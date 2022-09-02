@@ -1,0 +1,121 @@
+#fondo{
+    height: 190%;
+    max-height: 190%;
+}
+
+#contenedor{
+    background-color: rgba(27, 144, 240, 0.781);
+    position: absolute;
+    width: 100%;
+    height: 175%;
+    max-width: 750px;
+    max-height: 175%;
+    left: 30%;
+    top: 13%;
+    text-align: center;
+}
+
+iframe{ 
+    width: 382px; 
+    height: 215px;
+}
+
+#contenedor button{
+    position: absolute;
+    width: 60%;
+    font-size: 20px;
+    top: 95%;
+    left: 20%;
+}
+
+#img-1,
+#img-2,
+#img-3,
+#img-4,
+#img-5,
+#img-6{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 300px; 
+    max-height:  150px;
+    left: 30%;
+}
+
+#img-1{
+    top: 29%;
+}
+
+#img-2{
+    max-width: 500px; 
+    max-height:  170px;
+    top: 42%;
+    left: 17.5%;
+}
+
+#img-3{
+    max-width: 125px;
+    top: 56.5%;
+    left: 42.5%;
+}
+
+#img-4{
+    top: 70%;
+}
+
+#img-5{
+    top: 85%;
+    left: 7.5%;
+}
+
+#img-6{
+    top: 85%;
+    left: 52.5%;
+}
+
+#img-1 img,
+#img-2 img,
+#img-3 img,
+#img-4 img,
+#img-5 img,
+#img-6 img{
+    width: 100%;
+    height: 100%;
+}
+
+#p-1,
+#p-2,
+#p-3,
+#p-4,
+#p-5{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 90%; 
+    max-height: 6%;
+    left: 5%;
+}
+
+#p-1{
+    top: 25%;
+}
+
+#p-2{
+    top: 40%;
+}
+
+#p-3{
+    top: 52.5%;
+}
+
+#p-4{
+    top: 67%;
+}
+
+#p-5{
+    top: 81%;
+}
+
+footer{
+    bottom: -100%;
+}

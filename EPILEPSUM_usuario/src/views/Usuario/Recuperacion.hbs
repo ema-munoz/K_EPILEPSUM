@@ -1,0 +1,72 @@
+<!-- Required meta tags -->
+<link rel="stylesheet" href="/CSS/Usuario/Recuperacion.css">
+
+<div id="fondo">
+    <img src="/img/fondos/Fondo.jpg">
+</div>
+
+<div id="contenedor">
+    <div id="formulario">
+        <h1 id="h1" name="h1">EPILEPSUM</h1>
+        <form action="/actualizar/" method="post">
+
+            {{#each datosBD}}
+            <div id="correo">
+                <label>
+                    <b>Correo Electrónico</b> 
+                </label>
+                <input id="correo2" type="email" name="username" value="{{username}}" readonly required>
+                <input id="usuarioId" type="text" name="id" value="{{idUsuario}}" readonly>
+            </div>
+            {{/each}}
+
+            <div id="contrasenia">
+                <label>
+                    <b>Contraseña</b> 
+                </label>
+                <input id="password" type="password" name="password" placeholder="Ingrese su Contraseña" required>
+            </div>
+
+            <div id="contrasenia2">
+                <label>
+                    <b>Repetir Contraseña</b> 
+                </label>
+                <input id="password2" type="password" name="password2" onkeyup="boton.verificacion()" placeholder="Confirme su Contraseña" required>
+            </div>
+
+            <div id="ojo">
+                <button id="visto" type="button" onclick="boton.cambio()"><img src="/img/usuarios/visto.png"></button>
+                <button id="equis" type="button" onclick="boton.cambio2()"><img src="/img/usuarios/equis.png"></button>
+            </div>
+
+            <div id="ojo2">
+                <button id="visto2" type="button" onclick="boton.cambio3()"><img src="/img/usuarios/visto.png"></button>
+                <button id="equis2" type="button" onclick="boton.cambio4()"><img src="/img/usuarios/equis.png"></button>
+            </div>
+
+            <div id="boton">
+                <button type="submit">Actualizar</button>
+            </div>
+
+            <div id="mensaje"></div>
+        </form>
+    </div>
+</div>
+
+<div id="img">
+    <img src="/img/logo/Logo_epilepsum.png">
+</div>
+
+<script src="/js/Usuario/recuperacion.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+

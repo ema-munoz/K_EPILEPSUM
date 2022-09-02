@@ -1,0 +1,22 @@
+<!-- Required meta tags -->
+<link rel="stylesheet" href="/css/Ubicacion/Ubicacion.css">
+
+<form action="/ubicacion/{{user.idPaciente}}"></form>
+
+<div id="fondo">
+    <img src="/img/fondos/Fondo.jpg">
+</div>
+
+<div id="contenedor">
+
+    <div id="boton">
+        <button type="button" onclick="maps.verificacion()">Ver mi Localización</button>
+
+        <div id="out"></div>
+        
+        <div id="map-template"></div>
+    </div>
+
+</div>
+
+<script src="/js/Ubicacion/Ubicacion.js"></script>

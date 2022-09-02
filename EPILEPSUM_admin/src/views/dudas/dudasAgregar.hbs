@@ -1,0 +1,145 @@
+<link rel="stylesheet" href="/css/dudas/dudasAgregar.css" />
+
+<div id="fondo">
+    <img src="/img/fondos/sistemaNervioso.png" />
+</div>
+
+<div id="contenedor">
+    <form action="/dudas/agregar/{{user.idUsuario}}" method="post" enctype="multipart/form-data">
+        <div id="titulo">
+            <label>
+                Agregar Pregunta y Respuesta:
+            </label>
+        </div>
+
+        <!-- Pregunta -->
+        <div id="TituloPregunta">
+            <label>
+                {{#each idMaxPregunta}}
+                Pregunta N°:
+                <input type="text" name="IdPreguntas" id="numero" value="{{'MAX(idPreguntas)'}}" readonly />
+                {{/each}}
+            </label>
+        </div>
+
+        <div id="Pregunta">
+            <textarea type="text" name="pregunta" id="pregunta" placeholder="Escribe tu pregunta." required></textarea>
+        </div>
+
+        <!-- Pregunta Imagen -->
+        <div id="PreguntaAgregarImagen">
+            <input type="file" name="imagenPreguntas" id="imagenPreguntas" />
+        </div>
+
+        <div id="PreguntaImagen">
+            <input type="text" id="preguntaFinalImagen" name="preguntaFinalImagen" />
+            <div id="preguntaImagen">
+                <label>¿Desea añadir una imagen a la pregunta?</label>
+            </div>
+
+            <div id="preguntaImagenSi">
+                <input type="radio" id="imagenPreguntasSi" name="imagenPreguntasSi" value="Si"
+                    onclick="opcion.seleccion()"/>Sí
+            </div>
+
+            <div id="preguntaImagenNo">
+                <input type="radio" id="imagenPreguntasNo" name="imagenPreguntasNo" value="No"
+                    onclick="opcion.seleccion()"/>No
+            </div>
+        </div>
+
+        <!-- Pregunta Video -->
+        <div id="PreguntaAgregarVideo">
+            <input type="file" name="videoPreguntas" id="videoPreguntas" />
+        </div>
+
+        <div id="PreguntaVideo">
+            <div id="preguntaVideo">
+                <input type="text" id="preguntaFinalVideo" name="preguntaFinalVideo" />
+                <label>¿Desea añadir un vídeo a la pregunta?</label>
+            </div>
+
+            <div id="preguntaVideoSi">
+                <input type="radio" id="videoPreguntasSi" name="videoPreguntasSi" value="Si"
+                    onclick="opcion.seleccion()"/>Sí
+            </div>
+
+            <div id="preguntaVideoNo">
+                <input type="radio" id="videoPreguntasNo" name="videoPreguntasNo" value="No"
+                    onclick="opcion.seleccion()"/>No
+            </div>
+        </div>
+
+        <!-- Respuesta -->
+        <div id="TituloRespuesta">
+            <label>
+                {{#each idMaxRespuesta}}
+                Respuesta N°:
+                <input type="text" name="idRespuesta" id="idRespuesta" value="{{'MAX(idRespuesta)'}}" readonly />
+                {{/each}}
+            </label>
+        </div>
+
+        <div id="Unico">
+            <textarea name="unico" id="unico" maxlength="2500" placeholder="Escribe tu respuesta."></textarea>
+        </div>
+
+        <!-- Respuesta Imagen -->
+        <div id="RespuestaAgregarImagen">
+            <input type="file" name="imagenRespuesta" id="imagenRespuestas" />
+        </div>
+
+        <div id="RespuestaImagen">
+            <input type="text" id="respuestaFinalImagen" name="respuestaFinalImagen" />
+            <div id="imagenRespuesta">
+                <label>¿Desea añadir una imagen a la respuesta?</label>
+            </div>
+
+            <div id="respuestaImagenSi">
+                <input type="radio" id="imagenRespuestaSi" name="imagenRespuestaSi" value="Si"
+                    onclick="opcion.seleccion()"/>Sí
+            </div>
+
+            <div id="respuestaImagenNo">
+                <input type="radio" id="imagenRespuestaNo" name="imagenRespuestaNo" value="No"
+                    onclick="opcion.seleccion()"/>No
+            </div>
+        </div>
+
+        <!-- Respuesta Video -->
+        <div id="RespuestaAgregarVideo">
+            <input type="file" name="videoRespuesta" id="videoRespuestas" />
+        </div>
+
+        <div id="RespuestaVideo">
+            <input type="text" id="respuestaFinalVideo" name="respuestaFinalVideo" />
+            <div id="videoRespuesta">
+                <label>¿Desea añadir un video a la respuesta?</label>
+            </div>
+
+            <div id="respuestaVideoSi">
+                <input type="radio" id="videoRespuestaSi" name="videoRespuestaSi" value="Si"
+                    onclick="opcion.seleccion()"/>Sí
+            </div>
+
+            <div id="respuestaVideoNo">
+                <input type="radio" id="videoRespuestaNo" name="videoRespuestaNo" value="No"
+                    onclick="opcion.seleccion()"/>No
+            </div>
+        </div>
+
+        <!-- Botones -->
+        <div id="boton">
+            <button type="button" onclick="opcion.aparicion()">Crear Respuesta</button>
+        </div>
+
+        <div id="Guardar">
+            <button type="submit" id="btn-agregar">
+                Agregar
+            </button>
+        </div>
+    </form>
+</div>
+
+<script src="/js/numero.js"></script>
+<script src="/js/opciones.js"></script>

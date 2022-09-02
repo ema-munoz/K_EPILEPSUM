@@ -1,0 +1,44 @@
+{
+    "name": "epilepsum",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "epilepsum": "nodemon src/index.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ema-munoz/EPILEPSUM.git"
+    },
+    "author": "Emily",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ema-munoz/EPILEPSUM/issues"
+    },
+    "homepage": "https://github.com/ema-munoz/EPILEPSUM#readme",
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.20.0",
+        "connect": "^3.7.0",
+        "connect-flash": "^0.1.1",
+        "dotenv": "^16.0.2",
+        "express": "^4.18.1",
+        "express-handlebars": "^6.0.6",
+        "express-mysql-session": "^2.1.8",
+        "express-session": "^1.17.3",
+        "mariadb": "^3.0.1",
+        "morgan": "^1.10.0",
+        "mysql": "^2.18.1",
+        "mysql2": "^2.3.3",
+        "mysql2-promise": "^0.1.4",
+        "passport": "^0.6.0",
+        "passport-local": "^1.0.0",
+        "sequelize": "^6.21.4",
+        "timeago.js": "^4.0.2"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.19",
+        "npm-check-updates": "^16.0.6"
+    }
+}

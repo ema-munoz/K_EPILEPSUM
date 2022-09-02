@@ -1,0 +1,27 @@
+<!-- Required meta tags -->
+<link rel="stylesheet" href="/css/tipoEpilepsiaCss/tipoEpilepsiaAgragar.css">
+<div id="fondo">
+    <img src="/img/fondos/sistemaNervioso.png">
+</div>
+
+<form action="/tipoEpilepsia/agregar/ {{user.idUsuario}}" method="post">
+    <div id="contenido">
+           <div id="titulo">
+                <p>
+                    <b>Tipo de Epilepsias:</b>
+                </p>
+           </div>
+        <div id="Nombre">
+            <label>Tipos de Epilepsias :</label>
+            <input type="text" name="nombreTipoEpilepsia" id="nombre">
+        </div>
+<div id="Descripcion"> 
+      <label> Descripción:</label>
+        <textarea type="text" name="descripcionTipoEpilepsia" id="descripcion" maxlength="2500" required> </textarea>
+
+        <div id="boton">
+            <button type="submit">Guardar</button>
+        </div>
+    </div>
+    </div>
+</form>

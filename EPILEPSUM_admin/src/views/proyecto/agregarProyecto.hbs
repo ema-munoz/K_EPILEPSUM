@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="/CSS/proyecto/agregarProyecto.css">
+
+<div id="fondo">
+    <img src="/img/fondos/sistemaNervioso.png" alt="Logo">
+</div>
+<form action="/proyecto/agregar/" method="post">
+
+    <div id="contenedor">
+        <div id="titulo">
+            <p>Agregar Proyecto</p>
+        </div>
+
+        <div id="Nombre">
+            <label>Nombre:</label>
+            <input type="text" name="nombreProyecto" id="nombre">
+        </div>
+
+        <div id="objetivos">
+            <label>Objetivos:</label>
+            <input type="text" id="numeros" placeholder="Escriba su número de objetivos." checked>
+        </div>
+
+        <div id="boton">
+            <button type="button" onclick="objetivos.crear()">Crear Objetivos</button>
+        </div>
+
+        <div id="listaObjetivos"></div>
+
+
+        <div id="Guardar">
+            <button type="submit">Guardar</button>
+        </div>
+    </div>
+</form>
+
+<script src="/js/numero.js"></script>
+<script src="/js/objetivos.js"></script>

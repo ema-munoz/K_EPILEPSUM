@@ -1,0 +1,45 @@
+#contenedor{
+    background-color: rgba(27, 144, 240, 0.781);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 775px;
+    left: 35%;
+    top: 13%;
+    text-align: center;
+}
+
+label{
+    font-weight: bolder;
+}
+
+iframe{
+    width:485px;
+    height: 300px;
+    border:0; 
+}
+
+#contenedor button{
+    position: absolute;
+    width: 60%;
+    font-size: 20px;
+    top: 92.5%;
+    left: 20%;
+}
+
+footer{
+    bottom: -7.5%;
+}
+
+@media (max-width: 1400px) {
+    #contenedor{
+        left: 25%;
+    }
+}
+
+@media (max-width: 1024px) {
+    #contenedor{
+        left: 20%;
+    }
+}

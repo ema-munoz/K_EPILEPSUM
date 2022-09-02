@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="/css/partials/navegacion.css">
+{{#if user}}
+<nav>
+    <div id="img">
+        <a href="/proyecto/lista/{{user.idUsuario}}"><img src="/img/logo/Logo_epilepsum.png"></a>
+    </div>
+        
+    <div id="EPILEPSUM">
+        <a href="/proyecto/lista/{{user.idUsuario}}"><b>EPILEPSUM</b></a> 
+    </div>
+    
+    <div id="Contenido">
+        <a href="/contenido/lista/{{user.idUsuario}}">Contenido</a>
+    </div>
+
+    <div id="efectosSecundarios">
+        <a href="/efectosSecundarios/lista/{{user.idUsuario}}">Efectos Secundarios</a>
+    </div>
+
+    <div id="tipoEpilepsia">
+        <a href="/tipoEpilepsia/lista/{{user.idUsuario}}">Tipos de Epilepsia</a>
+    </div>
+
+    <div id="sintomas">
+        <a href="/sintomas/lista/{{user.idUsuario}}">Síntomas</a>
+    </div>
+
+    <div id="Experiencias">
+        <a href="/experiencias/lista/{{user.idUsuario}}">Experiencias</a>
+    </div>
+    
+    <div id="Consejos">
+        <a href="/consejo/lista/{{user.idUsuario}}">Consejos</a>
+    </div>
+
+    <div id="Dudas">
+        <a href="/dudas/lista/{{user.idUsuario}}">Preguntas</a>
+    </div>
+
+    <div id="Cierre">
+        <a href="/CerrarSesion"><button>Cerrar Sesión</button></a>
+    </div>
+</nav>
+{{/if}}

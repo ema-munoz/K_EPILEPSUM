@@ -1,0 +1,51 @@
+PARTE DE CLIENTE:
+CRUD => medicamentos (proceso)
+CRUD => Usuario (mejorar)
+
+CRUD => principio activo del medicamento
+CRUD => peso y estatura
+
+CRUD => ataques epilepticos (proceso detro de control),
+CRUD => medico / especialidades
+CRUD => Cita control
+CRUD => consejos
+CRUD => Experiencia
+CRUD => Ubicacion(mejorar)
+
+Mejora de preguntas frecuentes
+
+Mejora de estilos e intefaz
+
+crear tabla => CHAT
+
+crear una tabla rol
+
+aumentar en el CRUD de colaboraciones la columna consejos
+
+chatbot
+
+validaciones de input
+
+PARTE ADMINISTRATIVA (proceso)
+
+CRUD => Admin (mejorar)
+
+1. crear una tabla proyecto (pagina principal antes del login)
+2. CRUD => tabla de contenido de epilepsia(pagina principal despues del login)
+3. CRUD => efectos secundarios
+4. CRUD => tipos de epilepsia
+5. CRUD => sintomas
+6. CRUD => Experiencia (eliminacion)
+7. CRUD => consejos
+8. CRUD => preguntas
+9. CRUD => respuestas
+10. CRUD => PRIMEROS AUXILIOS (pendiente)
+
+VISTAS QUE FALTAN
+Ataques epilepticos
+Cita Crontrol
+Consejos
+
+
+
+

@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="/css/Experiencias/ExperienciasAgregar.css"/>
+<div id="fondo">
+    <img src="/img/fondos/sistemaNervioso.png">
+</div>
+
+<form action="/experiencias/agregar/{{user.idUsuario}}" method="POST">
+    <div id="contenedor">
+        <div id="titulo">
+            {{#each idMax}}
+            <label>Agregar Experiecia N: <input type="text" name="experiencia" id="numero"
+                    value="{{'MAX(idExperiencias)'}}"></label>
+            {{/each}}
+        </div>
+
+        <div id="Nombres">
+            <label>
+                Nombre:
+            </label>
+            <input type="text" name="nombreExperiencia" id="nombre" required>
+        </div>
+
+        <div id="descripcion">
+            <label>
+                Descripción:
+            </label>
+            <input type="text" name="experienciasDetallesExperiencias" id="descripcion" required>
+        </div>
+
+        <div id="Guardar">
+            <button type="submit" id="btn-agregar">
+                Agregar
+            </button>
+        </div>
+    </div>
+</form>
+
+<script src="/js/numero.js"></script>

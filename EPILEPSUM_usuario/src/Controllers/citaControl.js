@@ -1,0 +1,19 @@
+const index = {};
+
+const baseDatosSQL = require("../Database/basededatos.sql");
+/*
+index.Controlador = (req, res) => {
+	res.render("CitaControl/CitaControl");
+};
+*/
+
+index.lista = async (req, res) => {
+	const medicamentosId = req.user.idPaciente;
+	const enlistar = await baseDatosSQL.query(
+		"SELECT * FROM medicaciones WHERE pacienteIdPaciente = ?",
+		[medicamentosId]
+	);
+	res.render("CitaControl/CitaControl", { enlistar });
+};
+
+module.exports = index;

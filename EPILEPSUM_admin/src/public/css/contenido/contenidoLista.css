@@ -1,0 +1,126 @@
+#mensaje{
+    background-color: rgba(27, 144, 240, 0.781);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 750px;
+    max-height: 250px;
+    left: 30%;
+    top: 13%;
+    text-align: center;
+}
+
+#mensaje p{
+    position: absolute;
+    width: 70%;
+    top: 25%;
+    left: 15%;
+}
+
+#mensaje button{
+    position: absolute;
+    width: 70%;
+    top: 60%;
+    left: 15%;
+}
+
+#contenedor{
+    background-color: rgba(27, 144, 240, 0.781);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 92%;
+    max-height: 76%;
+    left: 3%;
+    top: 13%;
+    text-align: center;
+}
+
+#tarjeta{
+    background-color: rgba(137, 240, 163, 0.781);
+    width: 100%;
+    height: 100%;
+    max-width: 30%;
+    max-height: 70%;
+    margin-left: 0%;
+    text-align: center;
+}
+
+#titulo,
+#Nombres,
+#Descripcion,
+#foto,
+#video{
+    width: 100%;
+    height: 100%;
+    max-width: 70%; 
+    max-height: 10%;
+    left: 15%;
+}
+
+#titulo{
+    top: 5%;
+    font-size: 22.5px;
+}
+
+#Nombres {
+    top: 15%;
+}
+
+#Descripicion {
+    top: 25%;
+}
+
+#Descripcion textarea{
+    width: 60%;
+    height: 230%;
+    max-width: 80%;
+    max-height: 240%;
+    position: absolute;
+    right: 10%;
+}
+
+#video{
+    top: 50%;
+}
+
+#foto{
+    top: 60%;
+}
+
+#botonEditar,
+#botonEliminar{
+    width: 100%;
+    height: 100%;
+    max-width: 80%; 
+    max-height: 10%;
+    margin-left: 10%;
+    margin-top: 2.5%;
+}
+
+#botonEditar button,
+#botonEliminar button,
+#botonEditar a,
+#botonEliminar a{
+    width: 100%;
+    height: 100%;
+}
+
+#plus{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 75px; 
+    max-height:  75px;
+    right: 0.5%;
+    top: 11%;
+}
+
+#plus img {
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    bottom: 0%;
+}

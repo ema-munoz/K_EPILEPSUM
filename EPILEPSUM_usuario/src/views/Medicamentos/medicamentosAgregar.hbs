@@ -1,0 +1,51 @@
+<!-- Required meta tags -->
+<link rel="stylesheet" href="/css/Medicamentos/MedicamentosAgregar.css">
+
+<div id="fondo">
+    <img src="/img/fondos/sistemaNervioso.png">
+</div>
+
+<div id="contenedor">
+    <form action="/medicamentos/agregar/{{user.idPaciente}}" method="POST">
+        <div id="Nombres">
+            <label>
+                <b>Nombre de la Medicación:</b>
+            </label>
+            <input type="text" name="nombreMedicaciones" id="nombre" required>
+        </div>
+
+        <div id="Dosis">
+            <label>
+                <b>Dosis al Día:</b>
+            </label>
+            <input type="number" name="dosisMedicaciones" id="dosis" required>
+        </div>
+
+        <div id="Horario">
+            <label>
+                <b>Horario de la Dosis:</b>
+            </label>
+            <input type="text" name="horaMedicaciones" id="hora" required>
+        </div>
+
+        <div id="FechaInicio">
+            <label>
+                <b>Fecha de Inicio:</b>
+            </label>
+            <input type="date" name="fechaInicioMedicaciones" id="fechaInicio" required>
+        </div>
+
+        <div id="FechaFinal">
+            <label>
+                <b>Fecha de Control:</b>
+            </label>
+            <input type="date" name="fechaFinalMedicaciones" id="fechaFinal">
+        </div>
+
+        <div id="boton">
+            <button type="submit" id="btn-agregar">
+                Agregar
+            </button>
+        </div>
+    </form>
+</div>

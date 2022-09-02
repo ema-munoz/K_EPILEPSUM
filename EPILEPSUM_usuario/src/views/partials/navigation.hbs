@@ -1,0 +1,37 @@
+<link rel="stylesheet" href="/css/partials/navegacion.css">
+{{#if user}}
+<nav>
+    <div id="img">
+        <a href="/Inicio"><img src="/img/logo/Logo_epilepsum.png"></a>
+    </div>
+        
+    <div id="EPILEPSUM">
+        <a href="/Inicio"><b>EPILEPSUM</b></a> 
+    </div>
+
+    <div id="Control">
+        <a href="/Control/{{user.idPaciente}}">Mi Control</a>
+    </div>
+
+    <div id="Colaboracion">
+        <a href="/experiencias/lista/{{user.idPaciente}}">Experiencias</a>
+    </div>
+
+    <div id="PrimerosAuxilios">
+        <a href="/primeros_auxilios/{{user.idPaciente}}">Primeros Auxilios</a>
+    </div>
+
+    <div id="Ubicacion">
+        <a href="/ubicacion/{{user.idPaciente}}">Ubicación</a>
+    </div>
+
+    <div id="Contactos">
+        <a href="/contactos/lista/{{user.idPaciente}}">Mis Contactos</a>
+    </div>
+
+    <div id="Cierre">
+        <a href="/CerrarSesion"><button>Cerrar Sesión</button></a>
+    </div>
+</nav>
+{{/if}}
+

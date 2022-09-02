@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="/css/tipoEpilepsiaCss/tipoEpilepsiaListas.css">
+<div id="fondo">
+   <img src="/img/fondos/sistemaNervioso.png">
+</div>
+<form action="/tipoEpilepsia/lista/{{user.idUsuario}}" method="get"></form>
+<div id="contenido">
+
+   <div class="row">
+      {{#each lista}}
+      <div id="tarjeta">
+         <div id="titulo">
+            <p>
+               <b>Tipos de Epilepsias:</b>
+            </p>
+
+         </div>
+         <div id="nombre">
+            <label> Efectos :</label>
+            <label>{{nombreTipoEpilepsia}}</label>
+         </div>
+
+         <div id="Descripcion">
+            <label> Descripción:</label>
+            <p> {{descripcionTipoEpilepsia}} </p>
+         </div>
+
+         <div id="botonEditar">
+            <a href="/tipoEpilepsia/editar/{{idTipoEpilepsia}}">
+               <button>Editar</button>
+            </a>
+         </div>
+
+         <div id="botonEliminar">
+            <a href="/tipoEpilepsia/eliminar/{{idTipoEpilepsia}}">
+               <button>Eliminar</button>
+            </a>
+         </div>
+      </div>
+      {{else}}
+      <div id="mensaje">
+         <p><b> No existe registro de tipo de Epilepsia </b></p>
+         <a href="/tipoEpilepsia/agregar/{{user.idUsuario}}">
+            <button type="button">¿Desea registrar?</button>
+         </a>
+      </div>
+      {{/each}}
+   </div>
+</div>
+<div id="plus">
+   <a href="/tipoEpilepsia/agregar/{{user.idUsuario}}">
+      <button type="button"><img src="/img/usuarios/plus.png"></button>
+   </a>
+</div>

@@ -1,0 +1,34 @@
+<!-- Required meta tags -->
+<link rel="stylesheet" href="/CSS/proyecto/editarProyecto.css">
+
+<div id="fondo">
+    <img src="/img/fondos/sistemaNervioso.png" alt="Logo">
+</div>
+
+<div id="contenedor">
+    <div id="formulario">
+        {{#each lista}}
+        <form action="/proyecto/editar/{{idProyecto}}" method="post">
+            <div id="titulo">
+                <label>Nombre Proyecto:</label>
+            </div>
+
+            <div id="proyecto">
+                <input type="text" name="nombreProyecto" id="nombre" value="{{nombreProyecto}}">
+            </div>
+            {{/each}}
+
+            {{#each objetivos}}
+            <div id="objetivos">
+                <textarea name="objetivos">{{objetivoDetalleProyecto}}</textarea>
+            </div>
+            {{/each}}
+
+            <div id="boton">
+                <button type="submit">Guardar</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="/js/numero.js"></script>
+<script src="/js/objetivos.js"></script>

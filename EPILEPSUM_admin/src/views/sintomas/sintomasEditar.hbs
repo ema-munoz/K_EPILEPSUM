@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/css/sintomasCss/sintomasEditar.css">
+
+<div id="fondo">
+    <img src="/img/fondos/sistemaNervioso.png">
+</div>
+{{#each lista}} 
+<form action="/sintomas/editar/{{idSintomas}}" method="post">
+    <div id="contenido">
+       <div id="titulo">
+                <p>
+                    <b>Síntomas:</b>
+                </p>
+       </div>
+        <div id="Nombre">
+            <label>Síntomas:</label>
+            <input type="text" name="nombreSintomas" id="nombre" value="{{nombreSintomas}}">
+        </div>
+        
+    <div id="Descripcion"> 
+      <label> Descripción:</label>
+        <textarea type="text" name="descrpcionSintomas" id="descripcion" maxlength="2500" required> {{descrpcionSintomas}} </textarea>
+    
+        <div id="boton">
+            <button type="submit">Guardar</button>
+        </div>
+    </div>
+    </div>
+</form>
+{{/each}}

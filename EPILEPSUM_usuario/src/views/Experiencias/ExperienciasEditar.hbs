@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/CSS/Experiencias/ExperienciasLista.css">
+
+{{#each enlistar}}
+<form action="/experiencias/editar/{{idExperiencias}}" method="POST">
+    <div>
+        <label>
+            Foto:
+        </label>
+        <input type="image" name="imagenExperiencia" id="foto" value="{{imagenExperiencia}}">
+    </div>
+        <div>
+        <label>
+            Video:
+        </label>
+        <input type="video" name="videoExperiencia" id="video" value="{{videoExperiencia}}">
+    </div>
+    <div>
+        <label>
+            Nombre:
+        </label>
+        <input type="text" name="nombreExperiencia" id="nombre" value="{{nombreExperiencia}}">
+    </div>
+    <div>
+        <label>
+            Descripción:
+        </label>
+        <input type="text" name="experienciasDetallesExperiencias" id="descripcion" value="{{experienciasDetallesExperiencias}}">
+    </div>
+    <div>
+        <button type="submit" id="btn-agregar">
+            Guardar Cambios
+        </button>
+    </div>
+</form>
+{{/each}}

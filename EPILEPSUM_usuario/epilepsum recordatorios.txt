@@ -1,8 +1,7 @@
 PARTE DE CLIENTE:
-CRUD => medicamentos (proceso)
+CRUD => medicamentos (proceso)  
 CRUD => Usuario (mejorar)
 
-CRUD => principio activo del medicamento
 CRUD => peso y estatura
 
 CRUD => ataques epilepticos (proceso detro de control),
@@ -15,12 +14,6 @@ CRUD => Ubicacion(mejorar)
 Mejora de preguntas frecuentes
 
 Mejora de estilos e intefaz
-
-crear tabla => CHAT
-
-crear una tabla rol
-
-aumentar en el CRUD de colaboraciones la columna consejos
 
 chatbot
 
@@ -45,6 +38,13 @@ VISTAS QUE FALTAN
 Ataques epilepticos
 Cita Crontrol
 Consejos
+
+
+06/09/2022
+crear tabla => CHAT
+Crear una tabla rol
+aumentar en el CRUD de colaboraciones la columna consejos
+CRUD => principio activo del medicamento
 
 
 

@@ -43,6 +43,7 @@ const contenidoModels = require('../Model/contenidoModel')
 const detalleContenidoModels = require('../Model/detalleContenidoModel')
 
 const composicionMedicamentos = require('../Model/composicionMedicamento')
+const solicitudesModels = require('../Model/solicitudesModel')
 
 const sequelize = new Sequelize(
   'epilepsum', 
@@ -102,6 +103,9 @@ sequelize.authenticate()
   const detalleContenido = detalleContenidoModels(sequelize, Sequelize)
 
   const composicion = composicionMedicamentos(sequelize, Sequelize)
+  const solicitudes = solicitudesModels(sequelize, Sequelize);
+
+
 
   usuario.hasMany(efectosSecundarios)
   efectosSecundarios.belongsTo(usuario)
@@ -183,26 +187,29 @@ sequelize.authenticate()
 
   pacientes.hasMany(composicion)
   composicion.belongsTo(pacientes)
+  
+  pacientes.hasMany(solicitudes)
+  solicitudes.belongsTo(pacientes)
 
 module.exports = {
-    usuario,
-    medicacion,
-    ataque,
-    medico,
-    contactosEmergencia,
-    familiares,
-    citaControl,
-    consejo,
-    detallesConsejos,
-    detallesExperiencias,
-    detallesMedicamentos,
-    detallesRol,
-    experiencias,
-    rol,
+	usuario,
+	medicacion,
+	ataque,
+	medico,
+	contactosEmergencia,
+	familiares,
+	citaControl,
+	consejo,
+	detallesConsejos,
+	detallesExperiencias,
+	detallesMedicamentos,
+	detallesRol,
+	experiencias,
+	rol,
 
-    proyecto,
-    detalleProyecto,
-    efectosSecundarios,
+	proyecto,
+	detalleProyecto,
+	efectosSecundarios,
 
     tipoEpilepsia,
     sintomas,
@@ -212,5 +219,15 @@ module.exports = {
     contenido,
     detalleContenido,
 
-    composicion
-  }
+    composicion,
+  
+	tipoEpilepsia,
+	sintomas,
+	preguntas,
+	respuestas,
+	pacientes,
+	contenido,
+	detalleContenido,
+
+	solicitudes
+};

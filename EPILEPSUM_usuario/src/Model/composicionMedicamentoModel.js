@@ -1,6 +1,7 @@
+
 const composicion = (sequelize, type) => {
-    return sequelize.define('composicions', {
-        inComposicions: {
+    return sequelize.define('composicion', {
+        idComposiciones: {
             type: type.INTEGER,
             primaryKey: true,
             autoIncrement: true,
@@ -16,19 +17,19 @@ const composicion = (sequelize, type) => {
         laboratorioMedicamentos: type.STRING,
         estadoMedicamentos: type.STRING,
 
-        crecioComposiciones: {
-            type: 'TIMESTAMP',
-            defaultValue: type.literal('CURRENT_TIMESTAMP'),
+        creacionComposiciones: {
+            type: "TIMESTAMP",
+            defaultValue: type.literal("CURRENT_TIMESTAMP"),
+            allowNull: false,
+        },
+        actualizacionComposiciones: {
+            type: "TIMESTAMP",
+            defaultValue: type.literal("CURRENT_TIMESTAMP"),
             allowNull: false
         },
-        actualizanComposiciones: {
-            type: 'TIMESTAMP',
-            defaultValue: type.literal('CURRENT_TIMESTAMP'),
-            allowNull: false
-        }
-    }, {
+    },{
         timestamps: false,
-    })
+    });
 }
 
 module.exports = composicion

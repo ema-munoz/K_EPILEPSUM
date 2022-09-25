@@ -1,4 +1,3 @@
-
 const composicion = (sequelize, type) => {
     return sequelize.define('composicion', {
         idComposiciones: {
@@ -12,10 +11,9 @@ const composicion = (sequelize, type) => {
         viaAdministracionMedicamentos: type.STRING,
         indicacionesMedicamentos: type.STRING,
         dosisMedicamentos: type.STRING,
-        fechaElaboracionMedicamentos: type.STRING,
-        fechaVencimientoMedicamentos: type.STRING,
-        laboratorioMedicamentos: type.STRING,
-        estadoMedicamentos: type.STRING,
+        fechaElaboracionMedicamentos: type.DATE,
+        fechaVencimientoMedicamentos: type.DATE,
+        laboratorioMedicamentos: type.STRING,        
 
         creacionComposiciones: {
             type: "TIMESTAMP",

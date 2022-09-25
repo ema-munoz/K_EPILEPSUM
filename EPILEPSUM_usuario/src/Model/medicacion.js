@@ -11,13 +11,13 @@ const medicacion =(sequelize, type)=>{
         horaMedicaciones: type.STRING,
         fechaInicioMedicaciones: type.STRING,
         fechaFinalMedicaciones: type.STRING,
-        crecionMedicaciones:{
+        creacionMedicaciones:{
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
             allowNull: false
         },
         
-        actualizanMedicaciones:{
+        actualizacionMedicaciones:{
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
             allowNull: false

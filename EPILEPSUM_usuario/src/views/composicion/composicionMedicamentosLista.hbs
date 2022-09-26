@@ -9,46 +9,43 @@
         {{#each enlistar}}
         <div id="tarjeta">
             <div id="titulo">
-                <h3>Principio Activo de Medicamento</h3>
+                <h3>Medicamentos Ingresados</h3>
             </div>
-            <div>
-                <label for="">Nombre del Medicamento</label>
-                <input type="text" name="nombreMedicamentos" id="nombre" required>
+            <div id="nombre">
+                <p>Nombre del Medicamento: {{nombreMedicamentos}}</p>
+                
             </div>
-            <div>
-                <label for="">Composicion del Medicamento</label>
-                <ul>
-                    <li><input type="text" name="composicionMedicamentos" id="dosis" required></li>
-                    <li><input type="text" name="composicionMedicamentos" id="dosis" required></li>
-                </ul>
+            <div id="dosis">
+                <p>Composicion del Medicamento: {{composicionMedicamentos}}</p>
+                
             </div>
-            <div>
-                <label for="">Detalle del Medicamento</label>
-                <input type="text" name="descripcionMedicamentos" id="detalle" required>
+            <div id="detalle">
+                <p>Detalle del Medicamento: {{descripcionMedicamentos}}</p>
+                
             </div>
-            <div>
-                <label for="">Via de Administración del Medicamento</label>
-                <input type="text" name="viaAdministracionMedicamentos" id="administracion" required>
+            <div id="administracion">
+                <p>Via de Administración del Medicamento: {{viaAdministracionMedicamentos}}</p>
+                
             </div>
-            <div>
-                <label for="">Contraindicaciones del Medicamento</label>
-                <input type="text" name="indicacionesMedicamentos" id="contraindicaciones" required>
+            <div id="contraindicaciones">
+                <p>Contraindicaciones del Medicamento: {{indicacionesMedicamentos}}</p>
+                
             </div>
-            <div>
-                <label for="">Dosis del Medicamento</label>
-                <input type="text" name="dosisMedicamentos" id="Dosis" required>
+            <div id="Dosis">
+                <p>Dosis del Medicamento: {{dosisMedicamentos}}</p>
+                
             </div>
-            <div>
-                <label for="">Fecha de Elaboracion del Medicamento</label>
-                <input type="date" name="fechaElaboracionMedicamentos" id="fechaElaboracion" required>
+            <div id="fechaElaboracion">
+                <p>Fecha de Elaboracion del Medicamento: {{fechaElaboracionMedicamentos}}</p>
+                
             </div>
-            <div>
-                <label for="">Fecha de Vencimiento del Medicamento</label>
-                <input type="date" name="fechaVencimientoMedicamentos" id="fechaVencimiento" required>
+            <div id="fechaVencimiento">
+                <p>Fecha de Vencimiento del Medicamento: {{fechaVencimientoMedicamentos}}</p>
+                
             </div>
-            <div>
-                <label for="">Laboratorio </label>
-                <input type="text" name="laboratorioMedicamentos" id="laboratorio" required>
+            <div id="laboratorio">
+                <p>Laboratorio: {{laboratorioMedicamentos}}</p>
+                
             </div>
             <div id="botonEditar">
                 <a href="/medicamentos/editar/{{idComposiciones}}">
@@ -64,7 +61,7 @@
         {{else}}
         <div id="mensaje">
             <p><b>Usted no tiene registrado ningún medicamento. </b></p>
-            <a href="/medicamentos/agregar/{{user.idPaciente}}">
+            <a href="/medicamentos/agregar/{{user.idComposiciones}}">
                 <button type="button">¿Desea registrar?</button>
             </a>
         </div>
@@ -73,7 +70,7 @@
 </div>
 
 <div id="plus">
-    <a href="/medicamentos/agregar/{{user.idPaciente}}">
+    <a href="/medicamentos/agregar/{{user.idComposiciones}}">
         <button type="button"><img src="/img/usuarios/plus.png"></button>
     </a>
 </div>

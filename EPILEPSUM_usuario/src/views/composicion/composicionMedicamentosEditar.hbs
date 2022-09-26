@@ -1,0 +1,60 @@
+<link rel="stylesheet" href="/CSS/composicion/composicionMedicamentos.css">
+
+<div id="fondo">
+    <img src="/img/fondos/sistemaNervioso.png">
+</div>
+
+<div id="contenedor">
+    {{#each enlistar}}
+    <form action="/composicionMedicamento/editar/{{idComposiciones}}" method="POST">
+        <div id="titulo">
+            <h3>Principio Activo de Medicamento</h3>
+        </div>
+        <div>
+            <label for="">Nombre del Medicamento</label>
+            <input type="text" name="nombreMedicamentos" id="nombre" value="{{nombreMedicamentos}}" required>
+        </div>
+        <div>
+            <label for="">Composicion del Medicamento</label>
+            <ul>
+                <li><input type="text" name="composicionMedicamentos" id="dosis" value="{{composicionMedicamentos}}" required></li>
+                <li><input type="text" name="composicionMedicamentos" id="dosis" value="{{composicionMedicamentos}}" required></li>
+            </ul>
+        </div>
+        <div>
+            <label for="">Detalle del Medicamento</label>
+            <input type="text" name="descripcionMedicamentos" id="detalle" value="{{descripcionMedicamentos}}" required>
+        </div>
+        <div>
+            <label for="">Via de Administración del Medicamento</label>
+            <input type="text" name="viaAdministracionMedicamentos" id="administracion" value="{{viaAdministracionMedicamentos}}" required>
+        </div>
+        <div>
+            <label for="">Contraindicaciones del Medicamento</label>
+            <input type="text" name="indicacionesMedicamentos" id="contraindicaciones" value="{{indicacionesMedicamentos}}" required>
+        </div>
+        <div>
+            <label for="">Dosis del Medicamento</label>
+            <input type="text" name="dosisMedicamentos" id="Dosis" value="{{dosisMedicamentos}}" required>
+        </div>
+        <div>
+            <label for="">Fecha de Elaboracion del Medicamento</label>
+            <input type="date" name="fechaElaboracionMedicamentos" id="fechaElaboracion" value="{{fechaElaboracionMedicamentos}}" required>
+        </div>
+        <div>
+            <label for="">Fecha de Vencimiento del Medicamento</label>
+            <input type="date" name="fechaVencimientoMedicamentos" id="fechaVencimiento" value="{{fechaVencimientoMedicamentos}}" required>
+        </div>
+        <div>
+            <label for="">Laboratorio </label>
+            <input type="text" name="laboratorioMedicamentos" id="laboratorio" value="{{laboratorioMedicamentos}}" required>
+        </div>
+        <div id="boton">
+            <button type="submit" id="btn-agregar">
+                Agregar
+            </button>
+        </div>
+
+    </form>
+    {{/each }}
+</div>

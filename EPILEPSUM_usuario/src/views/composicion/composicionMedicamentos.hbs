@@ -5,44 +5,76 @@
 </div>
 
 <div id="contenedor">
-    <div id="titulo">
-        <h3>Principio Activo de Medicamento</h3>
+    <div id="row">
+        {{#each enlistar }}
+        <div id="titulo">
+            <h3>Principio Activo de Medicamento</h3>
+        </div>
+        <div>
+            <label for="">Nombre del Medicamento</label>
+            <input type="text" placeholder="Ingrese el Nombre del Medicamento">
+        </div>
+        <div>
+            <label for="">Composicion del Medicamento</label>
+            <ul>
+                <li><input type="text"></li>
+                <li><input type="text"></li>
+                <li><input type="text"></li>
+            </ul>
+
+        </div>
+        <div>
+            <label for="">Detalle del Medicamento</label>
+            <input type="text" placeholder="Ingrese el detalle del Medicamento">
+        </div>
+        <div>
+            <label for="">Via de Administración del Medicamento</label>
+            <input type="text" placeholder="Ingrese la forma de administrar el medicamento">
+        </div>
+        <div>
+            <label for="">Contraindicaciones del Medicamento</label>
+            <input type="text" placeholder="Ingrese si tiene alguna contraindicación">
+        </div>
+        <div>
+            <label for="">Dosis del Medicamento</label>
+            <input type="text" placeholder="Ingrese la dosis del Medicamento">
+        </div>
+        <div>
+            <label for="">Fecha de Elaboracion del Medicamento</label>
+            <input type="date" placeholder="Ingrese la fecha de elaboración del medicamento">
+        </div>
+        <div>
+            <label for="">Fecha de Vencimiento del Medicamento</label>
+            <input type="date" placeholder="Ingrese la fecha de Vencimiento del medicamento">
+        </div>
+        <div>
+            <label for="">Laboratorio </label>
+            <input type="text" placeholder="Ingrese si tiene alguna contraindicación">
+        </div>
+
     </div>
-    <div>
-        <label for="">Nombre del Medicamento</label>
-        <input type="text" placeholder="Ingrese el Nombre del Medicamento">
-    </div>
-    <div>
-        <label for="">Composicion del Medicamento</label>
-        <input type="text">
-    </div>
-    <div>
-        <label for="">Detalle del Medicamento</label>        
-        <input type="text" placeholder="Ingrese el detalle del Medicamento">
-    </div>
-    <div>
-        <label for="">Via de Administración del Medicamento</label>        
-        <input type="text" placeholder="Ingrese la forma de administrar el medicamento">
-    </div>
-    <div>
-        <label for="">Contraindicaciones del Medicamento</label>        
-        <input type="text" placeholder="Ingrese si tiene alguna contraindicación">
-    </div>
-    <div>
-        <label for="">Dosis del Medicamento</label>        
-        <input type="text" placeholder="Ingrese la dosis del Medicamento">
-    </div>
-    <div>
-        <label for="">Fecha de Elaboracion del Medicamento</label>        
-        <input type="date" placeholder="Ingrese la fecha de elaboración del medicamento">
-    </div>
-    <div>
-        <label for="">Fecha de Vencimiento del Medicamento</label>        
-        <input type="date" placeholder="Ingrese la fecha de Vencimiento del medicamento">
-    </div>
-    <div>
-        <label for="">Laboratorio </label>        
-        <input type="text" placeholder="Ingrese si tiene alguna contraindicación">
+    <div id="botonEditar">
+        <a href="/medicamentos/editar/{{idMedicaciones}}">
+            <button>Editar</button>
+        </a>
     </div>
 
+    <div id="botonEliminar">
+        <a href="/medicamentos/eliminar/{{idMedicaciones}}">
+            <button>Eliminar</button>
+        </a>
+    </div>
+    {{else}}
+    <div id="mensaje">
+        <p><b>Medicamento Guardado</b></p>
+        <a href="#">
+            <button type="button">Desea Verificar Medicamentos</button>
+        </a>
+    </div>
+    {{/each }}
+</div>
+<div id="plus">
+    <a href="#">
+        <button type="button"> <img src="/img/usuarios/plus.png" alt=""> </button>
+    </a>
 </div>

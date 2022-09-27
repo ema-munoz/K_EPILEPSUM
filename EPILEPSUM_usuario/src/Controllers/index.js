@@ -78,6 +78,10 @@ index.verificacion = async (req, res, done) => {
 				"CREATE VIEW listaDudas as SELECT p.pregunta, r.* FROM preguntas p join respuestas r ON  r.preguntaIdPreguntas = p.idPreguntas"
 			);
 
+			await sql.query(
+				"CREATE VIEW SolicitudAmigo as SELECT p.*, s.* FROM pacientes p JOIN solicitudes s ON s.pacienteIdPaciente = p.idPaciente"
+			);
+
 			console.log("Guardado con éxito.");
 		}
 	} else {

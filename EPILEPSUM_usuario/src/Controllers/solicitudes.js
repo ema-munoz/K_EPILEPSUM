@@ -4,7 +4,9 @@ const baseDatosSQL = require("../Database/basededatos.sql");
 const baseDatosORM = require("../Database/basededatos.orm");
 
 solicitudes.mostrar = async (req, res) => {
-	const enlistar = await baseDatosSQL.query("SELECT * FROM solicitudes");
+	const enlistar = await baseDatosSQL.query(
+		"SELECT DISTINCT * FROM solicitudamigo"
+	);
 	res.render("Solicitudes/solicitudes", { enlistar });
 };
 

@@ -1,24 +1,24 @@
-const mensajes={};
+const mensajes = {};
 
 const baseDatosSQL = require("../Database/basededatos.sql");
 const baseDatosORM = require("../Database/basededatos.orm");
 
-mensajes.agregar = async (req, res) => {
-	const enlistar = await baseDatosSQL.query("SELECT * FROM mensajes")
-	res.render("Mensajes/mensajes", {enlistar});
-}
+mensaje.mostrar = async (req, res) => {
+	const enlistar = await baseDatosSQL.query(
+		"SELECT DISTINCT * FROM mensajes"
+	);
+	res.render("Mensajes/mensajes", { enlistar });
+};
 
-mensajes.mostrar = async (req, res) => {
-	const creacionMensaje = req.params.id;
-	const {
-        idMensaje
-	} = req.body;
-	const nuevoMensaje = {
-		idMensaje
+mensaje.agregar = async (req, res) => {
+	const amigosId = req.params.id;
+	const { idMensaje } = req.body;
+	const nuevoAmigo = {
+		idMensaje,
 	};
-	await baseDatosORM.mensajes.create(nuevoMensaje);
-	req.flash("sucess", "Conectado ahora.");
-	res.redirect("/mensajes/lista/" + id);
+	await baseDatosORM.amigos.create(nuevoAmigo);
+	req.flash("sucess", "Ahora amigos.");
+	res.redirect("/amigos/lista/" + amigosId);
 };
 
 module.exports = mensajes;

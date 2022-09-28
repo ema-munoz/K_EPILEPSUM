@@ -1,26 +1,34 @@
-const mensajes={};
+const solicitudes = {};
 
 const baseDatosSQL = require("../Database/basededatos.sql");
 const baseDatosORM = require("../Database/basededatos.orm");
 
-mensajes.traerDatos = async (req, res) => {
+solicitudes.mostrar = async (req, res) => {
 	const enlistar = await baseDatosSQL.query(
-		"SELECT * FROM mensajes"
+		"SELECT DISTINCT * FROM solicitudamigo"
 	);
-	res.render("Mensajes/mensajes", {enlistar});
+	res.render("Solicitudes/solicitudes", { enlistar });
 };
 
-mensajes.agregar = async (req, res) => {
-	const creacionMensaje = req.params.id;
-	const {
-        idMensaje
-	} = req.body;
-	const nuevoMensaje = {
-		idMensaje
+solicitudes.agregar = async (req, res) => {
+	const amigosId = req.params.id;
+	const { idSolicitud } = req.body;
+	const nuevoAmigo = {
+		idSolicitud,
 	};
-	await baseDatosORM.mensajes.create(nuevoMensaje);
-	req.flash("sucess", "Conectado ahora.");
-	res.redirect("/mensajes/lista/" + creacionMensaje);
+	await baseDatosORM.amigos.create(nuevoAmigo);
+	req.flash("sucess", "Ahora amigos.");
+	res.redirect("/amigos/lista/" + amigosId);
 };
 
-module.exports = mensajes;
+solicitudes.eliminar = async (req, res) => {
+	const solicitudesId = req.params.id;
+	const id = req.user.idPaciente;
+	await baseDatosORM.amigos.destroy({
+		where: { idSolicitud: solicitudesId },
+	});
+	req.flash("sucess", "Solicitud Eliminada.");
+	res.redirect("/amigos/lista/" + id);
+};
+
+module.exports = solicitudes;

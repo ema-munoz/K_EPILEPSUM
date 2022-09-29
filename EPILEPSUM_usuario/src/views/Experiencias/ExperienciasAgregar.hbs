@@ -1,47 +1,49 @@
 <link rel="stylesheet" href="/CSS/Experiencias/ExperienciasLista.css">
 
 <form action="/experiencias/agregar/{{user.idPaciente}}" method="POST">
-<div id="contenedor">
-    <div id="titulo">
-        {{#each idMax}}
-        <label>Agregar Experiecia N: <input type="text" name="experiencia" id="numero" value="{{'MAX(idExperiencias)'}}"></label>
-        {{/each}}
-    </div>
+    <div id="contenedor">
+        <div id="titulo">
+            {{#each idMax}}
+            <label>Agregar Experiecia N:</label> 
+            <input type="text" name="experiencia" id="numero"
+                    value="{{'MAX(idExperiencias)'}}">
+            {{/each}}
+        </div>
 
-    <div>
-        <label>
-            Foto:
-        </label>
-        <input type="image" name="imagenExperiencia" id="foto">
+        <div>
+            <label>
+                Foto:
+            </label>
+            <input type="image" name="imagenExperiencia" id="foto">
+        </div>
+
+        <div>
+            <label>
+                Video:
+            </label>
+            <input type="video" name="videoExperiencia" id="video">
+        </div>
+
+        <div>
+            <label>
+                Nombre:
+            </label>
+            <input type="text" name="nombreExperiencia" id="nombre" required>
+        </div>
+
+        <div>
+            <label>
+                Descripción:
+            </label>
+            <input type="text" name="experienciasDetallesExperiencias" id="descripcion" required>
+        </div>
+
+        <div>
+            <button type="submit" id="btn-agregar">
+                Agregar
+            </button>
+        </div>
     </div>
-    
-    <div>
-        <label>
-            Video:
-        </label>
-        <input type="video" name="videoExperiencia" id="video">
-    </div>
-    
-    <div>
-        <label>
-            Nombre:
-        </label>
-        <input type="text" name="nombreExperiencia" id="nombre" required>
-    </div>
-    
-    <div>
-        <label>
-            Descripción:
-        </label>
-        <input type="text" name="experienciasDetallesExperiencias" id="descripcion" required>
-    </div>
-    
-    <div>
-        <button type="submit" id="btn-agregar">
-            Agregar
-        </button>
-    </div>
-</div>
 </form>
 
 <script src="/js/numero.js"></script>

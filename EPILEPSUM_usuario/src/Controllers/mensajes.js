@@ -12,9 +12,9 @@ mensajes.mostrar = async (req, res) => {
 
 mensajes.agregar = async (req, res) => {
 	const amigosId = req.params.id;
-	const { idPersona } = req.body;
+	const { idMensaje } = req.body;
 	const nuevoAmigo = {
-		idPersona,
+		idMensaje,
 	};
 	await baseDatosORM.amigos.create(nuevoAmigo);
 	req.flash("sucess", "Ahora amigos.");

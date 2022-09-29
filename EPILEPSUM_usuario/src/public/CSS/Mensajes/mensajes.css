@@ -4,38 +4,25 @@ footer {
 #fondo{
     background-repeat: no-repeatZ;
 }
-.card {
-    position: absolute;
-    top: 59%;
-    left: 24.3%;
-    width: 309px;
-    height: 400px;
-    margin: -150px;
-    float: left;
-    perspective: 500px;
-    background: white;
-    border-radius: 15px;
-    box-shadow: -24px 25px 20px rgba(7, 7, 7, 0.541);
+
+.back-icon{
+    font-size: 18px;
+    color: #fff;
 }
-
-.content {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-
+.back-icon .fas{
+    padding-left: 30px;
 }
 
 .card2 {
     position: absolute;
-    top: 22%;
-    left: 160%;
+    top: 50%;
+    left: 38%;
     width: 653px;
     height: 500px;
     margin: -150px;
     float: left;
     perspective: 500px;
-    background: rgba(255, 255, 255, 0.808);
+    background: rgb(194, 186, 186);
     border-radius: 15px;
     box-shadow: 24px 25px 20px rgba(7, 7, 7, 0.541);
 }
@@ -86,21 +73,20 @@ footer {
     overflow-y: scroll;
 }
 
-.todox::-webkit-scrollbar {
+:is(.todox, .chat-box)::-webkit-scrollbar {
     width: 9px;
 }
 
-.todox::-webkit-scrollbar-track {
+:is(.todox, .chat-box)::-webkit-scrollbar-track {
     background: rgba(94, 97, 97, 0.623);
     border-radius: 15px;
 }
 
-.todox::-webkit-scrollbar-thumb {
+:is(.todox, .chat-box)::-webkit-scrollbar-thumb {
     background-color: rgb(247, 247, 247);
     border-radius: 20px;
     border: 3px solid rgba(12, 91, 97, 0.623);
 }
-
 .contenedor {
     background: rgb(230, 230, 233);
     margin-top: 19px;
@@ -135,7 +121,7 @@ footer {
     margin-left: 100px;
 }
 .contenedor2 {
-    background: linear-gradient(90deg, rgb(52, 52, 197), rgb(60%, 20%, 40%));
+    background: rgb(56, 54, 54);
     margin-top: -1px;
     align-items: center;
     display: flex;
@@ -147,6 +133,8 @@ footer {
 .contenedor2 p {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: x-large;
+    color: #fff;
+    word-wrap: break-word;
 }
 
 .contenedor2 img {
@@ -156,45 +144,96 @@ footer {
     margin-left: 50px;
 }
 
-.contenedor3 {
-    background: rgba(37, 85, 129, 0.979);
-    margin-top: 331px;
-    align-items: center;
-    display: flex;
-    height: 90px;
-    border-radius: 8px;
-    width: 653px;
-}
-
-#formulario {
-    background-color: rgb(29, 51, 71);
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    height: 60px;
-    border-radius: 12px;
-    width: 520px;
-    margin-left: 71px;
-}
-
 .imgnc {
     margin-right: 20px;
     margin-left: 20px;
 }
 
-.escri {
-    color: white;
-    background: none;
-    border: none;
-    overflow: hidden;
-    outline: 0px;
-    border-bottom: 1px solid rgb(128, 128, 128);
-    font-size: large;
-    width: 400px;
-}
-
 .palabr2 p {
-    margin-left: 351px;
+    margin-left: 31px;
+    word-wrap: break-word;
     font-family: Arial, Helvetica, sans-serif;
     color: green;
+}
+
+/* contenido */
+.chat-box{
+    height: 350px;
+    overflow-y: auto;
+    padding: 10px 20px 20px 40px;
+    box-shadow: inset 0 32px 32px -32px rgb(0 0 0 /5%),
+    inset 0 -32px 32px -32px rgb(0 0 0 /5%) ;
+}
+.chat-box .chat{
+    margin: 10px 0;
+}
+.chat-box .salida{
+    display: flex;
+}
+.chat-box .chat p{
+    word-wrap: break-word;
+    padding: 1px 16px;
+    box-shadow: inset 0 0px rgb(0 0 0 /8%),
+    inset 0 16px 16px -16px rgb(0 0 0 /10%) ;
+}
+.salida .deatils span{
+    padding-left: 80%;
+    font-size: small;
+    color: rgb(17, 0, 255);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.chat-box .entrada span{
+    font-size: small;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.salida .deatils {
+    margin-left: auto;
+    max-width: calc(100% - 130px);
+}
+.salida .deatils p{
+    background: #333;
+    color: #fff;
+    border-radius: 18px 18px 0 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.chat-box .entrada{
+    display: flex;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.entrada .deatils2 p{
+    background: #fff;
+    color: #333;
+    border-radius: 18px 18px 0 18px;
+    border-radius: 18px 18px 18px 0;
+}
+
+/* enviar */
+.typing-area{
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    background: #333;
+}
+.typing-area input{
+    height: 51px;
+    width: calc(100% - 58px);
+    font-size: 17px;
+    border: 1px solid #ccc;
+    padding: 0 13px;
+    border-radius: 5px;
+    outline: none;
+}
+.typing-area button{
+    width: 55px;
+    border: none;
+    outline: none;
+    background: rgb(60%, 20%, 40%);
+    color: #ccc;
+    font-size: 19px;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
 }

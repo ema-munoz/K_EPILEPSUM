@@ -18,31 +18,6 @@ mysql
 			});
 	});
 
-const usuarioModels = require("../Model/user");
-const medicacionUsuarioModels = require("../Model/medicacion");
-const ataquesModels = require("../Model/ataquesEpilepticos");
-const medicosModels = require("../Model/medico");
-const contactosEmergenciaModels = require("../Model/contactosEmergencia");
-const familiaresModels = require("../Model/familiares");
-const citaControlModels = require("../Model/citaControl");
-const consejosModels = require("../Model/consejos");
-const detallesExperienciasModels = require("../Model/detallesExperiencia");
-const detallesConsejosModels = require("../Model/detallesConsejo");
-const detallesMedicamentosModels = require("../Model/detallesMedicamentos");
-const detallesRolModels = require("../Model/detallesRol");
-const experienciasModels = require("../Model/experiencia");
-const rolModels = require("../Model/rol");
-mysql.createConnection({
-  host: process.env.DB_HOST || "127.0.0.1",
-  port: process.env.DB_PORT || "3306",
-  user: process.env.DB_USER || "root",
-  password: process.env.DB_PASSWORD || "",
-}).then(connection => {
-  connection.query(`CREATE DATABASE IF NOT EXISTS ${dbName};`).then((res) => {
-    console.info("Base de datos creada o comprobada correctamente");
-  })
-})
-
 const usuarioModels = require('../Model/user')
 const medicacionUsuarioModels = require('../Model/medicacion')
 const ataquesModels = require('../Model/ataquesEpilepticos')

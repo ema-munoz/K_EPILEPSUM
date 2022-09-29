@@ -1,6 +1,6 @@
 const mensajes = (sequelize, type) => {
     return sequelize.define('mensajes', {
-        idMensaje: {
+        idPersona: {
             type: type.INTEGER,
             primaryKey: true,
             autoIncrement: true,

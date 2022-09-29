@@ -4,7 +4,8 @@
     <img src="/img/mensajes/Captura.PNG">
 </div>
 
-<di v class="row">
+<div class="row">
+    {{#each enlistar}}
     <div id="mensaje">
         <div class="card">
             <div class="content">
@@ -18,40 +19,7 @@
                             <div class="contenedor">
                                 <img src="#" alt="" class="imagenr">
                                 <div class="palabra">
-                                    <span>Alguien cualquiera </span>
-                                    <div class="letra">
-                                        <p>Ahora</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="contenedor">
-                                <img src="#"
-                                    alt="" class="imagenr">
-                                <div class="palabra">
-                                    <span>Alguien cualquiera </span>
-                                    <div class="letra">
-                                        <p>Ahora</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="contenedor">
-                                <img src="#"
-                                    alt="" class="imagenr">
-                                <div class="palabra">
-                                    <span>Alguien cualquiera </span>
-                                    <div class="letra">
-                                        <p>Ahora</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <br>
-                            <div class="contenedor">
-                                <img src="#"
-                                    alt="" class="imagenr">
-                                <div class="palabra">
-                                    <span>Alguien cualquiera </span>
+                                    <span>| </span>
                                     <div class="letra">
                                         <p>Ahora</p>
                                     </div>
@@ -82,4 +50,6 @@
             </div>
         </div>
     </div>
+    {{/each}}
+</div>
     

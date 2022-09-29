@@ -45,12 +45,14 @@ const respuestasModels = require("../Model/respuestasModel");
 const pacientesModels = require("../Model/paciente");
 const contenidoModels = require("../Model/contenidoModel");
 const detalleContenidoModels = require("../Model/detalleContenidoModel");
-
+/*Emily */
 const solicitudesModels = require("../Model/solicitudesModel");
 const amigosModels = require("../Model/amigos");
-
+/*Javier*/
 const composicionMedicamentoModels = require('../Model/composicionMedicamentoModel')
-const farmacoModels = require('../Model/farmaco')
+const farmacoModels = require('../Model/farmaco');
+/*Billy*/
+const mensajesModels = require('../Model/mensajesModel')
 
 const sequelize = new Sequelize("epilepsum", "root", "", {
 	host: "localhost",
@@ -90,25 +92,24 @@ const detallesMedicamentos = detallesMedicamentosModels(sequelize, Sequelize);
 const detallesRol = detallesRolModels(sequelize, Sequelize);
 const experiencias = experienciasModels(sequelize, Sequelize);
 const rol = rolModels(sequelize, Sequelize);
-
 const proyecto = proyectoModels(sequelize, Sequelize);
 const detalleProyecto = detalleProyectoModels(sequelize, Sequelize);
-
 const efectosSecundarios = efectosSecundariosModels(sequelize, Sequelize);
 const tipoEpilepsia = tipoEpilepsiaModels(sequelize, Sequelize);
 const sintomas = sintomasModels(sequelize, Sequelize);
-
 const preguntas = preguntasModels(sequelize, Sequelize);
 const respuestas = respuestasModels(sequelize, Sequelize);
 const pacientes = pacientesModels(sequelize, Sequelize);
 const contenido = contenidoModels(sequelize, Sequelize);
 const detalleContenido = detalleContenidoModels(sequelize, Sequelize);
-
+/*Emily*/
 const composicionMedicamento = composicionMedicamentoModels(sequelize, Sequelize)
 const farmaco = farmacoModels (sequelize, Sequelize);
-
+/*Javier*/
 const solicitudes = solicitudesModels(sequelize, Sequelize);
 const amigos = amigosModels(sequelize, Sequelize);
+/*Billy*/
+const mensajes = mensajesModels(sequelize, Sequelize);
 
 usuario.hasMany(efectosSecundarios);
 efectosSecundarios.belongsTo(usuario);
@@ -193,6 +194,7 @@ solicitudes.belongsTo(pacientes);
 
 solicitudes.hasMany(amigos);
 amigos.belongsTo(solicitudes);
+
 usuario.hasMany(efectosSecundarios)
 efectosSecundarios.belongsTo(usuario)
 
@@ -276,9 +278,21 @@ composicionMedicamento.belongsTo(pacientes)
 
 composicionMedicamento.hasMany(farmaco)
 farmaco.belongsTo(composicionMedicamento)
-
+/*Emily*/
 pacientes.hasMany(solicitudes)
 solicitudes.belongsTo(pacientes)
+
+solicitudes.hasMany(amigos);
+amigos.belongsTo(solicitudes);
+/*Javier*/
+pacientes.hasMany(composicionMedicamento);
+composicionMedicamento.belongsTo(pacientes);
+
+composicionMedicamento.hasMany(farmaco);
+farmaco.belongsTo(composicionMedicamento);
+/*Billy */
+pacientes.hasMany(mensajes)
+mensajes.belongsTo(pacientes)
 
 module.exports = {
   usuario,
@@ -295,11 +309,9 @@ module.exports = {
   detallesRol,
   experiencias,
   rol,
-
   proyecto,
   detalleProyecto,
   efectosSecundarios,
-
   tipoEpilepsia,
   sintomas,
   preguntas,
@@ -307,10 +319,12 @@ module.exports = {
   pacientes,
   contenido,
   detalleContenido,
-
+/*Emily */
 	solicitudes,
 	amigos,
-
+/* Javier */
   composicionMedicamento, 
   farmaco,
+/*Billy */
+  mensajes
 };

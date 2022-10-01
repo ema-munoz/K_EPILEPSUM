@@ -13,17 +13,20 @@
 
             {{#each datosBD}}
             <div id="Email">
-                <input id="nombreIntxt" type="userName"     name="username"     value="{{username}}" placeholder="Usuario"   readonly    required>
+                <input id="nombreIntxt" type="userName" name="username" value="{{username}}" placeholder="Usuario"
+                    readonly required>
             </div>
             {{/each}}
 
             <div id="Password">
-                <input id="passIntxt"   type="password"     name="password"     placeholder="Contraseña"    required>
+                <input id="passIntxt" type="password" name="password" placeholder="Contraseña" required>
             </div>
 
             <div id="ojo">
-                <button id="visto" type="button" onclick="boton.cambio()"><img src="/img/usuarios/visto.png"></button>
-                <button id="equis" type="button" onclick="boton.cambio2()"><img src="/img/usuarios/equis.png"></button>
+                <button id="visto" type="button" onclick="boton.cambio()"><img
+                        src="/img/icons/black/visto.png"></button>
+                <button id="equis" type="button" onclick="boton.cambio2()"><img
+                        src="/img/icons/black/equis.png"></button>
             </div>
 
             <div id="ingresar">
@@ -31,13 +34,13 @@
             </div>
         </form>
     </div>
-    
+
     <!-- Aquí termina el primer formulario -->
     {{#each datosBD}}
     <div id="recuperacion">
         <a href="/actualizar/{{idUsuario}}">
             <button type="button">Olvidé mi Contraseña</button>
-        </a>        
+        </a>
     </div>
     {{/each}}
 </div>

@@ -1,0 +1,28 @@
+<!-- Required meta tags -->
+<link rel="stylesheet" href="/css/ContactosEmergencia/contactosEditar.css">
+
+<div id="fondo">
+    <img src="/img/fondos/sistemaNervioso.png">
+</div>
+
+<div id="contenedor">
+{{#each enlistar}}
+<form action="/contactos/editar/{{idContactosEmergencia}}" method="POST">
+
+    <div id="Estado">
+        <label>
+        Estado:
+        </label>
+        <input type="number" name="telefonoContactosEmergencia" id="telefono" value="0{{telefonoContactosEmergencia}}">
+    </div>
+    
+    
+    <div id="boton">
+        <button type="submit" id="btn-agregar">
+            Guardar Cambios
+        </button>
+    </div>
+    {{/each}}
+        
+    </form>
+</div>

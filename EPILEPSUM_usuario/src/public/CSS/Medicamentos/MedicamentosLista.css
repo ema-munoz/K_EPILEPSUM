@@ -1,3 +1,7 @@
+#fondo{
+    opacity: 75%;
+}
+
 #mensaje{
     background-color: rgba(27, 144, 240, 0.781);
     position: absolute;
@@ -71,6 +75,13 @@
     max-width: 80%; 
     max-height: 10%;
     margin-left: 10%;
+}
+
+#botonEditar{
+    margin-top: 2.5%;
+}
+
+#botonEliminar{
     margin-top: 2.5%;
 }
 

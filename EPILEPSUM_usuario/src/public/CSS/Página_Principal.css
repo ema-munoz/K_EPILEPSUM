@@ -1,9 +1,12 @@
 #fondo{
-    position: fixed;
+    height: 230%;
+    max-height: 230%;
+    opacity: 75%;
 }
 
+
 footer{
-    bottom: -160%;
+    bottom: -145%;
 }
 
 /* Carrusel */
@@ -12,10 +15,10 @@ footer{
     position: absolute;
     width: 100%;
     height: 100%;
-    max-width: 80%;
-    max-height: 65%;
-    top: 30%;
-    left: 10%;
+    max-width: 1350px;
+    max-height: 540px;
+    top: 25%;
+    left: 17%;
 }
 
 #carrusel-img img{
@@ -31,16 +34,18 @@ footer{
     position: absolute;
     width: 100%;
     height: 100%;
-    max-width: 80%;
-    max-height: 12.5%;
-    top: 15%;
-    left: 10%;
+    max-width: 450px;
+    max-height: 100px;
+    top: 12.5%;
+    left: 40%;
     text-align: center;
 }
 
 #titulo2{
-    max-height: 10%;
-    top: 102.5%;
+    max-width: 500px;
+    max-height: 75px;
+    top: 87.5%;
+    left: 38%;
 }
 
 #contenedor{
@@ -50,7 +55,7 @@ footer{
     height: 130%;
     max-width: 80%;
     max-height: 130%;
-    top: 115%;
+    top: 100%;
     left: 10%;
 }
 

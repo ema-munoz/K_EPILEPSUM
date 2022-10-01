@@ -1,3 +1,7 @@
+#fondo{
+    opacity: 75%;
+}
+
 #contenedor{
     background-color: rgba(27, 144, 240, 0.781);
     position: absolute;

@@ -1,7 +1,7 @@
 const express = require('express');
 const rutas = express.Router()
 
-const { enseñar, dirigir, lista, traer, actualizar, eliminar } = require('../controllers/proyectoControllers')
+const { enseñar, dirigir, lista, traer, actualizar, eliminar } = require('../controllers/proyecto')
 
 rutas.get('/agregar/', enseñar)
 rutas.post('/agregar/', dirigir)

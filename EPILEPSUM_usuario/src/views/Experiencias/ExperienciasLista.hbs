@@ -1,11 +1,12 @@
 <!-- Required meta tags -->
-<link rel="stylesheet" href="/CSS/Experiencias/ExperienciasLista.css" />
+<link rel="stylesheet" href="/CSS/Experiencias/ExperienciasLista.css">
 
 <div id="fondo">
-    <img src="/img/fondos/sistemaNervioso.png" />
+    <img src="/img/fondos/sistemaNervioso.png">
 </div>
 
 <form action="/experiencias/lista/{{user.idPaciente}}" method="GET"></form>
+
 
 <div id="contenedor">
     <div class="row">
@@ -19,45 +20,38 @@
 
             <div id="foto">
                 <p>
-                    Foto:
-                    {{imagenExperiencia}}
+                    Foto: {{imagenExperiencia}}
                 </p>
             </div>
 
             <div id="video">
                 <p>
-                    Video:
-                    {{videoExperiencia}}
+                    Video: {{videoExperiencia}}
                 </p>
             </div>
 
             <div id="Nombres">
                 <p>
-                    Nombre:
-                    {{nombreExperiencia}}
+                    Nombre: {{nombreExperiencia}}
                 </p>
             </div>
 
             <div id="Descripcion">
                 <p>
-                    Descripción:
-                    {{experienciasDetallesExperiencias}}
+                    Descripción: {{experienciasDetallesExperiencias}}
                 </p>
             </div>
 
             <div id="botonEditar">
-                <a href="/experiencias/editar/{{idExperiencias}}"><button>
-                        Editar
-                    </button>
-                </a>
+                <button>
+                    <a href="/experiencias/editar/{{idExperiencias}}">Editar</a>
+                </button>
             </div>
 
             <div id="botonEliminar">
-
-                <a href="/experiencias/eliminar/{{idExperiencias}}">
-                    <button>Eliminar
-                    </button>
-                </a>
+                <button>
+                    <a href="/experiencias/eliminar/{{idExperiencias}}">Eliminar</a>
+                </button>
             </div>
         </div>
         {{else}}
@@ -74,9 +68,11 @@
 
 <div id="plus">
     <a href="/experiencias/agregar/{{user.idPaciente}}">
-        <button type="button"><img src="/img/usuarios/plus.png" /></button>
+        <button type="button"><img src="/img/usuarios/plus.png"></button>
     </a>
 </div>
+
+
 
 <!--
 <link rel="stylesheet" href="/css/Experiencias/ExperienciasLista.css">

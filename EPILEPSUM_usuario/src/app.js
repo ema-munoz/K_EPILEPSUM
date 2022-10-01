@@ -9,23 +9,22 @@ const mysqlstore = require('express-mysql-session')(session);
 const bodyparser = require('body-parser');
 const http = require('http');
 
+
 const {database} = require('./key');
+
 
 const app = express();
 require('./lib/passport');
-
-const handlebars = exphbs.create({
-	defaultLayout: "main",
-	layoutsDir: path.join(__dirname, "views", "layouts"),
-	partialsDir: path.join(__dirname, "views", "partials"),
-	extname: ".hbs",
-	helpres: require("./lib/handlebars"),
-});
-
 /// archivos compartidos
 app.set('port', process.env.PORT || 5000);
 app.set('views', path.join(__dirname, 'views'));
-app.engine(".hbs", handlebars.engine);
+app.engine('.hbs', exphbs({
+    defaultLayout: 'main',
+    layoutsDir: path.join(app.get('views'), 'layouts'),
+    partialsDir: path.join(app.get('views'), 'partials'),
+    extname: '.hbs',
+    helpres: require('./lib/handlebars') 
+}));
 app.set('view engine', '.hbs');
 /// archivos compartidos
 

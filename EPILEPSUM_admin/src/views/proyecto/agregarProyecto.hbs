@@ -1,33 +1,20 @@
-<link rel="stylesheet" href="/CSS/proyecto/agregarProyecto.css">
-
-<div id="fondo">
-    <img src="/img/fondos/sistemaNervioso.png" alt="Logo">
-</div>
 <form action="/proyecto/agregar/" method="post">
-
-    <div id="contenedor">
-        <div id="titulo">
-            <p>Agregar Proyecto</p>
+    <div id="contenido">
+        <div id="id">
+            {{#each proyecto}}
+            <input type="text" name="numero" id="numero" value="{{idProyect}}">
+            {{/each}}
         </div>
-
         <div id="Nombre">
-            <label>Nombre:</label>
+            <label>Nombre Proyecto:</label>
             <input type="text" name="nombreProyecto" id="nombre">
         </div>
-
         <div id="objetivos">
-            <label>Objetivos:</label>
-            <input type="text" id="numeros" placeholder="Escriba su número de objetivos." checked>
+            <label>Objetivos</label>
+            <input type="text" id="numeros" checked>
+            <button type="button" onclick="objetivos.crear()">-></button>
         </div>
-
         <div id="boton">
-            <button type="button" onclick="objetivos.crear()">Crear Objetivos</button>
-        </div>
-
-        <div id="listaObjetivos"></div>
-
-
-        <div id="Guardar">
             <button type="submit">Guardar</button>
         </div>
     </div>

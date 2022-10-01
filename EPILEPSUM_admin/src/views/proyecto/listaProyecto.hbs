@@ -1,56 +1,15 @@
-<!-- Required meta tags -->
-<link rel="stylesheet" href="/CSS/proyecto/listaProyecto.css">
-
-<div id="fondo">
-    <img src="/img/fondos/sistemaNervioso.png" alt="Logo">
-</div>
-
 <form action="/proyecto/lista/{{user.idUsuario}}" method="get"></form>
-<div id="contenedor">
-    <div id="titulo">
-        <p>Detalle</p>
+<div id="contenido">
+    {{#each listas}}
+    <div id="nombre">
+       <label >{{nombreProyecto}}</label> 
     </div>
-
-    <div id="tarjeta">
-        {{#each proyecto}}
-        <div id="Nombre">
-            <label>{{nombreProyecto}}</label>
-        </div>
-        {{/each}}
-
-        {{#each objetivos}}
-        <div id="objetivos">
-            <li>{{objetivoDetalleProyecto}}</li>
-
-            <div id="botonEditar">
-                <a href="/proyecto/editar/{{idDetalleProyecto}}">
-                    <button>Editar</button>
-                </a>
-            </div>
-
-            <div id="botonEliminar">
-                <a href="/proyecto/eliminar/{{idDetalleProyecto}}">
-                    <button>Eliminar</button>
-                </a>
-            </div>
-        </div>
-        {{else}}
-        <div id="mensaje">
-            <p><b>Usted no tiene registrado ningún proyecto. </b></p>
-            <a href="/proyecto/agregar/">
-                <button type="button">¿Desea registrar?</button>
-            </a>
-        </div>
-        {{/each}}
+    {{/each}}
+    {{#each objetivos}}
+    <div id="objetivos">
+        <ul>
+            <li>{{objetivos}}</li>            
+        </ul>
     </div>
+    {{/each}}
 </div>
-
-
-    <div id="plus">
-        <a href="/proyecto/agregar/">
-            <button type="button"><img src="/img/usuarios/plus.png" /></button>
-        </a>
-    </div>
-
-    <script src="/js/numero.js"></script>
-    <script src="/js/objetivos.js"></script>

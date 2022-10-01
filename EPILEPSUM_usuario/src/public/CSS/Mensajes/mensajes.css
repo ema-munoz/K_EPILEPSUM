@@ -5,6 +5,129 @@ footer {
     background-repeat: no-repeatZ;
 }
 
+#contenedor {
+    position: absolute;
+    top: 20%;
+    left: 28%;
+    width: 45%;
+    height: 80%;
+    perspective: 500px;
+    background: rgb(194, 186, 186);
+    border-radius: 15px;
+    box-shadow: 24px 25px 20px rgba(7, 7, 7, 0.541);
+}
+#mensaj{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+}
+#mensaje1{
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.616);
+    color: white;
+}
+#persona1{
+    background-color: aqua;
+    width: 75%;
+    height: 100%;
+}
+#fecha1, #fecha{
+    width: 100%;
+    height: 10%;
+    left: 0%;
+    top: 10%;
+    text-align: right;
+}
+#hora1{
+    width: 15%;
+    height: 10%;
+    left: 25%;
+    top: 10%;
+}
+#persona2{
+    background-color: rgba(81, 255, 0, 0.486);
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    top: 50%;
+}
+#chatsa1{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(99, 180, 142, 0.616);
+}
+#regresar{
+    width: 100%;
+    height: 10%;
+    max-width: 100%;
+    max-height: 10%;
+    background-color: #333;
+    position: absolute;
+    top: 0%;
+}
+#regresar button{
+    width: 10%;
+    height: 100%;
+}
+#regresar img{
+    width: 100%;
+    height: 100%;
+}
+#enviar{
+    width: 100%;
+    height: 15%;
+    max-width: 100%;
+    max-height: 10%;
+    background: #333;
+    position: absolute;
+    bottom: 0%;
+}
+#enviar button{
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    right: 5%;
+    background-color: #333;
+    border-color: transparent;
+    outline: none;
+}
+#enviar input:focus{
+    border-bottom: transparent;
+}
+#enviar img{
+    width: 100%;
+    height: 100%;
+}
+#horas, 
+#fechas{
+    display: none;
+}
+#escri{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    bottom: 10%;
+    left: 5%;
+    border-radius: 10px;
+    border-bottom: transparent;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+/* 
+#mensaje1{
+    height: 100px;
+    overflow-y: auto;
+    padding: 10px 20px 20px 40px;
+    box-shadow: inset 0 32px 32px -32px rgb(0 0 0 /5%),
+    inset 0 -32px 32px -32px rgb(0 0 0 /5%) ;
+}
+
 .back-icon{
     font-size: 18px;
     color: #fff;
@@ -156,7 +279,7 @@ footer {
     color: green;
 }
 
-/* contenido */
+/* contenido 
 .chat-box{
     height: 350px;
     overflow-y: auto;
@@ -211,7 +334,7 @@ footer {
     border-radius: 18px 18px 18px 0;
 }
 
-/* enviar */
+/* enviar 
 .typing-area{
     padding: 10px 30px;
     display: flex;
@@ -237,3 +360,4 @@ footer {
     cursor: pointer;
     border-radius: 0 5px 5px 0;
 }
+*/

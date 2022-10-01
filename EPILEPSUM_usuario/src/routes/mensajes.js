@@ -8,8 +8,8 @@ const {agregar, mostrar} = require ("../Controllers/mensajes");
 
 router.use(Ingreso)
 
-router.post("/agregar/:id", Ingreso, agregar);
+router.post("/amigos/:id", Ingreso, agregar);
 
-router.get("/lista/:id", Ingreso, mostrar);
+router.get("/amigos/:id", Ingreso, mostrar);
 
 module.exports = router;

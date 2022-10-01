@@ -4,59 +4,45 @@
     <img src="/img/mensajes/Captura.PNG">
 </div>
 
-<div class="row">
-    {{#each enlistar}}
-    <div class="card2">
-        <div class="content2">
-            <div class="front2">
-                <div class="contenedor2">
-                    <a href="#" class="back-icon"><i class="fas fa-arrow-left"></i></a>
-                    <img src="#" alt="" class="imagenr">
-                    <p>| {{fechaMensaje}}</p>
-                    <div class="palabr2">
-                        <p>Ahora</p>
-                    </div>
-                </div>
-                <div class="chat-box">
-                    <div class="chat salida">
-                        <div class="deatils">
-                            <p>Lorem ipsum dolor sit amet consectetur adinimenda temporibus, dolorem
-                                necessitatibus
-                                illum esse.</p><span>{{horaMensaje}}</span>
-                        </div>
-                    </div>
-                    <div class="chat entrada">
-                        <div class="deatils2">
-                            <p>Lorem ipsum suscipit reiciendis corrupti vitae doloremque, rerum perferendis nam
-                                dolorem.</p><span>{{horaMensaje}}</span>
-                        </div>
-                    </div>
-                    <div class="chat salida">
-                        <div class="deatils">
-                            <p>Lorem ipsum dolor sit amet consectetur adinimenda temporibus, dolorem
-                                necessitatibus
-                                illum esse.</p><span>{{horaMensaje}}</span>
-                        </div>
-                    </div>
-                    <div class="chat entrada">
-                        <div class="deatils2">
-                            <p>Lorem ipsum suscipit reiciendis corrupti vitae doloremque, rerum perferendis nam
-                                dolorem.</p><span>{{horaMensaje}}</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="contenedor3">
-                    <form id="formulario" class="typing-area" method="post" action="#">
-                        <input type="text" class="escri" placeholder="Escribir..." />
-                        <button><i class="fab fa.telegram-plane">-></i></button>
-                    </form>
-                </div>
+<div id="contenedor">
+    <div id="mensaj">
+    <div id="mensaje1">
+        {{#each mensaje}}
+        <div id="persona1">
+            <div id="fecha1">
+                <p>| {{fechaMensaje}}</p>
             </div>
+            <div id="chatsa1">{{mensajes}}</div>
+            <div id="hora1">{{horaMensaje}}</div>
         </div>
-        {{else}}
-        <div class="mens">
-            <p><b>Usted no tiene mensajes con esta persona</b></p>
-        </div>
+        {{/each}}
     </div>
-    {{/each}}
+    <div id="mensaje2">
+        {{#each mensaje1}}
+        <div id="persona2">
+            <div id="fecha">
+                <p>{{fechaMensaje}}</p>
+            </div>
+            <div id="chatsa">{{mensajes}}</div>
+            <div id="hora">| {{horaMensaje}}</div>
+        </div>
+        {{/each}}
+    </div>
+    </div>
+    <div id="regresar">
+        <a href="#"><button type="button"><img src="/img/mensajes/noun-return-1890577.png" alt=""></button></a>
+    </div>
+
+    <div id="enviar">
+        {{#each usuario}}
+        <form action="/chat/amigos/{{idPaciente}}" method="post">
+            <input type="text" id="escri" name="mensaje" placeholder="Escribir..." />
+            <input type="text" id="horas" name="horaMensaje" readonly>
+            <input type="text" id="fechas" name="fechaMensaje" readonly>
+            <button type="submit"><img src="/img/mensajes/noun-send-108705.png" alt=""></button>
+        </form>
+        {{/each}}
+    </div>
 </div>
+
+<script src="/js/mensajes/horafecha.js"></script>

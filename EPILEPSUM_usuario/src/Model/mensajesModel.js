@@ -5,6 +5,7 @@ const mensajes = (sequelize, type) => {
             primaryKey: true,
             autoIncrement: true,
         },
+        mensajes: type.STRING,
         fechaMensaje: type.STRING,
         horaMensaje: type.STRING,
         creacionMensaje: {

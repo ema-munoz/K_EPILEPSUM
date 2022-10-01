@@ -106,7 +106,7 @@ sequelize.authenticate()
   const solicitudes = solicitudesModels(sequelize, Sequelize);
 
   const mensajes = mensajesModels(sequelize, Sequelize);
-
+  
   usuario.hasMany(efectosSecundarios)
   efectosSecundarios.belongsTo(usuario)
 
@@ -191,6 +191,8 @@ sequelize.authenticate()
   pacientes.hasMany(mensajes)
   mensajes.belongsTo(pacientes)
 
+
+
 module.exports = {
 	usuario,
 	medicacion,
@@ -221,5 +223,7 @@ module.exports = {
 
 	solicitudes,
 
-  mensajes
+  mensajes,
+
+  
 };

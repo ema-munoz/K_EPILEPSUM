@@ -1,12 +1,19 @@
 <link rel="stylesheet" href="/css/partials/navegacion.css">
 {{#if user}}
-<nav>
+
+<div id="cierra">
+    <button type="button">
+        <img src="/img/usuarios/menu.png" onclick="menus.botonMenu()">
+    </button>
+</div>
+
+<nav id="nav">
     <div id="img">
         <a href="/Inicio"><img src="/img/logo/Logo_epilepsum.png"></a>
     </div>
-        
+
     <div id="EPILEPSUM">
-        <a href="/Inicio"><b>EPILEPSUM</b></a> 
+        <a href="/Inicio"><b>EPILEPSUM</b></a>
     </div>
 
     <div id="Control">
@@ -32,6 +39,17 @@
     <div id="Cierre">
         <a href="/CerrarSesion"><button>Cerrar Sesión</button></a>
     </div>
+
+    <div id="InformacionNavbar">
+        <a href="/Contacto/{{user.idPaciente}}">Información de la Página</a>
+    </div>
 </nav>
 {{/if}}
 
+<div id="hamburguesa">
+    <button type="button">
+        <img src="/img/usuarios/cross.png" onclick="menus.aparicion()">
+    </button>
+</div>
+
+<script src="/js/navegacion.js"></script>

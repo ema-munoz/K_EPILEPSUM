@@ -1,8 +1,8 @@
-#fondo{
+#fondo {
     position: fixed;
 }
 
-footer{
+footer {
     bottom: -160%;
 }
 
@@ -18,7 +18,7 @@ footer{
     left: 10%;
 }
 
-#carrusel-img img{
+#carrusel-img img {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -26,7 +26,7 @@ footer{
 
 /* titulos */
 #titulo,
-#titulo2{
+#titulo2 {
     background-color: rgba(27, 144, 240, 0.87);
     position: absolute;
     width: 100%;
@@ -38,12 +38,12 @@ footer{
     text-align: center;
 }
 
-#titulo2{
+#titulo2 {
     max-height: 10%;
     top: 102.5%;
 }
 
-#contenedor{
+#contenedor {
     background-color: rgba(27, 144, 240, 0.781);
     position: absolute;
     width: 100%;
@@ -63,7 +63,7 @@ footer{
 #carta-6,
 #carta-7,
 #carta-8,
-#carta-9{
+#carta-9 {
     background-color: white;
     position: absolute;
     width: 100%;
@@ -75,49 +75,49 @@ footer{
 /* Posición de Cartas */
 #carta-1,
 #carta-2,
-#carta-3{
+#carta-3 {
     top: 6%;
 }
 
 #carta-4,
 #carta-5,
-#carta-6{
+#carta-6 {
     top: 36%;
 }
 
 #carta-7,
 #carta-8,
-#carta-9{
+#carta-9 {
     top: 66%;
 }
 
 #carta-1,
 #carta-4,
-#carta-7{
+#carta-7 {
     left: 7%;
 }
 
 #carta-2,
 #carta-5,
-#carta-8{
+#carta-8 {
     left: 37%;
 }
 
 #carta-3,
 #carta-6,
-#carta-9{
+#carta-9 {
     left: 67%;
 }
 
 /* Imagenes de Cartas */
-#contenedor img{
+#contenedor img {
     position: absolute;
     width: 100%;
     height: 60%;
 }
 
 /* Titulos de Cartas */
-#contenedor h5{
+#contenedor h5 {
     text-align: center;
     position: absolute;
     width: 70%;
@@ -127,7 +127,7 @@ footer{
 }
 
 /* Botones de Cartas */
-#contenedor button{
+#contenedor button {
     position: absolute;
     width: 60%;
     font-size: 20px;
@@ -136,7 +136,7 @@ footer{
 }
 
 /* Letra de Cartas */
-#contenedor a{
+#contenedor a {
     color: white;
 }
 
@@ -149,11 +149,11 @@ footer{
 #ventana_9,
 #ventana_10,
 #ventana_11,
-#ventana_12{
+#ventana_12 {
     background-color: rgb(159, 219, 182);
     position: absolute;
     width: 100%;
-    height: 100%;    
+    height: 100%;
     left: 20%;
     max-width: 1000px;
     max-height: 700px;
@@ -162,25 +162,25 @@ footer{
 
 #ventana_4,
 #ventana_5,
-#ventana_6{
+#ventana_6 {
     top: 10%;
 }
 
 #ventana_7,
 #ventana_8,
-#ventana_9{
+#ventana_9 {
     top: 25%;
 }
 
 #ventana_10,
 #ventana_11,
-#ventana_12{
+#ventana_12 {
     top: 40%;
 }
 
 /* Videos */
 #contenedor iframe,
-#ventana_6 img{
+#ventana_6 img {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -191,7 +191,7 @@ footer{
 }
 
 /* Imagenes dentro de Ventanas */
-#niños{
+#niños {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -201,23 +201,23 @@ footer{
     top: 5%;
 }
 
-#famosos{
+#famosos {
     position: absolute;
     width: 100%;
     height: 100%;
     max-width: 300px;
     max-height: 225px;
     top: 85%;
-    left: 50%;  
+    left: 50%;
 }
 
-#famosos img{
+#famosos img {
     width: 100%;
     height: 100%;
 }
 
 /* Parrafos */
-#contenedor p{
+#contenedor p {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -230,27 +230,27 @@ footer{
 
 #ventana_4 p,
 #ventana_5 p,
-#ventana_12 p{
+#ventana_12 p {
     max-height: 600px;
 }
 
 #ventana_7 p,
-#ventana_9 p{
+#ventana_9 p {
     max-height: 225px;
 }
 
 
 #ventana_8 p,
-#ventana_11 p{
+#ventana_11 p {
     max-height: 300px;
 }
 
 #ventana_10 p,
-#ventana_12 p{
+#ventana_12 p {
     top: 5%;
 }
 
-#ventana_11 p{
+#ventana_11 p {
     top: 70%;
 }
 
@@ -259,7 +259,7 @@ footer{
 #p-2,
 #p-3,
 #p-4,
-#p-5{
+#p-5 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -269,23 +269,23 @@ footer{
     font-size: 20px;
 }
 
-#p-1{
+#p-1 {
     top: 5%;
 }
 
-#p-2{
+#p-2 {
     top: 85%;
 }
 
-#p-3{
+#p-3 {
     top: 150%;
 }
 
-#p-4{
+#p-4 {
     top: 215%;
 }
 
-#p-5{
+#p-5 {
     top: 290%;
 }
 
@@ -293,7 +293,7 @@ footer{
 #img-02,
 #img-03,
 #img-04,
-#img-05{
+#img-05 {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -302,23 +302,23 @@ footer{
     left: 25%;
 }
 
-#img-01{
+#img-01 {
     top: 37.5%;
 }
 
-#img-02{
+#img-02 {
     top: 102.5%;
 }
 
-#img-03{
+#img-03 {
     top: 166%;
 }
 
-#img-04{
+#img-04 {
     top: 245%;
 }
 
-#img-05{
+#img-05 {
     top: 310%;
 }
 
@@ -326,9 +326,41 @@ footer{
 #img-02 img,
 #img-03 img,
 #img-04 img,
-#img-05 img{
+#img-05 img {
     width: 80%;
     height: 80%;
     top: 10%;
     left: 10%;
+}
+
+@media only screen and (orientation: portrait) and (max-width: 1000px) and (min-width: 667px) {
+
+    /* Carrusel */
+    #carrusel-img {
+        background-color: black;
+        max-width: 100%;
+        left: 0%;
+
+    }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 667px) and (min-width: 384px) {
+
+    /* Carrusel */
+    #carrusel-img {
+        width: 180%;
+        max-width: 180%;
+        left: -40%;
+    }
+
+}
+
+@media only screen and (orientation: portrait) and (max-width: 384px) and (min-width: 150px) {
+
+    /* Carrusel */
+    #carrusel-img {
+        width: 180%;
+        max-width: 180%;
+        left: -40%;
+    }
 }

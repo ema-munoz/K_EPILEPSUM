@@ -12,25 +12,16 @@
 
             {{#each datosBD}}
             <div id="correo">
-                <label>
-                    <b>Correo Electrónico</b> 
-                </label>
                 <input id="correo2" type="email" name="username" value="{{username}}" readonly required>
-                <input id="usuarioId" type="text" name="id" value="{{idUsuario}}" readonly>
+                <input id="usuarioId" type="text" name="id" value="{{idPaciente}}" readonly>
             </div>
             {{/each}}
 
             <div id="contrasenia">
-                <label>
-                    <b>Contraseña</b> 
-                </label>
                 <input id="password" type="password" name="password" placeholder="Ingrese su Contraseña" required>
             </div>
 
             <div id="contrasenia2">
-                <label>
-                    <b>Repetir Contraseña</b> 
-                </label>
                 <input id="password2" type="password" name="password2" onkeyup="boton.verificacion()" placeholder="Confirme su Contraseña" required>
             </div>
 
@@ -53,8 +44,8 @@
     </div>
 </div>
 
-<div id="img">
-    <img src="/img/logo/Logo_epilepsum.png">
+<div id="logo">
+    <img src="/img/logo/Logo_epilepsum.png" alt="Logo">
 </div>
 
 <script src="/js/Usuario/recuperacion.js"></script>

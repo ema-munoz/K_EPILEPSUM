@@ -31,4 +31,10 @@ solicitudes.eliminar = async (req, res) => {
 	res.redirect("/amigos/lista/" + id);
 };
 
+solicitudes.MostrarAmigos = async (req, res) => {
+	const id = req.params.idPaciente
+	const amigos = await baseDatosSQL.query('select * from SolicitudAmigo where idPaciente = ?', [id])
+	res.render('Solicitudes/amigos', { amigos })
+}
+
 module.exports = solicitudes;

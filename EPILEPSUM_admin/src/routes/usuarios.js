@@ -1,12 +1,15 @@
-// const express = require('express');
-// const rutas = express.Router()
+const express = require('express');
+const rutas = express.Router()
+const {Ingreso} = require ("../lib/auth");
 
-// const { mostrar, lista, traerDatos, editar, eliminar } = require('../controllers/permisos')
 
-// rutas.get('/agregar/:id', mostrar)
-// rutas.post('/agregar/:id', lista)
-// rutas.get('/lista/:id', traerDatos)
-// rutas.get('/editar/:id', editar)
-// rutas.get('/eliminar/:id', eliminar)
+const { mostrar,agregar, lista, traerDatos, editar, eliminar } = require('../controllers/usuarios')
 
-// module.exports = rutas
+rutas.get('/agregar/:id', Ingreso, mostrar)
+rutas.post('/agregar/:id',Ingreso, agregar)
+rutas.get('/lista/:id', Ingreso, lista)
+rutas.get('/editar/:id',Ingreso, traerDatos)
+rutas.post('/editar/:id',Ingreso, editar)
+rutas.get('/eliminar/:id',Ingreso, eliminar)
+
+module.exports = rutas

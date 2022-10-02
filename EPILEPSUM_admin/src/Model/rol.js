@@ -6,6 +6,7 @@ const rol = (sequelize, type) => {
             autoIncrement: true,
         },
         nombreRol: type.STRING,
+        estadoRol: type.STRING,
         creacionRol: {
             type: 'TIMESTAMP',
             defaultValue: type.literal('CURRENT_TIMESTAMP'),
@@ -20,5 +21,6 @@ const rol = (sequelize, type) => {
         timestamps: false,
     })
 }
+
 
 module.exports = rol

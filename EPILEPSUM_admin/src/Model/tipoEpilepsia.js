@@ -1,6 +1,6 @@
 const tipoEpilepsia = (sequelize, type) => {
     return sequelize.define('tipoEpilepsia', {
-idTipoEpilepsia: {
+        idTipoEpilepsia: {
             type: type.INTEGER,
             primaryKey: true,
             autoIncrement: true,

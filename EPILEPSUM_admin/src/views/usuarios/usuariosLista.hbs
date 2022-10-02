@@ -1,11 +1,11 @@
 <!-- Required meta tags -->
-<link rel="stylesheet" href="/css/ContactosEmergencia/contactosLista.css">
+<link rel="stylesheet" href="/css/rolesUsuarios/usuariosLista.css">
 
 <div id="fondo">
     <img src="/img/fondos/sistemaNervioso.png">
 </div>
 
-<form action="/contactos/lista/{{user.idPaciente}}" method="GET"></form>
+<form action="/usuarios/lista/{{user.idUsuario}}" method="GET"></form>
 
 
 <div id="contenedor">
@@ -18,23 +18,29 @@
                 </p>
             </div>
 
-          
+             <div id="Nombres">
+                <p>
+                    Nombre: {{nombreUsuario}}
+                </p>
+            </div>
+
+   
             <div id="Estado">
                 <p>
-                    Estado: {{nombreFamiliar}}
+                    Estado: {{estadoUsuario}}
                 </p>
             </div>
 
     
 
             <div id="botonEditar">
-                <a href="/contactos/editar/{{idContactosEmergencia}}">
+                <a href="/usuarios/editar/{{idusuario}}">
                     <button type="button">Editar</button>
                 </a>
             </div>
 
             <div id="botonEliminar">
-                <a href="/contactos/eliminar/{{idContactosEmergencia}}">
+                <a href="/usuarios/eliminar/{{idusuario}}">
                     <button type="submit">Eliminar</button>
                 </a>
             </div>
@@ -43,7 +49,7 @@
         {{else}}
         <div id="mensaje">
             <p><b>Usted no tiene registrado ningún usuario.</b></p>
-            <a href="/contactos/agregar/{{user.idPaciente}}">
+            <a href="/usuarios/agregar/{{user.idUsuario}}">
                 <button type="button">¿Desea registrar?</button>
             </a>
         </div>
@@ -52,7 +58,7 @@
 </div>
 
 <div id="plus">
-    <a href="/contactos/agregar/{{user.idPaciente}}">
+    <a href="/usuarios/agregar/{{user.idUsuario}}">
         <button type="button"><img src="/img/usuarios/plus.png"></button>
     </a>
 </div>

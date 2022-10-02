@@ -1,20 +1,20 @@
-const rol = (sequelize, type) => {
+const usuario = (sequelize, type) => {
     return sequelize.define(
-        "rols",
+        "Rolusuarios",
         {
-            idrol: {
+            idusuario: {
                 type:type.INTEGER,
                 primaryKey: true,
                 autoIncrement: true,
             },
-            nombreRol: type.STRING,
-            estadoRol: type.STRING,
-            creationRol: {
+			nombreUsuario: type.STRING,
+			estadoUsuario: type.STRING,
+            creationUsuario: {
 				type: "TIMESTAMP",
 				defaultValue: type.literal("CURRENT_TIMESTAMP"),
 				allowNull: false,
 			},
-			updateRol: {
+			updateUsuario: {
 				type: "TIMESTAMP",
 				defaultValue: type.literal("CURRENT_TIMESTAMP "),
 				allowNull: false,
@@ -26,8 +26,7 @@ const rol = (sequelize, type) => {
 	);
 };
 
-
-module.exports = rol;
+module.exports = usuario;
 
 
     

@@ -22,7 +22,4 @@ const sintomas = (sequelize, type) => {
     })
 }
 
-
-
-
 module.exports = sintomas

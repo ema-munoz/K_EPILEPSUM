@@ -1,24 +1,24 @@
-<link rel="stylesheet" href="/css/permisos/permisosAgregar.css">
+<link rel="stylesheet" href="/css/rolesUsuarios/usuariosAgregar.css">
 
 <div id="fondo">
     <img src="/img/fondos/Fondo.jpg">
 </div>
 
 <div id="contenedor">
-    <form action="/roles/agregar/{{user.idPaciente}}" method="POST">
+    <form action="/usuarios/agregar/{{user.idUsuario}}" method="POST">
         <div id="tarjeta">
             <div="titulo">
-                <h1> Roles </h1>
+                <h1> Usuarios </h1>
         </div>
         <div id="nombre">
             Nombre:
-            <input type="text" name="nombreRol" id="nombre" required>
+            <input type="text" name="nombreUsuario" id="nombre" required>
 
         </div>
 
         <div id="estado">
             Estado:
-            <input type="text" name="estadoRol" id="nombre" required>
+            <input type="text" name="estadoUsuario" id="nombre" required>
         </div>
 
         <div id="boton">

@@ -42,7 +42,8 @@ const pacientesModels = require('../Model/paciente')
 
 // -------------EVER----------------------
 const permisosModels = require('../Model/permisos')
-const rolesModels = require('../Model/roles')
+const usuariosModels = require('../Model/rolUsuario')
+
 
 
 const sequelize = new Sequelize(
@@ -102,17 +103,18 @@ sequelize.authenticate()
 
     // ----------------EVER---------------------
     const permisos = permisosModels(sequelize, Sequelize)
-    const roles = rolesModels(sequelize, Sequelize)
+    const rolUsuarios = usuariosModels(sequelize, Sequelize)
     
   
     usuario.hasMany(permisos)
     permisos.belongsTo(usuario)
   
-    
-    usuario.hasMany(roles)
-    roles.belongsTo(usuario)
+
+     
+    usuario.hasMany(rolUsuarios)
+    rolUsuarios.belongsTo(usuario)
+
   
-    // usuario user  
   usuario.hasMany(efectosSecundarios)
   efectosSecundarios.belongsTo(usuario)
 
@@ -212,6 +214,6 @@ module.exports = {
     pacientes,
 
     permisos,
-    roles,
+    rolUsuarios
     
   }

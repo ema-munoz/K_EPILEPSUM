@@ -1,12 +1,13 @@
 const usuario = (sequelize, type) => {
     return sequelize.define(
-        "usuarios",
+        "Rolusuarios",
         {
             idusuario: {
                 type:type.INTEGER,
                 primaryKey: true,
                 autoIncrement: true,
             },
+			nombreUsuario: type.STRING,
 			estadoUsuario: type.STRING,
             creationUsuario: {
 				type: "TIMESTAMP",

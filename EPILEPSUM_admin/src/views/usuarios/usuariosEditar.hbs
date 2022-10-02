@@ -1,5 +1,5 @@
 <!-- Required meta tags -->
-<link rel="stylesheet" href="/css/ContactosEmergencia/contactosEditar.css">
+<link rel="stylesheet" href="/css/rolesUsuarios/usuariosEditar.css">
 
 <div id="fondo">
     <img src="/img/fondos/sistemaNervioso.png">
@@ -7,15 +7,21 @@
 
 <div id="contenedor">
 {{#each enlistar}}
-<form action="/contactos/editar/{{idContactosEmergencia}}" method="POST">
+<form action="/usuarios/editar/{{idusuario}}" method="POST">
+
+    <div id="Nombre">
+        <label>
+        Nombre:
+        </label>
+        <input type="text" name="nombreUsuario" id="nombre" value="0{{nombreUsuario}}">
+    </div>
 
     <div id="Estado">
         <label>
         Estado:
         </label>
-        <input type="number" name="telefonoContactosEmergencia" id="telefono" value="0{{telefonoContactosEmergencia}}">
+        <input type="text" name="estadoUsuario" id="estado" value="0{{estadoUsuario}}">
     </div>
-    
     
     <div id="boton">
         <button type="submit" id="btn-agregar">

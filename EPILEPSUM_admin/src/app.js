@@ -68,6 +68,8 @@ app.use('/tipoEpilepsia', require('./routes/tipoEpilepsiaRutas'))
 app.use('/sintomas', require('./routes/sintomasRutas'))
 app.use ("/permisos",require ("./routes/permisos"));
 app.use ( "/roles",require ("./routes/roles"));
+app.use ( "/usuarios",require ("./routes/usuarios"));
+
 
 
 

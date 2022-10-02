@@ -12,4 +12,5 @@ rutas.get('/editar/:id',Ingreso, traerDatos)
 rutas.post('/editar/:id',Ingreso, editar)
 rutas.get('/eliminar/:id',Ingreso, eliminar)
 
+
 module.exports = rutas

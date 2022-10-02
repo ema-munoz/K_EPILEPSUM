@@ -1,66 +1,59 @@
-const roles = {}
+const rols = {}
 
 const baseDatosSQL = require("../Configuration/basededatos.sql");
 const baseDatosORM = require("../Configuration/basededatos.orm");
 
-roles.mostrar = (req, res) => {
+rols.mostrar = (req, res) => {
     res.render("roles/rolesAgregar");
 }
 
-roles.agregar = async (req, res) => {
+rols.agregar = async (req, res) => {
     const rolId = req.params.id;
     const {nombreRol, estadoRol} = req.body
     const nuevoRol = {
         nombreRol,
-        estadoRol,
-        usuarioIdUsuario:rolId
-    }
-    await baseDatosORM.roles.create(nuevoRol)
+        estadoRol,    }
+    await baseDatosORM.rol.create(nuevoRol)
     req.flash ("sucess", "Roles Agregar.")
      res.redirect("/roles/lista/" + rolId);
-
-
 }
-
-
-roles.lista = async (req, res) => {
+rols.lista = async (req, res) => {
     const rolId = req.params.id;
-    const enlistar = await baseDatosSQL.query("SELECT * FROM rols WHERE usuarioIdUsuario = ?", [rolId]);
+    const enlistar = await baseDatosSQL.query("SELECT * FROM roles ", [rolId]);
     res.render("roles/rolesLista", {enlistar})
 }
 
-
-roles.traerDatos = async(req, res) => {
+rols.traerDatos = async(req, res) => {
     const rolId = req.params.id;
-    const enlistar = await baseDatosSQL.query ("SELECT * FROM rols WHERE idrol = ?", [rolId])
+    const enlistar = await baseDatosSQL.query ("SELECT * FROM roles WHERE idrol = ?", [rolId])
     res.render("roles/rolesEditar", {enlistar});
 }
 
-roles.editar = async (req, res) => {
+rols.editar = async (req, res) => {
     const rolId = req.params.id;
     const id = req.user.idUsuario
     const {nombreRol, estadoRol} = req.body
     const actualizacion = {
         nombreRol,
         estadoRol,
-        
     }
-    await baseDatosORM.roles.findOne({where: {idrol: rolId}})
+    await baseDatosORM.rol.findOne({where: {idrol: rolId}})
     .then( roles => {
         roles.update(actualizacion)
         req.flash ("sucess", "Información actualizada.")
         res.redirect("/roles/lista/" + id);
     })
 }
-
-roles.eliminar = async (req, res) => {
+rols.eliminar = async (req, res) => {
     const rolId = req.params.id;
     const id = req.user.idUsuario
-    await baseDatosORM.roles.destroy({where: {idrol:  rolId}})
+    await baseDatosORM.rol.destroy({where: {idrol:  rolId}})
     res.redirect("/roles/lista/" + id);
 }
 
-module.exports = roles
+module.exports = rols
+
+
 
 
 

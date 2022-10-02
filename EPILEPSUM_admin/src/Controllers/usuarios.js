@@ -1,29 +1,63 @@
-const usuario = {}
+const usuarios = {}
 
 const baseDatosSQL = require("../Configuration/basededatos.sql");
 const baseDatosORM = require("../Configuration/basededatos.orm");
 
-// consultar si necesiat estar lo de agregar 
+usuarios.mostrar = (req, res) => {
+    res.render("usuarios/usuariosAgregar");
+}
 
-usuario.agregar = async (req, res) => {
-    const usuarioId = req.user.idUsuario;
-    const {nombrePermisos, estadoPermisos} = req.body
-    const nuevoPermiso = {
-        nombrePermisos,
-        estadoPermisos,
-        usuarioIdUsuario:permisosId
+usuarios.agregar = async (req, res) => {
+    const usuariosId = req.user.idUsuario;
+    const {nombreUsuario, estadoUsuario} = req.body
+    const nuevoUsuario = {
+        nombreUsuario,
+        estadoUsuario,
+        usuarioIdUsuario:usuariosId
     }
-    await baseDatosORM.medicacion.create(nuevoPermiso)
-    req.flash ("sucess", "Permisos.")
-     res.redirect("/usuarios/lista/" + permisosId);
+    await baseDatosORM.rolUsuarios.create(nuevoUsuario)
+    req.flash ("sucess", "Usuarios Agregados")
+     res.redirect("/usuarios/lista/" + usuariosId);
 }
 
-usuario.mostrar = (req, res) => {
-    res.render("usuario/pusuarioLista");
+usuarios.lista = async (req, res) => {
+    const usuariosId = req.user.idUsuario;
+    const enlistar = await baseDatosSQL.query("SELECT * FROM rolusuarios WHERE usuarioIdUsuario= ?", [usuariosId])
+    res.render("usuarios/usuariosLista", {enlistar})
 }
 
-usuario.lista = async (req, res) => {
-    const usuarioId = req.params.id;
-    const enlistar = await baseDatosSQL.query("SELECT * FROM usuario WHERE usuarioIdusuario= ?", [usuarioId])
-    res.render("usuario/permisosLista", {enlistar})
+usuarios.traerDatos = async(req, res) => {
+    const usuariosId = req.params.id;
+    const enlistar = await baseDatosSQL.query ("SELECT * FROM rolusuarios WHERE idusuario = ?", [usuariosId])
+    res.render("usuarios/usuariosEditar", {enlistar});
 }
+
+
+usuarios.editar = async (req, res) => {
+    const usuariosId = req.params.id;
+    const id = req.user.idUsuario
+    const {nombreUsuario, estadoUsuario} = req.body
+    const actualizacion = {
+        nombreUsuario,
+        estadoUsuario,
+    }
+
+    await baseDatosORM.rolUsuarios.findOne({where: {idusuario: usuariosId}})
+    .then( usuarios => {
+        usuarios.update(actualizacion)
+        req.flash ("sucess", "Información actualizada.")
+        res.redirect("/usuarios/lista/" + id);
+    })
+}
+
+usuarios.eliminar = async (req, res) => {
+    const usuariosId = req.params.id;
+    const id = req.user.idUsuario
+    await baseDatosORM.rolUsuarios.destroy({where: {idusuario: usuariosId}})
+    res.redirect("/usuarios/lista/" + id);
+}
+
+
+
+module.exports = usuarios
+

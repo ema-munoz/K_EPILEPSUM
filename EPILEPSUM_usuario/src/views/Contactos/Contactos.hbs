@@ -1,45 +1,46 @@
 <!-- Required meta tags -->
-<link rel = "stylesheet" href="/CSS/Contactos/Contactos.css">
+<link rel="stylesheet" href="/CSS/Contactos/Contactos.css">
 
-<form action="/Contacto/{{user.idPaciente}}">
-<div id="fondo">
-    <img src="/img/fondos/Fondo.jpg">
-</div>
+<form action="/Contacto/{{user.idPaciente}}" id="ocultar">
+    <div id="fondo">
+        <img src="/img/fondos/Fondo.jpg">
+    </div>
 
-<div id="contenedor">
-    <h1><b>CONTACTANOS:</b></h1>
-    
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1410.6029049586327!2d-78.51742590472172!3d-0.2251379877650014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a28366b3d81%3A0xc6029256689ed873!2sInstituto%20Superior%20Tecnol%C3%B3gico%20Yavirac!5e0!3m2!1ses-419!2sec!4v1632782423635!5m2!1ses-419!2sec" allowfullscreen="" loading="lazy"></iframe> 
-    
-    <div id="contactos">
-        <div id="direccion">
-            <img id="imagen" src="/img/contactos/contactanos_3.png">
-            <label>DIRRECIÓN:</label>
-            <p>García Moreno S435 y Ambato</p>
+    <div id="contenedor">
+        <h1><b>CONTACTANOS:</b></h1>
+
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1410.6029049586327!2d-78.51742590472172!3d-0.2251379877650014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a28366b3d81%3A0xc6029256689ed873!2sInstituto%20Superior%20Tecnol%C3%B3gico%20Yavirac!5e0!3m2!1ses-419!2sec!4v1632782423635!5m2!1ses-419!2sec"
+            allowfullscreen="" loading="lazy"></iframe>
+
+        <div id="contactos">
+            <div id="direccion">
+                <img id="imagen" src="/img/contactos/contactanos_3.png">
+                <label>DIRRECIÓN:</label>
+                <p>García Moreno S435 y Ambato</p>
+            </div>
+
+            <div id="telefono">
+                <img id="imagen" src="/img/contactos/contactanos_1.png">
+                <label>TELÉFONO:</label>
+                <p>+593 99 520 5397 - Arboleda Ever</p>
+                <p>+593 96 949 5339 - Muñoz Emily</p>
+                <p>+593 98 756 8660 - Pinta Javier</p>
+            </div>
+
+            <div id="correo">
+                <img id="imagen" src="/img/contactos/contactanos_2.png">
+                <label>CORREO ELECTRÓNICO:</label>
+                <p>eja.arboleda@yavirac.edu.ec</p>
+                <p>ema.munoz@yavirac.edu.ec</p>
+                <p>jfc.pinta@yavirac.edu.ec</p>
+            </div>
         </div>
 
-        <div id="telefono">
-            <img id="imagen" src="/img/contactos/contactanos_1.png">
-            <label>TELÉFONO:</label>
-            <p>+593 99 520 5397 - Arboleda Ever</p>
-            <p>+593 96 949 5339 - Muñoz Emily</p>
-            <p>+593 98 756 8660 - Pinta Javier</p>
-        </div>
-
-        <div id="correo">
-            <img id="imagen" src="/img/contactos/contactanos_2.png">
-            <label>CORREO ELECTRÓNICO:</label>
-            <p>eja.arboleda@yavirac.edu.ec</p>
-            <p>ema.munoz@yavirac.edu.ec</p>
-            <p>jfc.pinta@yavirac.edu.ec</p>
-        </div>
-
-        <div id="boton">
-            <a href="/Inicio"><button type="button">VOLVER</button></a>
+        <div id="botonVolver">
+            <a href="/Inicio">
+                <button type="button">VOLVER</button>
+            </a>
         </div>
     </div>
-</div>
 </form>
-
-
-

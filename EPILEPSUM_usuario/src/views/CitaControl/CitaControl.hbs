@@ -1,43 +1,40 @@
 <!-- Required meta tags -->
 <link rel="stylesheet" href="/css/Control/Control.css">
 
-<form action="/Control/{{user.idPaciente}}"></form>
+<form action="/Control/{{user.idPaciente}}" id="ocultar">
 
-<div id="fondo">
-    <img src="/img/fondos/sistemaNervioso.png">
-</div>
-
-<div id="contenedor">
-
-    <!--Aquí comienza el calendario-->
-    <div id="calendario">
-        <div id="estilos-caledario">
-            <div id="prev-month">&#9664;</div>
-            <div id="month"></div>
-            <div id="year"></div>
-            <div id="next-month">&#9654;</div>
-        </div>
-
-        <div id="estilo-dia">
-            <div id="Mon">Mon</div>
-            <div id="Tue">Tue</div>
-            <div id="Wed">Wed</div>
-            <div id="Thu">Thu</div>
-            <div id="Fri">Fri</div>
-            <div id="Sat">Sat</div>
-            <div id="Sun">Sun</div>
-        </div>
-        <div class="row" id="dates"></div>
+    <div id="fondo">
+        <img src="/img/fondos/sistemaNervioso.png">
     </div>
 
-    <div id="boton">
-        <a href="/medicamentos/lista/{{user.idPaciente}}">
-            <button>¿Desea ver el historial?</button>
-        </a>
+    <div id="contenedor">
+        <!--Aquí comienza el calendario-->
+        <div id="calendario">
+            <div id="estilos-caledario">
+                <div id="prev-month">&#9664;</div>
+                <div id="month"></div>
+                <div id="year"></div>
+                <div id="next-month">&#9654;</div>
+            </div>
+
+            <div id="estilo-dia">
+                <div id="Mon">Mon</div>
+                <div id="Tue">Tue</div>
+                <div id="Wed">Wed</div>
+                <div id="Thu">Thu</div>
+                <div id="Fri">Fri</div>
+                <div id="Sat">Sat</div>
+                <div id="Sun">Sun</div>
+            </div>
+            <div class="row" id="dates"></div>
+        </div>
+
+        <div id="boton">
+            <a href="/medicamentos/lista/{{user.idPaciente}}">
+                <button>¿Desea ver el historial?</button>
+            </a>
+        </div>
+        <!--Aquí termina el calendario-->
     </div>
-
-    <!--Aquí termina el calendario-->
-
-</div>
-
+</form>
 <script src="/js/Control/Control.js"></script>

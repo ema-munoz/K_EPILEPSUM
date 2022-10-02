@@ -108,3 +108,13 @@
 footer {
     bottom: 0%;
 }
+
+@media only screen and (orientation: portrait) and (max-width: 1000px) and (min-width: 667px) {
+}
+
+@media only screen and (orientation: portrait) and (max-width: 667px) and (min-width: 384px) {
+}
+
+@media only screen and (orientation: portrait) and (max-width: 384px) and (min-width: 150px) {
+#contenedor {
+    max-width: 100%;}}

@@ -3,41 +3,40 @@
 <div id="fondo">
     <img src="/img/fondos/sistemaNervioso.jpg">
 </div>
-
+<form action="/amigos/lista/{{user.idPaciente}}" method="get"></form>
 <div id="contenedor">
+    <div id="titulo">
+        <h1>Amigos:</h1>
+    </div>
+    {{#each amigos}}
     <div class="row">
         <div id="tarjeta">
-            <div id="titulo">
-                <h1> Solictud:</h1>
-            </div>
             <div id="foto">
-                Foto:
+                <img src="/img/usuarios/{{imagenPaciente}}" alt="">
             </div>
             <div id="nombre">
                 Nombre:
+                <p>{{nombrePaciente}} {{apellidoPaciente}}</p>
             </div>
-
             <div id="botonAceptarSolicitud">
-                <a href="#">
+                <a href="/chat/amigos/{{idPaciente}}">
                     <button type="button">Enviar mensaje.</button>
                 </a>
             </div>
-
             <div id="botonEliminar">
-                <a href="#">
+                <a href="/amigos/eliminar/{{idPaciente}}">
                     <button type="submit">Eliminar Amigos</button>
                 </a>
             </div>
         </div>
-
-
+        {{else}}
         <div id="mensaje">
             <p><b>Usted no Solicitudes.</b></p>
             <a href="#">
                 <button type="button">¿Desea enviar una solicitud?</button>
             </a>
         </div>
-
+        {{/each}}
     </div>
 </div>
 

@@ -5,6 +5,7 @@ const pacientes = (sequelize, type) => {
             primaryKey: true,
             autoIncrement: true,
         },
+        imagenPaciente: type.STRING,
         username: type.STRING(99),
         password: type.STRING,
         cedulaPaciente:type.STRING(150),

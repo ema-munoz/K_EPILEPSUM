@@ -1,5 +1,4 @@
 #contenedor {
-    background-color: rgba(27, 144, 240, 0.781);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -10,7 +9,6 @@
 }
 
 #mensaje {
-    background-color: rgba(27, 144, 240, 0.781);
     text-align: center;
     position: absolute;
     width: 100%;
@@ -22,9 +20,9 @@
 }
 
 #mensaje p {
-        position: absolute;
-        width: 100%;
-            top: 25%;
+    position: absolute;
+    width: 100%;
+    top: 25%;
 }
 
 #mensaje a {
@@ -37,12 +35,12 @@
 
 #plus {
     position: absolute;
-        width: 100%;
-            height: 100%;
-            max-width: 4%;
-            max-height: 8%;
-            top: 15%;
-            right: 1%;
+    width: 100%;
+    height: 100%;
+    max-width: 4%;
+    max-height: 8%;
+    top: 15%;
+    right: 1%;
 
 }
 

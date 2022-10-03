@@ -1,4 +1,3 @@
-<!-- Required meta tags -->
 <link rel="stylesheet" href="/css/Medicamentos/MedicamentosEditar.css">
 
 <div id="fondo">
@@ -8,39 +7,40 @@
 <div id="contenedor">
 
     {{#each enlistar}}
-    <form action="/medicamentos/editar/{{idMedicaciones}}" method="POST">
+    <form action="/medicamentos/editar/{{idMedicaciones}}" method="POST" id="ocultar">
         <div>
             <div id="Nombres">
                 <label>
-                <b>Nombre de la Medicación:</b>
+                    <b>Nombre de la Medicación:</b>
                 </label>
                 <input type="text" name="nombreMedicaciones" id="nombre" value="{{nombreMedicaciones}}" required>
             </div>
 
             <div id="Dosis">
                 <label>
-                <b>Dosis al Día:</b>
+                    <b>Dosis al Día:</b>
                 </label>
                 <input type="number" name="dosisMedicaciones" id="dosis" value="{{dosisMedicaciones}}" required>
             </div>
 
             <div id="Horario">
                 <label>
-                <b>Horario de la Dosis:</b>
+                    <b>Horario de la Dosis:</b>
                 </label>
                 <input type="text" name="horaMedicaciones" id="hora" value="{{horaMedicaciones}}" required>
             </div>
 
             <div id="FechaInicio">
                 <label>
-                <b>Fecha de Inicio:</b>
+                    <b>Fecha de Inicio:</b>
                 </label>
-                <input type="date" name="fechaInicioMedicaciones" id="fechaInicio" value="{{fechaInicioMedicaciones}}" readonly>
+                <input type="date" name="fechaInicioMedicaciones" id="fechaInicio" value="{{fechaInicioMedicaciones}}"
+                    readonly>
             </div>
 
             <div id="FechaFinal">
                 <label>
-                <b>Fecha de Control:</b>
+                    <b>Fecha de Control:</b>
                 </label>
                 <input type="date" name="fechaFinalMedicaciones" id="fechaFinal" value="{{fechaFinalMedicaciones}}">
             </div>

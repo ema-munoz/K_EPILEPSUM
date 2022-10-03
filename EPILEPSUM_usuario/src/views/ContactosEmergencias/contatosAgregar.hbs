@@ -1,4 +1,3 @@
-<!-- Required meta tags -->
 <link rel="stylesheet" href="/css/ContactosEmergencia/contactosAgregar.css">
 
 <div id="fondo">
@@ -6,8 +5,8 @@
 </div>
 
 <div id="contenedor">
-    <form action="/contactos/agregar/{{user.idPaciente}}" method="POST">
-        
+    <form action="/contactos/agregar/{{user.idPaciente}}" method="POST" id="ocultar">
+
         <div id="Nombres">
             <label>
                 Nombre:
@@ -17,7 +16,7 @@
 
         <div id="Familiar">
             <label>
-            Familiar:
+                Familiar:
             </label>
             <select name="familiar" id="familiar" required>
                 {{#each familiar}}
@@ -30,14 +29,14 @@
 
         <div id="Telefono">
             <label>
-            Teléfono (Opcional):
+                Teléfono (Opcional):
             </label>
             <input type="number" name="telefonoContactosEmergencia" id="telefono">
         </div>
 
         <div id="Celular">
             <label>
-            Celular:
+                Celular:
             </label>
             <input type="number" name="celularContactosEmergencia" id="celular" required>
         </div>

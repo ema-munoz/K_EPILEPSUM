@@ -1,4 +1,3 @@
-<!-- Required meta tags -->
 <link rel="stylesheet" href="/css/efectosSecundariosCss/efectosSecundariosAgragar.css">
 
 <div id="fondo">
@@ -6,22 +5,23 @@
 </div>
 <form action="/efectosSecundarios/agregar/{{user.idUsuario}}" method="post">
     <div id="contenido">
-           <div id="titulo">
-                <p>
-                    <b>Efectos Secundarios:</b>
-                </p>
-           </div>
+        <div id="titulo">
+            <p>
+                <b>Efectos Secundarios:</b>
+            </p>
+        </div>
 
         <div id="Nombre">
             <label>Efectos Secundarios: </label>
             <input type="text" name="nombreEfectosSecundarios" id="nombre" required>
         </div>
 
-<div id="Descripcion"> 
-      <label> Descripción:</label>
-        <textarea type="text" name="descripcionEfectosSecundarios" id="descripcion" maxlength="2500" required> </textarea>
+        <div id="Descripcion">
+            <label> Descripción:</label>
+            <textarea type="text" name="descripcionEfectosSecundarios" id="descripcion" maxlength="2500"
+                required> </textarea>
 
-</div>
+        </div>
 
         <div id="boton">
             <button type="submit">Guardar</button>

@@ -4,7 +4,7 @@
     <img src="/img/fondos/sistemaNervioso.png">
 </div>
 
-<form action="/medicamentos/lista/{{user.idPaciente}}" method="GET"></form>
+<form action="/medicamentos/lista/{{user.idPaciente}}" method="GET" id="ocultar">
 
 <div id="contenedor">
     <div class="row">
@@ -46,13 +46,13 @@
 
             <div id="botonEditar">
                 <a href="/medicamentos/editar/{{idMedicaciones}}">
-                    <button>Editar</button>
+                    <button type="button">Editar</button>
                 </a>
             </div>
 
             <div id="botonEliminar">
                 <a href="/medicamentos/eliminar/{{idMedicaciones}}">
-                    <button>Eliminar</button>
+                    <button type="button">Eliminar</button>
                 </a>
             </div>
         </div>
@@ -68,9 +68,11 @@
     </div>
 </div>
 
-
 <div id="plus">
     <a href="/medicamentos/agregar/{{user.idPaciente}}">
-        <button type="button"><img src="/img/icons/black/plus.png"></button>
+        <button type="button">
+            <img src="/img/icons/white/plus.png">
+        </button>
     </a>
 </div>
+</form>

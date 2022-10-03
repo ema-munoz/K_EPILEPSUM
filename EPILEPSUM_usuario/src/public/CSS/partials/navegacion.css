@@ -1,5 +1,5 @@
 nav {
-    background-color: #e3f2fd;
+    background-color: #B98CB9;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -110,11 +110,9 @@ nav {
     display: none;
 }
 
-
-
 #hamburguesa img {
-    width: 100%;
-    height: 100%;
+    width: 75%;
+    height: 75%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -126,7 +124,7 @@ nav {
 }
 
 #cierra {
-    background-color: rgb(221, 139, 109);
+    background-color: #7D2181;
     position: absolute;
     top: 0%;
     right: 0%;
@@ -139,8 +137,8 @@ nav {
 }
 
 #cierra img {
-    width: 100%;
-    height: 100%;
+    width: 85%;
+    height: 85%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -151,9 +149,13 @@ nav {
     border-color: transparent;
 }
 
-@media screen and (orientation: landscape) and (max-width: 1115px) and (min-width: 1000px) {
+@media screen and (orientation: landscape) and (max-width: 1400px) and (min-width: 1000px) {
     nav {
         max-width: 100%;
+    }
+
+    #Cierre {
+        top: -5%;
     }
 }
 
@@ -161,6 +163,10 @@ nav {
 @media only screen and (orientation: landscape) and (max-width: 1000px) and (min-width: 655px) {
     nav {
         max-width: 100%;
+    }
+
+    #Cierre {
+        top: -5%;
     }
 }
 
@@ -170,6 +176,10 @@ nav {
         display: none;
         max-width: 100%;
         max-height: 100%;
+    }
+
+    #Cierre {
+        top: -5%;
     }
 
     #cierra {
@@ -254,6 +264,10 @@ nav {
         display: none;
         max-width: 100%;
         max-height: 100%;
+    }
+
+    #Cierre {
+        top: -5%;
     }
 
     #cierra {

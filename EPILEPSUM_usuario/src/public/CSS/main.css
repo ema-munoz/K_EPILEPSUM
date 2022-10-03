@@ -1,17 +1,26 @@
 input,
-textarea{
+textarea,
+select {
     text-align: center;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
     border-radius: 20px;
     width: 100%;
-    border-bottom: 6px solid coral;
+    height: 75%;
+    border: 2px solid black;
+    border-bottom: 6px solid #7D2181;
     transition: all .5s ease;
 }
 
 input:focus,
-textarea:focus{
-    border-bottom: 6px solid rgb(220, 20, 170);
+textarea:focus,
+select:focus {
+    border-bottom: 6px solid #D8BFD8;
+}
+
+#contenedor,
+#contenido {
+    background-color: #cccccc;
 }
 
 #contenedor a,
@@ -52,7 +61,7 @@ body {
 
 /*  BOTONES  */
 button {
-    background-color: rgb(220, 20, 170);
+    background-color: #7D2181;
     text-align: center;
     font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -63,6 +72,5 @@ button {
 }
 
 #button:focus {
-    border-radius: 6px solid crimson;
+    border-radius: 6px solid #7D2181;
 }
-

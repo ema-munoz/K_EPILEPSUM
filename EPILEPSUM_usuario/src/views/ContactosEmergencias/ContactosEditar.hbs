@@ -1,4 +1,3 @@
-<!-- Required meta tags -->
 <link rel="stylesheet" href="/css/ContactosEmergencia/contactosEditar.css">
 
 <div id="fondo">
@@ -6,36 +5,39 @@
 </div>
 
 <div id="contenedor">
-{{#each enlistar}}
-<form action="/contactos/editar/{{idContactosEmergencia}}" method="POST">
+    {{#each enlistar}}
+    <form action="/contactos/editar/{{idContactosEmergencia}}" method="POST" id="ocultar">
 
-    <div id="Nombres">
-        <label>
-            Nombre:
-        </label>
-        <input type="text" name="nombreContactosEmergencia" id="nombre" value="{{nombreContactosEmergencia}}" required>
-    </div>
-        
-    <div id="Telefono">
-        <label>
-        Teléfono:
-        </label>
-        <input type="number" name="telefonoContactosEmergencia" id="telefono" value="0{{telefonoContactosEmergencia}}">
-    </div>
-    
-    <div id="Celular">
-        <label>
-        Celular:
-        </label>
-        <input type="number" name="celularContactosEmergencia" id="celular" value="0{{celularContactosEmergencia}}" required>
-    </div>
-    
-    <div id="boton">
-        <button type="submit" id="btn-agregar">
-            Guardar Cambios
-        </button>
-    </div>
-    {{/each}}
+        <div id="Nombres">
+            <label>
+                Nombre:
+            </label>
+            <input type="text" name="nombreContactosEmergencia" id="nombre" value="{{nombreContactosEmergencia}}"
+                required>
+        </div>
+
+        <div id="Telefono">
+            <label>
+                Teléfono:
+            </label>
+            <input type="number" name="telefonoContactosEmergencia" id="telefono"
+                value="0{{telefonoContactosEmergencia}}">
+        </div>
+
+        <div id="Celular">
+            <label>
+                Celular:
+            </label>
+            <input type="number" name="celularContactosEmergencia" id="celular" value="0{{celularContactosEmergencia}}"
+                required>
+        </div>
+
+        <div id="boton">
+            <button type="submit" id="btn-agregar">
+                Guardar Cambios
+            </button>
+        </div>
+        {{/each}}
         <div id="Familiar">
             <label>
                 Familiar:

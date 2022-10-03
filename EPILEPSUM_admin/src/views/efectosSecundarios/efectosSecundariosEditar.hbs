@@ -1,4 +1,3 @@
-<!-- Required meta tags -->
 <link rel="stylesheet" href="/css/efectosSecundariosCss/efectosSecundariosEditar.css">
 
 <div id="fondo">
@@ -6,23 +5,24 @@
 </div>
 
 </div>
-{{#each lista}} 
+{{#each lista}}
 <form action="/efectosSecundarios/editar/{{idEfectosSecundarios}}" method="post">
     <div id="contenido">
-       <div id="titulo">
-                <p>
-                    <b>Efectos Secundarios:</b>
-                </p>
-       </div>
+        <div id="titulo">
+            <p>
+                <b>Efectos Secundarios:</b>
+            </p>
+        </div>
         <div id="Nombre">
             <label>Efectos Secundarios:</label>
             <input type="text" name="nombreEfectosSecundarios" id="nombre" value="{{nombreEfectosSecundarios}}">
         </div>
-    <div id="Descripcion"> 
-      <label> Descripción:</label>
-        <textarea type="text" name="descripcionEfectosSecundarios" id="descripcion" maxlength="2500" required> {{descripcionEfectosSecundarios}} </textarea>
+        <div id="Descripcion">
+            <label> Descripción:</label>
+            <textarea type="text" name="descripcionEfectosSecundarios" id="descripcion" maxlength="2500"
+                required> {{descripcionEfectosSecundarios}} </textarea>
 
-</div>
+        </div>
         <div id="boton">
             <button type="submit">Guardar</button>
         </div>

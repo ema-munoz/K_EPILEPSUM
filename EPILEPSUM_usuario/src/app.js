@@ -61,17 +61,23 @@ app.use(express.static(path.join(__dirname, "public")));
 //public
 
 //routas
-app.use (require ("./routes/index"));
-app.use (require ("./routes/registro"));
-app.use (require ("./routes/actualizacion"));
-app.use (require ("./routes/user"));
-app.use (require ("./routes/citaControl"));
-app.use (require ("./routes/contactos"));
-app.use ("/contactos", require ("./routes/contactosEmergencia"));
-app.use ("/experiencias", require ("./routes/experiencias"));
-app.use ("/medicamentos", require ("./routes/medicamentos"));
-app.use (require ("./routes/primeros_auxilios"));
-app.use (require ("./routes/ubicacion"));
-app.use ("/composicionMedicamento", require ("./routes/composicionMedicamento"));
+app.use(require("./routes/index"));
+app.use(require("./routes/registro"));
+app.use(require("./routes/actualizacion"));
+app.use(require("./routes/user"));
+app.use(require("./routes/citaControl"));
+app.use(require("./routes/contactos"));
+app.use("/contactos", require("./routes/contactosEmergencia"));
+app.use("/experiencias", require("./routes/experiencias"));
+app.use("/medicamentos", require("./routes/medicamentos"));
+app.use(require("./routes/primeros_auxilios"));
+app.use(require("./routes/ubicacion"));
+//Emily
+//Ever
+//Javier
+app.use("/composicionMedicamento", require("./routes/composicionMedicamento"));
+
+//Billy
+app.use("/chat", require("./routes/mensajes"));
 
 module.exports = app;

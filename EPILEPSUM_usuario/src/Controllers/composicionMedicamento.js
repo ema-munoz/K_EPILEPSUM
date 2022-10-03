@@ -7,8 +7,8 @@ const farmaco = require("../Model/farmaco");
 composicionMedicamento.mostrar = async (req, res) => {
     const enlistar = await baseDatosSQL.query(
         "SELECT * FROM composicions");
-    res.render("composicion/composicionMedicamentosAgregar", { enlistar });
-    res.render("composicion/composicionMedicamentosEditar", { enlistar });
+    /* res.render("composicion/composicionMedicamentosAgregar", { enlistar });
+    res.render("composicion/composicionMedicamentosEditar", { enlistar });*/
     res.render("composicion/composicionMedicamentosLista", { enlistar });
 };
 
@@ -59,7 +59,7 @@ composicionMedicamento.lista = async (req, res) => {
 composicionMedicamento.traerDatos = async (req, res) => {
     const farmacosId = req.params.id;
     const enlistar = await baseDatosSQL.query(
-        "SELECT * FROM composicions WHERE idComposiciones = ?",
+        "SELECT * FROM composicions WHERE idComposicion = ?",
         [farmacosId]
     );
     res.render("farmaco/farmacoEditar/", { enlistar });

@@ -1,14 +1,38 @@
+<<<<<<< HEAD
 #logo {
+=======
+#fondo{
+>>>>>>> Ever
     position: absolute;
     width: 100%;
     height: 100%;
-    max-width: 12%;
-    max-height: 24%;
-    left: 44%;
+    max-width: 100%;
+    max-height: 100%;
+    top: 0%;
+}
+
+#fondo img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    left: 45%;
     top: 12%;
 }
 
+<<<<<<< HEAD
 #logo img {
+=======
+#img img{
+>>>>>>> Ever
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -20,9 +44,9 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    max-width: 50%;
-    max-height: 50%;
-    right: 25%;
+    max-width: 600px;
+    max-height: 400px;
+    left: 35%;
     top: 30%;
 }
 
@@ -33,12 +57,16 @@
     height: 85%;
 }
 
+<<<<<<< HEAD
 #h1 {
     text-align: center;
     width: 100%;
     max-width: 70%;
+=======
+#h1{
+>>>>>>> Ever
     position: absolute;
-    left: 15%;
+    left: 30%;
 }
 
 #datos {
@@ -62,6 +90,7 @@
 
 #boton button {
     width: 100%;
+<<<<<<< HEAD
 }
 
 @media only screen and (orientation: portrait) and (max-width: 1000px) and (min-width: 667px) {
@@ -101,4 +130,7 @@
         max-height: 24%;
         left: 30%;
     }
+=======
+    font-size: 20px;
+>>>>>>> Ever
 }

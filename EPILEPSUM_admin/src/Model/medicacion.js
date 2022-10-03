@@ -5,7 +5,7 @@ const medicacion =(sequelize, type)=>{
             primaryKey: true,
             autoIncrement: true,
         },
-        
+
         nombreMedicaciones: type.STRING,
         dosisMedicaciones: type.INTEGER,
         horaMedicaciones: type.STRING,

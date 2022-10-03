@@ -1,14 +1,38 @@
+<<<<<<< HEAD
 #logo {
+=======
+#fondo{
+>>>>>>> Ever
     position: absolute;
     width: 100%;
     height: 100%;
-    max-width: 12%;
-    max-height: 24%;
-    left: 44%;
+    max-width: 100%;
+    max-height: 100%;
+    top: 0%;
+}
+
+#fondo img{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    left: 45%;
     top: 12%;
 }
 
+<<<<<<< HEAD
 #logo img {
+=======
+#img img{
+>>>>>>> Ever
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
@@ -21,9 +45,9 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    max-width: 50%;
-    max-height: 50%;
-    right: 25%;
+    max-width: 600px;
+    max-height: 500px;
+    left: 35%;
     top: 30%;
     text-align: center;
 }
@@ -35,6 +59,7 @@
     height: 85%;
 }
 
+<<<<<<< HEAD
 #h1 {
     text-align: center;
     width: 100%;
@@ -46,13 +71,29 @@
 #Email,
 #Password {
     width: 80%;
+=======
+#h1{
+    position: absolute;
+    left: 30%;
+}
+
+#Nombre{
+>>>>>>> Ever
     position: absolute;
     top: 20%;
     left: 10%;
+    width: 80%;
 }
 
+<<<<<<< HEAD
 #Password {
+=======
+#Password{
+    position: absolute;
+>>>>>>> Ever
     top: 40%;
+    left: 10%;
+    width: 80%;
 }
 
 #nombreIntxt,
@@ -104,7 +145,7 @@
     height: 100%;
     max-width: 50px;
     max-height: 50px;
-    left: 85%;
+    left: 82.5%;
     top: 38.5%;
 }
 

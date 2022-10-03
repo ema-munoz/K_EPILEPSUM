@@ -1,0 +1,35 @@
+<!-- Required meta tags -->
+<link rel="stylesheet" href="/css/roles/rolesEditar.css">
+
+<div id="fondo">
+    <img src="/img/fondos/sistemaNervioso.png">
+</div>
+
+<div id="contenedor">
+{{#each enlistar}}
+<form action="/roles/editar/{{idrol}}" method="POST">
+
+    <div id="Nombres">
+        <label>
+            Nombre:
+        </label>
+        <input type="text" name="nombreRol" id="nombre" value="{{nombreRol}}" required>
+    </div>
+        
+    <div id="Estado">
+        <label>
+        Estado:
+        </label>
+        <input type="text" name="estadoRol" id="estado" value="{{estadoRol}}">
+    </div>
+    
+    
+    <div id="boton">
+        <button type="submit" id="btn-agregar">
+            Guardar Cambios
+        </button>
+    </div>
+    {{/each}}
+        
+    </form>
+</div>

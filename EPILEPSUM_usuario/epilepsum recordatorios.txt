@@ -1,6 +1,7 @@
 PARTE DE CLIENTE:
 CRUD => medicamentos (proceso)  
 CRUD => Usuario (mejorar)
+CRUD => medicamentos (proceso)
 
 CRUD => peso y estatura
 
@@ -21,14 +22,12 @@ validaciones de input
 
 PARTE ADMINISTRATIVA (proceso)
 
-CRUD => Admin (mejorar)
-
-1. crear una tabla proyecto (pagina principal antes del login)
-2. CRUD => tabla de contenido de epilepsia(pagina principal despues del login)
+1. crear una tabla proyecto (pagina principal)
+2. CRUD => tabla de contenido de epilepsia(pagina principal)
 3. CRUD => efectos secundarios
-4. CRUD => tipos de epilepsia
+4. CRUD => tipo de epilepsia
 5. CRUD => sintomas
-6. CRUD => Experiencia (eliminacion)
+6. CRUD => Experiencia
 7. CRUD => consejos
 8. CRUD => preguntas
 9. CRUD => respuestas
@@ -38,6 +37,7 @@ VISTAS QUE FALTAN
 Ataques epilepticos
 Cita Crontrol
 Consejos
+<<<<<<< HEAD
 
 
 06/09/2022
@@ -49,3 +49,5 @@ CRUD => principio activo del medicamento
 
 
 
+=======
+>>>>>>> Ever

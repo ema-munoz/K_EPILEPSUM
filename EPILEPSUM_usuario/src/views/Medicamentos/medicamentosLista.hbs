@@ -1,3 +1,4 @@
+<!-- Required meta tags -->
 <link rel="stylesheet" href="/css/Medicamentos/MedicamentosLista.css">
 
 <div id="fondo">
@@ -21,39 +22,39 @@
             </div>
 
             <div id="Dosis">
-                <p>
+                <p> 
                     Dosis al Día: {{dosisMedicaciones}}
                 </p>
             </div>
 
             <div id="Horario">
-                <p>
+                <p> 
                     Horario de la Dosis: {{horaMedicaciones}}
                 </p>
             </div>
 
             <div id="FechaInicio">
-                <p>
+                <p> 
                     Fecha de inicio: {{fechaInicioMedicaciones}}
                 </p>
             </div>
 
             <div id="FechaFinal">
-                <p>
+                <p> 
                     Fecha de Terminación: {{fechaFinalMedicaciones}}
                 </p>
             </div>
 
             <div id="botonEditar">
-                <a href="/medicamentos/editar/{{idMedicaciones}}">
-                    <button type="button">Editar</button>
-                </a>
+                <button>
+                <a href="/medicamentos/editar/{{idMedicaciones}}">Editar</a>
+                </button>
             </div>
 
             <div id="botonEliminar">
-                <a href="/medicamentos/eliminar/{{idMedicaciones}}">
-                    <button type="button">Eliminar</button>
-                </a>
+                <button>
+                    <a href="/medicamentos/eliminar/{{idMedicaciones}}">Eliminar</a>
+                </button>
             </div>
         </div>
 
@@ -68,6 +69,10 @@
     </div>
 </div>
 
+<<<<<<< HEAD
+=======
+ 
+>>>>>>> Ever
 <div id="plus">
     <a href="/medicamentos/agregar/{{user.idPaciente}}">
         <button type="button">
@@ -75,4 +80,7 @@
         </button>
     </a>
 </div>
+<<<<<<< HEAD
 </form>
+=======
+>>>>>>> Ever

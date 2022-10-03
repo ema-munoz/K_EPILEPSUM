@@ -1,0 +1,30 @@
+<link rel="stylesheet" href="/css/rolesUsuarios/usuariosAgregar.css">
+
+<div id="fondo">
+    <img src="/img/fondos/Fondo.jpg">
+</div>
+
+<div id="contenedor">
+    <form action="/usuarios/agregar/{{user.idUsuario}}" method="POST">
+        <div id="tarjeta">
+            <div="titulo">
+                <h1> Usuarios </h1>
+        </div>
+        <div id="nombre">
+            Nombre:
+            <input type="text" name="nombreUsuario" id="nombre" required>
+
+        </div>
+
+        <div id="estado">
+            Estado:
+            <input type="text" name="estadoUsuario" id="nombre" required>
+        </div>
+
+        <div id="boton">
+            <button type="submit" id="btn-agregar">
+                Agregar
+            </button>
+        </div>
+    </form>
+</div>

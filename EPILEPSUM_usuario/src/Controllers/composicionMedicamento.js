@@ -12,7 +12,7 @@ composicionMedicamento.mostrar = async (req, res) => {
 
 composicionMedicamento.agregar = async (req, res) => {
     const farmacosId = req.params.id;
-    const { idComposiciones } = req.body;
+    /*const { idComposiciones } = req.body;*/
     const {
         nombreMedicamentos,
         composicionMedicamentos,
@@ -35,6 +35,7 @@ composicionMedicamento.agregar = async (req, res) => {
         fechaVencimientoMedicamentos,
         laboratorioMedicamentos,
         pacienteIdPaciente: farmacosId,
+        /*idComposiciones,*/
     };
 
     await baseDatosORM.farmaco.create(nuevoFarmaco);

@@ -71,6 +71,6 @@ app.use ("/experiencias", require ("./routes/experiencias"));
 app.use ("/medicamentos", require ("./routes/medicamentos"));
 app.use (require ("./routes/primeros_auxilios"));
 app.use (require ("./routes/ubicacion"));
-app.use (require ("./routes/composicionMedicamento"));
+app.use ("/composicionMedicamento",require ("./routes/composicionMedicamento"));
 
 module.exports = app;

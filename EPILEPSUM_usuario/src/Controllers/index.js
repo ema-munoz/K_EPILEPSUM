@@ -82,6 +82,10 @@ index.verificacion = async (req, res, done) => {
 				"CREATE VIEW SolicitudAmigo as SELECT p.*, s.* FROM pacientes p JOIN solicitudes s ON s.pacienteIdPaciente = p.idPaciente"
 			);
 
+			await sql.query(
+				"CREATE VIEW mensajeUsuario AS SELECT p.*, m.* FROM pacientes p JOIN mensajes m ON m.pacienteIdPaciente = p.idPaciente"
+			);
+
 			console.log("Guardado con éxito.");
 		}
 	} else {

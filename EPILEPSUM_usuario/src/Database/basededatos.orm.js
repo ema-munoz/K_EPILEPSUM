@@ -129,6 +129,9 @@ experiencias.belongsTo(usuario);
 usuario.hasMany(preguntas);
 preguntas.belongsTo(usuario);
 
+usuario.hasMany(efectosSecundarios)
+efectosSecundarios.belongsTo(usuario)
+
 usuario.hasMany(respuestas);
 respuestas.belongsTo(usuario);
 
@@ -293,6 +296,8 @@ farmaco.belongsTo(composicionMedicamento);
 /*Billy */
 pacientes.hasMany(mensajes)
 mensajes.belongsTo(pacientes)
+
+
 
 module.exports = {
   usuario,

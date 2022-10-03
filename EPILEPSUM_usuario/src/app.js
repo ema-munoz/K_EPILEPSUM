@@ -74,5 +74,6 @@ app.use("/medicamentos", require("./routes/medicamentos"));
 app.use(require("./routes/primeros_auxilios"));
 app.use(require("./routes/ubicacion"));
 app.use("/Solicitud", require("./routes/solicitud"));
+app.use ("/chat",  require ("./routes/mensajes"));
 
 module.exports = app;

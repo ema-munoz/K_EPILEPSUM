@@ -60,3 +60,4 @@ permisos.eliminar = async (req, res) => {
 }
 module.exports = permisos
 
+

@@ -3,19 +3,17 @@
 <div id="fondo">
     <img src="/img/fondos/Fondo.jpg" alt="Logo">
 </div>
-
 <div id="contenedor">
     <!-- Aquí comienza el primer formulario -->
     <div id="formulario">
         <h1 id="h1" name="h1">EPILEPSUM</h1>
         <form action="/Login" method="POST">
-
             {{#each datosBD}}
-            <div id="Nombre">
-                <input id="nombreIntxt" type="userName"     name="username"     value="{{username}}" placeholder="Usuario"   readonly    required>
+            <div id="Email">
+                <input id="nombreIntxt" type="userName" name="username" value="{{username}}" placeholder="Usuario"
+                    readonly required>
             </div>
             {{/each}}
-
             <div id="Password">
                 <input id="passIntxt" type="password" name="password" placeholder="Contraseña" required>
             </div>
@@ -34,7 +32,6 @@
             </div>
         </form>
     </div>
-
     <!-- Aquí termina el primer formulario -->
     {{#each datosBD}}
     <div id="recuperacion">
@@ -44,9 +41,7 @@
     </div>
     {{/each}}
 </div>
-
-<div id="img">
+<div id="logo">
     <img src="/img/logo/Logo_epilepsum.png" alt="Logo">
 </div>
-
 <script src="/js/Usuario/Login.js"></script>

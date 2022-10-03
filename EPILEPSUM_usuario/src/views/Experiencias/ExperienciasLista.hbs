@@ -1,72 +1,8 @@
 <link rel="stylesheet" href="/CSS/Experiencias/ExperienciasLista.css" />
-
 <div id="fondo">
-    <img src="/img/fondos/sistemaNervioso.png">
+    <img src="/img/fondos/sistemaNervioso.png" />
 </div>
-
-<form action="/experiencias/lista/{{user.idPaciente}}" method="GET" id="ocultar">
-    <div id="contenedor">
-        <div class="row">
-            {{#each enlistar}}
-            <div id="tarjeta">
-                <div id="titulo">
-                    <p>
-                        <b>Mi Testimonio:</b>
-                    </p>
-                </div>
-
-<<<<<<< HEAD
-                <div id="foto">
-                    <p>
-                        Foto:
-                        {{imagenExperiencia}}
-                    </p>
-                </div>
-
-                <div id="video">
-                    <p>
-                        Video:
-                        {{videoExperiencia}}
-                    </p>
-                </div>
-
-                <div id="Nombres">
-                    <p>
-                        Nombre:
-                        {{nombreExperiencia}}
-                    </p>
-                </div>
-
-                <div id="Descripcion">
-                    <p>
-                        Descripción:
-                        {{experienciasDetallesExperiencias}}
-                    </p>
-                </div>
-
-                <div id="botonEditar">
-                    <a href="/experiencias/editar/{{idExperiencias}}"><button>
-                            Editar
-                        </button>
-                    </a>
-                </div>
-
-                <div id="botonEliminar">
-
-                    <a href="/experiencias/eliminar/{{idExperiencias}}">
-                        <button>Eliminar
-                        </button>
-                    </a>
-                </div>
-            </div>
-            {{else}}
-            <div id="mensaje">
-                <p><b>Usted no tiene registrado ningún experiencia. </b></p>
-                <a href="/experiencias/agregar/{{user.idPaciente}}">
-                    <button type="button">¿Desea registrar?</button>
-                </a>
-=======
-
+<form action="/experiencias/lista/{{user.idUsuario}}" method="GET"></form>
 <div id="contenedor">
     <div class="row">
         {{#each enlistar}}
@@ -76,174 +12,56 @@
                     <b>Mi Testimonio:</b>
                 </p>
             </div>
-
             <div id="foto">
                 <p>
-                    Foto: {{imagenExperiencia}}
+                    Foto:
+                    {{imagenExperiencia}}
                 </p>
             </div>
-
             <div id="video">
                 <p>
-                    Video: {{videoExperiencia}}
+                    Video:
+                    {{videoExperiencia}}
                 </p>
             </div>
-
             <div id="Nombres">
                 <p>
-                    Nombre: {{nombreExperiencia}}
+                    Nombre:
+                    {{nombreExperiencia}}
                 </p>
             </div>
-
             <div id="Descripcion">
                 <p>
-                    Descripción: {{experienciasDetallesExperiencias}}
+                    Descripción:
+                    {{experienciasDetallesExperiencias}}
                 </p>
             </div>
-
             <div id="botonEditar">
-                <button>
-                    <a href="/experiencias/editar/{{idExperiencias}}">Editar</a>
-                </button>
->>>>>>> Ever
+                <a href="/experiencias/editar/{{idExperiencias}}"><button>
+                        Editar
+                    </button>
+                </a>
             </div>
-            {{/each}}
-
-<<<<<<< HEAD
-=======
             <div id="botonEliminar">
-                <button>
-                    <a href="/experiencias/eliminar/{{idExperiencias}}">Eliminar</a>
-                </button>
+                <a href="/experiencias/eliminar/{{idExperiencias}}">
+                    <button>Eliminar
+                    </button>
+                </a>
             </div>
->>>>>>> Ever
         </div>
+        {{else}}
+        <div id="mensaje">
+            <p><b>Usted no tiene registrado ningún experiencia. </b></p>
+            <a href="/experiencias/agregar/{{user.idUsuario}}">
+                <button type="button">¿Desea registrar?</button>
+            </a>
+        </div>
+        {{/each}}
     </div>
+</div>
 
-<<<<<<< HEAD
-    <div id="plus">
-        <a href="/experiencias/agregar/{{user.idPaciente}}">
-            <button type="button"><img src="/img/icons/white/plus.png" /></button>
-        </a>
-    </div>
-</form>
-=======
 <div id="plus">
-    <a href="/experiencias/agregar/{{user.idPaciente}}">
-        <button type="button"><img src="/img/usuarios/plus.png"></button>
+    <a href="/experiencias/agregar/{{user.idUsuario}}">
+        <button type="button"><img src="/img/icons/white/plus.png" /></button>
     </a>
 </div>
->>>>>>> Ever
-
-
-
-<!--
-<link rel="stylesheet" href="/css/Experiencias/ExperienciasLista.css">
-
-<div id="fondo">
-        <img src="/img/Experiencias/sistemaNervioso.png">
-</div>
-
-<div id="contenedor">
-
-    <div id="titulo1">
-        <h1><b>¿Cómo Es Mi Relación Con La Epilepsia?</b></h1>
-    </div>
-
-    
-
-    <div id="carrusel-img">
-        <img src="/img/Experiencias/emy1.jpg" id="img-1">
-        <img src="/img/Experiencias/emy2.jpg" id="img-2">
-        <img src="/img/Experiencias/emy3.jpg" id="img-3">
-        <img src="/img/Experiencias/emy4.jpg" id="img-4">
-        <img src="/img/Experiencias/emy5.jpg" id="img-5">
-        <img src="/img/Experiencias/emy6.jpg" id="img-6">
-        
-    </div>
-
-    <div>
-        <button id="boton-1" onclick="imagen.animacion1()"></button>
-        <button id="boton-2" onclick="imagen.animacion2()"></button>
-        <button id="boton-3" onclick="imagen.animacion3()"></button>
-        <button id="boton-4" onclick="imagen.animacion4()"></button>
-        <button id="boton-5" onclick="imagen.animacion5()"></button>
-        <button id="boton-6" onclick="imagen.animacion6()"></button>
-    </div>
-
-
-    <div id="titulo2">
-        <p><b>Mi Testimonio</b></p>
-    </div>
-
-    <div id="p-1">
-        <p> 
-            Hola mi nombre es <b><i>Emily Michelle Muñoz Asipuela</i></b>, tengo 19 años, vivo en Pifo, estudio en el <b><a href="http://yavirac.edu.ec/">Instituto Técnologico Yavirac</a></b>, curso tercer semestre, te cuento un poco de mi vida y <b>¿Cómo Es Mi Relación Con La Epilepsia?</b>
-        </p>
-    </div>
-    
-    <div id="p-2">
-        <p>
-            Tengo epilepsia desde los 13 años oficialmente, ya que de niña tenía esas ausencias temporales donde mis ojos se quedaban fijos en un solo lugar (también es un tipo de epilepsia) y me regañaban porque no ponía atención, la ignorancia de mis padres no permitió ser medicada desde el principio, cuando fui diagnósticada con epilepsia, ellos se negaban a la idea de tener una hija con epilepsia, al no ser claro  el diagnóstico médico pues la falta de conocimiento (¿qué es epilepsia?, ¿por qué se produce?, ¿cuáles son las causas?), los médicos le decían que yo no tenía nada, esa era la razón para no recibir ninguna medicación.
-        </p>
-    </div>
-
-
-    <div id="p-3">
-        <p>
-            A mis 14 años, sufrí de 5 ataques severos en menos de 30 minutos en donde estos fueron demasiados fuertes y por esta razón  fui hospitalizada de emergencia en UCI por 3 días cuando desperté, no recordaba mi nombre, no recordaba las personas, no podía caminar, no coordinaba mi vocabulario y los médicos le llamaron la atención a mis padres por no haber sido medicada antes.
-        </p>
-    </div>
-
-    <div id="p-4">
-        <p>
-            En ese entonces me recetaron una serie de medicamentos, aparte de que era muy caros no cumplían con los requerimientos para mi tipo de epilepsia al recibir 2 tipos de medicamentos en momentos de estrés yo aún sufría ataques epilépticos esto sucedió durante 3 años en dónde entre diagnóstico y diagnóstico también pesaba sobre mi el ser llamada mentalmente incapacitada o retrasada mental.
-        </p>
-    </div>
-
-    <div id="p-5">
-        <p>
-            La tenacidad de mis padres ya con el conocimiento de mi verdadero daño cerebral causado por una mal formación genética y falta de oxígeno al nacer los  llevaron a buscar más opciones, exámenes, se hablo de una operación y entre todas esas, llegué a las manos de un neuropsiquiatra quién supo guiarme tanto física y mentalmente probando una nueva medicación enfocada en donde yo tenía la malformación genética, esta medicación fue tomada durante 2 años en altas cantidades, luego de 2 años sin convulsiones me  encuentro una etapa de recesión en dónde mi medicación es solamente media pastilla en la mañana y media en la noche con el récord de cero convulsiones, soy una de las afortunadas que  tiene el privilegio de decir que estoy en recuperación, pero este camino no es fácil ahora tengo una rutina diaria de ejercicios cuerpo mente y emociones, una dieta saludable estricto control medico y una rigurosa administración de mis medicamentos. 
-        </p>
-    </div>
-
-    <div id="p-6">
-        <p>
-            De vivir con epilepsia me queda la experiencia de que tener epilepsia no es una vergüenza mas bien es una oportunidad para superarte, es una oportunidad para la gente que te ama busque alternativas y conozca la epilepsia, que puedan que existan alternativas naturales pero no son 100% efectivas y que siempre un médico va a ser tu mejor ayuda, si tienes epilepsia no calles la gente que te rodea puede ser tu ángel de la guarda.
-        </p>
-    </div>
-
-    <div id="titulo3">
-        <p><b>¿Qué consejos darías a una persona que acaba de ser diagnosticada con Epilepsia?</b></p>
-    </div>
-
-    <div id="p-7">
-        <p>
-            Medidas generales que debe tomar una persona que ha sido diagnosticada con epilepsia.
-        </p>
-    </div>
-
-    <div id="p-8">
-        <p>
-            •	Evite los factores desencadenantes
-            <br>•	Procure llevar un calendario de crisis y una lista de los medicamentos con las dosis prescritas.
-            <br>•	Acuda de forma periódica a su médico para controles hemáticos y niveles plasmáticos de medicación.
-            <br>•	No abandone jamás por su cuenta el tratamiento antiepiléptico.
-            <br>•	Antes de modificar el tratamiento, consulte a su especialista.
-            <br>•	Ante cualquier otra enfermedad, comunique al médico el tratamiento que está tomando.
-            <br>•	Haga deportes, pero nunca bruscos o de riesgo (submarinismo, alpinismo ...).<br>Es mejor hacer deportes colectivos.
-            <br>•	No llegue al agotamiento.
-        </p>
-    </div>
-
-    <div id="audio">
-        <audio>
-            <source src="/audio/celebraLaVida.mp3" type="audio/mp3">
-        </audio>
-    </div>
-
-    <div id="boton">
-        <a href="/Inicio"><button type="button">VOLVER</button></a>
-    </div>        
-</div>-->
-<script src="/js/Experiencias/ExperienciasLista.js"></script>

@@ -4,16 +4,16 @@ nav {
     width: 100%;
     height: 100%;
     max-width: 100%;
-    max-height: 100px;
+    max-height: 75px;
 }
 
 #img {
     position: absolute;
     width: 100%;
     height: 100%;
-    max-width: 90px;
-    max-height: 90px;
-    top: 2.5%;
+    max-width: 60px;
+    max-height: 60px;
+    top: 7.5%;
     left: 1%;
 }
 
@@ -22,66 +22,74 @@ nav {
     height: 100%;
 }
 
-#Nombre {
+#EPILEPSUM,
+#Contenido,
+#efectosSecundarios,
+#tipoEpilepsia,
+#sintomas,
+#Contactos,
+#Experiencias,
+#Consejos,
+#Dudas {
     position: absolute;
     top: 30%;
-    left: 7%;
+    left: 6%;
 }
 
-#Control {
-    position: absolute;
-    top: 30%;
-    left: 16%;
+#Contenido {
+    left: 15%;
 }
 
-#Colaboracion {
-    position: absolute;
-    top: 30%;
-    left: 24%;
+#efectosSecundarios {
+    left: 22.5%;
 }
 
-#PrimerosAuxilios {
-    position: absolute;
-    top: 30%;
-    left: 32%;
+#tipoEpilepsia {
+    left: 35.5%;
 }
 
-#Ubicacion {
-    position: absolute;
-    top: 30%;
-    left: 42%;
+#sintomas {
+    left: 47.5%;
 }
 
-#Contactos {
-    position: absolute;
-    top: 30%;
-    left: 50%;
+#Experiencias {
+
+    left: 55%;
 }
 
-#Nombre a,
-#Control a,
-#Colaboracion a,
-#PrimerosAuxilios a,
-#Ubicacion a,
-#Contactos a {
+#Consejos {
+    left: 64%;
+}
+
+#Dudas {
+    left: 73%;
+}
+
+#EPILEPSUM a,
+#Contenido a,
+#efectosSecundarios a,
+#tipoEpilepsia a,
+#sintomas a,
+#Contactos a,
+#Experiencias a,
+#Consejos a,
+#Dudas a {
     color: black;
+    text-decoration: none;
 }
 
-
-
-#Cierre{
+#Cierre {
     border-color: transparent;
     text-align: center;
     border-radius: 20px;
     position: absolute;
-    width: 15%;
-    height: 40%;
-    top: 10%;
-    left: 82.5%;
+    width: 10%;
+    height: 50%;
+    top: 20%;
+    left: 88%;
 }
 
-
-#Cierre button{
+#Cierre button {
     border-color: transparent;
     color: white;
     position: absolute;
@@ -90,4 +98,3 @@ nav {
     width: 100%;
     font-size: 20px;
 }
-

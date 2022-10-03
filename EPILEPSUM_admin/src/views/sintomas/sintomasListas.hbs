@@ -2,6 +2,7 @@
 <div id="fondo">
    <img src="/img/fondos/sistemaNervioso.png">
 </div>
+
 <form action="/efectosSecundarios/lista/{{user.idUsuario}}" method="get"></form>
 <div id="contenido">
    <div class="row">
@@ -9,34 +10,36 @@
       <div id="tarjeta">
          <div id="titulo">
             <p>
-               <b>Sintomas:</b>
+               <b>Síntomas:</b>
             </p>
          </div>
+
          <div id="nombre">
-            <label> Efectos :</label>
+            <label>Síntomas:</label>
             <label>{{nombreSintomas}}</label>
          </div>
 
          <div id="Descripcion">
-            <label> Descripcion :</label>
+            <label> Descripción:</label>
             <p> {{descrpcionSintomas}} </p>
          </div>
 
          <div id="botonEditar">
-            <button>
-               <a href="/sintomas/editar/{{idSintomas}}">Editar</a>
-            </button>
+            <a href="/sintomas/editar/{{idSintomas}}">
+               <button>Editar</button>
+            </a>
          </div>
 
          <div id="botonEliminar">
-            <button>
-               <a href="/sintomas/eliminar/{{idSintomas}}">Eliminar</a>
-            </button>
+            <a href="/sintomas/eliminar/{{idSintomas}}">
+               <button>Eliminar</button>
+            </a>
          </div>
       </div>
       {{else}}
+
       <div id="mensaje">
-         <p><b>No tienes ningun sintoma . </b></p>
+         <p><b>No tienes ningún síntoma . </b></p>
          <a href="/sintomas/agregar/{{user.idUsuario}}">
             <button type="button">¿Desea registrar?</button>
          </a>

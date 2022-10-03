@@ -1,9 +1,7 @@
 <link rel="stylesheet" href="/css/contenido/contenidoLista.css" />
-
 <div id="fondo">
     <img src="/img/fondos/sistemaNervioso.png" />
 </div>
-
 <form action="/contenido/lista/{{user.idUsuario}}" method="GET"></form>
 <div id="contenedor">
     {{#each enlistar}}
@@ -13,44 +11,37 @@
                 Contenido
             </label>
         </div>
-
         <div id="Nombres">
             <p>
                 Nombre:
                 {{nombreContenido}}
             </p>
         </div>
-
         <div id="Descripcion">
             <p>
                 Descripción:
                 {{descripcionDetalleContenido}}
             </p>
         </div>
-
         <div id="foto">
             <p>
                 Foto:
                 {{imagenDetalleContenido}}
             </p>
         </div>
-
         <div id="video">
             <p>
                 Video:
                 {{videoDetalleContenido}}
             </p>
         </div>
-
         <div id="botonEditar">
             <a href="/contenido/editar/{{idContenido}}"><button>
                     Editar
                 </button>
             </a>
         </div>
-
         <div id="botonEliminar">
-
             <a href="/contenido/eliminar/{{idContenido}}">
                 <button>Eliminar</button>
             </a>
@@ -65,7 +56,6 @@
     </div>
     {{/each}}
 </div>
-
 
 <div id="plus">
     <a href="/contenido/agregar/{{user.idUsuario}}">

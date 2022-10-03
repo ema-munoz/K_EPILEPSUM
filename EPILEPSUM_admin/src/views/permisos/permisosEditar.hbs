@@ -1,4 +1,3 @@
-<!-- Required meta tags -->
 <link rel="stylesheet" href="/css/permisos/permisosEditar.css">
 
 <div id="fondo">
@@ -6,30 +5,30 @@
 </div>
 
 <div id="contenedor">
-{{#each enlistar}}
-<form action="/permisos/editar/{{idpermisos}}" method="POST">
+    {{#each enlistar}}
+    <form action="/permisos/editar/{{idpermisos}}" method="POST">
 
-    <div id="Nombres">
-        <label>
-            Nombre:
-        </label>
-        <input type="text" name="nombrePermisos" id="nombre" value="{{nombrePermisos}}" required>
-    </div>
-        
-    <div id="Estado">
-        <label>
-        Estado:
-        </label>
-        <input type="text" name="estadoPermisos" id="telefono" value="0{{estadoPermisos}}">
-    </div>
-    
-    
-    <div id="boton">
-        <button type="submit" id="btn-agregar">
-            Guardar Cambios
-        </button>
-    </div>
-    {{/each}}
-        
+        <div id="Nombre">
+            <label>
+                Nombre:
+            </label>
+            <input type="text" name="nombrePermisos" id="nombre" value="{{nombrePermisos}}" required>
+        </div>
+
+        <div id="Estado">
+            <label>
+                Estado:
+            </label>
+            <input type="text" name="estadoPermisos" id="telefono" value="0{{estadoPermisos}}">
+        </div>
+
+
+        <div id="boton">
+            <button type="submit" id="btn-agregar">
+                Guardar Cambios
+            </button>
+        </div>
+        {{/each}}
+
     </form>
 </div>

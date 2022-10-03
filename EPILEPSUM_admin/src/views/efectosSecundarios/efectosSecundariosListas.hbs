@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="/css/efectosSecundariosCss/efectosSecundariosListas.css">
-
 <div id="fondo">
    <img src="/img/fondos/sistemaNervioso.png">
 </div>
@@ -14,28 +13,30 @@
                <b>Efectos Secundarios:</b>
             </p>
          </div>
+
          <div id="nombre">
             <label> Efectos :</label>
             <label>{{nombreEfectosSecundarios}}</label>
          </div>
 
          <div id="Descripcion">
-            <label> Descripcion :</label>
+            <label> Descripción:</label>
             <p> {{descripcionEfectosSecundarios}} </p>
          </div>
 
          <div id="botonEditar">
-            <button>
-               <a href="/efectosSecundarios/editar/{{idEfectosSecundarios}}">Editar</a>
-            </button>
+            <a href="/efectosSecundarios/editar/{{idEfectosSecundarios}}">
+               <button>Editar</button>
+            </a>
          </div>
 
          <div id="botonEliminar">
-            <button>
-               <a href="/efectosSecundarios/eliminar/{{idEfectosSecundarios}}">Eliminar</a>
-            </button>
+            <a href="/efectosSecundarios/eliminar/{{idEfectosSecundarios}}">
+               <button>Eliminar</button>
+            </a>
          </div>
       </div>
+
       {{else}}
       <div id="mensaje">
          <p><b>No tiene Efectos Secundarios. </b></p>
@@ -46,6 +47,7 @@
       {{/each}}
    </div>
 </div>
+
 <div id="plus">
    <a href="/efectosSecundarios/agregar/{{user.idUsuario}}">
       <button type="button"><img src="/img/icons/white/plus.png"></button>

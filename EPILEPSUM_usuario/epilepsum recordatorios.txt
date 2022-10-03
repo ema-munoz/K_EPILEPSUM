@@ -37,17 +37,9 @@ VISTAS QUE FALTAN
 Ataques epilepticos
 Cita Crontrol
 Consejos
-<<<<<<< HEAD
-
 
 06/09/2022
 crear tabla => CHAT
 Crear una tabla rol
 aumentar en el CRUD de colaboraciones la columna consejos
 CRUD => principio activo del medicamento
-
-
-
-
-=======
->>>>>>> Ever

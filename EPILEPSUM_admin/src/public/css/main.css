@@ -21,29 +21,31 @@ select:focus {
     background-color: #cccccc;
 }
 
-a{
+#contenedor a,
+#contenido a {
     text-decoration: none;
 }
 
-#fondo{
-    position: absolute;
+#fondo {
+    position: fixed;
     width: 100%;
     height: 100%;
     max-width: 100%;
-    max-height: 90%;
-    top: 10%;
+    max-height: 100%;
+    top: 0%;
+    opacity: 75%;
 }
 
-#fondo img{
+#fondo img {
     width: 100%;
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-body{
+body {
     font-size: 20px;
-    font-style: italic; 
+    font-style: italic;
     font-family: Georgia, 'Times New Roman', Times, serif;
     background-repeat: no-repeat;
     background-size: cover;

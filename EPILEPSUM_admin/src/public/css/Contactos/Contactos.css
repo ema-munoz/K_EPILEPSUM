@@ -1,0 +1,87 @@
+#contenedor {
+    position: absolute;
+    width: 100%;
+    height: 150%;
+    max-width: 40%;
+    max-height: 125%;
+    left: 30%;
+    top: 12%;
+    text-align: center;
+}
+
+label {
+    font-weight: bolder;
+}
+
+iframe {
+    width: 90%;
+    height: 30%;
+    position: absolute;
+    left: 5%;
+    top: 8%;
+    border-radius: 25px;
+}
+
+#contactos {
+    background-color: antiquewhite;
+    border-radius: 25px;
+    width: 90%;
+    height: 55%;
+    position: absolute;
+    left: 5%;
+    top: 42.5%;
+}
+
+#botonVolver {
+    position: absolute;
+    width: 60%;
+    height: 5%;
+    font-size: 20px;
+    bottom: 5%;
+    left: 20%;
+}
+
+#botonVolver button {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    bottom: -50%;
+}
+
+@media only screen and (orientation: portrait) and (max-width: 1000px) and (min-width: 667px) {
+    #contenedor {
+        max-width: 100%;
+        max-height: 150%;
+        left: 0%;
+    }
+
+    #contactos {
+        height: 55%;
+    }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 667px) and (min-width: 384px) {
+    #contenedor {
+        max-width: 100%;
+        max-height: 150%;
+        left: 0%;
+    }
+
+    #contactos {
+        height: 55%;
+    }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 384px) and (min-width: 150px) {
+    #contenedor {
+        max-width: 100%;
+        max-height: 150%;
+        left: 0%;
+    }
+
+    #contactos {
+        height: 55%;
+    }
+}

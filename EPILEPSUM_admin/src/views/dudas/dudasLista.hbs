@@ -1,14 +1,11 @@
 <link rel="stylesheet" href="/css/dudas/dudasLista.css">
-
 <div id="fondo">
     <img src="/img/fondos/sistemaNervioso.png">
 </div>
-
 <form action="/dudas/lista/{{user.idUsuario}}" method="GET"></form>
 <div id="contenedor">
     <div class="row">
         {{#each enlistar}}
-
         <div id="tarjeta">
             <div id="titulo">
                 <label>
@@ -16,19 +13,16 @@
                     <p>{{pregunta}}</p>
                 </label>
             </div>
-
             <div id="botonDetalle">
                 <a href="/dudas/detalle/{{idPreguntas}}">
                     <button>Detalle</button>
                 </a>
             </div>
-
             <div id="botonEliminar">
                 <a href="/dudas/eliminar/{{idPreguntas}}">
                     <button>Eliminar</button>
                 </a>
             </div>
-
         </div>
         {{/each}}
     </div>
@@ -36,6 +30,8 @@
 
 <div id="plus">
     <a href="/dudas/agregar/{{user.idUsuario}}">
-        <button type="button"><img src="/img/icons/white/plus.png"></button>
+        <button type="button">
+            <img src="/img/icons/white/plus.png">
+        </button>
     </a>
 </div>

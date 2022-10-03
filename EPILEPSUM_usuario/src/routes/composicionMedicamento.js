@@ -4,7 +4,7 @@ const routes = express.Router();
 
 const {Ingreso} = require ("../lib/auth");
 
-const {mostrar, agregar, lista, traerDatos, editar, eliminar} = require("../Controllers/medicamentos");
+const { mostrar, agregar, lista, traerDatos, editar, eliminar } = require("../Controllers/composicionMedicamento");
 
 routes.use (Ingreso);
 

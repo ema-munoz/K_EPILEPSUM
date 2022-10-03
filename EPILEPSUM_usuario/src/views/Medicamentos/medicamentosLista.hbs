@@ -4,9 +4,16 @@
     <img src="/img/fondos/sistemaNervioso.png">
 </div>
 
+<<<<<<< HEAD
 <form action="/medicamentos/lista/{{user.idPaciente}}" method="GET" id="ocultar">
 
     <div id="contenedor">
+=======
+
+
+<div id="contenedor">
+    <form action="/medicamentos/lista/{{user.idPaciente}}" method="GET">
+>>>>>>> Javier
         <div class="row">
             {{#each enlistar}}
             <div id="tarjeta">
@@ -46,13 +53,21 @@
 
                 <div id="botonEditar">
                     <a href="/medicamentos/editar/{{idMedicaciones}}">
+<<<<<<< HEAD
                         <button type="button">Editar</button>
+=======
+                        <button>Editar</button>
+>>>>>>> Javier
                     </a>
                 </div>
 
                 <div id="botonEliminar">
                     <a href="/medicamentos/eliminar/{{idMedicaciones}}">
+<<<<<<< HEAD
                         <button type="button">Eliminar</button>
+=======
+                        <button>Eliminar</button>
+>>>>>>> Javier
                     </a>
                 </div>
             </div>
@@ -66,7 +81,12 @@
             </div>
             {{/each}}
         </div>
+<<<<<<< HEAD
     </div>
+=======
+    </form>
+</div>
+>>>>>>> Javier
 
     <div id="plus">
         <a href="/medicamentos/agregar/{{user.idPaciente}}">

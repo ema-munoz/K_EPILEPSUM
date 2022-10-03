@@ -5,62 +5,64 @@
 </div>
 
 <div id="contenedor">
-    <form action="/composicionMedicamento/agregar/{{user.idComposiciones}}" method="POST">
-        <div id="titulo">
-            <h3>Principio Activo de Medicamento</h3>
-        </div>
-        <div>
-            <label for="">Nombre del Medicamento</label>
-            <input type="text" name="nombreMedicamentos" id="nombre" required>
-        </div>
-        <div>
-            <label for="">Composicion del Medicamento</label>
-            <ul>
-                <li><input type="text" name="composicionMedicamentos" id="dosis" required></li>
-            </ul>
-        </div>
-        <div>
-            <label for="">Detalle del Medicamento</label>
-            <input type="text" name="descripcionMedicamentos" id="detalle" required>
-        </div>
-        <div>
-            <label for="">Via de Administración del Medicamento</label>
-            <input type="text" name="viaAdministracionMedicamentos" id="administracion" required>
-        </div>
-        <div>
-            <label for="">Contraindicaciones del Medicamento</label>
-            <input type="text" name="indicacionesMedicamentos" id="contraindicaciones" required>
-        </div>
-        <div>
-            <label for="">Dosis del Medicamento</label>
-            <input type="text" name="dosisMedicamentos" id="Dosis" required>
-        </div>
-        <div>
-            <label for="">Fecha de Elaboracion del Medicamento</label>
-            <input type="date" name="fechaElaboracionMedicamentos" id="fechaElaboracion" required>
-        </div>
-        <div>
-            <label for="">Fecha de Vencimiento del Medicamento</label>
-            <input type="date" name="fechaVencimientoMedicamentos" id="fechaVencimiento" required>
-        </div>
-        <div>
-            <label for="">Laboratorio </label>
-            <input type="text" name="laboratorioMedicamentos" id="laboratorio" required>
-        </div>
-        <div id="boton">
-            <button type="submit" id="btn-agregar">Agregar</button>
-        </div>
+    <form action="/composicionMedicamento/agregar/{{idComposiciones}}" method="POST">
+        <div class="row">
+            {{#each enlistar}}
+            <div id="titulo">
+                <h3>Principio Activo de Medicamento</h3>
+            </div>
+            <div>
+                <label for="">Nombre del Medicamento</label>
+                <input type="text" name="nombreMedicamentos" id="nombre" required>
+            </div>
+            <div>
+                <label for="">Composicion del Medicamento</label>
+                <ul>
+                    <li><input type="text" name="composicionMedicamentos" id="dosis" required></li>
+                </ul>
+            </div>
+            <div>
+                <label for="">Detalle del Medicamento</label>
+                <input type="text" name="descripcionMedicamentos" id="detalle" required>
+            </div>
+            <div>
+                <label for="">Via de Administración del Medicamento</label>
+                <input type="text" name="viaAdministracionMedicamentos" id="administracion" required>
+            </div>
+            <div>
+                <label for="">Contraindicaciones del Medicamento</label>
+                <input type="text" name="indicacionesMedicamentos" id="contraindicaciones" required>
+            </div>
+            <div>
+                <label for="">Dosis del Medicamento</label>
+                <input type="text" name="dosisMedicamentos" id="Dosis" required>
+            </div>
+            <div>
+                <label for="">Fecha de Elaboracion del Medicamento</label>
+                <input type="date" name="fechaElaboracionMedicamentos" id="fechaElaboracion" required>
+            </div>
+            <div>
+                <label for="">Fecha de Vencimiento del Medicamento</label>
+                <input type="date" name="fechaVencimientoMedicamentos" id="fechaVencimiento" required>
+            </div>
+            <div>
+                <label for="">Laboratorio </label>
+                <input type="text" name="laboratorioMedicamentos" id="laboratorio" required>
+            </div>
+            <div id="boton">
+                <button type="submit" id="btn-agregar">Agregar</button>
+            </div>
 
-        <div id="mensaje">
-            <p><b> No se registra medicamentos</b></p>
-            <a href="#">
-                <button type="button"> Deseas Registrar Medicamentos</button>
-            </a>
-        </div>
-        <div id="boton">
-            <button type="submit" id="btn-agregar">
-                Agregar
-            </button>
+
+            {{else}}
+            <div id="mensaje">
+                <p><b>Usted no tiene registrado ningún medicamento. </b></p>
+                <a href="/medicamentos/agregar/{{user.idComposiciones}}">
+                    <button type="button">¿Desea registrar?</button>
+                </a>
+            </div>
+
+            {{/each }}
         </div>
     </form>
 

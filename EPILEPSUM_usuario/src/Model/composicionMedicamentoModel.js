@@ -1,6 +1,6 @@
 const composicion = (sequelize, type) => {
     return sequelize.define('composicion', {
-        idComposiciones: {
+        idComposicion: {
             type: type.INTEGER,
             primaryKey: true,
             autoIncrement: true,

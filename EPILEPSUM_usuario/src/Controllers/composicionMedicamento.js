@@ -7,13 +7,16 @@ const farmaco = require("../Model/farmaco");
 composicionMedicamento.mostrar = async (req, res) => {
     const enlistar = await baseDatosSQL.query(
         "SELECT * FROM composicions");
-    res.render("composicion/composicionMedicamentos", { enlistar });
+    res.render("composicion/composicionMedicamentosAgregar", { enlistar });
+    res.render("composicion/composicionMedicamentosEditar", { enlistar });
+    res.render("composicion/composicionMedicamentosLista", { enlistar });
 };
 
 composicionMedicamento.agregar = async (req, res) => {
     const farmacosId = req.params.id;
     /*const { idComposiciones } = req.body;*/
     const {
+        idComposicion,
         nombreMedicamentos,
         composicionMedicamentos,
         descripcionMedicamentos,
@@ -25,6 +28,7 @@ composicionMedicamento.agregar = async (req, res) => {
         laboratorioMedicamentos,
     } = req.body;
     const nuevoFarmaco = {
+        idComposicion,
         nombreMedicamentos,
         composicionMedicamentos,
         descripcionMedicamentos,
@@ -35,7 +39,7 @@ composicionMedicamento.agregar = async (req, res) => {
         fechaVencimientoMedicamentos,
         laboratorioMedicamentos,
         pacienteIdPaciente: farmacosId,
-        /*idComposiciones,*/
+        
     };
 
     await baseDatosORM.farmaco.create(nuevoFarmaco);
@@ -65,6 +69,7 @@ composicionMedicamento.editar = async (req, res) => {
     const farmacosId = req.params.id;
     const id = req.user.idPaciente;
     const {
+        idComposicion,
         nombreMedicamentos,
         composicionMedicamentos,
         descripcionMedicamentos,
@@ -76,6 +81,7 @@ composicionMedicamento.editar = async (req, res) => {
         laboratorioMedicamentos,
     } = req.body;
     const actualizacion = {
+        idComposicion,
         nombreMedicamentos,
         composicionMedicamentos,
         descripcionMedicamentos,

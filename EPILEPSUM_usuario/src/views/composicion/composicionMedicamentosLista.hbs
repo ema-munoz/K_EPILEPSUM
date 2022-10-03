@@ -5,7 +5,7 @@
 </div>
 
 <div id="contenedor">
-    <form action="/composicionMedicamento/lista/{{user.idComposiciones}}" method="POST">
+    <form action="/composicionMedicamento/lista/{{idComposiciones}}" method="POST">
         <div class="row">
             {{#each enlistar}}
             <div id="tarjeta">
@@ -59,13 +59,7 @@
                     </a>
                 </div>
             </div>
-            {{else}}
-            <div id="mensaje">
-                <p><b>Usted no tiene registrado ningún medicamento. </b></p>
-                <a href="/medicamentos/agregar/{{user.idComposiciones}}">
-                    <button type="button">¿Desea registrar?</button>
-                </a>
-            </div>
+            
             {{/each }}
         </div>
     </form>

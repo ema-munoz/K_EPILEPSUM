@@ -45,6 +45,7 @@ const detalleContenidoModels = require('../Model/detalleContenidoModel')
 const composicionMedicamentoModels = require('../Model/composicionMedicamentoModel')
 const farmacoModels = require('../Model/farmaco')
 
+const componentesFarmacosModel = require('../Model/componentesFarmacosModel')
 const solicitudesModels = require('../Model/solicitudesModel')
 
 const sequelize = new Sequelize(
@@ -106,6 +107,8 @@ const detalleContenido = detalleContenidoModels(sequelize, Sequelize)
 
 const composicionMedicamento = composicionMedicamentoModels(sequelize, Sequelize)
 const farmaco = farmacoModels (sequelize, Sequelize);
+
+const componentesFarmacos = componentesFarmacosModel (sequelize, Sequelize);
 
 const solicitudes = solicitudesModels(sequelize, Sequelize);
 
@@ -192,8 +195,17 @@ detalleContenido.belongsTo(contenido)
 pacientes.hasMany(composicionMedicamento)
 composicionMedicamento.belongsTo(pacientes)
 
+pacientes.hasMany(farmaco)
+farmaco.belongsTo(pacientes)
+
 composicionMedicamento.hasMany(farmaco)
 farmaco.belongsTo(composicionMedicamento)
+
+pacientes.hasMany(componentesFarmacos)
+componentesFarmacos.belongsTo(pacientes)
+
+componentesFarmacos.hasMany(composicionMedicamento)
+composicionMedicamento.belongsTo(componentesFarmacos)
 
 pacientes.hasMany(solicitudes)
 solicitudes.belongsTo(pacientes)
@@ -236,5 +248,8 @@ module.exports = {
 
   composicionMedicamento, 
   farmaco,
+
+  componentesFarmacos,
+  
   solicitudes
 };

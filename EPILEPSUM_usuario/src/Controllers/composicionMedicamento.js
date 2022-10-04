@@ -4,17 +4,13 @@ const baseDatosSQL = require("../Database/basededatos.sql");
 const baseDatosORM = require("../Database/basededatos.orm");
 const farmaco = require("../Model/farmaco");
 
-composicionMedicamento.mostrar = async (req, res) => {
-    const enlistar = await baseDatosSQL.query(
-        "SELECT * FROM composicions");
-    /*res.render("composicion/composicionMedicamentosAgregar", );
-    res.render("composicion/composicionMedicamentosEditar", );*/
-    res.render("composicion/composicionMedicamentosLista", {enlistar});
+composicionMedicamento.mostrar = async (req, res) => {    
+    res.render("composicion/composicionMedicamentosAgregar");
 };
 
 composicionMedicamento.agregar = async (req, res) => {
-    const farmacosId = req.params.id;
-    /*const { idComposiciones } = req.body;*/
+    const farmacosId = req.user.idPaciente;
+    
     const {
         idComposicion,
         nombreMedicamentos,
@@ -44,7 +40,7 @@ composicionMedicamento.agregar = async (req, res) => {
 
     await baseDatosORM.farmaco.create(nuevoFarmaco);
     req.flash("sucess", "Medicamento Registrado.");
-    res.redirect("/farmaco/lista/" + farmacosId);
+    res.redirect("/composicion/composicionMedicamentos/lista/" + farmacosId);
 }
 
 composicionMedicamento.lista = async (req, res) => {
@@ -53,7 +49,7 @@ composicionMedicamento.lista = async (req, res) => {
         "SELECT * FROM composicions WHERE pacienteIdPaciente = ?",
         [farmacosId]
     );
-    res.render("/farmaco/farmacoLista/", { enlistar });
+    res.render("composicion/composicionMedicamentosLista", { enlistar });
 };
 
 composicionMedicamento.traerDatos = async (req, res) => {
@@ -62,7 +58,7 @@ composicionMedicamento.traerDatos = async (req, res) => {
         "SELECT * FROM composicions WHERE idComposicion = ?",
         [farmacosId]
     );
-    res.render("farmaco/farmacoEditar/", { enlistar });
+    res.render("composicion/composicionMedicamentosEditar", { enlistar });
 };
 
 composicionMedicamento.editar = async (req, res) => {
@@ -97,7 +93,7 @@ composicionMedicamento.editar = async (req, res) => {
         .then((medicacion) => {
             medicacion.update(actualizacion);
             req.flash("sucess", "Medicamento Actualizado.");
-            res.redirect("/farmaco/lista/" + id);
+            res.redirect("/composicionMedicamentos/lista/" + id);
         });
 };
 
@@ -108,7 +104,7 @@ composicionMedicamento.eliminar = async (req, res) => {
         where: { idComposiciones: composicionesId },
     });
     req.flash("sucess", "Medicamento Eliminado.");
-    res.redirect("/farmaco/lista/" + id);
+    res.redirect("/composicionMedicamentos/lista/" + id);
 };
 
 module.exports = composicionMedicamento;

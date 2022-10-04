@@ -1,11 +1,11 @@
 <link rel="stylesheet" href="/CSS/composicion/composicionMedicamentos.css">
 
 <div id="fondo">
-    <img src="/img/fondos/sistemaNervioso.png">
+    <img src="/img/fondos/sistemaNervioso3.jpg">
 </div>
 
 <div id="contenedor">
-    <form action="/composicionMedicamento/lista/{{idComposicion}}" method="POST">
+    <form action="/composicionMedicamento/lista/{{user.idPaciente}}" method="POST">
         <div class="row">
             {{#each enlistar}}
             <div id="tarjeta">
@@ -50,12 +50,12 @@
                 </div>
                 <div id="botonEditar">
                     <a href="/medicamentos/editar/{{idComposiciones}}">
-                        <button>Editar</button>
+                        <button type="button">Editar</button>
                     </a>
                 </div>
                 <div id="botonEliminar">
                     <a href="/medicamentos/eliminar/{{idComposiciones}}">
-                        <button>Eliminar</button>
+                        <button type="button">Eliminar</button>
                     </a>
                 </div>
             </div>

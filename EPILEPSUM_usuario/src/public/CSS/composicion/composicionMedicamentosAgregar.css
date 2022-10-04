@@ -1,0 +1,96 @@
+#contenedor {
+    background: #d348d8;
+    position: absolute;
+    width: 100%;
+    height: 125%;
+    max-width: 60%;
+    max-height: 900%;
+    left: 20%;
+    top: 20%;
+    text-align: center;
+    padding: 4%;
+    border-radius: 5%;
+}
+
+#titulo {
+    margin-top: 5%;    
+}
+
+#titulo h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 6%;
+    margin-top: -60px;
+    font-size: 33px;
+    font-weight: bold;
+    padding-bottom: 4%;
+}
+
+#nombres,
+#composicion,
+#detalle,
+#administracion,
+#contradicaciones,
+#dosis,
+#fechaElaboracion,
+#fechaVencimiento,
+#laboratorio {
+    width: 100%;
+    height: 100%;
+    max-width: 70%;
+    max-height: 10%;
+    margin-left: 20%;
+}
+
+#nombres input,
+#composicion input,
+#detalle input,
+#administracion input,
+#contradicaciones input,
+#dosis input,
+#fechaElaboracion input,
+#fechaVencimiento input,
+#laboratorio input {
+    width: 40%;
+    height: 5%;
+    position: absolute;
+    right: 6%;
+}
+
+label {
+    position: absolute;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    left: 6%;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+#contenedor button{
+    position: absolute;
+    width: 60%;
+    font-size: 20px;
+    top: 95%;
+    left: 20%;
+}
+
+#plus {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 4%;
+    max-height: 8%;
+    right: 0%;
+    top: 18%;
+}
+
+#plus img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+footer {
+    bottom: -70%;
+}

@@ -30,14 +30,14 @@
             {{/each}}
         </div>
     </div>
-    
+
     <div id="regresar">
         <a href="#"><button type="button"><img src="/img/mensajes/noun-return-1890577.png" alt=""></button></a>
     </div>
 
     <div id="enviar">
         {{#each usuario}}
-        <form action="/chat/amigos/{{idPaciente}}" method="post">
+        <form action="/chat/amigos/{{idPaciente}}" method="post" id="ocultar">
             <input type="text" id="escri" name="mensaje" placeholder="Escribir..." />
             <input type="text" id="horas" name="horaMensaje" readonly>
             <input type="text" id="fechas" name="fechaMensaje" readonly>

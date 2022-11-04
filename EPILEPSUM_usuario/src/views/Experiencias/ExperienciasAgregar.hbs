@@ -1,10 +1,9 @@
-<form action="/experiencias/agregar/{{user.idPaciente}}" method="POST">
+<form action="/experiencias/agregar/{{user.idPaciente}}" method="post" id="ocultar">
     <div id="contenedor">
         <div id="titulo">
             {{#each idMax}}
-            <label>Agregar Experiecia N:</label> 
-            <input type="text" name="experiencia" id="numero"
-                    value="{{'MAX(idExperiencias)'}}">
+            <label>Agregar Experiecia N:</label>
+            <input type="text" name="experiencia" id="numero" value="{{'MAX(idExperiencias)'}}">
             {{/each}}
         </div>
 

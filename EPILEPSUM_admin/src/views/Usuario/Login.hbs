@@ -3,41 +3,50 @@
 <div id="fondo">
     <img src="/img/fondos/Fondo.jpg" alt="Logo">
 </div>
+
 <div id="contenedor">
-    <!-- Aquí comienza el primer formulario -->
+    <!-- Aquí comienza el formulario -->
     <div id="formulario">
         <h1 id="h1" name="h1">EPILEPSUM</h1>
-        <form action="/Login" method="POST">
+        <form action="/Login" method="post" id="ocultar">
             {{#each datosBD}}
             <div id="Email">
                 <input id="nombreIntxt" type="userName" name="username" value="{{username}}" placeholder="Usuario"
                     readonly required>
             </div>
+
             {{/each}}
             <div id="Password">
                 <input id="passIntxt" type="password" name="password" placeholder="Contraseña" required>
             </div>
+
             <div id="ojo">
-                <button id="visto" type="button" onclick="boton.cambio()"><img
-                        src="/img/icons/black/visto.png"></button>
-                <button id="equis" type="button" onclick="boton.cambio2()"><img
-                        src="/img/icons/black/equis.png"></button>
+                <button id="visto" type="button" onclick="boton.cambio()">
+                    <img src="/img/icons/white/eye.png">
+                </button>
+                <button id="equis" type="button" onclick="boton.cambio2()">
+                    <img src="/img/icons/white/blind.png">
+                </button>
             </div>
+
             <div id="ingresar">
                 <button type="submit">Ingresar</button>
             </div>
+
+            {{#each datosBD}}
+            <div id="recuperacion">
+                <a href="/actualizar/{{idUsuario}}">
+                    <button type="button">Olvidé mi Contraseña</button>
+                </a>
+            </div>
+            {{/each}}
         </form>
     </div>
-    <!-- Aquí termina el primer formulario -->
-    {{#each datosBD}}
-    <div id="recuperacion">
-        <a href="/actualizar/{{idUsuario}}">
-            <button type="button">Olvidé mi Contraseña</button>
-        </a>
-    </div>
-    {{/each}}
+    <!-- Aquí termina el formulario -->
 </div>
+
 <div id="logo">
     <img src="/img/logo/Logo_epilepsum.png" alt="Logo">
 </div>
+
 <script src="/js/Usuario/Login.js"></script>

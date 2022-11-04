@@ -1,12 +1,12 @@
 {{#each enlistar}}
-<form action="/experiencias/editar/{{idExperiencias}}" method="POST">
+<form action="/experiencias/editar/{{idExperiencias}}" method="post" id="ocultar">
     <div>
         <label>
             Foto:
         </label>
         <input type="image" name="imagenExperiencia" id="foto" value="{{imagenExperiencia}}">
     </div>
-        <div>
+    <div>
         <label>
             Video:
         </label>
@@ -22,7 +22,8 @@
         <label>
             Descripción:
         </label>
-        <input type="text" name="experienciasDetallesExperiencias" id="descripcion" value="{{experienciasDetallesExperiencias}}">
+        <input type="text" name="experienciasDetallesExperiencias" id="descripcion"
+            value="{{experienciasDetallesExperiencias}}">
     </div>
     <div>
         <button type="submit" id="btn-agregar">

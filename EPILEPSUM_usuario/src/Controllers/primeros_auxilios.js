@@ -1,9 +1,9 @@
 const index = {};
 
-const baseDatosSQL = require("../Configuration/basededatos.sql");
+const baseDatosSQL = require("../Database/basededatos.sql");
 
-index.Controlador = (req, res)=>{
-    res.render ("Primeros_Auxilios/Primeros_Auxilios");
-}
+index.Controlador = (req, res) => {
+	res.render("Primeros_Auxilios/Primeros_Auxilios");
+};
 
 module.exports = index;

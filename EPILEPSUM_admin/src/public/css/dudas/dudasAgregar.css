@@ -1,4 +1,5 @@
-#contenedor {
+#contenedor{
+    background-color: rgba(27, 144, 240, 0.781);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -12,7 +13,7 @@
 /*titulos*/
 #titulo,
 #TituloPregunta,
-#TituloRespuesta {
+#TituloRespuesta{
     width: 100%;
     height: 100%;
     max-width: 60%;
@@ -25,22 +26,22 @@
 }
 
 #TituloPregunta,
-#TituloRespuesta {
+#TituloRespuesta{
     max-width: 35%;
     top: 15%;
     text-align: left;
 }
 
-#TituloPregunta {
+#TituloPregunta{
     left: 5%;
 }
 
-#TituloRespuesta {
+#TituloRespuesta{
     left: 52.5%;
 }
 
 #numero,
-#idRespuesta {
+#idRespuesta{
     width: 100%;
     height: 100%;
     max-width: 15%;
@@ -50,7 +51,7 @@
     font-weight: bolder;
 }
 
-#idRespuesta {
+#idRespuesta{
     max-height: 100%;
     position: absolute;
     top: 0%;
@@ -58,7 +59,7 @@
 }
 
 /*Pregunta*/
-#Pregunta {
+#Pregunta{
     width: 42.5%;
     height: 100%;
     max-width: 100%;
@@ -75,7 +76,7 @@
 #RespuestaImagen,
 #RespuestaAgregarImagen,
 #RespuestaVideo,
-#RespuestaAgregarVideo {
+#RespuestaAgregarVideo{
     width: 42.5%;
     height: 100%;
     max-width: 100%;
@@ -88,22 +89,22 @@
 #RespuestaImagen,
 #RespuestaVideo,
 #RespuestaAgregarImagen,
-#RespuestaAgregarVideo {
+#RespuestaAgregarVideo{
     left: 52.5%;
 }
 
 #PreguntaAgregarImagen,
-#RespuestaAgregarImagen {
+#RespuestaAgregarImagen{
     top: 52%;
 }
 
 #PreguntaVideo,
-#RespuestaVideo {
+#RespuestaVideo{
     top: 64%;
 }
 
 #PreguntaAgregarVideo,
-#RespuestaAgregarVideo {
+#RespuestaAgregarVideo{
     top: 76%;
 }
 
@@ -114,7 +115,7 @@
 #respuestaImagenSi,
 #respuestaImagenNo,
 #respuestaVideoSi,
-#respuestaVideoNo {
+#respuestaVideoNo{
     width: 35%;
     height: 100%;
     max-width: 100%;
@@ -127,7 +128,7 @@
 #preguntaImagenNo,
 #preguntaVideoNo,
 #respuestaImagenNo,
-#respuestaVideoNo {
+#respuestaVideoNo{
     left: 55%;
 }
 
@@ -138,14 +139,14 @@
 #respuestaImagenSi input,
 #respuestaImagenNo input,
 #respuestaVideoSi input,
-#respuestaVideoNo input {
+#respuestaVideoNo input{
     position: absolute;
     top: 75%;
     left: 20%;
 }
 
 /*Textarea*/
-#Unico {
+#Unico{
     width: 42.5%;
     height: 60%;
     position: absolute;
@@ -154,7 +155,7 @@
 }
 
 #boton,
-#Guardar {
+#Guardar{
     width: 100%;
     height: 100%;
     max-width: 42.5%;
@@ -164,16 +165,16 @@
     bottom: 5%;
 }
 
-#Guardar {
+#Guardar{
     left: 52.5%;
 }
 
 #boton button,
-#Guardar button {
+#Guardar button{
     width: 100%;
     height: 100%;
 }
 
-footer {
+footer{
     bottom: 0%;
 }

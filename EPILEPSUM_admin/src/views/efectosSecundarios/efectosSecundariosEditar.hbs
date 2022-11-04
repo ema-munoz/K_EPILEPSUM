@@ -6,14 +6,14 @@
 
 </div>
 {{#each lista}}
-<form action="/efectosSecundarios/editar/{{idEfectosSecundarios}}" method="post">
+<form action="/efectosSecundarios/editar/{{idEfectosSecundarios}}" method="post" id="ocultar">
     <div id="contenido">
         <div id="titulo">
             <p>
                 <b>Efectos Secundarios:</b>
             </p>
         </div>
-        
+
         <div id="Nombre">
             <label>Efectos Secundarios:</label>
             <input type="text" name="nombreEfectosSecundarios" id="nombre" value="{{nombreEfectosSecundarios}}">

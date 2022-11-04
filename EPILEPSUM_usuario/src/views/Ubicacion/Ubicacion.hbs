@@ -2,21 +2,21 @@
 
 <form action="/ubicacion/{{user.idPaciente}}" id="ocultar">
 
-<div id="fondo">
-    <img src="/img/fondos/Fondo.jpg">
-</div>
+    <div id="fondo">
+        <img src="/img/fondos/Fondo.jpg">
+    </div>
 
-<div id="contenedor">
+    <div id="contenedor">
 
-    <div id="boton">
-        <button type="button" onclick="maps.verificacion()">Ver mi Localización</button>
+        <div id="boton">
+            <button type="button" onclick="maps.verificacion()">Ver mi Localización</button>
 
-        <div id="out"></div>
+            <div id="out"></div>
 
-        <div id="map-template"></div>
+            <div id="map-template"></div>
+        </div>
 
     </div>
-</div>
 </form>
 
 <script src="/js/Ubicacion/Ubicacion.js"></script>

@@ -4,7 +4,7 @@
     <img src="/img/fondos/sistemaNervioso.png" />
 </div>
 
-<form action="/consejo/lista/{{user.idUsuario}}" method="GET"></form>
+<form action="/consejo/lista/{{user.idUsuario}}" method="get" id="ocultar"></form>
 
 <div id="contenedor">
     <div class="row">
@@ -45,7 +45,8 @@
             </div>
 
             <div id="botonEditar">
-                <a href="/consejo/editar/{{idConsejo}}"><button>
+                <a href="/consejo/editar/{{idConsejo}}">
+                    <button>
                         Editar
                     </button>
                 </a>

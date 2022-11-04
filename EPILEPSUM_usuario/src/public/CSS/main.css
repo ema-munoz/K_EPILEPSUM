@@ -21,6 +21,14 @@ select:focus {
 #contenedor,
 #contenido {
     background-color: #cccccc;
+    border: 5px solid #7D2181;
+    border-radius: 25px;
+}
+
+#tarjeta,
+#mensaje {
+    background-color: #D8BFD8;
+    border-radius: 25px;
 }
 
 #contenedor a,

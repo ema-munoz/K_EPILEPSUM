@@ -1,20 +1,22 @@
-#fondo {
+#fondo{
     opacity: 75%;
     position: fixed;
 }
 
-#contenido {
+#contenido{
+    background-color: rgba(27, 144, 240, 0.781);
     position: absolute;
     width: 100%;
-    height: 80%;
+    height: auto;
     max-width: 92%;
-    max-height: 90%;
+    max-height: auto;
     left: 3%;
     top: 13%;
     text-align: center;
 }
 
-#tarjeta {
+#tarjeta{
+    background-color: rgba(137, 240, 163, 0.781);
     width: 100%;
     height: 100%;
     max-width: 30%;
@@ -24,42 +26,43 @@
 
 
 
-#titulo {
+#titulo{
     margin-top: 5%;
     font-size: 22.5px;
 }
 
 #botonEditar,
-#botonEliminar {
+#botonEliminar{
     width: 100%;
     height: 100%;
-    max-width: 90%;
+    max-width: 90%; 
     max-height: 5%;
     margin-left: 5%;
 }
 
-#botonEditar {
+#botonEditar{
     margin-top: 2.5%;
 }
 
-#botonEliminar {
+#botonEliminar{
     margin-top: 2.5%;
 }
 
 #botonEditar button,
 #botonEliminar button,
 #botonEditar a,
-#botonEliminar a {
+#botonEliminar a{
     width: 100%;
     height: 100%;
 }
 
-.row {
+.row{
     row-gap: 5%;
     gap: 50px;
 }
 
-#mensaje {
+#mensaje{
+    background-color: rgba(27, 144, 240, 0.781);
     position: absolute;
     width: 100%;
     height: 100px;
@@ -70,26 +73,25 @@
     text-align: center;
 }
 
-#mensaje p {
+#mensaje p{
     position: absolute;
     width: 70%;
     top: 25%;
     left: 15%;
 }
 
-#mensaje button {
+#mensaje button{
     position: absolute;
     width: 70%;
     top: 60%;
     left: 15%;
 }
-
-#plus {
+#plus{
     position: absolute;
     width: 100%;
     height: 100%;
-    max-width: 75px;
-    max-height: 75px;
+    max-width: 75px; 
+    max-height:  75px;
     right: 0.5%;
     top: 11%;
 }
@@ -99,6 +101,6 @@
     height: 100%;
 }
 
-footer {
-    display: none;
+footer{
+    display: none; 
 }

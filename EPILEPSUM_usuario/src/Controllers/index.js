@@ -1,5 +1,5 @@
-const orm = require("../Configuration/basededatos.orm");
-const sql = require("../Configuration/basededatos.sql");
+const orm = require("../Database/basededatos.orm");
+const sql = require("../Database/basededatos.sql");
 const index = {};
 
 index.login = (req, res) => {

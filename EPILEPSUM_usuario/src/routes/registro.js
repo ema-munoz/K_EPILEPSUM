@@ -1,8 +1,14 @@
-const express = require('express');
+const express = require("express");
 
 const rutas = express.Router();
 
-const {vista, registro, vistaLogin, login, logout} = require ("../Controllers/registro.js");
+const {
+	vista,
+	registro,
+	vistaLogin,
+	login,
+	logout,
+} = require("../Controllers/registro.js");
 
 rutas.get("/Registro", vista);
 

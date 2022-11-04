@@ -3,7 +3,7 @@
 <div id="fondo">
     <img src="/img/fondos/sistemaNervioso.png" alt="Logo">
 </div>
-<form action="/proyecto/lista/{{user.idUsuario}}" method="get"></form>
+<form action="/proyecto/lista/{{user.idUsuario}}" method="get" id="ocultar"></form>
 <div id="contenedor">
     <div id="titulo">
         <p>Detalle</p>
@@ -30,7 +30,7 @@
             </div>
         </div>
         {{else}}
-        
+
         <div id="mensaje">
             <p><b>Usted no tiene registrado ningún proyecto. </b></p>
             <a href="/proyecto/agregar/">

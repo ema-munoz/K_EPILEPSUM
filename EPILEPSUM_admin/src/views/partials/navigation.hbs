@@ -1,5 +1,12 @@
 <link rel="stylesheet" href="/css/partials/navegacion.css">
 {{#if user}}
+
+<div id="cierra">
+    <button type="button">
+        <img src="/img/icons/white/menu.png" onclick="menus.botonMenu()">
+    </button>
+</div>
+
 <nav>
     <div id="img">
         <a href="/proyecto/lista/{{user.idUsuario}}">
@@ -17,7 +24,7 @@
         <a href="/contenido/lista/{{user.idUsuario}}">Contenido</a>
     </div>
 
-    <div id="Control">
+    <div id="efectosSecundarios">
         <a href="/efectosSecundarios/lista/{{user.idUsuario}}">Efectos Secundarios</a>
     </div>
 
@@ -44,7 +51,7 @@
     <div id="Dudas">
         <a href="/dudas/lista/{{user.idUsuario}}">Preguntas</a>
     </div>
-    
+
     <div id="Contactos">
         <a href="/contactos/lista/{{user.idUsuario}}">Mis Contactos</a>
 
@@ -55,3 +62,11 @@
     </div>
 </nav>
 {{/if}}
+
+<div id="hamburguesa">
+    <button type="button">
+        <img src="/img/icons/black/cross.png" onclick="menus.aparicion()">
+    </button>
+</div>
+
+<script src="/js/navegacion.js"></script>

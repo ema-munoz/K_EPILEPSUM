@@ -8,6 +8,7 @@ const flash = require("connect-flash");
 const mysqlstore = require("express-mysql-session")(session);
 const bodyparser = require("body-parser");
 const http = require("http");
+
 const { database } = require("./key");
 
 const app = express();
@@ -72,12 +73,7 @@ app.use("/experiencias", require("./routes/experiencias"));
 app.use("/medicamentos", require("./routes/medicamentos"));
 app.use(require("./routes/primeros_auxilios"));
 app.use(require("./routes/ubicacion"));
-//Emily
-//Ever
-//Javier
-app.use("/composicionMedicamento", require("./routes/composicionMedicamento"));
-
-//Billy
-app.use("/chat", require("./routes/mensajes"));
+app.use("/amigos", require("./routes/solicitud"));
+//routes
 
 module.exports = app;

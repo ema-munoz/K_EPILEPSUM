@@ -5,15 +5,15 @@
 </div>
 
 <div id="contenedor">
-    <!-- Aquí comienza el segundo formulario -->
+    <!-- Aquí comienza el formulario -->
     <div id="formulario">
         <h2 name="h2" id="h2">CREAR CUENTA</h2>
-        <form action="/Registro" method="POST">
+        <form action="/Registro" method="post" id="ocultar">
             <div id="Cedula">
                 <input id="cedulatxt" type="text" name="cedulaPaciente" placeholder="Cédula" required>
             </div>
 
-            <div id="Nombre">
+            <div id="Nombres">
                 <input id="nombretxt" type="text" name="nombrePaciente" placeholder="Nombre" required>
             </div>
 
@@ -22,7 +22,8 @@
             </div>
 
             <div id="FechaNacimiento">
-                <input id="fechaNacimientotxt" type="text" name="fechaNacimientoPaciente" placeholder="Fecha de Nacimiento" required>
+                <input id="fechaNacimientotxt" type="date" name="fechaNacimientoPaciente"
+                    placeholder="Fecha de Nacimiento" required>
             </div>
 
             <div id="CorreoEletronico">
@@ -51,9 +52,10 @@
             </div>
         </form>
     </div>
-    <!-- Aquí termina el segundo formulario --><div id="img">
-    <img src="/img/logo/Logo_epilepsum.png">
+    <!-- Aquí termina el formulario -->
+    <div id="logo">
+        <img src="/img/logo/Logo_epilepsum.png">
+    </div>
 </div>
 
-</div>
 <script src="/js/Usuario/Registro.js"></script>

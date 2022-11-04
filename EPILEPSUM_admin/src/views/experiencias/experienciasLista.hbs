@@ -2,7 +2,7 @@
 <div id="fondo">
     <img src="/img/fondos/sistemaNervioso.png" />
 </div>
-<form action="/experiencias/lista/{{user.idUsuario}}" method="GET"></form>
+<form action="/experiencias/lista/{{user.idUsuario}}" method="get" id="ocultar"></form>
 <div id="contenedor">
     <div class="row">
         {{#each enlistar}}
@@ -12,7 +12,7 @@
                     <b>Mi Testimonio:</b>
                 </p>
             </div>
-            
+
             <div id="foto">
                 <p>
                     Foto:

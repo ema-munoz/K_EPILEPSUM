@@ -1,47 +1,48 @@
-<link rel="stylesheet" href="/CSS/solicitud/solicitud.css">
+<link rel="stylesheet" href="/CSS/solicitud/amigos.css">
 
 <div id="fondo">
     <img src="/img/fondos/sistemaNervioso.jpg">
 </div>
-<form action="/amigos/lista/{{user.idPaciente}}" method="get"></form>
-<div id="contenedor">
-    <div id="titulo">
-        <h1>Amigos:</h1>
-    </div>
-    {{#each amigos}}
-    <div class="row">
-        <div id="tarjeta">
-            <div id="foto">
-                <img src="/img/usuarios/{{imagenPaciente}}" alt="">
-            </div>
-            <div id="nombre">
-                Nombre:
-                <p>{{nombrePaciente}} {{apellidoPaciente}}</p>
-            </div>
-            <div id="botonAceptarSolicitud">
-                <a href="/chat/amigos/{{idPaciente}}">
-                    <button type="button">Enviar mensaje.</button>
-                </a>
-            </div>
-            <div id="botonEliminar">
-                <a href="/amigos/eliminar/{{idPaciente}}">
-                    <button type="submit">Eliminar Amigos</button>
-                </a>
-            </div>
-        </div>
-        {{else}}
-        <div id="mensaje">
-            <p><b>Usted no Solicitudes.</b></p>
-            <a href="#">
-                <button type="button">¿Desea enviar una solicitud?</button>
-            </a>
-        </div>
-        {{/each}}
-    </div>
-</div>
 
-<div id="plus">
-    <a href="#">
-        <button type="button"><img src="/img/icons/white/plus.png"></button>
-    </a>
-</div>
+<form action="/amigos/lista/{{user.idPaciente}}" method="get" id="ocultar">
+    <div id="contenedor">
+        <div id="titulo">
+            <h1>Amigos:</h1>
+        </div>
+
+
+        <div class="row">
+            {{#each amigos}}
+            <div id="tarjeta">
+                <div id="foto">
+                    <img src="/img/usuarios/{{imagenPaciente}}" alt="">
+                </div>
+
+                <div id="Nombres">
+                    Nombre:
+                    <p>{{nombrePaciente}} {{apellidoPaciente}}</p>
+                </div>
+
+                <div id="botonEnviaarMensaje">
+                    <a href="/chat/amigos/{{idPaciente}}">
+                        <button type="button">Enviar mensaje.</button>
+                    </a>
+                </div>
+
+                <div id="botonEliminarAmigo">
+                    <a href="/amigos/eliminar/{{idPaciente}}">
+                        <button type="submit">Eliminar Amigos</button>
+                    </a>
+                </div>
+            </div>
+            {{else}}
+            <div id="mensaje">
+                <p><b>Usted no Solicitudes.</b></p>
+                <a href="#">
+                    <button type="button">¿Desea enviar una solicitud?</button>
+                </a>
+            </div>
+            {{/each}}
+        </div>
+    </div>
+</form>

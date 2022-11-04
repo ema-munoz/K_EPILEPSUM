@@ -146,7 +146,7 @@ footer {
     position: absolute;
     width: 100%;
     height: 10%;
-    bottom: 0%;
+    bottom: -1%;
     left: 0%;
 }
 
@@ -155,6 +155,8 @@ footer {
     height: 100%;
     border-radius: 0px;
     border-color: transparent;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
 }
 
 @media only screen and (orientation: portrait) and (max-width: 1000px) and (min-width: 667px) {

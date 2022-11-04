@@ -1,8 +1,9 @@
-#fondo {
+#fondo{
     opacity: 75%;
 }
 
-#contenido {
+#contenido{
+    background-color: rgba(27, 144, 240, 0.781);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -13,8 +14,8 @@
     text-align: center;
 }
 
-#Descripcion {
-    position: absolute;
+#Descripcion{
+   position: absolute;
     width: 100%;
     height: 100%;
     max-width: 800px;
@@ -22,21 +23,21 @@
     left: 0.5%;
     top: 35%;
     text-align: center;
-
+  
 }
 
-#Nombre {
+#Nombre{
     position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 800px;
-    top: 15%;
-    max-height: 50%;
-    text-align: center;
+     width: 100%;
+     height: 100%;
+     max-width: 800px;
+     top: 15%;
+     max-height: 50%;
+     text-align: center;
+   
+ }
 
-}
-
-#contenido button {
+#contenido button{
     position: absolute;
     width: 60%;
     font-size: 20px;
@@ -44,12 +45,12 @@
     left: 20%;
 }
 
-label {
+label{
     position: absolute;
     left: 5%;
     font-size: 25px;
 }
 
-footer {
+footer{
     bottom: 0%;
 }

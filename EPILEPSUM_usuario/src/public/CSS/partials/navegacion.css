@@ -23,39 +23,35 @@ nav {
     height: 100%;
 }
 
-#EPILEPSUM {
+#EPILEPSUM,
+#Control,
+#Colaboracion,
+#PrimerosAuxilios,
+#Ubicacion,
+#Contactos,
+#InformacionNavbar {
     position: absolute;
     top: 30%;
     left: 6%;
 }
 
 #Control {
-    position: absolute;
-    top: 30%;
     left: 18%;
 }
 
 #Colaboracion {
-    position: absolute;
-    top: 30%;
     left: 26%;
 }
 
 #PrimerosAuxilios {
-    position: absolute;
-    top: 30%;
     left: 36%;
 }
 
 #Ubicacion {
-    position: absolute;
-    top: 30%;
     left: 48%;
 }
 
 #Contactos {
-    position: absolute;
-    top: 30%;
     left: 56%;
 }
 

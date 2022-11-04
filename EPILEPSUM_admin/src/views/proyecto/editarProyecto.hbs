@@ -6,16 +6,16 @@
 <div id="contenedor">
     <div id="formulario">
         {{#each lista}}
-        <form action="/proyecto/editar/{{idProyecto}}" method="post">
+        <form action="/proyecto/editar/{{idProyecto}}" method="post" id="ocultar">
             <div id="titulo">
                 <label>Nombre Proyecto:</label>
             </div>
-        
+
             <div id="proyecto">
                 <input type="text" name="nombreProyecto" id="nombre" value="{{nombreProyecto}}">
             </div>
             {{/each}}
-        
+
             {{#each objetivos}}
             <div id="objetivos">
                 <textarea name="objetivos">{{objetivoDetalleProyecto}}</textarea>

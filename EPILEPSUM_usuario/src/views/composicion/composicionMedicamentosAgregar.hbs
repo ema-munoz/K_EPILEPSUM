@@ -3,61 +3,61 @@
     <img src="/img/fondos/sistemaNervioso1.jpg">
 </div>
 
-<form action="/composicionMedicamento/agregar/{{idComposiciones}}" method="POST">
+<form action="/composicionMedicamento/agregar/{{idComposiciones}}" method="post" id="ocultar">
     <div id="contenedor">
         <div class="row">
             {{#each enlistar}}
             <div id="titulo">
                 <h3>Principio Activo de Medicamento</h3>
             </div>
-            
+
             <div>
                 <label for="">Nombre del Medicamento</label>
                 <input type="text" name="nombreMedicamentos" id="nombre" required>
             </div>
-            
+
             <div>
                 <label for="">Composicion del Medicamento</label>
                 <ul>
                     <li><input type="text" name="composicionMedicamentos" id="dosis" required></li>
                 </ul>
             </div>
-            
+
             <div>
                 <label for="">Detalle del Medicamento</label>
                 <input type="text" name="descripcionMedicamentos" id="detalle" required>
             </div>
-            
+
             <div>
                 <label for="">Via de Administración del Medicamento</label>
                 <input type="text" name="viaAdministracionMedicamentos" id="administracion" required>
             </div>
-            
+
             <div>
                 <label for="">Contraindicaciones del Medicamento</label>
                 <input type="text" name="indicacionesMedicamentos" id="contraindicaciones" required>
             </div>
-            
+
             <div>
                 <label for="">Dosis del Medicamento</label>
                 <input type="text" name="dosisMedicamentos" id="Dosis" required>
             </div>
-            
+
             <div>
                 <label for="">Fecha de Elaboracion del Medicamento</label>
                 <input type="date" name="fechaElaboracionMedicamentos" id="fechaElaboracion" required>
             </div>
-            
+
             <div>
                 <label for="">Fecha de Vencimiento del Medicamento</label>
                 <input type="date" name="fechaVencimientoMedicamentos" id="fechaVencimiento" required>
             </div>
-            
+
             <div>
                 <label for="">Laboratorio </label>
                 <input type="text" name="laboratorioMedicamentos" id="laboratorio" required>
             </div>
-            
+
             <div id="boton">
                 <button type="submit" id="btn-agregar">Agregar</button>
             </div>

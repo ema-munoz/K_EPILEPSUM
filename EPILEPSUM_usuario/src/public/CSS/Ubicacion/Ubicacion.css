@@ -54,9 +54,12 @@ footer {
     #map-template {
         max-width: 90%;
         left: 5%;
+        bottom: 1%;
     }
 
     #posicion {
+        max-width: 90%;
+        left: 5%;
         font-size: 20px;
     }
 }
@@ -71,9 +74,12 @@ footer {
     #map-template {
         max-width: 90%;
         left: 5%;
+        bottom: 1%;
     }
 
     #posicion {
+        max-width: 90%;
+        left: 5%;
         font-size: 20px;
     }
 }
@@ -88,9 +94,12 @@ footer {
     #map-template {
         max-width: 90%;
         left: 5%;
+        bottom: 1%;
     }
 
     #posicion {
+        max-width: 90%;
+        left: 5%;
         font-size: 20px;
     }
 }

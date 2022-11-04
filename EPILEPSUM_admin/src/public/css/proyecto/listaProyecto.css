@@ -1,4 +1,5 @@
-#mensaje {
+#mensaje{
+    background-color: rgba(27, 144, 240, 0.781);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -9,14 +10,14 @@
     text-align: center;
 }
 
-#mensaje p {
+#mensaje p{
     position: absolute;
     width: 70%;
     top: 25%;
     left: 15%;
 }
 
-#mensaje button {
+#mensaje button{
     position: absolute;
     width: 70%;
     top: 60%;
@@ -24,6 +25,7 @@
 }
 
 #contenedor {
+    background-color: rgba(27, 144, 240, 0.781);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -34,7 +36,7 @@
     text-align: center;
 }
 
-#tarjeta {
+#tarjeta{
     width: 100%;
     height: 100%;
     max-width: 35%;
@@ -44,7 +46,7 @@
     left: 10%;
 }
 
-#titulo {
+#titulo{
     font-size: 40px;
     text-align: center;
     width: 100%;
@@ -57,54 +59,54 @@
 }
 
 #Nombre,
-#objetivos {
-    width: 100%;
+#objetivos{
+   width: 100%;
     height: 100%;
     max-width: 100%;
     max-height: 10%;
     font-size: 25px;
 }
 
-#Nombres {
+#Nombres{
     position: absolute;
     top: 20%;
     left: 10%;
     top: 15%;
 }
 
-#objetivos {
+#objetivos{
     margin-top: 20%;
     top: 60%;
 }
 
 #botonEditar,
-#botonEliminar {
+#botonEliminar{
     width: 100%;
     height: 100%;
-    max-width: 35%;
+    max-width: 35%; 
     max-height: 10%;
     position: absolute;
     left: 10%;
 }
 
-#botonEliminar {
+#botonEliminar{
     left: 55%;
 }
 
 #botonEditar button,
 #botonEliminar button,
 #botonEditar a,
-#botonEliminar a {
+#botonEliminar a{
     width: 100%;
     height: 100%;
 }
 
-#plus {
+#plus{
     position: absolute;
     width: 100%;
     height: 100%;
-    max-width: 75px;
-    max-height: 75px;
+    max-width: 75px; 
+    max-height:  75px;
     right: 0.5%;
     top: 11%;
 }
@@ -114,6 +116,6 @@
     height: 100%;
 }
 
-footer {
+footer{
     bottom: 0%;
 }

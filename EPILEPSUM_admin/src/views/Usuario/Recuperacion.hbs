@@ -7,7 +7,7 @@
 <div id="contenedor">
     <div id="formulario">
         <h1 id="h1" name="h1">EPILEPSUM</h1>
-        <form action="/actualizar/" method="post">
+        <form action="/actualizar/" method="post" id="ocultar">
 
             {{#each datosBD}}
             <div id="correo">
@@ -26,17 +26,21 @@
             </div>
 
             <div id="ojo">
-                <button id="visto" type="button" onclick="boton.cambio()"><img
-                        src="/img/icons/black/visto.png"></button>
-                <button id="equis" type="button" onclick="boton.cambio2()"><img
-                        src="/img/icons/black/equis.png"></button>
+                <button id="visto" type="button" onclick="boton.cambio()">
+                    <img src="/img/icons/white/eye.png">
+                </button>
+                <button id="equis" type="button" onclick="boton.cambio2()">
+                    <img src="/img/icons/white/blind.png">
+                </button>
             </div>
 
             <div id="ojo2">
-                <button id="visto2" type="button" onclick="boton.cambio3()"><img
-                        src="/img/icons/black/visto.png"></button>
-                <button id="equis2" type="button" onclick="boton.cambio4()"><img
-                        src="/img/icons/black/equis.png"></button>
+                <button id="visto2" type="button" onclick="boton.cambio3()">
+                    <img src="/img/icons/white/eye.png">
+                </button>
+                <button id="equis2" type="button" onclick="boton.cambio4()">
+                    <img src="/img/icons/white/blind.png">
+                </button>
             </div>
 
             <div id="boton">

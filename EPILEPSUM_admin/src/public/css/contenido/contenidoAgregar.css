@@ -1,4 +1,5 @@
-#contenedor {
+#contenedor{
+    background-color: rgba(27, 144, 240, 0.781);
     position: absolute;
     width: 100%;
     height: 100%;
@@ -9,7 +10,7 @@
     text-align: center;
 }
 
-#titulo {
+#titulo{
     width: 100%;
     height: 100%;
     max-width: 60%;
@@ -21,7 +22,7 @@
     font-weight: bolder;
 }
 
-#numero {
+#numero{
     width: 100%;
     height: 100%;
     max-width: 15%;
@@ -32,44 +33,44 @@
 }
 
 #Nombres,
-#descripcion {
+#descripcion{
     position: absolute;
-    width: 100%;
-    height: 100%;
-    max-height: 10%;
-    max-width: 80%;
-    top: 25%;
-    left: 10%;
-    max-height: 50%;
-    text-align: center;
-
+     width: 100%;
+     height: 100%;
+     max-height: 10%;
+     max-width: 80%;
+     top: 25%;
+     left: 10%;
+     max-height: 50%;
+     text-align: center;
+   
 }
 
-#descripcion {
+#descripcion{
     top: 40%;
 }
 
 #Nombres label,
-#descripcion label {
+#descripcion label{
     width: 20%;
     position: absolute;
     left: 0%;
 }
 
-#Nombres input {
+#Nombres input{
     width: 80%;
     position: absolute;
     right: 0%;
 }
 
-#descripcion input {
+#descripcion input{
     width: 80%;
     position: absolute;
     left: 20%;
     top: 0%;
 }
 
-#Guardar {
+#Guardar{
     width: 100%;
     height: 100%;
     max-width: 80%;
@@ -79,11 +80,11 @@
     bottom: 5%;
 }
 
-#Guardar button {
+#Guardar button{
     width: 100%;
     height: 100%;
 }
-
-footer {
+ 
+footer{
     bottom: 0%;
 }

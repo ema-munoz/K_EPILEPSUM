@@ -31,7 +31,7 @@
 #formulario {
     width: 100%;
     position: absolute;
-    top: 15%;
+    bottom: 0%;
     height: 85%;
 }
 
@@ -76,12 +76,12 @@
 
 #recuperacion {
     position: absolute;
-    top: 80%;
+    bottom: 0%;
     left: 0%;
     width: 100%;
     height: 100%;
     max-width: 100%;
-    max-height: 100px;
+    max-height: 20%;
 }
 
 #recuperacion button {
@@ -90,6 +90,8 @@
     height: 100%;
     border-radius: 0px;
     border-color: transparent;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 #recuperacion a {

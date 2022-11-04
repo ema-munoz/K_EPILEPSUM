@@ -11,20 +11,22 @@ const http = require('http');
 
 const { database } = require('./key');
 
-
 const app = express();
-require('./lib/passport');
+require("./lib/passport");
+
+const handlebars = exphbs.create({
+	defaultLayout: "main",
+	layoutsDir: path.join(__dirname, "views", "layouts"),
+	partialsDir: path.join(__dirname, "views", "partials"),
+	extname: ".hbs",
+	helpres: require("./lib/handlebars"),
+});
+
 /// archivos compartidos
 app.set('port', process.env.PORT || 4000);
 app.set('views', path.join(__dirname, 'views'));
-app.engine('.hbs', exphbs({
-    defaultLayout: 'main',
-    layoutsDir: path.join(app.get('views'), 'layouts'),
-    partialsDir: path.join(app.get('views'), 'partials'),
-    extname: '.hbs',
-    helpres: require('./lib/handlebars')
-}));
-app.set('view engine', '.hbs');
+app.engine(".hbs", handlebars.engine);
+app.set("view engine", ".hbs");
 /// archivos compartidos
 
 //midlewars
@@ -69,8 +71,6 @@ app.use('/sintomas', require('./routes/sintomasRutas'))
 app.use ("/permisos",require ("./routes/permisos"));
 app.use ( "/roles",require ("./routes/roles"));
 app.use ( "/usuarios",require ("./routes/usuarios"));
-
-
-
+//routes
 
 module.exports = app;

@@ -8,7 +8,7 @@ nav {
     text-align: center;
 }
 
-#img {
+nav #img {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -18,7 +18,7 @@ nav {
     left: 1%;
 }
 
-#img img {
+nav #img img {
     width: 100%;
     height: 100%;
 }
@@ -76,8 +76,10 @@ nav {
     text-align: center;
     border-radius: 20px;
     position: absolute;
-    width: 10%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
+    max-width: 10%;
+    max-height: 50%;
     top: 25%;
     left: 88%;
 }
@@ -85,11 +87,13 @@ nav {
 #Cierre button {
     border-color: transparent;
     color: white;
-    position: absolute;
-    top: 20%;
-    left: 0%;
     width: 100%;
+    height: 100%;
     font-size: 20px;
+}
+
+#Cierre a {
+    text-decoration: none;
 }
 
 /*Navegacion pequeña*/
@@ -102,19 +106,6 @@ nav {
     max-width: 5%;
     max-height: 10%;
     display: none;
-}
-
-#hamburguesa img {
-    width: 75%;
-    height: 75%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-#hamburguesa button {
-    background-color: transparent;
-    border-color: transparent;
 }
 
 #cierra {
@@ -130,42 +121,88 @@ nav {
     border-radius: 50%;
 }
 
-#cierra img {
-    width: 85%;
-    height: 85%;
+#cierra button,
+#hamburguesa button {
+    background-color: transparent;
+    border-color: transparent;
+    width: 100%;
+    height: 100%;
+}
+
+#cierra button img,
+#hamburguesa button img {
+    width: 100%;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
-#cierra button {
-    background-color: transparent;
-    border-color: transparent;
-}
-
-@media screen and (orientation: landscape) and (max-width: 1400px) and (min-width: 1000px) {
+/* RESPONSIVE */
+@media screen and (orientation: landscape) and (max-width: 1400px) and (min-width: 1100px) {
     nav {
         max-width: 100%;
     }
 
+    #Control {
+        left: 20%;
+    }
+
+    #Colaboracion {
+        left: 32%;
+    }
+
+    #PrimerosAuxilios {
+        left: 44%;
+    }
+
+    #Ubicacion {
+        left: 62%;
+    }
+
+    #Contactos {
+        left: 73%;
+    }
+
     #Cierre {
-        top: -5%;
+        top: 5%;
+        max-height: 90%;
     }
 }
 
-
-@media only screen and (orientation: landscape) and (max-width: 1000px) and (min-width: 655px) {
+@media only screen and (orientation: landscape) and (max-width: 1100px) and (min-width: 900px) {
     nav {
         max-width: 100%;
     }
 
+    #Control {
+        left: 21%;
+    }
+
+    #Colaboracion {
+        left: 32.5%;
+    }
+
+    #PrimerosAuxilios {
+        left: 44%;
+    }
+
+    #Ubicacion {
+        left: 62.25%;
+    }
+
+    #Contactos {
+        left: 73%;
+    }
+
+
     #Cierre {
-        top: -5%;
+        top: 5%;
+        max-height: 90%;
     }
 }
 
-
-@media only screen and (orientation: portrait) and (max-width: 1000px) and (min-width: 655px) {
+@media only screen and (orientation: landscape) and (max-width: 900px) and (min-width: 690px) {
     nav {
         display: none;
         max-width: 100%;
@@ -178,8 +215,8 @@ nav {
 
     #cierra {
         display: block;
-        max-width: 10%;
-        max-height: 10%;
+        max-width: 50px;
+        max-height: 60px;
     }
 
     #hamburguesa {
@@ -195,7 +232,13 @@ nav {
         left: 42.5%;
     }
 
-    #EPILEPSUM {
+    #EPILEPSUM,
+    #Control,
+    #Colaboracion,
+    #PrimerosAuxilios,
+    #Ubicacion,
+    #Contactos,
+    #InformacionNavbar {
         top: 17.5%;
         left: 0%;
         width: 100%;
@@ -203,38 +246,26 @@ nav {
 
     #Control {
         top: 30%;
-        left: 0%;
-        width: 100%;
     }
 
     #Colaboracion {
         top: 40%;
-        left: 0%;
-        width: 100%;
     }
 
     #PrimerosAuxilios {
         top: 50%;
-        left: 0%;
-        width: 100%;
     }
 
     #Ubicacion {
         top: 60%;
-        left: 0%;
-        width: 100%;
     }
 
     #Contactos {
         top: 70%;
-        left: 0%;
-        width: 100%;
     }
 
     #InformacionNavbar {
         top: 80%;
-        left: 0%;
-        width: 100%;
     }
 
     #Cierre {
@@ -250,7 +281,7 @@ nav {
     }
 }
 
-@media only screen and (orientation: portrait) and (max-width: 667px) and (min-width: 384px) {
+@media only screen and (orientation: portrait) and (max-width: 700px) and (min-width: 384px) {
     nav {
         display: none;
         max-width: 100%;
@@ -280,7 +311,13 @@ nav {
         left: 42.5%;
     }
 
-    #EPILEPSUM {
+    #EPILEPSUM,
+    #Control,
+    #Colaboracion,
+    #PrimerosAuxilios,
+    #Ubicacion,
+    #Contactos,
+    #InformacionNavbar {
         top: 17.5%;
         left: 0%;
         width: 100%;
@@ -288,38 +325,26 @@ nav {
 
     #Control {
         top: 30%;
-        left: 0%;
-        width: 100%;
     }
 
     #Colaboracion {
         top: 40%;
-        left: 0%;
-        width: 100%;
     }
 
     #PrimerosAuxilios {
         top: 50%;
-        left: 0%;
-        width: 100%;
     }
 
     #Ubicacion {
         top: 60%;
-        left: 0%;
-        width: 100%;
     }
 
     #Contactos {
         top: 70%;
-        left: 0%;
-        width: 100%;
     }
 
     #InformacionNavbar {
         top: 80%;
-        left: 0%;
-        width: 100%;
     }
 
     #Cierre {
@@ -361,7 +386,13 @@ nav {
         left: 37.5%;
     }
 
-    #EPILEPSUM {
+    #EPILEPSUM,
+    #Control,
+    #Colaboracion,
+    #PrimerosAuxilios,
+    #Ubicacion,
+    #Contactos,
+    #InformacionNavbar {
         top: 17.5%;
         left: 0%;
         width: 100%;
@@ -369,38 +400,26 @@ nav {
 
     #Control {
         top: 30%;
-        left: 0%;
-        width: 100%;
     }
 
     #Colaboracion {
         top: 40%;
-        left: 0%;
-        width: 100%;
     }
 
     #PrimerosAuxilios {
         top: 50%;
-        left: 0%;
-        width: 100%;
     }
 
     #Ubicacion {
         top: 60%;
-        left: 0%;
-        width: 100%;
     }
 
     #Contactos {
         top: 70%;
-        left: 0%;
-        width: 100%;
     }
 
     #InformacionNavbar {
         top: 80%;
-        left: 0%;
-        width: 100%;
     }
 
     #Cierre {

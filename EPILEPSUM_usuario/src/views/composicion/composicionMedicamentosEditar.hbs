@@ -1,80 +1,70 @@
-<link rel="stylesheet" href="/CSS/composicion/composicionMedicamentos.css">
+<link rel="stylesheet" href="/CSS/composicion/composicionMedicamentosEditar.css">
+
 <div id="fondo">
-    <img src="/img/fondos/sistemaNervioso.png">
+    <img src="/img/fondos/sistemaNervioso1.jpg">
 </div>
 
-<form action="/composicionMedicamento/editar/{{idComposiciones}}" method="post" id="ocultar">
-    <div id="contenedor">
+<div id="contenedor">
+
+    <form action="/composicionMedicamento/editar/{{idComposicion}}" method="POST">
+
         {{#each enlistar}}
         <div id="titulo">
-            <h3>Principio Activo de Medicamento</h3>
+            <h3>Medicamento</h3>
         </div>
-
-        <div>
+        <div id="nombres">
             <label for="">Nombre del Medicamento</label>
             <input type="text" name="nombreMedicamentos" id="nombre" value="{{nombreMedicamentos}}" required>
         </div>
-
-        <div>
+        <div id="composicion">
             <label for="">Composicion del Medicamento</label>
             <ul>
-                <li>
-                    <input type="text" name="composicionMedicamentos" id="dosis" value="{{composicionMedicamentos}}"
-                        required>
-                </li>
-
-                <li>
-                    <input type="text" name="composicionMedicamentos" id="dosis" value="{{composicionMedicamentos}}"
-                        required>
-                </li>
+                <li><input type="text" name="composicionMedicamentos" id="dosis" value="{{composicionMedicamentos}}"
+                        required></li>
+                <li><input type="text" name="composicionMedicamentos" id="dosis" value="{{composicionMedicamentos}}"
+                        required></li>
             </ul>
         </div>
-
-        <div>
+        <div id="detalle">
             <label for="">Detalle del Medicamento</label>
             <input type="text" name="descripcionMedicamentos" id="detalle" value="{{descripcionMedicamentos}}" required>
         </div>
-
-        <div>
+        <div id="administracion">
             <label for="">Via de Administración del Medicamento</label>
             <input type="text" name="viaAdministracionMedicamentos" id="administracion"
                 value="{{viaAdministracionMedicamentos}}" required>
         </div>
-
-        <div>
+        <div id="contradicaciones">
             <label for="">Contraindicaciones del Medicamento</label>
             <input type="text" name="indicacionesMedicamentos" id="contraindicaciones"
                 value="{{indicacionesMedicamentos}}" required>
         </div>
-
-        <div>
+        <div id="dosis">
             <label for="">Dosis del Medicamento</label>
             <input type="text" name="dosisMedicamentos" id="Dosis" value="{{dosisMedicamentos}}" required>
         </div>
-
-        <div>
+        <div id="fechaElaboracion">
             <label for="">Fecha de Elaboracion del Medicamento</label>
             <input type="date" name="fechaElaboracionMedicamentos" id="fechaElaboracion"
                 value="{{fechaElaboracionMedicamentos}}" required>
         </div>
-
-        <div>
+        <div id="fechaVencimiento">
             <label for="">Fecha de Vencimiento del Medicamento</label>
             <input type="date" name="fechaVencimientoMedicamentos" id="fechaVencimiento"
                 value="{{fechaVencimientoMedicamentos}}" required>
         </div>
-
-        <div>
+        <div id="laboratorio">
             <label for="">Laboratorio </label>
             <input type="text" name="laboratorioMedicamentos" id="laboratorio" value="{{laboratorioMedicamentos}}"
                 required>
         </div>
-
-        <div id="boton">
-            <button type="submit">
-                Agregar
-            </button>
+        <div id="botonActualizar">
+            <a href="/composicionMedicamento/lista/{{idComposiciones}}">
+                <button type="submit" id="btn-agregar">Actualizar</button>
+            </a>
         </div>
         {{/each }}
-    </div>
-</form>
+
+    </form>
+
+</div>

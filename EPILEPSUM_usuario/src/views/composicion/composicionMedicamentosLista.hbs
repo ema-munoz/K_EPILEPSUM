@@ -1,10 +1,11 @@
-<link rel="stylesheet" href="/CSS/composicion/composicionMedicamentos.css">
+<link rel="stylesheet" href="/CSS/composicion/composicionMedicamentosLista.css">
+
 <div id="fondo">
-    <img src="/img/fondos/sistemaNervioso.png">
+    <img src="/img/fondos/sistemaNervioso1.jpg">
 </div>
 
-<form action="/composicionMedicamento/lista/{{idComposiciones}}" method="get" id="ocultar">
-    <div id="contenedor">
+<div id="contenedor">
+    <form action="/composicionMedicamento/lista/{{user.idPaciente}}" method="POST">
         <div class="row">
             {{#each enlistar}}
             <div id="tarjeta">
@@ -13,51 +14,59 @@
                 </div>
 
                 <div id="nombre">
-                    <p>Nombre del Medicamento: {{nombreMedicamentos}}</p>
+                    <p><b>Medicamento:</b> {{nombreMedicamentos}}</p>
 
                 </div>
 
                 <div id="dosis">
-                    <p>Composicion del Medicamento: {{composicionMedicamentos}}</p>
+                    <p><b>Composicion del Medicamento:</b> {{composicionMedicamentos}}</p>
+
                 </div>
 
                 <div id="detalle">
-                    <p>Detalle del Medicamento: {{descripcionMedicamentos}}</p>
+                    <p> <b> Detalle del Medicamento:</b> {{descripcionMedicamentos}}</p>
+
                 </div>
 
                 <div id="administracion">
-                    <p>Via de Administración del Medicamento: {{viaAdministracionMedicamentos}}</p>
+                    <p> <b> Via de Administración del Medicamento:</b> {{viaAdministracionMedicamentos}}</p>
+
                 </div>
 
                 <div id="contraindicaciones">
-                    <p>Contraindicaciones del Medicamento: {{indicacionesMedicamentos}}</p>
+                    <p><b> Contraindicaciones del Medicamento:</b> {{indicacionesMedicamentos}}</p>
+
                 </div>
 
                 <div id="Dosis">
-                    <p>Dosis del Medicamento: {{dosisMedicamentos}}</p>
+                    <p> <b> Dosis del Medicamento: </b> {{dosisMedicamentos}}</p>
+
                 </div>
 
                 <div id="fechaElaboracion">
-                    <p>Fecha de Elaboracion del Medicamento: {{fechaElaboracionMedicamentos}}</p>
+                    <p> <b> Fecha de Elaboracion del Medicamento:</b> {{fechaElaboracionMedicamentos}}</p>
+
                 </div>
 
                 <div id="fechaVencimiento">
-                    <p>Fecha de Vencimiento del Medicamento: {{fechaVencimientoMedicamentos}}</p>
+                    <p><b> Fecha de Vencimiento del Medicamento:</b> {{fechaVencimientoMedicamentos}}</p>
+
                 </div>
 
                 <div id="laboratorio">
-                    <p>Laboratorio: {{laboratorioMedicamentos}}</p>
+                    <p><b> Laboratorio:</b> {{laboratorioMedicamentos}}</p>
+
                 </div>
 
                 <div id="botonEditar">
-                    <a href="/medicamentos/editar/{{idComposiciones}}">
-                        <button>Editar</button>
+                    <a href="/composicionMedicamento/editar/{{idComposiciones}}">
+                        <button type="button">Editar</button>
                     </a>
                 </div>
 
                 <div id="botonEliminar">
-                    <a href="/medicamentos/eliminar/{{idComposiciones}}">
-                        <button>Eliminar</button>
+                    <a href="/composicionMedicamento/eliminar/{{idComposiciones}}">
+                        <button type="button">Eliminar</button>
                     </a>
                 </div>
             </div>
@@ -71,13 +80,11 @@
             </div>
             {{/each }}
         </div>
-    </div>
+    </form>
+</div>
 
-    <div id="plus">
-        <a href="/medicamentos/agregar/{{user.idComposiciones}}">
-            <button type="button">
-                <img src="/img/icons/white/plus.png">
-                <button>
-        </a>
-    </div>
-</form>
+<div id="plus">
+    <a href="/composicionMedicamento/agregar/{{user.idPaciente}}">
+        <button type="button"><img src="/img/usuarios/plus.png"></button>
+    </a>
+</div>

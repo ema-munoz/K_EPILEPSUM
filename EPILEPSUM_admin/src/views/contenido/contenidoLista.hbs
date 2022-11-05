@@ -36,20 +36,22 @@
                 </p>
             </div>
             <div id="botonEditar">
-                <a href="/contenido/editar/{{idContenido}}"><button>
+                <a href="/contenido/editar/{{idContenido}}"><button type="button">
                         Editar
                     </button>
                 </a>
             </div>
             <div id="botonEliminar">
                 <a href="/contenido/eliminar/{{idContenido}}">
-                    <button>Eliminar</button>
+                    <button type="button">Eliminar</button>
                 </a>
             </div>
         </div>
         {{else}}
         <div id="mensaje">
-            <p><b>Usted no tiene registrado ningún Contenido. </b></p>
+            <p>
+                <b>Usted no tiene registrado ningún Contenido.</b>
+            </p>
             <a href="/contenido/agregar/{{user.idUsuario}}">
                 <button type="button">¿Desea registrar?</button>
             </a>
@@ -61,7 +63,7 @@
         <a href="/contenido/agregar/{{user.idUsuario}}">
             <button type="button">
                 <img src="/img/icons/white/plus.png" />
-                <button>
+                <button type="button">
         </a>
     </div>
 </form>

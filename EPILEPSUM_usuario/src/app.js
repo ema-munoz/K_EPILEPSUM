@@ -61,7 +61,7 @@ app.use((req, res, next) => {
 app.use(express.static(path.join(__dirname, "public")));
 //public
 
-//routas
+//routes
 app.use(require("./routes/index"));
 app.use(require("./routes/registro"));
 app.use(require("./routes/actualizacion"));

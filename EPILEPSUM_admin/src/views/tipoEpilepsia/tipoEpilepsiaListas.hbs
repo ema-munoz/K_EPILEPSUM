@@ -25,20 +25,22 @@
             </div>
 
             <div id="botonEditar">
-               <button>
+               <button type="button">
                   <a href="/tipoEpilepsia/editar/{{idTipoEpilepsia}}">Editar</a>
                </button>
             </div>
 
             <div id="botonEliminar">
-               <button>
+               <button type="button">
                   <a href="/tipoEpilepsia/eliminar/{{idTipoEpilepsia}}">Eliminar</a>
                </button>
             </div>
          </div>
          {{else}}
          <div id="mensaje">
-            <p><b> No existe registro de tipo de Epilepsia </b></p>
+            <p>
+               <b> No existe registro de tipo de Epilepsia </b>
+            </p>
             <a href="/tipoEpilepsia/agregar/{{user.idUsuario}}">
                <button type="button">¿Desea registrar?</button>
             </a>
@@ -50,7 +52,7 @@
       <a href="/tipoEpilepsia/agregar/{{user.idUsuario}}">
          <button type="button">
             <img src="/img/icons/white/plus.png">
-            <button>
+            <button type="button">
       </a>
    </div>
 </form>

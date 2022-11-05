@@ -77,11 +77,6 @@
     height: 100%;
 }
 
-.row {
-    row-gap: 5%;
-    gap: 50px;
-}
-
 #plus {
     position: absolute;
     width: 100%;

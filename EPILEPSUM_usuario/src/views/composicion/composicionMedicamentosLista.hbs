@@ -14,47 +14,66 @@
                 </div>
 
                 <div id="nombre">
-                    <p><b>Medicamento:</b> {{nombreMedicamentos}}</p>
+                    <p>
+                        <b>Medicamento:</b><br>
+                        {{nombreMedicamentos}}
+                    </p>
 
                 </div>
 
                 <div id="dosis">
-                    <p><b>Composicion del Medicamento:</b> {{composicionMedicamentos}}</p>
+                    <p>
+                        <b>Composicion del Medicamento:</b><br>
+                        {{composicionMedicamentos}}
+                    </p>
 
                 </div>
 
                 <div id="detalle">
-                    <p> <b> Detalle del Medicamento:</b> {{descripcionMedicamentos}}</p>
+                    <p> <b> Detalle del Medicamento:</b><br>
+                        {{descripcionMedicamentos}}</p>
 
                 </div>
 
                 <div id="administracion">
-                    <p> <b> Via de Administración del Medicamento:</b> {{viaAdministracionMedicamentos}}</p>
+                    <p> <b> Via de Administración del Medicamento:</b><br>
+                        {{viaAdministracionMedicamentos}}</p>
 
                 </div>
 
                 <div id="contraindicaciones">
-                    <p><b> Contraindicaciones del Medicamento:</b> {{indicacionesMedicamentos}}</p>
+                    <p>
+                        <b> Contraindicaciones del Medicamento:</b><br>
+                        {{indicacionesMedicamentos}}
+                    </p>
 
                 </div>
 
                 <div id="Dosis">
-                    <p> <b> Dosis del Medicamento: </b> {{dosisMedicamentos}}</p>
+                    <p> <b> Dosis del Medicamento: </b><br>
+                        {{dosisMedicamentos}}</p>
 
                 </div>
 
                 <div id="fechaElaboracion">
-                    <p> <b> Fecha de Elaboracion del Medicamento:</b> {{fechaElaboracionMedicamentos}}</p>
+                    <p> <b> Fecha de Elaboracion del Medicamento:</b><br>
+                        {{fechaElaboracionMedicamentos}}</p>
 
                 </div>
 
                 <div id="fechaVencimiento">
-                    <p><b> Fecha de Vencimiento del Medicamento:</b> {{fechaVencimientoMedicamentos}}</p>
+                    <p>
+                        <b> Fecha de Vencimiento del Medicamento:</b><br>
+                        {{fechaVencimientoMedicamentos}}
+                    </p>
 
                 </div>
 
                 <div id="laboratorio">
-                    <p><b> Laboratorio:</b> {{laboratorioMedicamentos}}</p>
+                    <p>
+                        <b> Laboratorio:</b><br>
+                        {{laboratorioMedicamentos}}
+                    </p>
 
                 </div>
 
@@ -73,7 +92,9 @@
 
             {{else}}
             <div id="mensaje">
-                <p><b>Usted no tiene registrado ningún medicamento. </b></p>
+                <p>
+                    <b>Usted no tiene registrado ningún medicamento.</b>
+                </p>
                 <a href="/medicamentos/agregar/{{user.idComposiciones}}">
                     <button type="button">¿Desea registrar?</button>
                 </a>

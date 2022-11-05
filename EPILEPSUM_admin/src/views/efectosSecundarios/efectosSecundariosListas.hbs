@@ -26,20 +26,22 @@
 
             <div id="botonEditar">
                <a href="/efectosSecundarios/editar/{{idEfectosSecundarios}}">
-                  <button>Editar</button>
+                  <button type="button">Editar</button>
                </a>
             </div>
 
             <div id="botonEliminar">
                <a href="/efectosSecundarios/eliminar/{{idEfectosSecundarios}}">
-                  <button>Eliminar</button>
+                  <button type="button">Eliminar</button>
                </a>
             </div>
          </div>
 
          {{else}}
          <div id="mensaje">
-            <p><b>No tiene Efectos Secundarios. </b></p>
+            <p>
+               <b>No tiene Efectos Secundarios.</b>
+            </p>
             <a href="/efectosSecundarios/agregar/{{user.idUsuario}}">
                <button type="button">¿Desea registrar ?</button>
             </a>
@@ -52,7 +54,7 @@
       <a href="/efectosSecundarios/agregar/{{user.idUsuario}}">
          <button type="button">
             <img src="/img/icons/white/plus.png">
-            <button>
+            <button type="button">
       </a>
    </div>
 </form>

@@ -44,7 +44,7 @@
                 </div>
 
                 <div id="botonEditar">
-                    <a href="/experiencias/editar/{{idExperiencias}}"><button>
+                    <a href="/experiencias/editar/{{idExperiencias}}"><button type="button">
                             Editar
                         </button>
                     </a>
@@ -52,7 +52,7 @@
 
                 <div id="botonEliminar">
                     <a href="/experiencias/eliminar/{{idExperiencias}}">
-                        <button>Eliminar
+                        <button type="button">Eliminar
                         </button>
                     </a>
                 </div>
@@ -60,7 +60,9 @@
 
             {{else}}
             <div id="mensaje">
-                <p><b>Usted no tiene registrado ningún experiencia. </b></p>
+                <p>
+                    <b>Usted no tiene registrado ningún experiencia.</b>
+                </p>
                 <a href="/experiencias/agregar/{{user.idUsuario}}">
                     <button type="button">¿Desea registrar?</button>
                 </a>
@@ -73,7 +75,7 @@
         <a href="/experiencias/agregar/{{user.idUsuario}}">
             <button type="button">
                 <img src="/img/icons/white/plus.png" />
-                <button>
+                <button type="button">
         </a>
     </div>
 </form>

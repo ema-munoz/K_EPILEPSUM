@@ -5,7 +5,6 @@
 </div>
 
 <form action="/medicamentos/lista/{{user.idPaciente}}" method="GET" id="ocultar">
-
     <div id="contenedor">
         <div class="row">
             {{#each enlistar}}
@@ -67,7 +66,7 @@
             {{else}}
             <div id="mensaje">
                 <p>
-                    <b>Usted no tiene registrado ningún medicamento. </b>
+                    <b>Usted no tiene registrado ningún medicamento.</b>
                 </p>
                 <a href="/medicamentos/agregar/{{user.idPaciente}}">
                     <button type="button">¿Desea registrar?</button>

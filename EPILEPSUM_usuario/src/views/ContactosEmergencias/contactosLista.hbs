@@ -58,7 +58,9 @@
 
             {{else}}
             <div id="mensaje">
-                <p><b>Usted no tiene registrado ningún contacto de Emergencia.</b></p>
+                <p>
+                    <b>Usted no tiene registrado ningún contacto de Emergencia.</b>
+                </p>
                 <a href="/contactos/agregar/{{user.idPaciente}}">
                     <button type="button">¿Desea registrar?</button>
                 </a>
@@ -71,7 +73,7 @@
         <a href="/contactos/agregar/{{user.idPaciente}}">
             <button type="button">
                 <img src="/img/icons/white/plus.png">
-                <button>
+            </button>
         </a>
     </div>
 </form>

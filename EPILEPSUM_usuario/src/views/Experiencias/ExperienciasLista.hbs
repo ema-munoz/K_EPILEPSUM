@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="/CSS/Experiencias/ExperienciasLista.css" />
+<link rel="stylesheet" href="/css/Experiencias/ExperienciasLista.css" />
 
 <div id="fondo">
     <img src="/img/fondos/sistemaNervioso.png" />
@@ -17,65 +17,63 @@
 
                 <div id="foto">
                     <p>
-                        Foto:
+                        <b>Foto:</b>
                         {{imagenExperiencia}}
                     </p>
                 </div>
 
                 <div id="video">
                     <p>
-                        Video:
+                        <b>Video:</b>
                         {{videoExperiencia}}
                     </p>
                 </div>
 
                 <div id="Nombres">
                     <p>
-                        Nombre:
+                        <b>Nombre:</b>
                         {{nombreExperiencia}}
                     </p>
                 </div>
 
                 <div id="Descripcion">
                     <p>
-                        Descripción:
+                        <b>Descripción:</b>
                         {{experienciasDetallesExperiencias}}
                     </p>
                 </div>
 
                 <div id="botonEditar">
-                    <a href="/experiencias/editar/{{idExperiencias}}"><button>
-                            Editar
-                        </button>
+                    <a href="/experiencias/editar/{{idExperiencias}}">
+                        <button type="button">Editar</button>
                     </a>
                 </div>
 
                 <div id="botonEliminar">
-
                     <a href="/experiencias/eliminar/{{idExperiencias}}">
-                        <button>Eliminar
-                        </button>
+                        <button type="button">Eliminar</button>
                     </a>
                 </div>
             </div>
 
             {{else}}
             <div id="mensaje">
-                <p><b>Usted no tiene registrado ningún experiencia. </b></p>
+                <p>
+                    <b>Usted no tiene registrado ningún experiencia.</b>
+                </p>
                 <a href="/experiencias/agregar/{{user.idPaciente}}">
                     <button type="button">¿Desea registrar?</button>
                 </a>
             </div>
             {{/each}}
-
         </div>
     </div>
 
     <div id="plus">
         <a href="/experiencias/agregar/{{user.idPaciente}}">
             <button type="button">
-                <img src="/img/icons/white/plus.png" />
-                <button>
+                <img src="/img/icons/white/plus.png">
+            </button>
         </a>
     </div>
 </form>
@@ -99,22 +97,23 @@
         <img src="/img/Experiencias/emy6.jpg" id="img-6">
         
     </div>
-    <div>
-        <button id="boton-1" onclick="imagen.animacion1()">
-                <button>
+    
+    <div>        <button id="boton-1" onclick="imagen.animacion1()">
+                <button type="button">
         <button id="boton-2" onclick="imagen.animacion2()">
-                <button>
+                <button type="button">
         <button id="boton-3" onclick="imagen.animacion3()">
-                <button>
+                <button type="button">
         <button id="boton-4" onclick="imagen.animacion4()">
-                <button>
+                <button type="button">
         <button id="boton-5" onclick="imagen.animacion5()">
-                <button>
+                <button type="button">
         <button id="boton-6" onclick="imagen.animacion6()">
-                <button>
+                <button type="button">
     </div>
     <div id="titulo2">
-        <p><b>Mi Testimonio</b></p>
+                            <p>
+                        <b>Mi Testimonio</b></p>
     </div>
     <div id="p-1">
         <p> 
@@ -148,7 +147,8 @@
         </p>
     </div>
     <div id="titulo3">
-        <p><b>¿Qué consejos darías a una persona que acaba de ser diagnosticada con Epilepsia?</b></p>
+                            <p>
+                        <b>¿Qué consejos darías a una persona que acaba de ser diagnosticada con Epilepsia?</b></p>
     </div>
     <div id="p-7">
         <p>

@@ -48,7 +48,9 @@
 
             {{else}}
             <div id="mensaje">
-                <p><b>Usted no tiene registrado ningún usuario.</b></p>
+                <p>
+                    <b>Usted no tiene registrado ningún usuario.</b>
+                </p>
                 <a href="/usuarios/agregar/{{user.idUsuario}}">
                     <button type="button">¿Desea registrar?</button>
                 </a>
@@ -61,7 +63,7 @@
         <a href="/usuarios/agregar/{{user.idUsuario}}">
             <button type="button">
                 <img src="/img/usuarios/plus.png">
-                <button>
+                <button type="button">
         </a>
     </div>
 </form>

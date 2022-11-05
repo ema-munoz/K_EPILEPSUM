@@ -3,51 +3,53 @@
     <img src="/img/mensajes/Captura.PNG">
 </div>
 
-<div id="contenedor">
-    <div id="mensaj">
-        <div id="mensaje1">
-            {{#each mensaje}}
-            <div id="persona1">
-                <div id="fecha1">
-                    <p>| {{fechaMensaje}}</p>
-                </div>
-
-                <div id="chatsa1">{{mensajes}}</div>
-                <div id="hora1">{{horaMensaje}}</div>
+<div id="card">
+    <div id="content">
+        <div id="contenedor">
+            <div id="regresar">
+                <a href="#"><img src="/img/mensajes/noun-return-1890577.png" alt=""></a>
             </div>
-            {{/each}}
+            <img src="/img/mensajes/icon.png" alt="" id="imagenr">
+            <p>(Usuario escogido)</p>
+            <div id="palabr">
+                <h5>En línea</h5>
+            </div>
+        </div>
+        <div id="mensaj">
+            <div id="mensaje1">
+                {{#each mensaje}}
+                <div id="persona1">
+                    <div id="fecha1">
+                        <p>{{fechaMensaje}}</p>
+                    </div>
+                    <div id="chatsa1">
+                        <p>{{mensajes}}</p>
+                    </div>
+                    <div id="hora1">{{horaMensaje}}</div>
+                </div>
+                <div id="persona2">
+                    <div id="fecha">
+                        <p>{{fechaMensaje}}</p>
+                    </div>
+                    <div id="chatsa">
+                        <p>{{mensajes}}</p>
+                    </div>
+                    <div id="hora">{{horaMensaje}}</div>
+                </div>
+                {{/each}}
+            </div>
         </div>
 
-        <div id="mensaje2">
-            {{#each mensaje1}}
-            <div id="persona2">
-                <div id="fecha">
-                    <p>{{fechaMensaje}}</p>
-                </div>
-                <div id="chatsa">{{mensajes}}</div>
-                <div id="hora">| {{horaMensaje}}</div>
-            </div>
+        <div id="enviar">
+            {{#each usuario}}
+            <form action="/chat/amigos/{{idPaciente}}" id="area" method="post">
+                <input type="text" id="escri" name="mensaje" placeholder="Escribir..." />
+                <input type="text" id="horas" name="horaMensaje" readonly>
+                <input type="text" id="fechas" name="fechaMensaje" readonly>
+                <button type="submit"><img src="/img/mensajes/noun-send-108705.png"></button>
+            </form>
             {{/each}}
         </div>
-    </div>
-
-    <div id="regresar">
-        <a href="#"><button type="button">
-                <img src="/img/mensajes/noun-return-1890577.png" alt="">
-                <button></a>
-    </div>
-
-    <div id="enviar">
-        {{#each usuario}}
-        <form action="/chat/amigos/{{idPaciente}}" method="post" id="ocultar">
-            <input type="text" id="escri" name="mensaje" placeholder="Escribir..." />
-            <input type="text" id="horas" name="horaMensaje" readonly>
-            <input type="text" id="fechas" name="fechaMensaje" readonly>
-            <button type="submit">
-                <img src="/img/mensajes/noun-send-108705.png" alt="">
-                <button>
-        </form>
-        {{/each}}
     </div>
 </div>
 

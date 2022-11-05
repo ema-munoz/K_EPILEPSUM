@@ -85,54 +85,13 @@ footer {
     height: 100%;
 }
 
-#regresar img {
-    width: 100%;
-    height: 100%;
+.imgnc {
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
-#enviar {
-    width: 100%;
-    height: 15%;
-    max-width: 100%;
-    max-height: 10%;
-    background: #333;
-    position: absolute;
-    bottom: 0%;
-}
-
-#enviar button {
-    width: 10%;
-    height: 100%;
-    position: absolute;
-    top: 0%;
-    right: 5%;
-    background-color: #333;
-    border-color: transparent;
-    outline: none;
-}
-
-#enviar input:focus {
-    border-bottom: transparent;
-}
-
-#enviar img {
-    width: 100%;
-    height: 100%;
-}
-
-#horas,
-#fechas {
-    display: none;
-}
-
-#escri {
-    width: 80%;
-    height: 80%;
-    position: absolute;
-    bottom: 10%;
-    left: 5%;
-    border-radius: 10px;
-    border-bottom: transparent;
-    outline: none;
-    border: 1px solid #ccc;
+#palabr h5 {
+    word-wrap: break-word;
+    font-family: Arial, Helvetica, sans-serif;
+    color: green;
 }

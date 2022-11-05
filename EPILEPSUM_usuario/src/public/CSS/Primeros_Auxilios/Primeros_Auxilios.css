@@ -155,6 +155,7 @@ footer {
     bottom: -110%;
 }
 
+/* RESPONSIVE */
 @media only screen and (orientation: landscape) and (max-width: 1400px) and (min-width: 1000px) {
     #contenedor {
         max-width: 60%;

@@ -74,11 +74,11 @@
     margin-left: 10%;
 }
 
-#botonEditar{
+#botonEditar {
     margin-top: 2.5%;
 }
 
-#botonEliminar{
+#botonEliminar {
     margin-top: 2.5%;
 }
 
@@ -117,6 +117,7 @@ footer {
     bottom: 0%;
 }
 
+/* RESPONSIVE */
 @media only screen and (orientation: portrait) and (max-width: 1000px) and (min-width: 667px) {
     #contenedor {
         max-width: 100%;

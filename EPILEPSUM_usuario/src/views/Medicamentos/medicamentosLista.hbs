@@ -11,31 +11,33 @@
             {{#each enlistar}}
             <div id="tarjeta">
                 <div id="titulo">
-                    <p><b>Mi Control:</b></p>
+                    <p>
+                        <b>MI CONTROL:</b>
+                    </p>
                 </div>
                 <div id="Nombres">
                     <p>
-                        Medicación: <br> {{nombreMedicaciones}}
+                        <b>Medicación:</b><br> {{nombreMedicaciones}}
                     </p>
                 </div>
                 <div id="Dosis">
                     <p>
-                        Dosis al Día:<br> {{dosisMedicaciones}}
+                        <b>Dosis al Día:</b><br> {{dosisMedicaciones}}
                     </p>
                 </div>
                 <div id="Horario">
                     <p>
-                        Horario de la Dosis: <br>{{horaMedicaciones}}
+                        <b>Horario de la Dosis:</b><br>{{horaMedicaciones}}
                     </p>
                 </div>
                 <div id="FechaInicio">
                     <p>
-                        Fecha de inicio:<br> {{fechaInicioMedicaciones}}
+                        <b>Fecha de inicio:</b><br> {{fechaInicioMedicaciones}}
                     </p>
                 </div>
                 <div id="FechaFinal">
                     <p>
-                        Fecha de Terminación:<br> {{fechaFinalMedicaciones}}
+                        <b>Fecha de Terminación:</b><br> {{fechaFinalMedicaciones}}
                     </p>
                 </div>
 
@@ -51,9 +53,12 @@
                     </a>
                 </div>
             </div>
+
             {{else}}
             <div id="mensaje">
-                <p><b>Usted no tiene registrado ningún medicamento. </b></p>
+                <p>
+                    <b>Usted no tiene registrado ningún medicamento. </b>
+                </p>
                 <a href="/medicamentos/agregar/{{user.idPaciente}}">
                     <button type="button">¿Desea registrar?</button>
                 </a>

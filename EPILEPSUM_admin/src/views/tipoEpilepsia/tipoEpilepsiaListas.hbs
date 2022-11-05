@@ -2,52 +2,52 @@
 <div id="fondo">
    <img src="/img/fondos/sistemaNervioso.png">
 </div>
-<form action="/tipoEpilepsia/lista/{{user.idUsuario}}" method="get" id="ocultar"></form>
-<div id="contenido">
+<form action="/tipoEpilepsia/lista/{{user.idUsuario}}" method="get" id="ocultar">
+   <div id="contenido">
 
-   <div class="row">
-      {{#each lista}}
-      <div id="tarjeta">
-         <div id="titulo">
-            <p>
-               <b>Tipos de Epilepsias:</b>
-            </p>
+      <div class="row">
+         {{#each lista}}
+         <div id="tarjeta">
+            <div id="titulo">
+               <p>
+                  <b>Tipos de Epilepsias:</b>
+               </p>
 
-         </div>
-         <div id="nombre">
-            <label> Efectos :</label>
-            <label>{{nombreTipoEpilepsia}}</label>
-         </div>
+            </div>
+            <div id="nombre">
+               <label> Efectos :</label>
+               <label>{{nombreTipoEpilepsia}}</label>
+            </div>
 
-         <div id="Descripcion">
-            <label> Descripcion :</label>
-            <p> {{descripcionTipoEpilepsia}} </p>
-         </div>
+            <div id="Descripcion">
+               <label> Descripcion :</label>
+               <p> {{descripcionTipoEpilepsia}} </p>
+            </div>
 
-         <div id="botonEditar">
-            <button>
-               <a href="/tipoEpilepsia/editar/{{idTipoEpilepsia}}">Editar</a>
-            </button>
-         </div>
+            <div id="botonEditar">
+               <button>
+                  <a href="/tipoEpilepsia/editar/{{idTipoEpilepsia}}">Editar</a>
+               </button>
+            </div>
 
-         <div id="botonEliminar">
-            <button>
-               <a href="/tipoEpilepsia/eliminar/{{idTipoEpilepsia}}">Eliminar</a>
-            </button>
+            <div id="botonEliminar">
+               <button>
+                  <a href="/tipoEpilepsia/eliminar/{{idTipoEpilepsia}}">Eliminar</a>
+               </button>
+            </div>
          </div>
+         {{else}}
+         <div id="mensaje">
+            <p><b> No existe registro de tipo de Epilepsia </b></p>
+            <a href="/tipoEpilepsia/agregar/{{user.idUsuario}}">
+               <button type="button">¿Desea registrar?</button>
+            </a>
+         </div>
+         {{/each}}
       </div>
-      {{else}}
-      <div id="mensaje">
-         <p><b> No existe registro de tipo de Epilepsia </b></p>
-         <a href="/tipoEpilepsia/agregar/{{user.idUsuario}}">
-            <button type="button">¿Desea registrar?</button>
-         </a>
-      </div>
-      {{/each}}
    </div>
-</div>
-<div id="plus">
-   <a href="/tipoEpilepsia/agregar/{{user.idUsuario}}">
-      <button type="button"><img src="/img/icons/white/plus.png"></button>
-   </a>
-</div>
+   <div id="plus">
+      <a href="/tipoEpilepsia/agregar/{{user.idUsuario}}">
+         <button type="button"><img src="/img/icons/white/plus.png"></button>
+      </a>
+   </div></form>

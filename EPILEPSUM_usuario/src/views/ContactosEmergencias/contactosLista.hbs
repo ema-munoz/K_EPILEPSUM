@@ -4,69 +4,69 @@
     <img src="/img/fondos/sistemaNervioso.png">
 </div>
 
-<form action="/contactos/lista/{{user.idPaciente}}" method="get" id="ocultar"></form>
+<form action="/contactos/lista/{{user.idPaciente}}" method="get" id="ocultar">
 
+    <div id="contenedor">
+        <div class="row">
+            {{#each enlistar}}
+            <div id="tarjeta">
+                <div id="titulo">
+                    <p>
+                        <b>Contacto:</b>
+                    </p>
+                </div>
 
-<div id="contenedor">
-    <div class="row">
-        {{#each enlistar}}
-        <div id="tarjeta">
-            <div id="titulo">
-                <p>
-                    <b>Contacto:</b>
-                </p>
+                <div id="Nombres">
+                    <p>
+                        Nombre: {{nombreContactosEmergencia}}
+                    </p>
+                </div>
+
+                <div id="Familiar">
+                    <p>
+                        Parentesco: {{nombreFamiliar}}
+                    </p>
+                </div>
+
+                <div id="Telefono">
+                    <p>
+                        Teléfono: 0{{telefonoContactosEmergencia}}
+                    </p>
+                </div>
+
+                <div id="Celular">
+                    <p>
+                        Celular: 0{{celularContactosEmergencia}}
+                    </p>
+                </div>
+
+                <div id="botonEditar">
+                    <a href="/contactos/editar/{{idContactosEmergencia}}">
+                        <button type="button">Editar</button>
+                    </a>
+                </div>
+
+                <div id="botonEliminar">
+                    <a href="/contactos/eliminar/{{idContactosEmergencia}}">
+                        <button type="submit">Eliminar</button>
+                    </a>
+                </div>
             </div>
 
-            <div id="Nombres">
-                <p>
-                    Nombre: {{nombreContactosEmergencia}}
-                </p>
-            </div>
-
-            <div id="Familiar">
-                <p>
-                    Parentesco: {{nombreFamiliar}}
-                </p>
-            </div>
-
-            <div id="Telefono">
-                <p>
-                    Teléfono: 0{{telefonoContactosEmergencia}}
-                </p>
-            </div>
-
-            <div id="Celular">
-                <p>
-                    Celular: 0{{celularContactosEmergencia}}
-                </p>
-            </div>
-
-            <div id="botonEditar">
-                <a href="/contactos/editar/{{idContactosEmergencia}}">
-                    <button type="button">Editar</button>
+            {{else}}
+            <div id="mensaje">
+                <p><b>Usted no tiene registrado ningún contacto de Emergencia.</b></p>
+                <a href="/contactos/agregar/{{user.idPaciente}}">
+                    <button type="button">¿Desea registrar?</button>
                 </a>
             </div>
-
-            <div id="botonEliminar">
-                <a href="/contactos/eliminar/{{idContactosEmergencia}}">
-                    <button type="submit">Eliminar</button>
-                </a>
-            </div>
+            {{/each}}
         </div>
-
-        {{else}}
-        <div id="mensaje">
-            <p><b>Usted no tiene registrado ningún contacto de Emergencia.</b></p>
-            <a href="/contactos/agregar/{{user.idPaciente}}">
-                <button type="button">¿Desea registrar?</button>
-            </a>
-        </div>
-        {{/each}}
     </div>
-</div>
 
-<div id="plus">
-    <a href="/contactos/agregar/{{user.idPaciente}}">
-        <button type="button"><img src="/img/icons/white/plus.png"></button>
-    </a>
-</div>
+    <div id="plus">
+        <a href="/contactos/agregar/{{user.idPaciente}}">
+            <button type="button"><img src="/img/icons/white/plus.png"></button>
+        </a>
+    </div>
+</form>

@@ -3,49 +3,50 @@
 <div id="fondo">
     <img src="/img/fondos/sistemaNervioso.png" alt="Logo">
 </div>
-<form action="/proyecto/lista/{{user.idUsuario}}" method="get" id="ocultar"></form>
-<div id="contenedor">
-    <div id="titulo">
-        <p>Detalle</p>
-    </div>
-    <div id="tarjeta">
-        {{#each proyecto}}
-        <div id="Nombre">
-            <label>{{nombreProyecto}}</label>
+<form action="/proyecto/lista/{{user.idUsuario}}" method="get" id="ocultar">
+    <div id="contenedor">
+        <div id="titulo">
+            <p>Detalle</p>
         </div>
-        {{/each}}
+        <div id="tarjeta">
+            {{#each proyecto}}
+            <div id="Nombre">
+                <label>{{nombreProyecto}}</label>
+            </div>
+            {{/each}}
 
-        {{#each objetivos}}
-        <div id="objetivos">
-            <li>{{objetivoDetalleProyecto}}</li>
-            <div id="botonEditar">
-                <a href="/proyecto/editar/{{idDetalleProyecto}}">
-                    <button>Editar</button>
+            {{#each objetivos}}
+            <div id="objetivos">
+                <li>{{objetivoDetalleProyecto}}</li>
+                <div id="botonEditar">
+                    <a href="/proyecto/editar/{{idDetalleProyecto}}">
+                        <button>Editar</button>
+                    </a>
+                </div>
+                <div id="botonEliminar">
+                    <a href="/proyecto/eliminar/{{idDetalleProyecto}}">
+                        <button>Eliminar</button>
+                    </a>
+                </div>
+            </div>
+            {{else}}
+
+            <div id="mensaje">
+                <p><b>Usted no tiene registrado ningún proyecto. </b></p>
+                <a href="/proyecto/agregar/">
+                    <button type="button">¿Desea registrar?</button>
                 </a>
             </div>
-            <div id="botonEliminar">
-                <a href="/proyecto/eliminar/{{idDetalleProyecto}}">
-                    <button>Eliminar</button>
-                </a>
-            </div>
+            {{/each}}
         </div>
-        {{else}}
-
-        <div id="mensaje">
-            <p><b>Usted no tiene registrado ningún proyecto. </b></p>
-            <a href="/proyecto/agregar/">
-                <button type="button">¿Desea registrar?</button>
-            </a>
-        </div>
-        {{/each}}
     </div>
-</div>
 
-<div id="plus">
-    <a href="/proyecto/agregar/">
-        <button type="button"><img src="/img/icons/white/plus.png" /></button>
-    </a>
-</div>
+    <div id="plus">
+        <a href="/proyecto/agregar/">
+            <button type="button"><img src="/img/icons/white/plus.png" /></button>
+        </a>
+    </div>
+</form>
 
-<script src="/js/numero.js"></script>
-<script src="/js/objetivos.js"></script>
+    <script src="/js/numero.js"></script>
+    <script src="/js/objetivos.js"></script>

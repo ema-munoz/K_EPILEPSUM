@@ -40,7 +40,7 @@ nav #img img {
 }
 
 #Colaboracion {
-    left: 26%;
+    left: 27%;
 }
 
 #PrimerosAuxilios {
@@ -71,7 +71,7 @@ nav #img img {
     text-decoration: none;
 }
 
-#Cierre {
+#CerrarSesion {
     border-color: transparent;
     text-align: center;
     border-radius: 20px;
@@ -84,7 +84,7 @@ nav #img img {
     left: 88%;
 }
 
-#Cierre button {
+#CerrarSesion button {
     border-color: transparent;
     color: white;
     width: 100%;
@@ -92,7 +92,7 @@ nav #img img {
     font-size: 20px;
 }
 
-#Cierre a {
+#CerrarSesion a {
     text-decoration: none;
 }
 
@@ -164,7 +164,7 @@ nav #img img {
         left: 73%;
     }
 
-    #Cierre {
+    #CerrarSesion {
         top: 5%;
         max-height: 90%;
     }
@@ -196,7 +196,7 @@ nav #img img {
     }
 
 
-    #Cierre {
+    #CerrarSesion {
         top: 5%;
         max-height: 90%;
     }
@@ -209,7 +209,7 @@ nav #img img {
         max-height: 100%;
     }
 
-    #Cierre {
+    #CerrarSesion {
         top: -5%;
     }
 
@@ -225,7 +225,7 @@ nav #img img {
         top: 0%;
     }
 
-    #img {
+    nav #img {
         max-width: 15%;
         max-height: 15%;
         top: 2%;
@@ -268,11 +268,10 @@ nav #img img {
         top: 80%;
     }
 
-    #Cierre {
-        background-color: black;
+    #CerrarSesion {
         top: 90%;
         left: 0%;
-        width: 100%;
+        max-width: 100%;
         height: 6%;
     }
 
@@ -288,7 +287,7 @@ nav #img img {
         max-height: 100%;
     }
 
-    #Cierre {
+    #CerrarSesion {
         top: -5%;
     }
 
@@ -304,7 +303,7 @@ nav #img img {
         top: 0%;
     }
 
-    #img {
+    nav #img {
         max-width: 15%;
         max-height: 15%;
         top: 2%;
@@ -347,11 +346,10 @@ nav #img img {
         top: 80%;
     }
 
-    #Cierre {
-        background-color: black;
+    #CerrarSesion {
         top: 90%;
         left: 0%;
-        width: 100%;
+        max-width: 100%;
         height: 6%;
     }
 
@@ -379,7 +377,7 @@ nav #img img {
         top: 0%;
     }
 
-    #img {
+    nav #img {
         max-width: 25%;
         max-height: 15%;
         top: 2%;
@@ -422,11 +420,10 @@ nav #img img {
         top: 80%;
     }
 
-    #Cierre {
-        background-color: black;
+    #CerrarSesion {
         top: 90%;
         left: 0%;
-        width: 100%;
+        max-width: 100%;
         height: 6%;
     }
 

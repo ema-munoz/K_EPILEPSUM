@@ -3,53 +3,54 @@
    <img src="/img/fondos/sistemaNervioso.png">
 </div>
 
-<form action="/efectosSecundarios/lista/{{user.idUsuario}}" method="get" id="ocultar"></form>
-<div id="contenido">
-   <div class="row">
-      {{#each lista}}
-      <div id="tarjeta">
-         <div id="titulo">
-            <p>
-               <b>Efectos Secundarios:</b>
-            </p>
+<form action="/efectosSecundarios/lista/{{user.idUsuario}}" method="get" id="ocultar">
+   <div id="contenido">
+      <div class="row">
+         {{#each lista}}
+         <div id="tarjeta">
+            <div id="titulo">
+               <p>
+                  <b>Efectos Secundarios:</b>
+               </p>
+            </div>
+
+            <div id="nombre">
+               <label> Efectos :</label>
+               <label>{{nombreEfectosSecundarios}}</label>
+            </div>
+
+            <div id="Descripcion">
+               <label> Descripción:</label>
+               <p> {{descripcionEfectosSecundarios}} </p>
+            </div>
+
+            <div id="botonEditar">
+               <a href="/efectosSecundarios/editar/{{idEfectosSecundarios}}">
+                  <button>Editar</button>
+               </a>
+            </div>
+
+            <div id="botonEliminar">
+               <a href="/efectosSecundarios/eliminar/{{idEfectosSecundarios}}">
+                  <button>Eliminar</button>
+               </a>
+            </div>
          </div>
 
-         <div id="nombre">
-            <label> Efectos :</label>
-            <label>{{nombreEfectosSecundarios}}</label>
-         </div>
-
-         <div id="Descripcion">
-            <label> Descripción:</label>
-            <p> {{descripcionEfectosSecundarios}} </p>
-         </div>
-
-         <div id="botonEditar">
-            <a href="/efectosSecundarios/editar/{{idEfectosSecundarios}}">
-               <button>Editar</button>
+         {{else}}
+         <div id="mensaje">
+            <p><b>No tiene Efectos Secundarios. </b></p>
+            <a href="/efectosSecundarios/agregar/{{user.idUsuario}}">
+               <button type="button">¿Desea registrar ?</button>
             </a>
          </div>
-
-         <div id="botonEliminar">
-            <a href="/efectosSecundarios/eliminar/{{idEfectosSecundarios}}">
-               <button>Eliminar</button>
-            </a>
-         </div>
+         {{/each}}
       </div>
-
-      {{else}}
-      <div id="mensaje">
-         <p><b>No tiene Efectos Secundarios. </b></p>
-         <a href="/efectosSecundarios/agregar/{{user.idUsuario}}">
-            <button type="button">¿Desea registrar ?</button>
-         </a>
-      </div>
-      {{/each}}
    </div>
-</div>
 
-<div id="plus">
-   <a href="/efectosSecundarios/agregar/{{user.idUsuario}}">
-      <button type="button"><img src="/img/icons/white/plus.png"></button>
-   </a>
-</div>
+   <div id="plus">
+      <a href="/efectosSecundarios/agregar/{{user.idUsuario}}">
+         <button type="button"><img src="/img/icons/white/plus.png"></button>
+      </a>
+   </div>
+</form>

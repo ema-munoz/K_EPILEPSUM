@@ -22,8 +22,7 @@ iframe {
     border-radius: 25px;
 }
 
-#contactos {
-    background-color: antiquewhite;
+#tarjeta {
     border-radius: 25px;
     width: 90%;
     height: 55%;
@@ -50,6 +49,7 @@ footer {
     bottom: -50%;
 }
 
+/* RESPONSIVE */
 @media only screen and (orientation: portrait) and (max-width: 1000px) and (min-width: 667px) {
     #contenedor {
         max-width: 100%;

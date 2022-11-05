@@ -58,7 +58,7 @@
                     </a>
                 </div>
             </div>
-            
+
             {{else}}
             <div id="mensaje">
                 <p><b>Usted no tiene registrado ningún experiencia. </b></p>
@@ -73,7 +73,9 @@
 
     <div id="plus">
         <a href="/experiencias/agregar/{{user.idPaciente}}">
-            <button type="button"><img src="/img/icons/white/plus.png" /></button>
+            <button type="button">
+                <img src="/img/icons/white/plus.png" />
+                <button>
         </a>
     </div>
 </form>
@@ -98,12 +100,18 @@
         
     </div>
     <div>
-        <button id="boton-1" onclick="imagen.animacion1()"></button>
-        <button id="boton-2" onclick="imagen.animacion2()"></button>
-        <button id="boton-3" onclick="imagen.animacion3()"></button>
-        <button id="boton-4" onclick="imagen.animacion4()"></button>
-        <button id="boton-5" onclick="imagen.animacion5()"></button>
-        <button id="boton-6" onclick="imagen.animacion6()"></button>
+        <button id="boton-1" onclick="imagen.animacion1()">
+                <button>
+        <button id="boton-2" onclick="imagen.animacion2()">
+                <button>
+        <button id="boton-3" onclick="imagen.animacion3()">
+                <button>
+        <button id="boton-4" onclick="imagen.animacion4()">
+                <button>
+        <button id="boton-5" onclick="imagen.animacion5()">
+                <button>
+        <button id="boton-6" onclick="imagen.animacion6()">
+                <button>
     </div>
     <div id="titulo2">
         <p><b>Mi Testimonio</b></p>

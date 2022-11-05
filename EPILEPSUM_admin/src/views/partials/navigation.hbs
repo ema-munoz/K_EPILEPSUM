@@ -2,9 +2,11 @@
 {{#if user}}
 
 <div id="cierra">
-    <button type="button">
-        <img src="/img/icons/white/menu.png" onclick="menus.botonMenu()">
-    </button>
+    <a onclick="menus.botonMenu()">
+        <button type="button">
+            <img src="/img/icons/white/menu.png">
+        </button>
+    </a>
 </div>
 
 <nav>
@@ -57,16 +59,19 @@
 
     </div>
 
-    <div id="Cierre">
+    <div id="CerrarSesion">
         <a href="/CerrarSesion"><button>Cerrar Sesión</button></a>
     </div>
 </nav>
 {{/if}}
 
 <div id="hamburguesa">
-    <button type="button">
-        <img src="/img/icons/black/cross.png" onclick="menus.aparicion()">
-    </button>
+    <a onclick="menus.aparicion()">
+        <button type="button">
+            <img src="/img/icons/white/cross.png">
+        </button>
+    </a>
 </div>
 
+<script src="/js/navegacion.js"></script>
 <script src="/js/navegacion.js"></script>

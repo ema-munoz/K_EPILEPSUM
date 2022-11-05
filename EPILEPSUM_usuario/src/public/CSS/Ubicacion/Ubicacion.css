@@ -45,11 +45,31 @@ footer {
 }
 
 /* RESPONSIVE */
+@media only screen and (orientation: landscape) and (max-width: 1000px) and (min-width: 667px) {
+    #contenedor {
+        max-width: 90%;
+        max-height: 80%;
+        left: 5%;
+    }
+
+    #map-template {
+        max-width: 90%;
+        left: 5%;
+        bottom: 1%;
+    }
+
+    #posicion {
+        max-width: 90%;
+        left: 5%;
+        font-size: 20px;
+    }
+}
+
 @media only screen and (orientation: portrait) and (max-width: 1000px) and (min-width: 667px) {
     #contenedor {
-        max-width: 100%;
+        max-width: 90%;
         max-height: 80%;
-        left: 0%;
+        left: 5%;
     }
 
     #map-template {
@@ -95,12 +115,19 @@ footer {
     #map-template {
         max-width: 90%;
         left: 5%;
-        bottom: 1%;
+        bottom: 0%;
     }
 
     #posicion {
         max-width: 90%;
         left: 5%;
-        font-size: 20px;
+        font-size: 17px;
+    }
+
+    #contenedor button {
+        position: absolute;
+        width: 80%;
+        top: 5%;
+        left: 10%;
     }
 }

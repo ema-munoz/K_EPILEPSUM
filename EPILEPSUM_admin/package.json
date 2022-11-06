@@ -1,5 +1,5 @@
 {
-    "name": "epilepsum",
+    "name": "epilepsum_admin",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -31,9 +31,10 @@
         "morgan": "^1.10.0",
         "mysql": "^2.18.1",
         "mysql2": "^2.3.3",
+        "mysql2-promise": "^0.1.4",
         "passport": "^0.6.0",
         "passport-local": "^1.0.0",
-        "sequelize": "^6.25.3",
+        "sequelize": "^6.25.4",
         "timeago.js": "^4.0.2"
     },
     "devDependencies": {

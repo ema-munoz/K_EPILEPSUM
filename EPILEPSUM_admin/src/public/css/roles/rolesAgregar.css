@@ -1,9 +1,4 @@
-#fondo{
-    opacity: 75%;
-}
-
-#contenedor{
-    background-color: rgba(27, 144, 240, 0.781);
+#contenedor {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -13,33 +8,41 @@
     top: 25%;
     text-align: center;
 }
-#Nombre{
-    position: absolute;
-     width: 100%;
-     height: 100%;
-     max-width: 800px;
-     top: 25%;
-     max-height: 50%;
-     text-align: center;
-   
- }
 
- #Estado{
+#titulo {
+    width: 100%;
+    height: 100%;
+    max-width: 60%;
+    max-height: 7.5%;
     position: absolute;
-     width: 100%;
-     height: 100%;
-     max-width: 800px;
-     top: 40%;
-     max-height: 50%;
-     text-align: center;
-   
- }
+    top: 5%;
+    left: 20%;
+    font-size: 25px;
+    font-weight: bolder;
+}
 
- #boton button{
+#Nombre,
+#Estado{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    max-width: 80%;
+    max-height: 25%;
+    top: 20%;
+    left: 10%;
+    text-align: center;
+
+}
+
+#Estado {
+top: 50%;
+
+}
+
+#boton button {
     position: absolute;
     width: 60%;
     font-size: 20px;
-    top: 70%;
+    bottom: 10%;
     left: 20%;
 }
-

@@ -6,10 +6,8 @@
 
 <form action="/proyecto/agregar/" method="post" id="ocultar">
     <div id="contenedor">
-        <div id="id">
-            {{#each proyecto}}
-            <input type="text" name="numero" id="numero" value="{{idProyect}}">
-            {{/each}}
+        <div id="titulo">
+            <label>Agregar Proyecto</label>
         </div>
 
         <div id="Nombre">
@@ -17,17 +15,39 @@
             <input type="text" name="nombreProyecto" id="nombre">
         </div>
 
+        <div id="Descripcion">
+            <label>Descripción del Proyecto:</label>
+            <input type="text" name="descripcionProyecto" id="descripcion">
+        </div>
+
+        <div id="Mision">
+            <label>Misión del Proyecto:</label>
+            <input type="text" name="misionProyecto" id="mision">
+        </div>
+
+        <div id="Vision">
+            <label>Visión del Proyecto:</label>
+            <input type="text" name="visionProyecto" id="vision">
+        </div>
+
         <div id="objetivos">
-            <label>Objetivos</label>
-            <input type="text" id="numeros" checked>
-            <button type="button" onclick="objetivos.crear()">->
-            </button>
+            <label>Objetivos:</label>
+            <input type="text" id="numeros" placeholder="Ingrese su número de objetivos" checked>
+        </div>
+
+        <div id="listaObjetivos"></div>
+
+        <div id="Unico">
+            <textarea name="unico" id="unico" maxlength="2500"></textarea>
         </div>
 
         <div id="boton">
-            <button type="submit">Guardar</button>
+            <button type="button" onclick="objetivos.crear()">Crear Objetivos</button>
         </div>
 
+        <div id="Guardar">
+            <button type="submit">Guardar</button>
+        </div>
     </div>
 </form>
 

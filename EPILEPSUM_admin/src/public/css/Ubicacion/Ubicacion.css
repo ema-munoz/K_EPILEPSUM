@@ -40,24 +40,43 @@
     font-size: 20px;
 }
 
-footer {
-    bottom: 0%;
-}
-
 /* RESPONSIVE */
-@media only screen and (orientation: portrait) and (max-width: 1000px) and (min-width: 667px) {
+@media only screen and (orientation: landscape) and (max-width: 1000px) and (min-width: 667px) {
     #contenedor {
-        max-width: 100%;
+        max-width: 90%;
         max-height: 80%;
-        left: 0%;
+        left: 5%;
     }
 
     #map-template {
         max-width: 90%;
         left: 5%;
+        bottom: 1%;
     }
 
     #posicion {
+        max-width: 90%;
+        left: 5%;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 1000px) and (min-width: 667px) {
+    #contenedor {
+        max-width: 90%;
+        max-height: 80%;
+        left: 5%;
+    }
+
+    #map-template {
+        max-width: 90%;
+        left: 5%;
+        bottom: 1%;
+    }
+
+    #posicion {
+        max-width: 90%;
+        left: 5%;
         font-size: 20px;
     }
 }
@@ -72,9 +91,12 @@ footer {
     #map-template {
         max-width: 90%;
         left: 5%;
+        bottom: 1%;
     }
 
     #posicion {
+        max-width: 90%;
+        left: 5%;
         font-size: 20px;
     }
 }
@@ -89,9 +111,19 @@ footer {
     #map-template {
         max-width: 90%;
         left: 5%;
+        bottom: 0%;
     }
 
     #posicion {
-        font-size: 20px;
+        max-width: 90%;
+        left: 5%;
+        font-size: 17px;
+    }
+
+    #contenedor button {
+        position: absolute;
+        width: 80%;
+        top: 5%;
+        left: 10%;
     }
 }

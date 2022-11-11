@@ -1,183 +1,96 @@
 footer {
     bottom: -25%;
 }
-#fondo{
+
+#fondo {
     background-repeat: no-repeatZ;
 }
 
-
-/* contenido general */
-#horas, 
-#fechas{
-    display: none;
-}
-#mensaj::-webkit-scrollbar {
-    width: 9px;
-}
-
-#mensaj{
-    height: 350px;
-    overflow-y: auto;
-    padding: 10px 20px 20px 40px;
-    box-shadow: inset 0 32px 32px -32px rgb(0 0 0 /5%),
-    inset 0 -32px 32px -32px rgb(0 0 0 /5%) ;
-}
-#mensaj::-webkit-scrollbar-track {
-    background: rgba(94, 97, 97, 0.623);
-    border-radius: 15px;
-}
-
-#mensaj::-webkit-scrollbar-thumb {
-    background-color: rgb(247, 247, 247);
-    border-radius: 20px;
-    border: 3px solid rgba(12, 91, 97, 0.623);
-}
-
-#card {
+#contenedor {
     position: absolute;
-    top: 50%;
-    left: 38%;
+    top: 20%;
+    left: 28%;
     width: 45%;
-    height: 500px;
-    margin: -150px;
-    float: left;
+    height: 80%;
     perspective: 500px;
-    background: #ccc;
+    background: rgb(194, 186, 186);
     border-radius: 15px;
     box-shadow: 24px 25px 20px rgba(7, 7, 7, 0.541);
 }
 
-#content {
-    position: absolute;
+#mensaj {
     width: 100%;
+    height: 90%;
+    position: absolute;
+    top: 10%;
+    left: 0%;
+}
+
+#mensaje1 {
+    width: 100%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.616);
+    color: white;
+}
+
+#persona1 {
+    background-color: aqua;
+    width: 75%;
     height: 100%;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-
 }
 
-
-/* envio */
-#area{
-    padding: 10px 30px;
-    display: flex;
-    justify-content: space-between;
-    background: #333;
-}
-#area input{
-    height: 51px;
-    width: calc(100% - 58px);
-    font-size: 17px;
-    border: 1px solid #ccc;
-    padding: 0 13px;
-    border-radius: 5px;
-    outline: none;
-}
-#area button{
-    width: 55px;
-    border: none;
-    outline: none;
-    background: #333;
-    color: #fff;
-    font-size: 19px;
-    cursor: pointer;
-    border-radius: 0 5px 5px 0;
-}
-#area img{
-    width: 55px;
-    border: none;
-    outline: none;
-    background: #333;
+#fecha1,
+#fecha {
+    width: 100%;
+    height: 10%;
+    left: 0%;
+    top: 10%;
+    text-align: right;
 }
 
+#hora1 {
+    width: 15%;
+    height: 10%;
+    left: 25%;
+    top: 10%;
+}
 
-/* contendio chat */
-#mensaj{
-    height: 350px;
-    overflow-y: auto;
-    padding: 10px 30px 20px 30px;
+#persona2 {
+    background-color: rgba(81, 255, 0, 0.486);
+    width: 75%;
+    height: 100%;
+    position: absolute;
+    right: 0%;
+    top: 50%;
 }
 
 #chatsa1 {
-    background: #333;
-    color: #fff;
-    border-radius: 18px 18px 0 18px ;
-    word-wrap: break-word;
-
-}
-#persona1,
-#chatsa1  {
-    margin-left: auto;
-    max-width: calc(100% - 130px);
-}
-#persona2,
-#chatsa  {
-    margin-right: auto;
-    max-width: calc(100% - 130px);
-}
-#chatsa1 p {
-    padding: 4% 6%;
-}
-#fecha1{
-    padding-left: 45%;
-}
-#hora1{
-    padding-left: 90%;
-}
-#fecha1, #hora1{
-    font-size: small;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#chatsa p{
-    word-wrap: break-word;
-    padding-left: 10%;
-    background: #fff;
-    color: #333;
-    border-radius: 18px 18px 18px 0;
-}
-#fecha{
-    padding-left: 45%;
-}
-#fecha, #hora{
-    font-size: small;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
-/* encabezdo */
-#imagenr {
-    border-radius: 75%;
-}
-#contenedor {
-    background: rgb(56, 54, 54);
-    margin-top: -1px;
-    align-items: center;
-    display: flex;
-    height: 80px;
     width: 100%;
-    border-radius: 8px;
+    height: 100%;
+    background-color: rgba(99, 180, 142, 0.616);
 }
 
-#contenedor p {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: x-large;
-    color: #fff;
-    word-wrap: break-word;
+#regresar {
+    width: 100%;
+    height: 10%;
+    max-width: 100%;
+    max-height: 10%;
+    background-color: #333;
+    position: absolute;
+    top: 0%;
 }
 
-#contenedor img {
-    height: 60px;
-    width: 60px;
-    margin-right: 2%;
-    margin-left: 3%;
+#regresar button {
+    width: 10%;
+    height: 100%;
 }
 
 .imgnc {
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
-#palabr p {
+#palabr h5 {
     word-wrap: break-word;
     font-family: Arial, Helvetica, sans-serif;
     color: green;

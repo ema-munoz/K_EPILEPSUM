@@ -76,10 +76,6 @@ label {
     text-align: left;
 }
 
-footer {
-    bottom: 0%;
-}
-
 /* RESPONSIVE */
 @media only screen and (orientation: landscape) and (max-width: 1000px) and (min-width: 667px) {
     #contenedor {

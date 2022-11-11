@@ -24,8 +24,8 @@ nav #img img {
 }
 
 #EPILEPSUM,
-#Control,
-#Colaboracion,
+#Proyecto,
+#Usuario,
 #PrimerosAuxilios,
 #Ubicacion,
 #Contactos,
@@ -35,12 +35,12 @@ nav #img img {
     left: 6%;
 }
 
-#Control {
+#Proyecto {
     left: 18%;
 }
 
-#Colaboracion {
-    left: 27%;
+#Usuario {
+    left: 25%;
 }
 
 #PrimerosAuxilios {
@@ -61,8 +61,8 @@ nav #img img {
 }
 
 #EPILEPSUM a,
-#Control a,
-#Colaboracion a,
+#Proyecto a,
+#Usuario a,
 #PrimerosAuxilios a,
 #Ubicacion a,
 #Contactos a,
@@ -123,12 +123,12 @@ nav #img img {
         max-width: 100%;
     }
 
-    #Control {
+    #Proyecto {
         left: 20%;
     }
 
-    #Colaboracion {
-        left: 32%;
+    #Usuario {
+        left: 28%;
     }
 
     #PrimerosAuxilios {
@@ -154,11 +154,11 @@ nav #img img {
         max-width: 100%;
     }
 
-    #Control {
+    #Proyecto {
         left: 21%;
     }
 
-    #Colaboracion {
+    #Usuario {
         left: 32.5%;
     }
 
@@ -211,8 +211,8 @@ nav #img img {
     }
 
     #EPILEPSUM,
-    #Control,
-    #Colaboracion,
+    #Proyecto,
+    #Usuario,
     #PrimerosAuxilios,
     #Ubicacion,
     #Contactos,
@@ -222,11 +222,11 @@ nav #img img {
         width: 100%;
     }
 
-    #Control {
+    #Proyecto {
         top: 30%;
     }
 
-    #Colaboracion {
+    #Usuario {
         top: 40%;
     }
 
@@ -288,8 +288,8 @@ nav #img img {
     }
 
     #EPILEPSUM,
-    #Control,
-    #Colaboracion,
+    #Proyecto,
+    #Usuario,
     #PrimerosAuxilios,
     #Ubicacion,
     #Contactos,
@@ -299,11 +299,11 @@ nav #img img {
         width: 100%;
     }
 
-    #Control {
+    #Proyecto {
         top: 30%;
     }
 
-    #Colaboracion {
+    #Usuario {
         top: 40%;
     }
 
@@ -361,8 +361,8 @@ nav #img img {
     }
 
     #EPILEPSUM,
-    #Control,
-    #Colaboracion,
+    #Proyecto,
+    #Usuario,
     #PrimerosAuxilios,
     #Ubicacion,
     #Contactos,
@@ -372,11 +372,11 @@ nav #img img {
         width: 100%;
     }
 
-    #Control {
+    #Proyecto {
         top: 30%;
     }
 
-    #Colaboracion {
+    #Usuario {
         top: 40%;
     }
 

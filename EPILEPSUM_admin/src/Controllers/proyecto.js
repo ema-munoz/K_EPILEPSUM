@@ -14,27 +14,45 @@ proyectoCtl.enseñar = async (req, res) => {
 
 proyectoCtl.dirigir = async (req, res) => {
 	const id = req.user.idUsuario;
-	const ids = req.params.id;
-	const { nombreProyecto, objetivos, numero } = req.body;
+	const {
+		nombreProyecto,
+		descripcionProyecto,
+		misionProyecto,
+		visionProyecto,
+		objetivos,
+		unico,
+		numeros,
+	} = req.body;
 	const nuevoEnvio = {
 		nombreProyecto,
+		descripcionProyecto,
+		misionProyecto,
+		visionProyecto,
 		usuarioIdUsuario: id,
 	};
 	await orm.proyecto.create(nuevoEnvio);
-	for (let i = 0; i < objetivos.length; i++) {
+	if (parseInt(numeros) === 1) {
 		await sql.query(
-			"INSERT INTO detalleproyectos (objetivo, proyectoIdProyecto) VALUES(?, ?)",
-			[objetivos[i], numero]
+			"INSERT INTO proyectos(objetivos, usuarioIdUsuario) VALUES (?,?)",
+			[unico, id]
 		);
+	} else {
+		if (parseInt(numeros) > 1)
+			for (let i = 0; i < objetivos.length; i++) {
+				await sql.query(
+					"INSERT INTO detalleproyectos (objetivo, proyectoIdProyecto) VALUES(?, ?)",
+					[objetivos[i], id]
+				);
+			}
 	}
-	req.flash("success", "guardado");
+	req.flash("success", "Proyecto guardado correctamente.");
 	res.redirect("/proyecto/lista/" + id);
 };
 
 proyectoCtl.lista = async (req, res) => {
-	const ids = req.params.id;
+	const id = req.user.idUsuario;
 	const lista = await ("select * from  proyectos where usuarioIdUsuario = ?",
-	[ids]);
+	[id]);
 	const objetivos =
 		await "select * from detalleproyectos where proyectoIdProyecto";
 	res.render("proyecto/listaProyecto", {

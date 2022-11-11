@@ -1,9 +1,9 @@
 #contenedor {
-    position: absolute;
     width: 100%;
-    height: 150%;
+    height: 300%;
     max-width: 40%;
     max-height: 125%;
+    position: absolute;
     left: 30%;
     top: 12%;
     text-align: center;
@@ -22,8 +22,7 @@ iframe {
     border-radius: 25px;
 }
 
-#contactos {
-    background-color: antiquewhite;
+#tarjeta {
     border-radius: 25px;
     width: 90%;
     height: 55%;
@@ -51,38 +50,78 @@ footer {
 }
 
 /* RESPONSIVE */
-@media only screen and (orientation: portrait) and (max-width: 1000px) and (min-width: 667px) {
+@media only screen and (orientation: landscape) and (max-width: 1400px) and (min-width: 1000px) {
     #contenedor {
-        max-width: 100%;
+        max-width: 50%;
         max-height: 150%;
-        left: 0%;
+        left: 25%;
     }
 
-    #contactos {
-        height: 55%;
+    label {
+        font-size: 25px;
+    }
+
+    iframe {
+        max-width: 70%;
+        max-height: 70%;
+        left: 15%;
+        top: 8%;
     }
 }
 
-@media only screen and (orientation: portrait) and (max-width: 667px) and (min-width: 384px) {
+@media only screen and (orientation: landscape) and (max-width: 1000px) and (min-width: 692px) {
     #contenedor {
-        max-width: 100%;
+        max-width: 60%;
         max-height: 150%;
-        left: 0%;
+        left: 20%;
     }
 
-    #contactos {
-        height: 55%;
+    label {
+        font-size: 25px;
+    }
+
+    iframe {
+        max-width: 70%;
+        max-height: 70%;
+        left: 15%;
+        top: 8%;
+    }
+}
+
+@media only screen and (orientation: portrait) and (max-width: 692px) and (min-width: 384px) {
+    #contenedor {
+        max-width: 70%;
+        max-height: 150%;
+        left: 15%;
+    }
+
+    label {
+        font-size: 25px;
+    }
+
+    iframe {
+        max-width: 70%;
+        max-height: 70%;
+        left: 15%;
+        top: 8%;
     }
 }
 
 @media only screen and (orientation: portrait) and (max-width: 384px) and (min-width: 150px) {
     #contenedor {
-        max-width: 100%;
+        max-width: 80%;
         max-height: 150%;
-        left: 0%;
+        left: 10%;
     }
 
-    #contactos {
-        height: 55%;
+    label {
+        font-size: 25px;
+    }
+
+    iframe {
+        max-width: 70%;
+        max-height: 70%;
+        left: 15%;
+        top: 8%;
     }
 }

@@ -1,37 +1,49 @@
 <link rel="stylesheet" href="/CSS/consejos/ConsejoAgregar.css" />
 <div id="fondo">
-    <img src="/img/fondos/sistemaNervioso.png">
+  <img src="/img/fondos/sistemaNervioso.png" />
 </div>
 
 <form action="/consejo/agregar/{{user.idUsuario}}" method="post" id="ocultar">
-    <div id="contenedor">
-        <div id="titulo">
-            {{#each idMax}}
-            <label>Agregar Consejo N: <input type="text" name="consejos" id="numero"
-                    value="{{'MAX(idConsejo)'}}"></label>
-            {{/each}}
-        </div>
-
-        <div id="Nombres">
-            <label>
-                Nombre:
-            </label>
-            <input type="text" name="nombreConsejo" id="nombre" required>
-        </div>
-
-        <div id="descripcion">
-            <label>
-                Descripción:
-            </label>
-            <input type="text" name="consejosDetallesConsejo" id="descripcion" required>
-        </div>
-
-        <div id="Guardar">
-            <button type="submit">
-                Agregar
-            </button>
-        </div>
+  <div id="contenedor">
+    <div id="titulo">
+      {{#each idMax}}
+        <label>
+          Agregar Consejo N:
+          <input
+            type="text"
+            name="consejos"
+            id="numero"
+            value="{{'MAX(idConsejo)'}}"
+          />
+        </label>
+      {{/each}}
     </div>
+
+    <div id="Nombres">
+      <label>
+        Nombre:
+      </label>
+      <input type="text" name="nombreConsejo" id="nombre" required />
+    </div>
+
+    <div id="descripcion">
+      <label>
+        Descripción:
+      </label>
+      <input
+        type="text"
+        name="consejosDetallesConsejo"
+        id="descripcion"
+        required
+      />
+    </div>
+
+    <div id="Guardar">
+      <button type="submit">
+        Agregar
+      </button>
+    </div>
+  </div>
 </form>
 
 <script src="/js/numero.js"></script>

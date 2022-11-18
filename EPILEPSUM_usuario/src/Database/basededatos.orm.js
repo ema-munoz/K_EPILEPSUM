@@ -4,19 +4,17 @@ const mysql = require("mysql2/promise");
 const dbName = process.env.DB_SCHEMAS || "EPILEPSUM";
 
 mysql
-	.createConnection({
-		host: process.env.DB_HOST || "127.0.0.1",
-		port: process.env.DB_PORT || "3306",
-		user: process.env.DB_USER || "root",
-		password: process.env.DB_PASSWORD || "",
-	})
-	.then((connection) => {
-		connection
-			.query(`CREATE DATABASE IF NOT EXISTS ${dbName};`)
-			.then((res) => {
-				console.info("Base de datos creada o comprobada correctamente");
-			});
-	});
+  .createConnection({
+    host: process.env.DB_HOST || "127.0.0.1",
+    port: process.env.DB_PORT || "3306",
+    user: process.env.DB_USER || "root",
+    password: process.env.DB_PASSWORD || "",
+  })
+  .then((connection) => {
+    connection.query(`CREATE DATABASE IF NOT EXISTS ${dbName};`).then((res) => {
+      console.info("Base de datos creada o comprobada correctamente");
+    });
+  });
 
 const usuarioModels = require("../Model/user");
 const medicacionUsuarioModels = require("../Model/medicacion");
@@ -54,27 +52,27 @@ const mensajesModels = require("../Model/mensajesModel");
 /* Ever */
 
 const sequelize = new Sequelize("epilepsum", "root", "", {
-	host: "localhost",
-	dialect: "mysql",
-	pool: {
-		max: 5,
-		min: 0,
-		require: 30000,
-		idle: 10000,
-	},
+  host: "localhost",
+  dialect: "mysql",
+  pool: {
+    max: 5,
+    min: 0,
+    require: 30000,
+    idle: 10000,
+  },
 });
 
 sequelize
-	.authenticate()
-	.then(() => {
-		console.log("Conectado");
-	})
-	.catch((err) => {
-		console.log("No se conecto");
-	});
+  .authenticate()
+  .then(() => {
+    console.log("Conectado");
+  })
+  .catch((err) => {
+    console.log("No se conecto");
+  });
 
 sequelize.sync({ force: false }).then(() => {
-	console.log("Tablas sincronizadas");
+  console.log("Tablas sincronizadas");
 });
 
 const usuario = usuarioModels(sequelize, Sequelize);
@@ -103,8 +101,8 @@ const contenido = contenidoModels(sequelize, Sequelize);
 const detalleContenido = detalleContenidoModels(sequelize, Sequelize);
 /*Javier*/
 const composicionMedicamento = composicionMedicamentoModels(
-	sequelize,
-	Sequelize
+  sequelize,
+  Sequelize
 );
 const farmaco = farmacoModels(sequelize, Sequelize);
 const componentesFarmacos = componentesFarmacosModel(sequelize, Sequelize);
@@ -302,37 +300,37 @@ pacientes.hasMany(mensajes);
 mensajes.belongsTo(pacientes);
 
 module.exports = {
-	usuario,
-	medicacion,
-	ataque,
-	medico,
-	contactosEmergencia,
-	familiares,
-	citaControl,
-	consejo,
-	detallesConsejos,
-	detallesExperiencias,
-	detallesMedicamentos,
-	detallesRol,
-	experiencias,
-	rol,
-	proyecto,
-	detalleProyecto,
-	efectosSecundarios,
-	tipoEpilepsia,
-	sintomas,
-	preguntas,
-	respuestas,
-	pacientes,
-	contenido,
-	detalleContenido,
-	/*Emily */
-	solicitudes,
-	amigos,
-	/* Javier */
-	composicionMedicamento,
-	farmaco,
-	componentesFarmacos,
-	/*Billy */
-	mensajes,
+  usuario,
+  medicacion,
+  ataque,
+  medico,
+  contactosEmergencia,
+  familiares,
+  citaControl,
+  consejo,
+  detallesConsejos,
+  detallesExperiencias,
+  detallesMedicamentos,
+  detallesRol,
+  experiencias,
+  rol,
+  proyecto,
+  detalleProyecto,
+  efectosSecundarios,
+  tipoEpilepsia,
+  sintomas,
+  preguntas,
+  respuestas,
+  pacientes,
+  contenido,
+  detalleContenido,
+  /*Emily */
+  solicitudes,
+  amigos,
+  /* Javier */
+  composicionMedicamento,
+  farmaco,
+  componentesFarmacos,
+  /*Billy */
+  mensajes,
 };

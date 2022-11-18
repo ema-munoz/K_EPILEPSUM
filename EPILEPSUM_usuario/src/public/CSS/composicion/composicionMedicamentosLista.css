@@ -1,41 +1,41 @@
 #contenedor {
-    background: #c13dc5;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 88%;
-    max-height: 100%;
-    left: 5%;    
-    top: 13%;
-    text-align: center;
-    padding: 3%;    
+  background: #c13dc5;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 88%;
+  max-height: 100%;
+  left: 5%;
+  top: 13%;
+  text-align: center;
+  padding: 3%;
 }
 
-.row{
-    row-gap: 5%;
-    gap: 50px;
+.row {
+  row-gap: 5%;
+  gap: 50px;
 }
 
-#tarjeta{
-    background-color: #e359e7;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 50%;
-    margin-left: 0%;
-    text-align: center;
-    padding: 1%;    
-    border-radius: 2%;
+#tarjeta {
+  background-color: #e359e7;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 50%;
+  margin-left: 0%;
+  text-align: center;
+  padding: 1%;
+  border-radius: 2%;
 }
 
-#titulo{
-    margin-top: -1.5%;
+#titulo {
+  margin-top: -1.5%;
 }
 
-#titulo h3{
-    margin-top: 5%;
-    font-size: 35px;
-    font-weight: bolder;    
+#titulo h3 {
+  margin-top: 5%;
+  font-size: 35px;
+  font-weight: bolder;
 }
 
 #titulo,
@@ -43,53 +43,52 @@
 #Dosis,
 #Horario,
 #FechaInicio,
-#FechaFinal{
-    width: 100%;
-    height: 100%;
-    max-width: 70%; 
-    max-height: 10%;
-    margin-left: 15%;    
+#FechaFinal {
+  width: 100%;
+  height: 100%;
+  max-width: 70%;
+  max-height: 10%;
+  margin-left: 15%;
 }
 
 #botonEditar,
-#botonEliminar{    
-    width: 100%;
-    height: 100%;
-    max-width: 20%; 
-    max-height: 10%;
-    margin-left: 10%;
-    margin-top: 2.5%;
-    margin: 0 auto;
-    padding: 0.5%;
+#botonEliminar {
+  width: 100%;
+  height: 100%;
+  max-width: 20%;
+  max-height: 10%;
+  margin-left: 10%;
+  margin-top: 2.5%;
+  margin: 0 auto;
+  padding: 0.5%;
 }
 
 #botonEditar button,
 #botonEliminar button,
 #botonEditar a,
-#botonEliminar a{
-    width: 100%;
-    height: 100%;
+#botonEliminar a {
+  width: 100%;
+  height: 100%;
 }
 
-
 #plus {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 4%;
-    max-height: 8%;
-    right: 0%;
-    top: 18%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 4%;
+  max-height: 8%;
+  right: 0%;
+  top: 18%;
 }
 
 #plus img {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-footer{
-    bottom: -30%;
+footer {
+  bottom: -30%;
 }

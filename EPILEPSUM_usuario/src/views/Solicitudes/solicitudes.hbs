@@ -1,56 +1,76 @@
-<link rel="stylesheet" href="/CSS/solicitud/solicitud.css">
+<link rel="stylesheet" href="/CSS/solicitud/solicitud.css" />
 
 <div id="fondo">
-    <img src="/img/fondos/sistemaNervioso.jpg">
+  <img src="/img/fondos/sistemaNervioso.jpg" />
 </div>
-<form action="/amigos/solicitudes/{{user.idPaciente}}" method="post" id="ocultar">
-    <div id="contenedor">
-        <div class="row">
-            {{#each enlistar}}
-            <div id="tarjeta">
-                <div id="titulo">
-                    <h1> Solictud:</h1>
-                </div>
+<form
+  action="/amigos/solicitudes/{{user.idPaciente}}"
+  method="post"
+  id="ocultar"
+>
+  <div id="contenedor">
+    <div class="row">
+      {{#each enlistar}}
+        <div id="tarjeta">
+          <div id="titulo">
+            <h1> Solictud:</h1>
+          </div>
 
-                <div id="foto">
-                    Foto:
-                </div>
-                
-                <div id="nombre">
-                    <p>Nombre: {{nombrePaciente}} {{apellidoPaciente}}</p>
-                </div>
+          <div id="foto">
+            Foto:
+          </div>
 
-                <div id="fecha">
-                    <p>Fecha: {{fechaSolicitud}}</p>
-                </div>
+          <div id="nombre">
+            <p>Nombre: {{nombrePaciente}} {{apellidoPaciente}}</p>
+          </div>
 
-                <div id="botonAceptarSolicitud">
-                    <input type="text" name="idSolicitud" id="soliciyud" value="{{idSolicitud}}" readonly>
-                    <input type="text" id="horas" name="horaMensaje" readonly>
-                    <input type="text" id="fechas" name="fechaMensaje" readonly>
-                    <button type="submit">Aceptar</button>
-                </div>
+          <div id="fecha">
+            <p>Fecha: {{fechaSolicitud}}</p>
+          </div>
 
-                <div id="botonEliminarSolicitud">
-                    <a href="#">
-                        <button type="button">Eliminar</button>
-                    </a>
-                </div>
-            </div>
+          <div id="botonAceptarSolicitud">
+            <input
+              type="text"
+              name="idSolicitud"
+              id="soliciyud"
+              value="{{idSolicitud}}"
+              readonly
+            />
+            <input type="text" id="horas" name="horaMensaje" readonly />
+            <input type="text" id="fechas" name="fechaMensaje" readonly />
+            <button type="submit">
+              Aceptar
+            </button>
+          </div>
 
-            {{else}}
-            <div id="mensaje">
+          <div id="botonEliminarSolicitud">
+            <a href="#">
+              <button type="button">
+                Eliminar
+              </button>
+            </a>
+          </div>
+        </div>
+
+      {{else}}
+        <div id="mensaje">
+          <p>
+            <b>Usted no tiene registrado ninguna solicitud. </b>
+          </p>
+          <!--
                 <div id="botonAceptarSolicitud">
                     <input type="text" name="idSolicitud" id="soliciyud" value="{{user.idPaciente}}" readonly>
                     <input type="text" id="horas" name="horaMensaje" readonly>
                     <input type="text" id="fechas" name="fechaMensaje" readonly>
-                    <button type="submit">Aceptar</button>
+                    <button type="submit">
+Aceptar
+</button>
                 </div>
-
-            </div>
-            {{/each}}
+                -->
         </div>
+      {{/each}}
     </div>
+  </div>
 </form>
 
 <script src="/js/mensajes/horafecha.js"></script>

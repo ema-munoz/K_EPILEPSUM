@@ -1,34 +1,37 @@
-<link rel="stylesheet" href="/css/roles/rolesEditar.css">
+<link rel="stylesheet" href="/css/roles/rolesEditar.css" />
 
 <div id="fondo">
-    <img src="/img/fondos/sistemaNervioso.png">
+  <img src="/img/fondos/sistemaNervioso.png" />
 </div>
 
-<div id="contenedor">
-    {{#each enlistar}}
-    <form action="/roles/editar/{{idrol}}" method="post" id="ocultar">
+{{#each enlistar}}
+  <form action="/roles/editar/{{idrol}}" method="post" id="ocultar">
+    <div id="contenedor">
+      <div id="Nombre">
+        <label>
+          Nombre:
+        </label>
+        <input
+          type="text"
+          name="nombreRol"
+          id="nombre"
+          value="{{nombreRol}}"
+          required
+        />
+      </div>
 
-        <div id="Nombre">
-            <label>
-                Nombre:
-            </label>
-            <input type="text" name="nombreRol" id="nombre" value="{{nombreRol}}" required>
-        </div>
+      <div id="Estado">
+        <label>
+          Estado:
+        </label>
+        <input type="text" name="estadoRol" id="estado" value="{{estadoRol}}" />
+      </div>
 
-        <div id="Estado">
-            <label>
-                Estado:
-            </label>
-            <input type="text" name="estadoRol" id="estado" value="{{estadoRol}}">
-        </div>
-
-
-        <div id="boton">
-            <button type="submit">
-                Guardar Cambios
-            </button>
-        </div>
-        {{/each}}
-
-    </form>
-</div>
+      <div id="boton">
+        <button type="submit">
+          Guardar Cambios
+        </button>
+      </div>
+    </div>
+  </form>
+{{/each}}

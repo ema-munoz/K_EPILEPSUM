@@ -5,10 +5,10 @@ const router = express.Router();
 const { Ingreso } = require("../lib/auth");
 
 const {
-	agregar,
-	eliminar,
-	mostrar,
-	MostrarAmigos,
+  agregar,
+  eliminar,
+  mostrar,
+  MostrarAmigos,
 } = require("../Controllers/solicitudes");
 
 router.use(Ingreso);

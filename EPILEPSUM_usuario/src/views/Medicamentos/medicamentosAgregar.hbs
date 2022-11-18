@@ -1,52 +1,80 @@
-<link rel="stylesheet" href="/css/Medicamentos/MedicamentosAgregar.css">
+<link rel="stylesheet" href="/css/Medicamentos/MedicamentosAgregar.css" />
 
 <div id="fondo">
-    <img src="/img/fondos/sistemaNervioso.png">
+  <img src="/img/fondos/sistemaNervioso.png" />
 </div>
 
-<form action="/medicamentos/agregar/{{user.idPaciente}}" method="post" id="ocultar">
-    <div id="contenedor">
-        <div id="formulario">
-            <div id="Nombres">
-                <label>
-                    <b>Nombre de la Medicación:</b>
-                </label>
-                <input type="text" name="nombreMedicaciones" id="nombre" required>
-            </div>
+<form
+  action="/medicamentos/agregar/{{user.idPaciente}}"
+  method="post"
+  id="ocultar"
+>
+  <div id="contenedor">
+    <div id="formulario">
+      <div id="Nombres">
+        <label>
+          <b>Nombre de la Medicación:</b>
+        </label>
+        <input type="text" name="nombreMedicaciones" id="nombre" required />
+      </div>
 
-            <div id="Dosis">
-                <label>
-                    <b>Dosis al Día:</b>
-                </label>
-                <input type="number" name="dosisMedicaciones" id="dosis" required>
-            </div>
+      <div id="Dosis">
+        <label>
+          <b>Dosis al Día:</b>
+        </label>
+        <input type="number" name="dosisMedicaciones" id="dosis" required />
+      </div>
 
-            <div id="Horario">
-                <label>
-                    <b>Horario de la Dosis:</b>
-                </label>
-                <input type="text" name="horaMedicaciones" id="hora" required>
-            </div>
+      <div id="Horario">
+        <label>
+          <b>Horario de la Dosis:</b>
+        </label>
+        <input type="text" name="horaMedicaciones" id="hora" required />
+      </div>
 
-            <div id="FechaInicio">
-                <label>
-                    <b>Fecha de Inicio:</b>
-                </label>
-                <input type="date" name="fechaInicioMedicaciones" id="fechaInicio" required>
-            </div>
+      <div id="FechaInicio">
+        <label>
+          <b>Fecha de Inicio:</b>
+        </label>
+        <input
+          type="date"
+          name="fechaInicioMedicaciones"
+          id="fechaInicio"
+          required
+        />
+      </div>
 
-            <div id="FechaFinal">
-                <label>
-                    <b>Fecha de Control:</b>
-                </label>
-                <input type="date" name="fechaFinalMedicaciones" id="fechaFinal">
-            </div>
-        </div>
+      <div id="FechaFinal">
+        <label>
+          <b>Fecha de Terminación:</b>
+        </label>
+        <input type="date" name="fechaFinalMedicaciones" id="fechaFinal" />
+      </div>
 
-        <div id="boton">
-            <button type="submit">
-                Agregar
-            </button>
-        </div>
+      <div id="HoraInicio">
+        <label>
+          <b>Hora de Inicio:</b>
+        </label>
+        <input
+          type="time"
+          name="horaInicioMedicaciones"
+          id="horaInicio"
+          required
+        />
+      </div>
+
+      <div id="HoraFinal">
+        <label>
+          <b>Hora de Terminación:</b>
+        </label>
+        <input type="time" name="horaFinalMedicaciones" id="horaFinal" />
+      </div>
     </div>
+
+    <div id="boton">
+      <button type="submit">
+        Agregar
+      </button>
+    </div>
+  </div>
 </form>

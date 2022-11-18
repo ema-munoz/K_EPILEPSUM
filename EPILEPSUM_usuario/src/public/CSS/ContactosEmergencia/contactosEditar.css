@@ -1,169 +1,165 @@
-#fondo {
-    opacity: 75%;
-}
-
 #contenedor {
-    width: 100%;
-    height: 100%;
-    max-width: 60%;
-    max-height: 60%;
-    position: absolute;
-    left: 20%;
-    top: 20%;
+  width: 100%;
+  height: 100%;
+  max-width: 60%;
+  max-height: 60%;
+  position: absolute;
+  left: 20%;
+  top: 20%;
 }
 
 #formulario {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    position: absolute;
-    left: 0%;
-    top: 00%;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  left: 0%;
+  top: 00%;
 }
 
 #boton {
-    position: absolute;
-    width: 60%;
-    font-size: 20px;
-    bottom: 10%;
-    left: 20%;
+  position: absolute;
+  width: 60%;
+  font-size: 20px;
+  bottom: 10%;
+  left: 20%;
 }
 
 #boton button {
-    width: 100%;
+  width: 100%;
 }
 
 #Nombres,
 #Familiar,
 #Telefono,
 #Celular {
-    width: 100%;
-    height: 15%;
-    position: absolute;
-    top: 10%;
+  width: 100%;
+  height: 15%;
+  position: absolute;
+  top: 10%;
 }
 
 #Nombres {
-    top: 15%;
+  top: 15%;
 }
 
 #Familiar {
-    top: 30%;
+  top: 30%;
 }
 
 #Telefono {
-    top: 45%;
+  top: 45%;
 }
 
 #Celular {
-    top: 60%;
+  top: 60%;
 }
 
 #Nombres input {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 input,
 select {
-    max-width: 50%;
-    max-height: 60%;
-    position: absolute;
-    left: 45%;
+  max-width: 50%;
+  max-height: 60%;
+  position: absolute;
+  left: 45%;
 }
 
 label {
-    position: absolute;
-    left: 6%;
-    font-size: 22px;
-    text-align: left;
+  position: absolute;
+  left: 6%;
+  font-size: 22px;
+  text-align: left;
 }
 
 footer {
-    bottom: 0%;
+  bottom: 0%;
 }
 
 /* RESPONSIVE */
 @media only screen and (orientation: portrait) and (max-width: 1000px) and (min-width: 667px) {
-    #contenedor {
-        max-width: 100%;
-        max-height: 85%;
-        top: 10%;
-        left: 0%;
-    }
+  #contenedor {
+    max-width: 100%;
+    max-height: 85%;
+    top: 10%;
+    left: 0%;
+  }
 
-    #Nombres,
-    #Familiar,
-    #Telefono,
-    #Celular {
-        max-height: 10%;
-    }
+  #Nombres,
+  #Familiar,
+  #Telefono,
+  #Celular {
+    max-height: 10%;
+  }
 
-    input,
-    select {
-        max-width: 80%;
-        top: 60%;
-        left: 10%;
-    }
+  input,
+  select {
+    max-width: 80%;
+    top: 60%;
+    left: 10%;
+  }
 
-    label {
-        text-align: center;
-        left: 10%;
-    }
+  label {
+    text-align: center;
+    left: 10%;
+  }
 }
 
 @media only screen and (orientation: portrait) and (max-width: 667px) and (min-width: 384px) {
-    #contenedor {
-        max-width: 100%;
-        max-height: 85%;
-        top: 10%;
-        left: 0%;
-    }
+  #contenedor {
+    max-width: 100%;
+    max-height: 85%;
+    top: 10%;
+    left: 0%;
+  }
 
-    #Nombres,
-    #Familiar,
-    #Telefono,
-    #Celular {
-        max-height: 10%;
-    }
+  #Nombres,
+  #Familiar,
+  #Telefono,
+  #Celular {
+    max-height: 10%;
+  }
 
-    input,
-    select {
-        max-width: 80%;
-        top: 60%;
-        left: 10%;
-    }
+  input,
+  select {
+    max-width: 80%;
+    top: 60%;
+    left: 10%;
+  }
 
-    label {
-        text-align: center;
-        left: 10%;
-    }
+  label {
+    text-align: center;
+    left: 10%;
+  }
 }
 
 @media only screen and (orientation: portrait) and (max-width: 384px) and (min-width: 150px) {
-    #contenedor {
-        max-width: 100%;
-        max-height: 85%;
-        top: 10%;
-        left: 0%;
-    }
+  #contenedor {
+    max-width: 100%;
+    max-height: 85%;
+    top: 10%;
+    left: 0%;
+  }
 
-    #Nombres,
-    #Familiar,
-    #Telefono,
-    #Celular {
-        max-height: 10%;
-    }
+  #Nombres,
+  #Familiar,
+  #Telefono,
+  #Celular {
+    max-height: 10%;
+  }
 
-    input,
-    select {
-        max-width: 80%;
-        top: 60%;
-        left: 10%;
-    }
+  input,
+  select {
+    max-width: 80%;
+    top: 60%;
+    left: 10%;
+  }
 
-    label {
-        text-align: center;
-        left: 10%;
-    }
+  label {
+    text-align: center;
+    left: 10%;
+  }
 }

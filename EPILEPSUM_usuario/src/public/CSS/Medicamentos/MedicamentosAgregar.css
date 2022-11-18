@@ -1,188 +1,196 @@
-#fondo {
-    opacity: 75%;
-}
-
 #contenedor {
-    width: 100%;
-    height: 100%;
-    max-width: 60%;
-    max-height: 60%;
-    position: absolute;
-    left: 20%;
-    top: 20%;
+  width: 100%;
+  height: 100%;
+  max-width: 60%;
+  max-height: 70%;
+  position: absolute;
+  left: 20%;
+  top: 15%;
 }
 
 #formulario {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 100%;
-    position: absolute;
-    left: 0%;
-    top: 00%;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  left: 0%;
+  top: 00%;
 }
 
 #boton {
-    position: absolute;
-    width: 60%;
-    font-size: 20px;
-    bottom: 5%;
-    left: 20%;
+  position: absolute;
+  width: 60%;
+  height: 7.5%;
+  font-size: 20px;
+  bottom: 5%;
+  left: 20%;
 }
 
 #boton button {
-    width: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #Nombres,
 #Dosis,
 #Horario,
 #FechaInicio,
-#FechaFinal {
-    width: 100%;
-    height: 15%;
-    position: absolute;
-    top: 10%;
+#FechaFinal,
+#HoraInicio,
+#HoraFinal {
+  width: 100%;
+  height: 12.5%;
+  position: absolute;
+  top: 5%;
 }
 
 #Dosis {
-    top: 25%;
+  top: 16.5%;
 }
 
 #Horario {
-    top: 40%;
+  top: 28%;
 }
 
 #FechaInicio {
-    top: 55%;
+  top: 39.5%;
+}
+
+#HoraInicio {
+  top: 51%;
 }
 
 #FechaFinal {
-    top: 70%;
+  top: 62.5%;
+}
+
+#HoraFinal {
+  top: 74%;
 }
 
 #Nombres input,
 #Horario input {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 input {
-    max-width: 50%;
-    max-height: 60%;
-    position: absolute;
-    left: 45%;
+  max-width: 50%;
+  max-height: 60%;
+  position: absolute;
+  left: 45%;
 }
 
 label {
-    position: absolute;
-    left: 6%;
-    font-size: 22px;
-    text-align: left;
+  position: absolute;
+  left: 6%;
+  font-size: 22px;
+  text-align: left;
 }
 
 footer {
-    bottom: 0%;
+  bottom: 0%;
 }
 
 /* RESPONSIVE */
 @media only screen and (orientation: landscape) and (max-width: 1000px) and (min-width: 667px) {
-    #contenedor {
-        max-width: 80%;
-        max-height: 70%;
-        top: 15%;
-        left: 10%;
-    }
+  #contenedor {
+    max-width: 80%;
+    max-height: 70%;
+    top: 15%;
+    left: 10%;
+  }
 
-    #formulario {
-        max-height: 100%;
-        top: -5%;
-    }
+  #formulario {
+    max-height: 100%;
+    top: 0%;
+  }
 
-    input {
-        max-width: 80%;
-        max-height: 50%;
-        top: 40%;
-        left: 10%;
-    }
+  input {
+    max-width: 80%;
+    max-height: 50%;
+    top: 40%;
+    left: 10%;
+  }
 
-    label {
-        text-align: center;
-        left: 10%;
-    }
+  label {
+    text-align: center;
+    left: 10%;
+  }
 }
 
-@media only screen and (orientation: portrait) and (max-width: 695px) and (min-width: 665px) {
-    #contenedor {
-        max-width: 100%;
-        max-height: 80%;
-        top: 10%;
-        left: 0%;
-    }
+@media only screen and (orientation: portrait) and (max-width: 895px) and (min-width: 665px) {
+  #contenedor {
+    max-width: 100%;
+    max-height: 90%;
+    top: 10%;
+    left: 0%;
+  }
 
-    #formulario {
-        max-height: 100%;
-        top: -5%;
-    }
+  #formulario {
+    max-height: 100%;
+    top: 0%;
+  }
 
-    input {
-        max-width: 80%;
-        max-height: 50%;
-        top: 40%;
-        left: 10%;
-    }
+  input {
+    max-width: 80%;
+    max-height: 50%;
+    top: 40%;
+    left: 10%;
+  }
 
-    label {
-        left: 10%;
-    }
+  label {
+    left: 10%;
+  }
 }
 
 @media only screen and (orientation: portrait) and (max-width: 667px) and (min-width: 384px) {
-    #contenedor {
-        max-width: 100%;
-        max-height: 80%;
-        top: 10%;
-        left: 0%;
-    }
+  #contenedor {
+    max-width: 100%;
+    max-height: 90%;
+    top: 10%;
+    left: 0%;
+  }
 
-    #formulario {
-        max-height: 100%;
-        top: -5%;
-    }
+  #formulario {
+    max-height: 100%;
+    top: 0%;
+  }
 
-    input {
-        max-width: 80%;
-        max-height: 50%;
-        top: 40%;
-        left: 10%;
-    }
+  input {
+    max-width: 80%;
+    max-height: 50%;
+    top: 40%;
+    left: 10%;
+  }
 
-    label {
-        left: 10%;
-    }
+  label {
+    left: 10%;
+  }
 }
 
 @media only screen and (orientation: portrait) and (max-width: 384px) and (min-width: 150px) {
-    #contenedor {
-        max-width: 100%;
-        max-height: 80%;
-        top: 10%;
-        left: 0%;
-    }
+  #contenedor {
+    max-width: 100%;
+    max-height: 90%;
+    top: 10%;
+    left: 0%;
+  }
 
-    #formulario {
-        max-height: 100%;
-        top: -5%;
-    }
+  #formulario {
+    max-height: 100%;
+    top: 0%;
+  }
 
-    input {
-        max-width: 80%;
-        max-height: 50%;
-        top: 40%;
-        left: 10%;
-    }
+  input {
+    max-width: 80%;
+    max-height: 50%;
+    top: 40%;
+    left: 10%;
+  }
 
-    label {
-        left: 10%;
-        font-size: 20px;
-    }
+  label {
+    left: 10%;
+    font-size: 20px;
+  }
 }

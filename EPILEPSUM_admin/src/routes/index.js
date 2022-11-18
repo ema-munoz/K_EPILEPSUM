@@ -1,9 +1,8 @@
-
-const express = require('express');
+const express = require("express");
 
 const rutas = express.Router();
 
-const {mostrar, verificacion} = require ("../Controllers/index");
+const { mostrar, verificacion } = require("../Controllers/index");
 
 rutas.get("/", mostrar);
 

@@ -1,103 +1,102 @@
 #fondo {
-    opacity: 75%;
-    position: fixed;
+  opacity: 75%;
+  position: fixed;
 }
 
 #mensaje {
-    position: absolute;
-    width: 100%;
-    height: 100px;
-    max-width: 95%;
-    max-height: 100px;
-    left: 5%;
-    top: 100%;
-    text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  max-width: 95%;
+  max-height: 100px;
+  left: 5%;
+  top: 100%;
+  text-align: center;
 }
 
 #mensaje p {
-    position: absolute;
-    width: 70%;
-    top: 25%;
-    left: 15%;
+  position: absolute;
+  width: 70%;
+  top: 25%;
+  left: 15%;
 }
 
 #mensaje button {
-    position: absolute;
-    width: 70%;
-    top: 60%;
-    left: 15%;
+  position: absolute;
+  width: 70%;
+  top: 60%;
+  left: 15%;
 }
 
 #contenido {
-    position: absolute;
-    width: 100%;
-    height: 80%;
-    max-width: 92%;
-    max-height: 80%;
-    left: 3%;
-    top: 13%;
-    text-align: center;
-
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  max-width: 92%;
+  max-height: 80%;
+  left: 3%;
+  top: 13%;
+  text-align: center;
 }
 
 .row {
-    gap: 1.5%;
-    row-gap: 20px;
+  gap: 1.5%;
+  row-gap: 20px;
 }
 
 #tarjeta {
-    width: 100%;
-    height: 100%;
-    max-width: 30%;
-    max-height: 20%;
-    text-align: center;
+  width: 100%;
+  height: 100%;
+  max-width: 30%;
+  max-height: 20%;
+  text-align: center;
 }
 
 #titulo {
-    margin-top: 5%;
-    font-size: 22.5px;
+  margin-top: 5%;
+  font-size: 22.5px;
 }
 
 #botonEditar,
 #botonEliminar {
-    width: 100%;
-    height: 100%;
-    max-width: 90%;
-    max-height: 5%;
-    margin-left: 5%;
+  width: 100%;
+  height: 100%;
+  max-width: 90%;
+  max-height: 5%;
+  margin-left: 5%;
 }
 
 #botonEditar {
-    margin-top: 2.5%;
+  margin-top: 2.5%;
 }
 
 #botonEliminar {
-    margin-top: 2.5%;
+  margin-top: 2.5%;
 }
 
 #botonEditar button,
 #botonEliminar button,
 #botonEditar a,
 #botonEliminar a {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #plus {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 75px;
-    max-height: 75px;
-    right: 0.5%;
-    top: 11%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 75px;
+  max-height: 75px;
+  right: 0.5%;
+  top: 11%;
 }
 
 #plus img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 footer {
-    display: none;
+  display: none;
 }

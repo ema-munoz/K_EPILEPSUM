@@ -1,31 +1,32 @@
-<link rel="stylesheet" href="/css/roles/rolesAgregar.css">
+<link rel="stylesheet" href="/css/roles/rolesAgregar.css" />
 
 <div id="fondo">
-    <img src="/img/fondos/Fondo.jpg">
+  <img src="/img/fondos/Fondo.jpg" />
 </div>
 
-<div id="contenedor">
-    <form action="/roles/agregar/{{user.idUsuario}}" method="post" id="ocultar">
-        <div id="tarjeta">
-            <div="titulo">
-                <h1> Roles </h1>
-        </div>
+<form action="/roles/agregar/{{user.idUsuario}}" method="post" id="ocultar">
+  <div id="contenedor">
+    <div id="tarjeta">
+      <div id="titulo">
+        <h1> Roles </h1>
+      </div>
 
-        <div id="Nombre">
-            Nombre:
-            <input type="text" name="nombreRol" id="nombre" required>
+      <div id="Nombre">
+        Nombre:
+        <input type="text" name="nombreRol" id="nombre" required />
 
-        </div>
+      </div>
 
-        <div id="Estado">
-            Estado:
-            <input type="text" name="estadoRol" id="nombre" required>
-        </div>
+      <div id="Estado">
+        Estado:
+        <input type="text" name="estadoRol" id="nombre" required />
+      </div>
 
-        <div id="boton">
-            <button type="submit">
-                Agregar
-            </button>
-        </div>
-    </form>
-</div>
+      <div id="boton">
+        <button type="submit">
+          Agregar
+        </button>
+      </div>
+    </div>
+  </div>
+</form>

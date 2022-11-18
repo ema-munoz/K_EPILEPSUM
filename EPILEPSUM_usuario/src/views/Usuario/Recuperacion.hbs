@@ -1,59 +1,88 @@
-<link rel="stylesheet" href="/CSS/Usuario/Recuperacion.css">
+<link rel="stylesheet" href="/CSS/Usuario/Recuperacion.css" />
 
 <div id="fondo">
-    <img src="/img/fondos/Fondo.jpg">
+  <img src="/img/fondos/Fondo.jpg" />
 </div>
 
 <div id="contenedor">
-    <div id="formulario">
-        <h1 id="h1" name="h1">EPILEPSUM</h1>
-        <form action="/actualizar/" method="post" id="ocultar">
+  <div id="formulario">
+    <h1 id="h1" name="h1">
+      EPILEPSUM</h1>
+    <form action="/actualizar/" method="post" id="ocultar">
 
-            {{#each datosBD}}
-            <div id="correo">
-                <input id="correo2" type="email" name="username" value="{{username}}" readonly required>
-                <input id="usuarioId" type="text" name="id" value="{{idPaciente}}" readonly>
-            </div>
-            {{/each}}
+      {{#each datosBD}}
+        <div id="correo">
+          <input
+            id="correo2"
+            type="email"
+            name="username"
+            value="{{username}}"
+            readonly
+            required
+          />
+          <input
+            id="usuarioId"
+            type="text"
+            name="id"
+            value="{{idPaciente}}"
+            readonly
+          />
+        </div>
+      {{/each}}
 
-            <div id="contrasenia">
-                <input id="password" type="password" name="password" placeholder="Ingrese su Contraseña" required>
-            </div>
+      <div id="contrasenia">
+        <input
+          id="password"
+          type="password"
+          name="password"
+          placeholder="Ingrese su Contraseña"
+          required
+        />
+      </div>
 
-            <div id="contrasenia2">
-                <input id="password2" type="password" name="password2" onkeyup="boton.verificacion()"
-                    placeholder="Confirme su Contraseña" required>
-            </div>
+      <div id="contrasenia2">
+        <input
+          id="password2"
+          type="password"
+          name="password2"
+          onkeyup="boton.verificacion()"
+          placeholder="Confirme su Contraseña"
+          required
+        />
+      </div>
 
-            <div id="ojo">
-                <button id="visto" type="button" onclick="boton.cambio()">
-                    <img src="/img/icons/white/eye.png">
-                </button>
-                <button id="equis" type="button" onclick="boton.cambio2()">
-                    <img src="/img/icons/white/blind.png">
-                </button>
-            </div>
+      <div id="ojo">
+        <button id="visto" type="button" onclick="boton.cambio()">
+          <img src="/img/icons/white/eye.png" />
+        </button>
+        <button id="equis" type="button" onclick="boton.cambio2()">
+          <img src="/img/icons/white/blind.png" />
+        </button>
+      </div>
 
-            <div id="ojo2">
-                <button id="visto2" type="button" onclick="boton.cambio3()">
-                    <img src="/img/icons/white/eye.png">
-                </button>
-                <button id="equis2" type="button" onclick="boton.cambio4()">
-                    <img src="/img/icons/white/blind.png">
-                </button>
-            </div>
+      <div id="ojo2">
+        <button id="visto2" type="button" onclick="boton.cambio3()">
+          <img src="/img/icons/white/eye.png" />
+        </button>
+        <button id="equis2" type="button" onclick="boton.cambio4()">
+          <img src="/img/icons/white/blind.png" />
+        </button>
+      </div>
 
-            <div id="boton">
-                <button type="submit">Actualizar</button>
-            </div>
+      <div id="boton">
+        <button type="submit">
+          Actualizar
+        </button>
+      </div>
 
-            <div id="mensaje"></div>
-        </form>
-    </div>
+      <div id="mensaje">
+      </div>
+    </form>
+  </div>
 </div>
 
 <div id="logo">
-    <img src="/img/logo/Logo_epilepsum.png" alt="Logo">
+  <img src="/img/logo/Logo_epilepsum.png" alt="Logo" />
 </div>
 
 <script src="/js/Usuario/recuperacion.js"></script>

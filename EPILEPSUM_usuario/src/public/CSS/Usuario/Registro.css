@@ -1,46 +1,46 @@
 #logo {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 24%;
-    max-height: 28%;
-    left: 38%;
-    top: -18%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 24%;
+  max-height: 28%;
+  left: 38%;
+  top: -18%;
 }
 
 #logo img {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 #contenedor {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 40%;
-    max-height: 75%;
-    left: 30%;
-    top: 20%;
-    text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 40%;
+  max-height: 75%;
+  left: 30%;
+  top: 20%;
+  text-align: center;
 }
 
 #formulario {
-    width: 90%;
-    height: 80%;
-    position: absolute;
-    top: 15%;
-    left: 5%;
+  width: 90%;
+  height: 80%;
+  position: absolute;
+  top: 15%;
+  left: 5%;
 }
 
 #h2 {
-    width: 100%;
-    position: absolute;
-    left: 0%;
-    top: -5%;
+  width: 100%;
+  position: absolute;
+  left: 0%;
+  top: -5%;
 }
 
 #Cedula,
@@ -50,34 +50,34 @@
 #CorreoEletronico,
 #Contrasena,
 #Celular {
-    position: absolute;
-    top: 8%;
-    left: 10%;
-    width: 80%;
+  position: absolute;
+  top: 8%;
+  left: 10%;
+  width: 80%;
 }
 
 #Nombres {
-    top: 20%;
+  top: 20%;
 }
 
 #Apellido {
-    top: 32%;
+  top: 32%;
 }
 
 #FechaNacimiento {
-    top: 44%;
+  top: 44%;
 }
 
 #CorreoEletronico {
-    top: 56%;
+  top: 56%;
 }
 
 #Contrasena {
-    top: 68%;
+  top: 68%;
 }
 
 #Celular {
-    top: 80%;
+  top: 80%;
 }
 
 #cedulatxt,
@@ -87,86 +87,86 @@
 #emailtxt,
 #pastxt,
 #celulartxt {
-    width: 100%;
-    font-size: 20px;
-    transition: all .5s ease;
+  width: 100%;
+  font-size: 20px;
+  transition: all 0.5s ease;
 }
 
 #Nombres input,
 #Apellido input {
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 #ingresar {
-    position: absolute;
-    top: 92%;
-    left: 20%;
-    width: 60%;
+  position: absolute;
+  top: 92%;
+  left: 20%;
+  width: 60%;
 }
 
 #ingresar button {
-    width: 100%;
-    font-size: 20px;
+  width: 100%;
+  font-size: 20px;
 }
 
 #ojo {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 50px;
-    max-height: 50px;
-    left: 82.5%;
-    top: 66.25%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 50px;
+  max-height: 50px;
+  left: 82.5%;
+  top: 66.25%;
 }
 
 #visto,
 #equis {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 #ojo img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /* RESPONSIVE */
 @media only screen and (orientation: portrait) and (max-width: 1000px) and (min-width: 667px) {
-    #contenedor {
-        max-width: 100%;
-        left: 0%;
-    }
+  #contenedor {
+    max-width: 100%;
+    left: 0%;
+  }
 
-    #logo {
-        max-width: 30%;
-        max-height: 24%;
-        left: 35%;
-    }
+  #logo {
+    max-width: 30%;
+    max-height: 24%;
+    left: 35%;
+  }
 }
 
 @media only screen and (orientation: portrait) and (max-width: 667px) and (min-width: 384px) {
-    #contenedor {
-        max-width: 100%;
-        left: 0%;
-    }
+  #contenedor {
+    max-width: 100%;
+    left: 0%;
+  }
 
-    #logo {
-        max-width: 48%;
-        max-height: 24%;
-        left: 26%;
-    }
+  #logo {
+    max-width: 48%;
+    max-height: 24%;
+    left: 26%;
+  }
 }
 
 @media only screen and (orientation: portrait) and (max-width: 384px) and (min-width: 150px) {
-    #contenedor {
-        max-width: 100%;
-        left: 0%;
-    }
+  #contenedor {
+    max-width: 100%;
+    left: 0%;
+  }
 
-    #logo {
-        max-width: 40%;
-        max-height: 24%;
-        left: 30%;
-    }
+  #logo {
+    max-width: 40%;
+    max-height: 24%;
+    left: 30%;
+  }
 }

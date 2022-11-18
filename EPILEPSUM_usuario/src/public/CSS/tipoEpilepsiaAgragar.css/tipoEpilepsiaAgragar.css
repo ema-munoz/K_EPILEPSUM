@@ -1,59 +1,54 @@
-#fondo {
-    opacity: 75%;
-}
-
 #contenido {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 800px;
-    max-height: 50%;
-    left: 20%;
-    top: 25%;
-    text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  max-height: 50%;
+  left: 20%;
+  top: 25%;
+  text-align: center;
 }
 
 #Descripcion {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 800px;
-    max-height: 50%;
-    left: 0.5%;
-    top: 35%;
-    text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  max-height: 50%;
+  left: 0.5%;
+  top: 35%;
+  text-align: center;
 }
 
 #titulo {
-    margin-top: 1%;
-    text-align: center;
+  margin-top: 1%;
+  text-align: center;
 }
 
-
 #Nombre {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 800px;
-    top: 15%;
-    max-height: 50%;
-    text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  top: 15%;
+  max-height: 50%;
+  text-align: center;
 }
 
 #contenido button {
-    position: absolute;
-    width: 60%;
-    font-size: 20px;
-    top: 85%;
-    left: 20%;
+  position: absolute;
+  width: 60%;
+  font-size: 20px;
+  top: 85%;
+  left: 20%;
 }
 
 label {
-    position: absolute;
-    left: 5%;
-    font-size: 25px;
+  position: absolute;
+  left: 5%;
+  font-size: 25px;
 }
 
 footer {
-    bottom: 0%;
+  bottom: 0%;
 }

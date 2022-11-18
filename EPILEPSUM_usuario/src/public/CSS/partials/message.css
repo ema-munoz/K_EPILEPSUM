@@ -1,62 +1,62 @@
 #message1 {
-    position: absolute;
-    width: 25%;
-    height: 25%;
-    top: 10%;
-    left: 60%;
-    max-width: 100%;
-    max-width: 100%;
+  position: absolute;
+  width: 25%;
+  height: 25%;
+  top: 10%;
+  left: 60%;
+  max-width: 100%;
+  max-width: 100%;
 }
 
 #message2 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 15%;
-    max-height: 10%;
-    top: 10%;
-    left: 70%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 15%;
+  max-height: 10%;
+  top: 10%;
+  left: 70%;
 }
 
 /* RESPONSIVE */
 @media only screen and (orientation: portrait) and (max-width: 1000px) and (min-width: 667px) {
-    #message1 {
-        max-width: 60%;
-        max-height: 10%;
-        left: 20%;
-    }
+  #message1 {
+    max-width: 60%;
+    max-height: 10%;
+    left: 20%;
+  }
 
-    #message2 {
-        max-width: 60%;
-        max-height: 10%;
-        left: 20%;
-    }
+  #message2 {
+    max-width: 60%;
+    max-height: 10%;
+    left: 20%;
+  }
 }
 
 @media only screen and (orientation: portrait) and (max-width: 667px) and (min-width: 384px) {
-    #message1 {
-        max-width: 60%;
-        max-height: 10%;
-        left: 20%;
-    }
+  #message1 {
+    max-width: 60%;
+    max-height: 10%;
+    left: 20%;
+  }
 
-    #message2 {
-        max-width: 60%;
-        max-height: 10%;
-        left: 20%;
-    }
+  #message2 {
+    max-width: 60%;
+    max-height: 10%;
+    left: 20%;
+  }
 }
 
 @media only screen and (orientation: portrait) and (max-width: 384px) and (min-width: 150px) {
-    #message1 {
-        max-width: 60%;
-        max-height: 10%;
-        left: 20%;
-    }
+  #message1 {
+    max-width: 60%;
+    max-height: 10%;
+    left: 20%;
+  }
 
-    #message2 {
-        max-width: 60%;
-        max-height: 10%;
-        left: 20%;
-    }
+  #message2 {
+    max-width: 60%;
+    max-height: 10%;
+    left: 20%;
+  }
 }

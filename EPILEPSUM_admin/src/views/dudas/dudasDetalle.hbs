@@ -1,71 +1,89 @@
 <link rel="stylesheet" href="/css/dudas/dudasDetalle.css" />
 
 <div id="fondo">
-    <img src="/img/fondos/sistemaNervioso.png" />
+  <img src="/img/fondos/sistemaNervioso.png" />
 </div>
 
 <form action="/dudas/detalle/{{user.idUsuario}}" method="get" id="ocultar">
-    <div id="contenedorPregunta">
-        {{#each enlistar}}
-        <div id="titulo">
-            <label>
-                <b>{{pregunta}}</b>
-            </label>
-        </div>
+  <div id="contenedorPregunta">
+    {{#each enlistar}}
+      <div id="titulo">
+        <label>
+          <b>{{pregunta}}</b>
+        </label>
+      </div>
 
-        <div id="imagenPregunta">
-            <img src="/img/dudas/Preguntas/{{imagenPreguntas}}" id="imagenSubidaPregunta" />
-        </div>
+      <div id="imagenPregunta">
+        <img
+          src="/img/dudas/Preguntas/{{imagenPreguntas}}"
+          id="imagenSubidaPregunta"
+        />
+      </div>
 
-        <div id="iconImagenPregunta">
-            <img src="/img/icons/black/images.png" />
-        </div>
+      <div id="iconImagenPregunta">
+        <img src="/img/icons/black/images.png" />
+      </div>
 
-        <div id="videoPregunta">
-            <video src="/video/dudas/Preguntas/{{videoPreguntas}}" id="videoSubidoPregunta" controls></video>
-        </div>
+      <div id="videoPregunta">
+        <video
+          src="/video/dudas/Preguntas/{{videoPreguntas}}"
+          id="videoSubidoPregunta"
+          controls
+        >
+        </video>
+      </div>
 
-        <div id="iconVideoPregunta">
-            <img src="/img/icons/black/video.png" />
-        </div>
-        {{/each}}
-    </div>
+      <div id="iconVideoPregunta">
+        <img src="/img/icons/black/video.png" />
+      </div>
+    {{/each}}
+  </div>
 
-    <div id="contenedorRespuesta">
-        {{#each enlistar1}}
-        <div id="Respuesta">
-            <label>
-                <p>{{respuesta}}</p>
-            </label>
-        </div>
+  <div id="contenedorRespuesta">
+    {{#each enlistar1}}
+      <div id="Respuesta">
+        <label>
+          <p>{{respuesta}}</p>
+        </label>
+      </div>
 
-        <div id="imagenRespuesta">
-            <img src="/img/dudas/Respuestas/{{imagenRespuesta}}" id="imagenSubidaRespuesta" />
-        </div>
+      <div id="imagenRespuesta">
+        <img
+          src="/img/dudas/Respuestas/{{imagenRespuesta}}"
+          id="imagenSubidaRespuesta"
+        />
+      </div>
 
-        <div id="iconImagenRespuesta">
-            <img src="/img/icons/black/images.png" />
-        </div>
+      <div id="iconImagenRespuesta">
+        <img src="/img/icons/black/images.png" />
+      </div>
 
-        <div id="videoRespuesta">
-            <video src="/video/dudas/Respuestas/{{videoRespuesta}}" id="videoSubidoRespuesta" controls></video>
-        </div>
+      <div id="videoRespuesta">
+        <video
+          src="/video/dudas/Respuestas/{{videoRespuesta}}"
+          id="videoSubidoRespuesta"
+          controls
+        >
+        </video>
+      </div>
 
-        <div id="iconVideoRespuesta">
-            <img src="/img/icons/black/video.png" />
-        </div>
-        {{/each}}
-    </div>
+      <div id="iconVideoRespuesta">
+        <img src="/img/icons/black/video.png" />
+      </div>
+    {{/each}}
+  </div>
 
-    <div id="boton">
-        {{#each enlistar}}
-        <div id="botonEditar">
-            <a href="/dudas/editar/{{idPreguntas}}">
-                <button>Editar</button>
-            </a>
-        </div>
-        {{/each}}
-    </div>
+  <div id="boton">
+    {{#each enlistar}}
+      <div id="botonEditar">
+        <a href="/dudas/editar/{{idPreguntas}}">
+          <button type="button">
+            Editar
+          </button>
+        </a>
+      </div>
+    {{/each}}
+  </div>
 </form>
 
 <script src="/js/dudas/dudas.js"></script>

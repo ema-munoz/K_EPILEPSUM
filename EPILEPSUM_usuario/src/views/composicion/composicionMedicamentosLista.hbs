@@ -1,90 +1,125 @@
-<link rel="stylesheet" href="/CSS/composicion/composicionMedicamentosLista.css">
+<link
+  rel="stylesheet"
+  href="/CSS/composicion/composicionMedicamentosLista.css"
+/>
 
 <div id="fondo">
-    <img src="/img/fondos/sistemaNervioso1.jpg">
+  <img src="/img/fondos/sistemaNervioso1.jpg" />
 </div>
 
 <div id="contenedor">
-    <form action="/composicionMedicamento/lista/{{user.idPaciente}}" method="POST">
-        <div class="row">
-            {{#each enlistar}}
-            <div id="tarjeta">
-                <div id="titulo">
-                    <h3>Medicamentos Ingresados</h3>
-                </div>
+  <form
+    action="/composicionMedicamento/lista/{{user.idPaciente}}"
+    method="POST"
+  >
+    <div class="row">
+      {{#each enlistar}}
+        <div id="tarjeta">
+          <div id="titulo">
+            <h3>Medicamentos Ingresados</h3>
+          </div>
 
-                <div id="nombre">
-                    <p><b>Medicamento:</b> {{nombreMedicamentos}}</p>
+          <div id="nombre">
+            <p>
+              <b>Medicamento:</b>
+              {{nombreMedicamentos}}
+            </p>
 
-                </div>
+          </div>
 
-                <div id="dosis">
-                    <p><b>Composicion del Medicamento:</b> {{composicionMedicamentos}}</p>
+          <div id="dosis">
+            <p>
+              <b>Composicion del Medicamento:</b>
+              {{composicionMedicamentos}}
+            </p>
 
-                </div>
+          </div>
 
-                <div id="detalle">
-                    <p> <b> Detalle del Medicamento:</b> {{descripcionMedicamentos}}</p>
+          <div id="detalle">
+            <p> <b> Detalle del Medicamento:</b> {{descripcionMedicamentos}}</p>
 
-                </div>
+          </div>
 
-                <div id="administracion">
-                    <p> <b> Via de Administración del Medicamento:</b> {{viaAdministracionMedicamentos}}</p>
+          <div id="administracion">
+            <p>
+              <b> Via de Administración del Medicamento:</b>
+              {{viaAdministracionMedicamentos}}</p>
 
-                </div>
+          </div>
 
-                <div id="contraindicaciones">
-                    <p><b> Contraindicaciones del Medicamento:</b> {{indicacionesMedicamentos}}</p>
+          <div id="contraindicaciones">
+            <p>
+              <b> Contraindicaciones del Medicamento:</b>
+              {{indicacionesMedicamentos}}
+            </p>
 
-                </div>
+          </div>
 
-                <div id="Dosis">
-                    <p> <b> Dosis del Medicamento: </b> {{dosisMedicamentos}}</p>
+          <div id="Dosis">
+            <p> <b> Dosis del Medicamento: </b> {{dosisMedicamentos}}</p>
 
-                </div>
+          </div>
 
-                <div id="fechaElaboracion">
-                    <p> <b> Fecha de Elaboracion del Medicamento:</b> {{fechaElaboracionMedicamentos}}</p>
+          <div id="fechaElaboracion">
+            <p>
+              <b> Fecha de Elaboracion del Medicamento:</b>
+              {{fechaElaboracionMedicamentos}}</p>
 
-                </div>
+          </div>
 
-                <div id="fechaVencimiento">
-                    <p><b> Fecha de Vencimiento del Medicamento:</b> {{fechaVencimientoMedicamentos}}</p>
+          <div id="fechaVencimiento">
+            <p>
+              <b> Fecha de Vencimiento del Medicamento:</b>
+              {{fechaVencimientoMedicamentos}}
+            </p>
 
-                </div>
+          </div>
 
-                <div id="laboratorio">
-                    <p><b> Laboratorio:</b> {{laboratorioMedicamentos}}</p>
+          <div id="laboratorio">
+            <p>
+              <b> Laboratorio:</b>
+              {{laboratorioMedicamentos}}
+            </p>
 
-                </div>
+          </div>
 
-                <div id="botonEditar">
-                    <a href="/composicionMedicamento/editar/{{idComposiciones}}">
-                        <button type="button">Editar</button>
-                    </a>
-                </div>
+          <div id="botonEditar">
+            <a href="/composicionMedicamento/editar/{{idComposiciones}}">
+              <button type="button">
+                Editar
+              </button>
+            </a>
+          </div>
 
-                <div id="botonEliminar">
-                    <a href="/composicionMedicamento/eliminar/{{idComposiciones}}">
-                        <button type="button">Eliminar</button>
-                    </a>
-                </div>
-            </div>
-
-            {{else}}
-            <div id="mensaje">
-                <p><b>Usted no tiene registrado ningún medicamento. </b></p>
-                <a href="/medicamentos/agregar/{{user.idComposiciones}}">
-                    <button type="button">¿Desea registrar?</button>
-                </a>
-            </div>
-            {{/each }}
+          <div id="botonEliminar">
+            <a href="/composicionMedicamento/eliminar/{{idComposiciones}}">
+              <button type="button">
+                Eliminar
+              </button>
+            </a>
+          </div>
         </div>
-    </form>
+
+      {{else}}
+        <div id="mensaje">
+          <p>
+            <b>Usted no tiene registrado ningún medicamento. </b>
+          </p>
+          <a href="/medicamentos/agregar/{{user.idComposiciones}}">
+            <button type="button">
+              ¿Desea registrar?
+            </button>
+          </a>
+        </div>
+      {{/each}}
+    </div>
+  </form>
 </div>
 
 <div id="plus">
-    <a href="/composicionMedicamento/agregar/{{user.idPaciente}}">
-        <button type="button"><img src="/img/usuarios/plus.png"></button>
-    </a>
+  <a href="/composicionMedicamento/agregar/{{user.idPaciente}}">
+    <button type="button">
+      <img src="/img/usuarios/plus.png" />
+    </button>
+  </a>
 </div>

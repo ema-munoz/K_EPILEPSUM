@@ -1,97 +1,97 @@
 footer {
-    bottom: -25%;
+  bottom: -25%;
 }
 
 #fondo {
-    background-repeat: no-repeatZ;
+  background-repeat: no-repeatZ;
 }
 
 #contenedor {
-    position: absolute;
-    top: 20%;
-    left: 28%;
-    width: 45%;
-    height: 80%;
-    perspective: 500px;
-    background: rgb(194, 186, 186);
-    border-radius: 15px;
-    box-shadow: 24px 25px 20px rgba(7, 7, 7, 0.541);
+  position: absolute;
+  top: 20%;
+  left: 28%;
+  width: 45%;
+  height: 80%;
+  perspective: 500px;
+  background: rgb(194, 186, 186);
+  border-radius: 15px;
+  box-shadow: 24px 25px 20px rgba(7, 7, 7, 0.541);
 }
 
 #mensaj {
-    width: 100%;
-    height: 90%;
-    position: absolute;
-    top: 10%;
-    left: 0%;
+  width: 100%;
+  height: 90%;
+  position: absolute;
+  top: 10%;
+  left: 0%;
 }
 
 #mensaje1 {
-    width: 100%;
-    height: 10%;
-    background-color: rgba(0, 0, 0, 0.616);
-    color: white;
+  width: 100%;
+  height: 10%;
+  background-color: rgba(0, 0, 0, 0.616);
+  color: white;
 }
 
 #persona1 {
-    background-color: aqua;
-    width: 75%;
-    height: 100%;
+  background-color: aqua;
+  width: 75%;
+  height: 100%;
 }
 
 #fecha1,
 #fecha {
-    width: 100%;
-    height: 10%;
-    left: 0%;
-    top: 10%;
-    text-align: right;
+  width: 100%;
+  height: 10%;
+  left: 0%;
+  top: 10%;
+  text-align: right;
 }
 
 #hora1 {
-    width: 15%;
-    height: 10%;
-    left: 25%;
-    top: 10%;
+  width: 15%;
+  height: 10%;
+  left: 25%;
+  top: 10%;
 }
 
 #persona2 {
-    background-color: rgba(81, 255, 0, 0.486);
-    width: 75%;
-    height: 100%;
-    position: absolute;
-    right: 0%;
-    top: 50%;
+  background-color: rgba(81, 255, 0, 0.486);
+  width: 75%;
+  height: 100%;
+  position: absolute;
+  right: 0%;
+  top: 50%;
 }
 
 #chatsa1 {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(99, 180, 142, 0.616);
+  width: 100%;
+  height: 100%;
+  background-color: rgba(99, 180, 142, 0.616);
 }
 
 #regresar {
-    width: 100%;
-    height: 10%;
-    max-width: 100%;
-    max-height: 10%;
-    background-color: #333;
-    position: absolute;
-    top: 0%;
+  width: 100%;
+  height: 10%;
+  max-width: 100%;
+  max-height: 10%;
+  background-color: #333;
+  position: absolute;
+  top: 0%;
 }
 
 #regresar button {
-    width: 10%;
-    height: 100%;
+  width: 10%;
+  height: 100%;
 }
 
 .imgnc {
-    margin-right: 10%;
-    margin-left: 10%;
+  margin-right: 10%;
+  margin-left: 10%;
 }
 
 #palabr h5 {
-    word-wrap: break-word;
-    font-family: Arial, Helvetica, sans-serif;
-    color: green;
+  word-wrap: break-word;
+  font-family: Arial, Helvetica, sans-serif;
+  color: green;
 }

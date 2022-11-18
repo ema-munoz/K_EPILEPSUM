@@ -1,31 +1,39 @@
-<link rel="stylesheet" href="/css/sintomasCss/sintomasAgragar.css">
+<link rel="stylesheet" href="/css/sintomasCss/sintomasAgragar.css" />
 
 <div id="fondo">
-    <img src="/img/fondos/sistemaNervioso.png">
+  <img src="/img/fondos/sistemaNervioso.png" />
 </div>
 
 <form action="/sintomas/agregar/{{user.idUsuario}}" method="post" id="ocultar">
-    <div id="contenido">
-        <div id="tarjeta">
-            <div id="titulo">
-                <p>
-                    <b>Síntomas:</b>
-                </p>
-            </div>
+  <div id="contenido">
+    <div id="tarjeta">
+      <div id="titulo">
+        <p>
+          <b>Síntomas:</b>
+        </p>
+      </div>
 
-            <div id="Nombre">
-                <label>Síntomas:</label>
-                <input type="text" name="nombreSintomas" id="nombre">
-            </div>
+      <div id="Nombre">
+        <label>Síntomas:</label>
+        <input type="text" name="nombreSintomas" id="nombre" />
+      </div>
 
-            <div id="Descripcion">
-                <label> Descripción:</label>
-                <textarea type="text" name="descrpcionSintomas" id="descripcion" maxlength="2500" required> </textarea>
-            </div>
+      <div id="Descripcion">
+        <label> Descripción:</label>
+        <textarea
+          type="text"
+          name="descrpcionSintomas"
+          id="descripcion"
+          maxlength="2500"
+          required
+        > </textarea>
+      </div>
 
-            <div id="boton">
-                <button type="submit">Guardar</button>
-            </div>
-        </div>
+      <div id="boton">
+        <button type="submit">
+          Guardar
+        </button>
+      </div>
     </div>
+  </div>
 </form>

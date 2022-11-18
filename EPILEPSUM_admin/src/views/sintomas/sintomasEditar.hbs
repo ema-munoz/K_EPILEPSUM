@@ -1,31 +1,43 @@
-<link rel="stylesheet" href="/css/sintomasCss/sintomasEditar.css">
+<link rel="stylesheet" href="/css/sintomasCss/sintomasEditar.css" />
 
 <div id="fondo">
-    <img src="/img/fondos/sistemaNervioso.png">
+  <img src="/img/fondos/sistemaNervioso.png" />
 </div>
 {{#each lista}}
-<form action="/sintomas/editar/{{idSintomas}}" method="post" id="ocultar">
+  <form action="/sintomas/editar/{{idSintomas}}" method="post" id="ocultar">
     <div id="contenido">
-        <div id="titulo">
-            <p>
-                <b>Sintomas:</b>
-            </p>
-        </div>
+      <div id="titulo">
+        <p>
+          <b>Sintomas:</b>
+        </p>
+      </div>
 
-        <div id="Nombre">
-            <label>Sintomas:</label>
-            <input type="text" name="nombreSintomas" id="nombre" value="{{nombreSintomas}}">
-        </div>
+      <div id="Nombre">
+        <label>Sintomas:</label>
+        <input
+          type="text"
+          name="nombreSintomas"
+          id="nombre"
+          value="{{nombreSintomas}}"
+        />
+      </div>
 
-        <div id="Descripcion">
-            <label> Descripcion :</label>
-            <textarea type="text" name="descrpcionSintomas" id="descripcion" maxlength="2500"
-                required> {{descrpcionSintomas}} </textarea>
+      <div id="Descripcion">
+        <label> Descripcion :</label>
+        <textarea
+          type="text"
+          name="descrpcionSintomas"
+          id="descripcion"
+          maxlength="2500"
+          required
+        > {{descrpcionSintomas}} </textarea>
 
-            <div id="boton">
-                <button type="submit">Guardar</button>
-            </div>
+        <div id="boton">
+          <button type="submit">
+            Guardar
+          </button>
         </div>
+      </div>
     </div>
-</form>
+  </form>
 {{/each}}

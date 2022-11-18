@@ -1,93 +1,91 @@
-#fondo{
-    opacity: 75%;
+#fondo {
+  opacity: 75%;
 }
 
-#contenedor{
-    background-color: rgba(27, 144, 240, 0.781);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 90%;
-    max-height: 50%;
-    left: 5%;
-    top: 25%;
-    text-align: center;
+#contenedor {
+  background-color: rgba(27, 144, 240, 0.781);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 90%;
+  max-height: 50%;
+  left: 5%;
+  top: 25%;
+  text-align: center;
 }
 
 img {
-    width: 50px;
-    height: 50px;
-    /* display: flex;
+  width: 50px;
+  height: 50px;
+  /* display: flex;
     align-items:flex-end; */
 }
 
-#tarjeta{
-    background-color: rgba(137, 240, 163, 0.781);
-    width: 100%;
-    height: 100%;
-    max-width: 20%;
-    max-height: 20%;
-    text-align: center;
-    margin-left:3%;
-    margin-top: 2%;
-
+#tarjeta {
+  background-color: rgba(137, 240, 163, 0.781);
+  width: 100%;
+  height: 100%;
+  max-width: 20%;
+  max-height: 20%;
+  text-align: center;
+  margin-left: 3%;
+  margin-top: 2%;
 }
 
-#botonEliminar{
-    width: 100%;
-    height: 100%;
-    max-width: 90%; 
-    max-height: 5%;
-    margin-left: 5%;
+#botonEliminar {
+  width: 100%;
+  height: 100%;
+  max-width: 90%;
+  max-height: 5%;
+  margin-left: 5%;
 }
 
-#botonEditar{
-    margin-top: 2.5%;
+#botonEditar {
+  margin-top: 2.5%;
 }
 
-#botonEliminar{
-    margin-top: 2.5%;
+#botonEliminar {
+  margin-top: 2.5%;
 }
 
 #botonEditar button,
 #botonEliminar button,
 #botonEditar a,
-#botonEliminar a{
-    width: 100%;
-    height: 100%;
+#botonEliminar a {
+  width: 100%;
+  height: 100%;
 }
 
-.row{
-    row-gap: 5%;
-    gap: 50px;
+.row {
+  row-gap: 5%;
+  gap: 50px;
 }
 
-
-#mensaje p{
-    position: absolute;
-    width: 70%;
-    top: 25%;
-    left: 15%;
+#mensaje p {
+  position: absolute;
+  width: 70%;
+  top: 25%;
+  left: 15%;
 }
 
-#mensaje button{
-    position: absolute;
-    width: 70%;
-    top: 60%;
-    left: 15%;
+#mensaje button {
+  position: absolute;
+  width: 70%;
+  top: 60%;
+  left: 15%;
 }
 
-#plus{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 75px; 
-    max-height:  75px;
-    right: 0.5%;
-    top: 11%;
+#plus {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 75px;
+  max-height: 75px;
+  right: 0.5%;
+  top: 11%;
 }
 
 #plus img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }

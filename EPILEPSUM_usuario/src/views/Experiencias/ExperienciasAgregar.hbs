@@ -1,46 +1,61 @@
-<form action="/experiencias/agregar/{{user.idPaciente}}" method="post" id="ocultar">
-    <div id="contenedor">
-        <div id="titulo">
-            {{#each idMax}}
-            <label>Agregar Experiecia N:</label>
-            <input type="text" name="experiencia" id="numero" value="{{'MAX(idExperiencias)'}}">
-            {{/each}}
-        </div>
-
-        <div>
-            <label>
-                Foto:
-            </label>
-            <input type="image" name="imagenExperiencia" id="foto">
-        </div>
-
-        <div>
-            <label>
-                Video:
-            </label>
-            <input type="video" name="videoExperiencia" id="video">
-        </div>
-
-        <div>
-            <label>
-                Nombre:
-            </label>
-            <input type="text" name="nombreExperiencia" id="nombre" required>
-        </div>
-
-        <div>
-            <label>
-                Descripción:
-            </label>
-            <input type="text" name="experienciasDetallesExperiencias" id="descripcion" required>
-        </div>
-
-        <div>
-            <button type="submit">
-                Agregar
-            </button>
-        </div>
+<form
+  action="/experiencias/agregar/{{user.idPaciente}}"
+  method="post"
+  id="ocultar"
+>
+  <div id="contenedor">
+    <div id="titulo">
+      {{#each idMax}}
+        <label>
+          Agregar Experiecia N:</label>
+        <input
+          type="text"
+          name="experiencia"
+          id="numero"
+          value="{{'MAX(idExperiencias)'}}"
+        />
+      {{/each}}
     </div>
+
+    <div>
+      <label>
+        Foto:
+      </label>
+      <input type="image" name="imagenExperiencia" id="foto" />
+    </div>
+
+    <div>
+      <label>
+        Video:
+      </label>
+      <input type="video" name="videoExperiencia" id="video" />
+    </div>
+
+    <div>
+      <label>
+        Nombre:
+      </label>
+      <input type="text" name="nombreExperiencia" id="nombre" required />
+    </div>
+
+    <div>
+      <label>
+        Descripción:
+      </label>
+      <input
+        type="text"
+        name="experienciasDetallesExperiencias"
+        id="descripcion"
+        required
+      />
+    </div>
+
+    <div>
+      <button type="submit">
+        Agregar
+      </button>
+    </div>
+  </div>
 </form>
 
 <script src="/js/numero.js"></script>

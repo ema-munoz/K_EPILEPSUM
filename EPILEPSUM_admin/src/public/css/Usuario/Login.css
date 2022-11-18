@@ -1,163 +1,163 @@
 #logo {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 12%;
-    max-height: 24%;
-    left: 44%;
-    top: 12%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 12%;
+  max-height: 24%;
+  left: 44%;
+  top: 12%;
 }
 
 #logo img {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
 }
 
 #contenedor {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 50%;
-    max-height: 50%;
-    right: 25%;
-    top: 30%;
-    text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 50%;
+  max-height: 50%;
+  right: 25%;
+  top: 30%;
+  text-align: center;
 }
 
 #formulario {
-    width: 100%;
-    position: absolute;
-    bottom: 0%;
-    height: 85%;
+  width: 100%;
+  position: absolute;
+  bottom: 0%;
+  height: 85%;
 }
 
 #h1 {
-    text-align: center;
-    width: 100%;
-    max-width: 100%;
-    position: absolute;
-    left: 0%;
+  text-align: center;
+  width: 100%;
+  max-width: 100%;
+  position: absolute;
+  left: 0%;
 }
 
 #Email,
 #Password {
-    width: 80%;
-    position: absolute;
-    top: 20%;
-    left: 10%;
+  width: 80%;
+  position: absolute;
+  top: 20%;
+  left: 10%;
 }
 
 #Password {
-    top: 40%;
+  top: 40%;
 }
 
 #nombreIntxt,
 #passIntxt {
-    width: 100%;
-    font-size: 20px;
-    transition: all .5s ease;
+  width: 100%;
+  font-size: 20px;
+  transition: all 0.5s ease;
 }
 
 #ingresar {
-    position: absolute;
-    top: 60%;
-    left: 20%;
-    width: 60%;
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  width: 60%;
 }
 
 #ingresar button {
-    width: 100%;
-    font-size: 20px;
+  width: 100%;
+  font-size: 20px;
 }
 
 #recuperacion {
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 20%;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 20%;
 }
 
 #recuperacion button {
-    background-color: #7D2181;
-    width: 100%;
-    height: 100%;
-    border-radius: 0px;
-    border-color: transparent;
-    border-bottom-right-radius: 15px;
-    border-bottom-left-radius: 15px;
+  background-color: #7d2181;
+  width: 100%;
+  height: 100%;
+  border-radius: 0px;
+  border-color: transparent;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 #recuperacion a {
-    width: 100%;
-    font-size: 25px;
-    color: black;
+  width: 100%;
+  font-size: 25px;
+  color: black;
 }
 
 #ojo {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 50px;
-    max-height: 50px;
-    left: 85%;
-    top: 38.5%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 50px;
+  max-height: 50px;
+  left: 85%;
+  top: 38.5%;
 }
 
 #visto,
 #equis {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 #ojo img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /* RESPONSIVE */
 @media only screen and (orientation: portrait) and (max-width: 1000px) and (min-width: 667px) {
-    #contenedor {
-        max-width: 100%;
-        left: 0%;
-    }
+  #contenedor {
+    max-width: 100%;
+    left: 0%;
+  }
 
-    #logo {
-        max-width: 30%;
-        max-height: 24%;
-        left: 35%;
-    }
+  #logo {
+    max-width: 30%;
+    max-height: 24%;
+    left: 35%;
+  }
 }
 
 @media only screen and (orientation: portrait) and (max-width: 667px) and (min-width: 384px) {
-    #contenedor {
-        max-width: 100%;
-        left: 0%;
-    }
+  #contenedor {
+    max-width: 100%;
+    left: 0%;
+  }
 
-    #logo {
-        max-width: 48%;
-        max-height: 24%;
-        left: 26%;
-    }
+  #logo {
+    max-width: 48%;
+    max-height: 24%;
+    left: 26%;
+  }
 }
 
 @media only screen and (orientation: portrait) and (max-width: 384px) and (min-width: 150px) {
-    #contenedor {
-        max-width: 100%;
-        left: 0%;
-    }
+  #contenedor {
+    max-width: 100%;
+    left: 0%;
+  }
 
-    #logo {
-        max-width: 40%;
-        max-height: 24%;
-        left: 30%;
-    }
+  #logo {
+    max-width: 40%;
+    max-height: 24%;
+    left: 30%;
+  }
 }

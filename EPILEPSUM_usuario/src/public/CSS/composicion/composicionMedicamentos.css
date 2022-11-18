@@ -1,33 +1,33 @@
 #contenedor {
-    position: absolute;
-    width: 100%;
-    height: 125%;
-    max-width: 60%;
-    max-height: 900%;
-    left: 20%;
-    top: 20%;
-    text-align: center;
-    padding: 4%;
+  position: absolute;
+  width: 100%;
+  height: 125%;
+  max-width: 60%;
+  max-height: 900%;
+  left: 20%;
+  top: 20%;
+  text-align: center;
+  padding: 4%;
 }
 
 #plus {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 4%;
-    max-height: 8%;
-    right: 0%;
-    top: 18%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 4%;
+  max-height: 8%;
+  right: 0%;
+  top: 18%;
 }
 
 #plus img {
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 footer {
-    bottom: -70%;
+  bottom: -70%;
 }

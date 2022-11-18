@@ -1,54 +1,72 @@
-<link rel="stylesheet" href="/css/ContactosEmergencia/contactosEditar.css">
+<link rel="stylesheet" href="/css/ContactosEmergencia/contactosEditar.css" />
 
 <div id="fondo">
-    <img src="/img/fondos/sistemaNervioso.png">
+  <img src="/img/fondos/sistemaNervioso.png" />
 </div>
 
-<div id="contenedor">
-    {{#each enlistar}}
-    <form action="/contactos/editar/{{idContactosEmergencia}}" method="post" id="ocultar">
+{{#each enlistar}}
+  <form
+    action="/contactos/editar/{{idContactosEmergencia}}"
+    method="post"
+    id="ocultar"
+  >
+    <div id="contenedor">
+      <div id="Nombres">
+        <label>
+          Nombre:
+        </label>
+        <input
+          type="text"
+          name="nombreContactosEmergencia"
+          id="nombre"
+          value="{{nombreContactosEmergencia}}"
+          required
+        />
+      </div>
 
-        <div id="Nombres">
-            <label>
-                Nombre:
-            </label>
-            <input type="text" name="nombreContactosEmergencia" id="nombre" value="{{nombreContactosEmergencia}}"
-                required>
-        </div>
+      <div id="Telefono">
+        <label>
+          Teléfono (Opcional):
+        </label>
+        <input
+          type="number"
+          name="telefonoContactosEmergencia"
+          id="telefono"
+          value="{{telefonoContactosEmergencia}}"
+        />
+      </div>
 
-        <div id="Telefono">
-            <label>
-                Teléfono (Opcional):
-            </label>
-            <input type="number" name="telefonoContactosEmergencia" id="telefono"
-                value="{{telefonoContactosEmergencia}}">
-        </div>
+      <div id="Celular">
+        <label>
+          Celular:
+        </label>
+        <input
+          type="number"
+          name="celularContactosEmergencia"
+          id="celular"
+          value="0{{celularContactosEmergencia}}"
+          required
+        />
+      </div>
 
-        <div id="Celular">
-            <label>
-                Celular:
-            </label>
-            <input type="number" name="celularContactosEmergencia" id="celular" value="0{{celularContactosEmergencia}}"
-                required>
-        </div>
+      <div id="boton">
+        <button type="submit">
+          Guardar Cambios
+        </button>
+      </div>
 
-        <div id="boton">
-            <button type="submit">
-                Guardar Cambios
-            </button>
-        </div>
-        {{/each}}
-        <div id="Familiar">
-            <label>
-                Familiar:
-            </label>
-            <select name="familiar" id="familiar" required>
-                {{#each familiar}}
-                <option value="{{this.idFamiliar}}">
-                    {{this.nombreFamiliar}}
-                </option>
-                {{/each}}
-            </select>
-        </div>
-    </form>
-</div>
+      <div id="Familiar">
+        <label>
+          Familiar:
+        </label>
+        <select name="familiar" id="familiar" required>
+          {{#each familiar}}
+            <option value="{{this.idFamiliar}}">
+              {{this.nombreFamiliar}}
+            </option>
+          {{/each}}
+        </select>
+      </div>
+    </div>
+  </form>
+{{/each}}

@@ -1,51 +1,65 @@
-<link rel="stylesheet" href="/css/ContactosEmergencia/contactosAgregar.css">
+<link rel="stylesheet" href="/css/ContactosEmergencia/contactosAgregar.css" />
 
 <div id="fondo">
-    <img src="/img/fondos/sistemaNervioso.png">
+  <img src="/img/fondos/sistemaNervioso.png" />
 </div>
 
-<form action="/contactos/agregar/{{user.idPaciente}}" method="post" id="ocultar">
-    <div id="contenedor">
-        <div id="formulario">
-            <div id="Nombres">
-                <label>
-                    Nombre:
-                </label>
-                <input type="text" name="nombreContactosEmergencia" id="nombre" required>
-            </div>
+<form
+  action="/contactos/agregar/{{user.idPaciente}}"
+  method="post"
+  id="ocultar"
+>
+  <div id="contenedor">
+    <div id="formulario">
+      <div id="Nombres">
+        <label>
+          Nombre:
+        </label>
+        <input
+          type="text"
+          name="nombreContactosEmergencia"
+          id="nombre"
+          required
+        />
+      </div>
 
-            <div id="Familiar">
-                <label>
-                    Familiar:
-                </label>
-                <select name="familiar" id="familiar" required>
-                    {{#each familiar}}
-                    <option value="{{this.idFamiliar}}">
-                        {{this.nombreFamiliar}}
-                    </option>
-                    {{/each}}
-                </select>
-            </div>
+      <div id="Familiar">
+        <label>
+          Familiar:
+        </label>
+        <select name="familiar" id="familiar" required>
+          {{#each familiar}}
+            <option value="{{this.idFamiliar}}">
+              {{this.nombreFamiliar}}
+            </option>
+          {{/each}}
+        </select>
+      </div>
 
-            <div id="Telefono">
-                <label>
-                    Teléfono (Opcional):
-                </label>
-                <input type="number" name="telefonoContactosEmergencia" id="telefono">
-            </div>
+      <div id="Telefono">
+        <label>
+          Teléfono (Opcional):
+        </label>
+        <input type="number" name="telefonoContactosEmergencia" id="telefono" />
+      </div>
 
-            <div id="Celular">
-                <label>
-                    Celular:
-                </label>
-                <input type="number" name="celularContactosEmergencia" id="celular" required>
-            </div>
+      <div id="Celular">
+        <label>
+          Celular:
+        </label>
+        <input
+          type="number"
+          name="celularContactosEmergencia"
+          id="celular"
+          required
+        />
+      </div>
 
-            <div id="boton">
-                <button type="submit">
-                    Agregar
-                </button>
-            </div>
-        </div>
+      <div id="boton">
+        <button type="submit">
+          Agregar
+        </button>
+      </div>
     </div>
+  </div>
 </form>

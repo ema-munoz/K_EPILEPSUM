@@ -15,11 +15,11 @@ const app = express();
 require("./lib/passport");
 
 const handlebars = exphbs.create({
-	defaultLayout: "main",
-	layoutsDir: path.join(__dirname, "views", "layouts"),
-	partialsDir: path.join(__dirname, "views", "partials"),
-	extname: ".hbs",
-	helpres: require("./lib/handlebars"),
+  defaultLayout: "main",
+  layoutsDir: path.join(__dirname, "views", "layouts"),
+  partialsDir: path.join(__dirname, "views", "partials"),
+  extname: ".hbs",
+  helpres: require("./lib/handlebars"),
 });
 
 /// archivos compartidos
@@ -35,12 +35,12 @@ app.use(morgan("dev"));
 app.use(bodyparser.urlencoded({ extended: false }));
 app.use(bodyparser.json());
 app.use(
-	session({
-		secret: "EPILEPSUM",
-		resave: false,
-		saveUninitialized: false,
-		store: new mysqlstore(database),
-	})
+  session({
+    secret: "EPILEPSUM",
+    resave: false,
+    saveUninitialized: false,
+    store: new mysqlstore(database),
+  })
 );
 app.use(flash());
 app.use(passport.initialize());
@@ -50,10 +50,10 @@ app.use(passport.session());
 //varible globales
 
 app.use((req, res, next) => {
-	app.locals.menssage = req.flash("menssage");
-	app.locals.success = req.flash("success");
-	app.locals.user = req.user;
-	next();
+  app.locals.menssage = req.flash("menssage");
+  app.locals.success = req.flash("success");
+  app.locals.user = req.user;
+  next();
 });
 //varible globales
 

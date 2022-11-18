@@ -1,58 +1,70 @@
-<link rel="stylesheet" href="/css/sintomasCss/sintomasListas.css">
+<link rel="stylesheet" href="/css/sintomasCss/sintomasListas.css" />
 <div id="fondo">
-   <img src="/img/fondos/sistemaNervioso.png">
+  <img src="/img/fondos/sistemaNervioso.png" />
 </div>
 
-<form action="/efectosSecundarios/lista/{{user.idUsuario}}" method="get" id="ocultar">
-   <div id="contenido">
-      <div class="row">
-         {{#each lista}}
-         <div id="tarjeta">
-            <div id="titulo">
-               <p>
-                  <b>Síntomas:</b>
-               </p>
-            </div>
+<form
+  action="/efectosSecundarios/lista/{{user.idUsuario}}"
+  method="get"
+  id="ocultar"
+>
+  <div id="contenido">
+    <div class="row">
+      {{#each lista}}
+        <div id="tarjeta">
+          <div id="titulo">
+            <p>
+              <b>Síntomas:</b>
+            </p>
+          </div>
 
-            <div id="nombre">
-               <label>Síntomas:</label>
-               <label>{{nombreSintomas}}</label>
-            </div>
+          <div id="nombre">
+            <label>Síntomas:</label>
+            <label>{{nombreSintomas}}</label>
+          </div>
 
-            <div id="Descripcion">
-               <label> Descripción:</label>
-               <p> {{descrpcionSintomas}} </p>
-            </div>
+          <div id="Descripcion">
+            <label> Descripción:</label>
+            <p> {{descrpcionSintomas}} </p>
+          </div>
 
-            <div id="botonEditar">
-               <a href="/sintomas/editar/{{idSintomas}}">
-                  <button>Editar</button>
-               </a>
-            </div>
-
-            <div id="botonEliminar">
-               <a href="/sintomas/eliminar/{{idSintomas}}">
-                  <button>Eliminar</button>
-               </a>
-            </div>
-         </div>
-         {{else}}
-
-         <div id="mensaje">
-            <p><b>No tienes ningún síntoma . </b></p>
-            <a href="/sintomas/agregar/{{user.idUsuario}}">
-               <button type="button">¿Desea registrar?</button>
+          <div id="botonEditar">
+            <a href="/sintomas/editar/{{idSintomas}}">
+              <button type="button">
+                Editar
+              </button>
             </a>
-         </div>
-         {{/each}}
-      </div>
-   </div>
+          </div>
 
-   <div id="plus">
-      <a href="/sintomas/agregar/{{user.idUsuario}}">
-         <button type="button">
-            <img src="/img/icons/white/plus.png">
-            <button>
-      </a>
-   </div>
+          <div id="botonEliminar">
+            <a href="/sintomas/eliminar/{{idSintomas}}">
+              <button type="button">
+                Eliminar
+              </button>
+            </a>
+          </div>
+        </div>
+      {{else}}
+
+        <div id="mensaje">
+          <p>
+            <b>No tienes ningún síntoma . </b>
+          </p>
+          <a href="/sintomas/agregar/{{user.idUsuario}}">
+            <button type="button">
+              ¿Desea registrar?
+            </button>
+          </a>
+        </div>
+      {{/each}}
+    </div>
+  </div>
+
+  <div id="plus">
+    <a href="/sintomas/agregar/{{user.idUsuario}}">
+      <button type="button">
+        <img src="/img/icons/white/plus.png" />
+      </button>
+    </a>
+  </div>
 </form>

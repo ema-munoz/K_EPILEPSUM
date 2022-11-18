@@ -1,13 +1,12 @@
-
-const express = require('express');
+const express = require("express");
 
 const router = express.Router();
 
-const {Ingreso} = require ("../lib/auth");
+const { Ingreso } = require("../lib/auth");
 
-const {principal, listar} = require ("../Controllers/user");
+const { principal, listar } = require("../Controllers/user");
 
-router.use(Ingreso)
+router.use(Ingreso);
 
 router.get("/Inicio", Ingreso, listar);
 

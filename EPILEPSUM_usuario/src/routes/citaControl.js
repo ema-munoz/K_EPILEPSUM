@@ -1,12 +1,12 @@
-const express = require('express');
+const express = require("express");
 
 const router = express.Router();
 
-const {Ingreso} = require ("../lib/auth");
+const { Ingreso } = require("../lib/auth");
 
-const {lista} = require ("../Controllers/citaControl");
+const { lista } = require("../Controllers/citaControl");
 
-router.use(Ingreso)
+router.use(Ingreso);
 
 router.get("/Control/:id", Ingreso, lista);
 

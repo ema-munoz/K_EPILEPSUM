@@ -1,34 +1,61 @@
 {{#each enlistar}}
-<form action="/experiencias/editar/{{idExperiencias}}" method="post" id="ocultar">
+  <form
+    action="/experiencias/editar/{{idExperiencias}}"
+    method="post"
+    id="ocultar"
+  >
     <div>
-        <label>
-            Foto:
-        </label>
-        <input type="image" name="imagenExperiencia" id="foto" value="{{imagenExperiencia}}">
+      <label>
+        Foto:
+      </label>
+      <input
+        type="image"
+        name="imagenExperiencia"
+        id="foto"
+        value="{{imagenExperiencia}}"
+      />
     </div>
+
     <div>
-        <label>
-            Video:
-        </label>
-        <input type="video" name="videoExperiencia" id="video" value="{{videoExperiencia}}">
+      <label>
+        Video:
+      </label>
+      <input
+        type="video"
+        name="videoExperiencia"
+        id="video"
+        value="{{videoExperiencia}}"
+      />
     </div>
+
     <div>
-        <label>
-            Nombre:
-        </label>
-        <input type="text" name="nombreExperiencia" id="nombre" value="{{nombreExperiencia}}">
+      <label>
+        Nombre:
+      </label>
+      <input
+        type="text"
+        name="nombreExperiencia"
+        id="nombre"
+        value="{{nombreExperiencia}}"
+      />
     </div>
+
     <div>
-        <label>
-            Descripción:
-        </label>
-        <input type="text" name="experienciasDetallesExperiencias" id="descripcion"
-            value="{{experienciasDetallesExperiencias}}">
+      <label>
+        Descripción:
+      </label>
+      <input
+        type="text"
+        name="experienciasDetallesExperiencias"
+        id="descripcion"
+        value="{{experienciasDetallesExperiencias}}"
+      />
     </div>
+
     <div>
-        <button type="submit">
-            Guardar Cambios
-        </button>
+      <button type="submit">
+        Guardar Cambios
+      </button>
     </div>
-</form>
+  </form>
 {{/each}}

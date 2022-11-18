@@ -1,57 +1,114 @@
-<link rel="stylesheet" href="/css/Medicamentos/MedicamentosEditar.css">
+<link rel="stylesheet" href="/css/Medicamentos/MedicamentosEditar.css" />
 
 <div id="fondo">
-    <img src="/img/fondos/sistemaNervioso.png">
+  <img src="/img/fondos/sistemaNervioso.png" />
 </div>
 
 {{#each enlistar}}
-<form action="/medicamentos/editar/{{idMedicaciones}}" method="post" id="ocultar">
+  <form
+    action="/medicamentos/editar/{{idMedicaciones}}"
+    method="post"
+    id="ocultar"
+  >
     <div>
-        <div id="contenedor">
-            <div id="formulario">
-                <div id="Nombres">
-                    <label>
-                        <b>Nombre de la Medicación:</b>
-                    </label>
-                    <input type="text" name="nombreMedicaciones" id="nombre" value="{{nombreMedicaciones}}" required>
-                </div>
+      <div id="contenedor">
+        <div id="formulario">
+          <div id="Nombres">
+            <label>
+              <b>Nombre de la Medicación:</b>
+            </label>
+            <input
+              type="text"
+              name="nombreMedicaciones"
+              id="nombre"
+              value="{{nombreMedicaciones}}"
+              required
+            />
+          </div>
 
-                <div id="Dosis">
-                    <label>
-                        <b>Dosis al Día:</b>
-                    </label>
-                    <input type="number" name="dosisMedicaciones" id="dosis" value="{{dosisMedicaciones}}" required>
-                </div>
+          <div id="Dosis">
+            <label>
+              <b>Dosis al Día:</b>
+            </label>
+            <input
+              type="number"
+              name="dosisMedicaciones"
+              id="dosis"
+              value="{{dosisMedicaciones}}"
+              required
+            />
+          </div>
 
-                <div id="Horario">
-                    <label>
-                        <b>Horario de la Dosis:</b>
-                    </label>
-                    <input type="text" name="horaMedicaciones" id="hora" value="{{horaMedicaciones}}" required>
-                </div>
+          <div id="Horario">
+            <label>
+              <b>Horario de la Dosis:</b>
+            </label>
+            <input
+              type="text"
+              name="horaMedicaciones"
+              id="hora"
+              value="{{horaMedicaciones}}"
+              required
+            />
+          </div>
 
-                <div id="FechaInicio">
-                    <label>
-                        <b>Fecha de Inicio:</b>
-                    </label>
-                    <input type="date" name="fechaInicioMedicaciones" id="fechaInicio"
-                        value="{{fechaInicioMedicaciones}}" readonly>
-                </div>
+          <div id="FechaInicio">
+            <label>
+              <b>Fecha de Inicio:</b>
+            </label>
+            <input
+              type="date"
+              name="fechaInicioMedicaciones"
+              id="fechaInicio"
+              value="{{fechaInicioMedicaciones}}"
+              readonly
+            />
+          </div>
 
-                <div id="FechaFinal">
-                    <label>
-                        <b>Fecha de Control:</b>
-                    </label>
-                    <input type="date" name="fechaFinalMedicaciones" id="fechaFinal" value="{{fechaFinalMedicaciones}}">
-                </div>
+          <div id="FechaFinal">
+            <label>
+              <b>Fecha de Terminación:</b>
+            </label>
+            <input
+              type="date"
+              name="fechaFinalMedicaciones"
+              id="fechaFinal"
+              value="{{fechaFinalMedicaciones}}"
+            />
+          </div>
 
-                <div id="boton">
-                    <button type="submit">
-                        Actualizar
-                    </button>
-                </div>
-            </div>
+          <div id="HoraInicio">
+            <label>
+              <b>Hora de Inicio:</b>
+            </label>
+            <input
+              type="time"
+              name="horaInicioMedicaciones"
+              id="horaInicio"
+              value="{{horaInicioMedicaciones}}"
+              readonly
+            />
+          </div>
+
+          <div id="HoraFinal">
+            <label>
+              <b>Hora de Terminación:</b>
+            </label>
+            <input
+              type="time"
+              name="horaFinalMedicaciones"
+              id="horaFinal"
+              value="{{horaFinalMedicaciones}}"
+            />
+          </div>
+
+          <div id="boton">
+            <button type="submit">
+              Actualizar
+            </button>
+          </div>
         </div>
+      </div>
     </div>
-</form>
+  </form>
 {{/each}}

@@ -1,26 +1,26 @@
 nav {
-    background-color: #B98CB9;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 75px;
-    text-align: center;
+  background-color: #b98cb9;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 75px;
+  text-align: center;
 }
 
 nav #img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 4.5%;
-    max-height: 85%;
-    top: 7.5%;
-    left: 1%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 4.5%;
+  max-height: 85%;
+  top: 7.5%;
+  left: 1%;
 }
 
 nav #img img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 #EPILEPSUM,
@@ -30,34 +30,34 @@ nav #img img {
 #Ubicacion,
 #Contactos,
 #InformacionNavbar {
-    position: absolute;
-    top: 30%;
-    left: 6%;
+  position: absolute;
+  top: 30%;
+  left: 6%;
 }
 
 #Control {
-    left: 18%;
+  left: 18%;
 }
 
 #Colaboracion {
-    left: 27%;
+  left: 27%;
 }
 
 #PrimerosAuxilios {
-    left: 36%;
+  left: 36%;
 }
 
 #Ubicacion {
-    left: 48%;
+  left: 48%;
 }
 
 #Contactos {
-    left: 56%;
+  left: 56%;
 }
 
 #InformacionNavbar {
-    display: none;
-    position: absolute;
+  display: none;
+  position: absolute;
 }
 
 #EPILEPSUM a,
@@ -67,343 +67,341 @@ nav #img img {
 #Ubicacion a,
 #Contactos a,
 #InformacionNavbar a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 
 #CerrarSesion {
-    border-color: transparent;
-    text-align: center;
-    border-radius: 20px;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 10%;
-    max-height: 50%;
-    top: 25%;
-    left: 88%;
+  border-color: transparent;
+  text-align: center;
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 10%;
+  max-height: 50%;
+  top: 25%;
+  left: 88%;
 }
 
 #CerrarSesion button {
-    border-color: transparent;
-    color: white;
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
+  border-color: transparent;
+  color: white;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
 }
 
 #CerrarSesion a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 /*Navegacion pequeña*/
 #hamburguesa,
 #cierra {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0.5%;
-    right: 0.5%;
-    display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0.5%;
+  right: 0.5%;
+  display: none;
 }
-
 
 #cierra a button img,
 #hamburguesa a button img {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* RESPONSIVE */
 @media screen and (orientation: landscape) and (max-width: 1400px) and (min-width: 1100px) {
-    nav {
-        max-width: 100%;
-    }
+  nav {
+    max-width: 100%;
+  }
 
-    #Control {
-        left: 20%;
-    }
+  #Control {
+    left: 20%;
+  }
 
-    #Colaboracion {
-        left: 32%;
-    }
+  #Colaboracion {
+    left: 32%;
+  }
 
-    #PrimerosAuxilios {
-        left: 44%;
-    }
+  #PrimerosAuxilios {
+    left: 44%;
+  }
 
-    #Ubicacion {
-        left: 62%;
-    }
+  #Ubicacion {
+    left: 62%;
+  }
 
-    #Contactos {
-        left: 73%;
-    }
+  #Contactos {
+    left: 73%;
+  }
 
-    #CerrarSesion {
-        top: 5%;
-        max-height: 90%;
-    }
+  #CerrarSesion {
+    top: 5%;
+    max-height: 90%;
+  }
 }
 
 @media only screen and (orientation: landscape) and (max-width: 1100px) and (min-width: 900px) {
-    nav {
-        max-width: 100%;
-    }
+  nav {
+    max-width: 100%;
+  }
 
-    #Control {
-        left: 21%;
-    }
+  #Control {
+    left: 21%;
+  }
 
-    #Colaboracion {
-        left: 32.5%;
-    }
+  #Colaboracion {
+    left: 32.5%;
+  }
 
-    #PrimerosAuxilios {
-        left: 44%;
-    }
+  #PrimerosAuxilios {
+    left: 44%;
+  }
 
-    #Ubicacion {
-        left: 62.25%;
-    }
+  #Ubicacion {
+    left: 62.25%;
+  }
 
-    #Contactos {
-        left: 73%;
-    }
+  #Contactos {
+    left: 73%;
+  }
 
-
-    #CerrarSesion {
-        top: 5%;
-        max-height: 90%;
-    }
+  #CerrarSesion {
+    top: 5%;
+    max-height: 90%;
+  }
 }
 
 @media only screen and (orientation: landscape) and (max-width: 900px) and (min-width: 690px) {
-    nav {
-        display: none;
-        max-width: 100%;
-        max-height: 100%;
-    }
+  nav {
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    #CerrarSesion {
-        top: -5%;
-    }
+  #CerrarSesion {
+    top: -5%;
+  }
 
-    #cierra {
-        display: block;
-        max-width: 10%;
-        max-height: 7.5%;
-    }
+  #cierra {
+    display: block;
+    max-width: 10%;
+    max-height: 7.5%;
+  }
 
-    #hamburguesa {
-        max-width: 10%;
-        max-height: 7.5%;
-    }
+  #hamburguesa {
+    max-width: 10%;
+    max-height: 7.5%;
+  }
 
-    nav #img {
-        max-width: 15%;
-        max-height: 15%;
-        top: 2%;
-        left: 42.5%;
-    }
+  nav #img {
+    max-width: 15%;
+    max-height: 15%;
+    top: 2%;
+    left: 42.5%;
+  }
 
-    #EPILEPSUM,
-    #Control,
-    #Colaboracion,
-    #PrimerosAuxilios,
-    #Ubicacion,
-    #Contactos,
-    #InformacionNavbar {
-        top: 17.5%;
-        left: 0%;
-        width: 100%;
-    }
+  #EPILEPSUM,
+  #Control,
+  #Colaboracion,
+  #PrimerosAuxilios,
+  #Ubicacion,
+  #Contactos,
+  #InformacionNavbar {
+    top: 17.5%;
+    left: 0%;
+    width: 100%;
+  }
 
-    #Control {
-        top: 30%;
-    }
+  #Control {
+    top: 30%;
+  }
 
-    #Colaboracion {
-        top: 40%;
-    }
+  #Colaboracion {
+    top: 40%;
+  }
 
-    #PrimerosAuxilios {
-        top: 50%;
-    }
+  #PrimerosAuxilios {
+    top: 50%;
+  }
 
-    #Ubicacion {
-        top: 60%;
-    }
+  #Ubicacion {
+    top: 60%;
+  }
 
-    #Contactos {
-        top: 70%;
-    }
+  #Contactos {
+    top: 70%;
+  }
 
-    #InformacionNavbar {
-        top: 80%;
-    }
+  #InformacionNavbar {
+    top: 80%;
+  }
 
-    #CerrarSesion {
-        top: 90%;
-        left: 0%;
-        max-width: 100%;
-        height: 6%;
-    }
+  #CerrarSesion {
+    top: 90%;
+    left: 0%;
+    max-width: 100%;
+    height: 6%;
+  }
 
-    footer {
-        display: none;
-    }
+  footer {
+    display: none;
+  }
 }
 
 @media only screen and (orientation: portrait) and (max-width: 700px) and (min-width: 384px) {
-    nav {
-        display: none;
-        max-width: 100%;
-        max-height: 100%;
-    }
+  nav {
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    #CerrarSesion {
-        top: -5%;
-    }
+  #CerrarSesion {
+    top: -5%;
+  }
 
-    #cierra {
-        display: block;
-        max-width: 15%;
-        max-height: 7.5%;
-    }
+  #cierra {
+    display: block;
+    max-width: 15%;
+    max-height: 7.5%;
+  }
 
-    #hamburguesa {
-        max-width: 15%;
-        max-height: 7.5%;
-    }
+  #hamburguesa {
+    max-width: 15%;
+    max-height: 7.5%;
+  }
 
-    nav #img {
-        max-width: 15%;
-        max-height: 15%;
-        top: 2%;
-        left: 42.5%;
-    }
+  nav #img {
+    max-width: 15%;
+    max-height: 15%;
+    top: 2%;
+    left: 42.5%;
+  }
 
-    #EPILEPSUM,
-    #Control,
-    #Colaboracion,
-    #PrimerosAuxilios,
-    #Ubicacion,
-    #Contactos,
-    #InformacionNavbar {
-        top: 17.5%;
-        left: 0%;
-        width: 100%;
-    }
+  #EPILEPSUM,
+  #Control,
+  #Colaboracion,
+  #PrimerosAuxilios,
+  #Ubicacion,
+  #Contactos,
+  #InformacionNavbar {
+    top: 17.5%;
+    left: 0%;
+    width: 100%;
+  }
 
-    #Control {
-        top: 30%;
-    }
+  #Control {
+    top: 30%;
+  }
 
-    #Colaboracion {
-        top: 40%;
-    }
+  #Colaboracion {
+    top: 40%;
+  }
 
-    #PrimerosAuxilios {
-        top: 50%;
-    }
+  #PrimerosAuxilios {
+    top: 50%;
+  }
 
-    #Ubicacion {
-        top: 60%;
-    }
+  #Ubicacion {
+    top: 60%;
+  }
 
-    #Contactos {
-        top: 70%;
-    }
+  #Contactos {
+    top: 70%;
+  }
 
-    #InformacionNavbar {
-        top: 80%;
-    }
+  #InformacionNavbar {
+    top: 80%;
+  }
 
-    #CerrarSesion {
-        top: 90%;
-        left: 0%;
-        max-width: 100%;
-        height: 6%;
-    }
+  #CerrarSesion {
+    top: 90%;
+    left: 0%;
+    max-width: 100%;
+    height: 6%;
+  }
 
-    footer {
-        display: none;
-    }
+  footer {
+    display: none;
+  }
 }
 
 @media only screen and (orientation: portrait) and (max-width: 384px) and (min-width: 150px) {
-    nav {
-        display: none;
-        max-width: 100%;
-        max-height: 100%;
-    }
+  nav {
+    display: none;
+    max-width: 100%;
+    max-height: 100%;
+  }
 
-    #cierra {
-        display: block;
-        max-width: 15%;
-        max-height: 7.5%;
-    }
+  #cierra {
+    display: block;
+    max-width: 15%;
+    max-height: 7.5%;
+  }
 
-    #hamburguesa {
-        max-width: 15%;
-        max-height: 7.5%;
-    }
+  #hamburguesa {
+    max-width: 15%;
+    max-height: 7.5%;
+  }
 
-    nav #img {
-        max-width: 25%;
-        max-height: 15%;
-        top: 2%;
-        left: 37.5%;
-    }
+  nav #img {
+    max-width: 25%;
+    max-height: 15%;
+    top: 2%;
+    left: 37.5%;
+  }
 
-    #EPILEPSUM,
-    #Control,
-    #Colaboracion,
-    #PrimerosAuxilios,
-    #Ubicacion,
-    #Contactos,
-    #InformacionNavbar {
-        top: 17.5%;
-        left: 0%;
-        width: 100%;
-    }
+  #EPILEPSUM,
+  #Control,
+  #Colaboracion,
+  #PrimerosAuxilios,
+  #Ubicacion,
+  #Contactos,
+  #InformacionNavbar {
+    top: 17.5%;
+    left: 0%;
+    width: 100%;
+  }
 
-    #Control {
-        top: 30%;
-    }
+  #Control {
+    top: 30%;
+  }
 
-    #Colaboracion {
-        top: 40%;
-    }
+  #Colaboracion {
+    top: 40%;
+  }
 
-    #PrimerosAuxilios {
-        top: 50%;
-    }
+  #PrimerosAuxilios {
+    top: 50%;
+  }
 
-    #Ubicacion {
-        top: 60%;
-    }
+  #Ubicacion {
+    top: 60%;
+  }
 
-    #Contactos {
-        top: 70%;
-    }
+  #Contactos {
+    top: 70%;
+  }
 
-    #InformacionNavbar {
-        top: 80%;
-    }
+  #InformacionNavbar {
+    top: 80%;
+  }
 
-    #CerrarSesion {
-        top: 90%;
-        left: 0%;
-        max-width: 100%;
-        height: 6%;
-    }
+  #CerrarSesion {
+    top: 90%;
+    left: 0%;
+    max-width: 100%;
+    height: 6%;
+  }
 
-    footer {
-        display: none;
-    }
+  footer {
+    display: none;
+  }
 }

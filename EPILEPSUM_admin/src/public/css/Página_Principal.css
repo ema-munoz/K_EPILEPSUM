@@ -1,53 +1,53 @@
 footer {
-    bottom: -180%;
+  bottom: -180%;
 }
 
 /* Carrusel */
 #carrusel-img {
-    background-position: center center;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 80%;
-    max-height: 65%;
-    top: 30%;
-    left: 10%;
+  background-position: center center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 80%;
+  max-height: 65%;
+  top: 30%;
+  left: 10%;
 }
 
 #carrusel-img img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 /* titulos */
 #titulo,
 #titulo2 {
-    background-color: #7D2181;
-    color: white;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 80%;
-    max-height: 15%;
-    top: 15%;
-    left: 10%;
-    text-align: center;
+  background-color: #7d2181;
+  color: white;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 80%;
+  max-height: 15%;
+  top: 15%;
+  left: 10%;
+  text-align: center;
 }
 
 #titulo2 {
-    max-height: 10%;
-    top: 102.5%;
+  max-height: 10%;
+  top: 102.5%;
 }
 
 #contenedor {
-    position: absolute;
-    width: 100%;
-    height: 400%;
-    max-width: 80%;
-    max-height: 150%;
-    top: 115%;
-    left: 10%;
+  position: absolute;
+  width: 100%;
+  height: 400%;
+  max-width: 80%;
+  max-height: 150%;
+  top: 115%;
+  left: 10%;
 }
 
 /* Cartas */
@@ -60,82 +60,82 @@ footer {
 #carta-7,
 #carta-8,
 #carta-9 {
-    background-color: #D8BFD8;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 27%;
-    max-height: 28%;
+  background-color: #d8bfd8;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 27%;
+  max-height: 28%;
 }
 
 /* Posición de Cartas */
 #carta-1,
 #carta-2,
 #carta-3 {
-    top: 6%;
+  top: 6%;
 }
 
 #carta-4,
 #carta-5,
 #carta-6 {
-    top: 36%;
+  top: 36%;
 }
 
 #carta-7,
 #carta-8,
 #carta-9 {
-    top: 66%;
+  top: 66%;
 }
 
 #carta-1,
 #carta-4,
 #carta-7 {
-    left: 7%;
+  left: 7%;
 }
 
 #carta-2,
 #carta-5,
 #carta-8 {
-    left: 37%;
+  left: 37%;
 }
 
 #carta-3,
 #carta-6,
 #carta-9 {
-    left: 67%;
+  left: 67%;
 }
 
 /* Imagenes de Cartas */
 #contenedor img {
-    position: absolute;
-    width: 100%;
-    height: 60%;
+  position: absolute;
+  width: 100%;
+  height: 60%;
 }
 
 /* Titulos de Cartas */
 #contenedor h5 {
-    text-align: center;
-    position: absolute;
-    width: 100%;
-    height: 20%;
-    max-width: 80%;
-    max-height: 15%;
-    top: 65%;
-    left: 10%;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  max-width: 80%;
+  max-height: 15%;
+  top: 65%;
+  left: 10%;
 }
 
 /* Botones de Cartas */
 #contenedor button {
-    position: absolute;
-    width: 60%;
-    font-size: 20px;
-    bottom: 2.5%;
-    left: 20%;
+  position: absolute;
+  width: 60%;
+  font-size: 20px;
+  bottom: 2.5%;
+  left: 20%;
 }
 
 /* Letra de Cartas */
 #contenedor a {
-    color: white;
+  color: white;
 }
 
 /* Ventanas */
@@ -148,107 +148,107 @@ footer {
 #ventana_10,
 #ventana_11,
 #ventana_12 {
-    background-color: rgb(159, 219, 182);
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 20%;
-    max-width: 1000px;
-    max-height: 700px;
-    top: 40%;
+  background-color: rgb(159, 219, 182);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 20%;
+  max-width: 1000px;
+  max-height: 700px;
+  top: 40%;
 }
 
 #ventana_4,
 #ventana_5,
 #ventana_6 {
-    top: 10%;
+  top: 10%;
 }
 
 #ventana_7,
 #ventana_8,
 #ventana_9 {
-    top: 25%;
+  top: 25%;
 }
 
 #ventana_10,
 #ventana_11,
 #ventana_12 {
-    top: 40%;
+  top: 40%;
 }
 
 /* Videos */
 #contenedor iframe,
 #ventana_6 img {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 500px;
-    max-height: 255px;
-    left: 25%;
-    top: 5%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+  max-height: 255px;
+  left: 25%;
+  top: 5%;
 }
 
 /* Imagenes dentro de Ventanas */
 #niños {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 750px;
-    max-height: 750px;
-    left: 12.5%;
-    top: 5%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 750px;
+  max-height: 750px;
+  left: 12.5%;
+  top: 5%;
 }
 
 #famosos {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 300px;
-    max-height: 225px;
-    top: 85%;
-    left: 50%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 300px;
+  max-height: 225px;
+  top: 85%;
+  left: 50%;
 }
 
 #famosos img {
-    width: 100%;
-    height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 /* Parrafos */
 #contenedor p {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 800px;
-    left: 10%;
-    top: 45%;
-    text-align: justify;
-    font-size: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  left: 10%;
+  top: 45%;
+  text-align: justify;
+  font-size: 20px;
 }
 
 #ventana_4 p,
 #ventana_5 p,
 #ventana_12 p {
-    max-height: 600px;
+  max-height: 600px;
 }
 
 #ventana_7 p,
 #ventana_9 p {
-    max-height: 225px;
+  max-height: 225px;
 }
 
 #ventana_8 p,
 #ventana_11 p {
-    max-height: 300px;
+  max-height: 300px;
 }
 
 #ventana_10 p,
 #ventana_12 p {
-    top: 5%;
+  top: 5%;
 }
 
 #ventana_11 p {
-    top: 70%;
+  top: 70%;
 }
 
 /* Epilepsia Natural */
@@ -257,33 +257,33 @@ footer {
 #p-3,
 #p-4,
 #p-5 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 80%;
-    max-height: 20%;
-    text-align: justify;
-    font-size: 20px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 80%;
+  max-height: 20%;
+  text-align: justify;
+  font-size: 20px;
 }
 
 #p-1 {
-    top: 5%;
+  top: 5%;
 }
 
 #p-2 {
-    top: 85%;
+  top: 85%;
 }
 
 #p-3 {
-    top: 150%;
+  top: 150%;
 }
 
 #p-4 {
-    top: 215%;
+  top: 215%;
 }
 
 #p-5 {
-    top: 290%;
+  top: 290%;
 }
 
 #img-01,
@@ -291,32 +291,32 @@ footer {
 #img-03,
 #img-04,
 #img-05 {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
-    max-height: 60%;
-    left: 25%;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 60%;
+  left: 25%;
 }
 
 #img-01 {
-    top: 37.5%;
+  top: 37.5%;
 }
 
 #img-02 {
-    top: 102.5%;
+  top: 102.5%;
 }
 
 #img-03 {
-    top: 166%;
+  top: 166%;
 }
 
 #img-04 {
-    top: 245%;
+  top: 245%;
 }
 
 #img-05 {
-    top: 310%;
+  top: 310%;
 }
 
 #img-01 img,
@@ -324,253 +324,248 @@ footer {
 #img-03 img,
 #img-04 img,
 #img-05 img {
-    width: 80%;
-    height: 80%;
-    top: 10%;
-    left: 10%;
+  width: 80%;
+  height: 80%;
+  top: 10%;
+  left: 10%;
 }
 
 /* RESPONSIVE */
 @media only screen and (orientation: portrait) and (max-width: 1000px) and (min-width: 667px) {
+  /* Carrusel */
+  #carrusel-img {
+    max-width: 100%;
+    left: 0%;
+  }
 
-    /* Carrusel */
-    #carrusel-img {
-        max-width: 100%;
-        left: 0%;
-    }
+  /*Titulo*/
+  #titulo,
+  #titulo2 {
+    max-width: 100%;
+    max-height: 18.5%;
+    top: 8%;
+    left: 0%;
+  }
 
-    /*Titulo*/
-    #titulo,
-    #titulo2 {
-        max-width: 100%;
-        max-height: 18.5%;
-        top: 8%;
-        left: 0%;
-    }
+  #titulo2 {
+    top: 95%;
+    max-height: 15%;
+  }
 
-    #titulo2 {
-        top: 95%;
-        max-height: 15%;
-    }
+  #contenedor {
+    max-width: 100%;
+    max-height: 250%;
+    left: 0%;
+  }
 
-    #contenedor {
-        max-width: 100%;
-        max-height: 250%;
-        left: 0%;
-    }
+  /* Titulos de Cartas */
+  #contenedor h5 {
+    max-width: 95%;
+    left: 2.5%;
+  }
 
-    /* Titulos de Cartas */
-    #contenedor h5 {
-        max-width: 95%;
-        left: 2.5%;
-    }
+  /* Cartas */
+  #carta-1,
+  #carta-2,
+  #carta-3,
+  #carta-4,
+  #carta-5,
+  #carta-6,
+  #carta-7,
+  #carta-8,
+  #carta-9 {
+    max-width: 35%;
+    max-height: 15%;
+    left: 10%;
+    top: 2.5%;
+  }
 
-    /* Cartas */
-    #carta-1,
-    #carta-2,
-    #carta-3,
-    #carta-4,
-    #carta-5,
-    #carta-6,
-    #carta-7,
-    #carta-8,
-    #carta-9 {
-        max-width: 35%;
-        max-height: 15%;
-        left: 10%;
-        top: 2.5%;
-    }
+  /* Posición de Cartas */
+  #carta-2,
+  #carta-4,
+  #carta-6,
+  #carta-8 {
+    left: 55%;
+  }
 
-    /* Posición de Cartas */
-    #carta-2,
-    #carta-4,
-    #carta-6,
-    #carta-8 {
-        left: 55%;
-    }
+  #carta-3,
+  #carta-4 {
+    top: 22.5%;
+  }
 
-    #carta-3,
-    #carta-4 {
-        top: 22.5%;
-    }
+  #carta-5,
+  #carta-6 {
+    top: 42.5%;
+  }
 
+  #carta-7,
+  #carta-8 {
+    top: 62.5%;
+  }
 
-    #carta-5,
-    #carta-6 {
-        top: 42.5%;
-    }
-
-    #carta-7,
-    #carta-8 {
-        top: 62.5%;
-    }
-
-    #carta-9 {
-        top: 82.5%;
-    }
+  #carta-9 {
+    top: 82.5%;
+  }
 }
 
 @media only screen and (orientation: portrait) and (max-width: 667px) and (min-width: 384px) {
+  /* Carrusel */
+  #carrusel-img {
+    width: 180%;
+    max-width: 180%;
+    left: -40%;
+  }
 
-    /* Carrusel */
-    #carrusel-img {
-        width: 180%;
-        max-width: 180%;
-        left: -40%;
-    }
+  /*Titulo*/
+  #titulo,
+  #titulo2 {
+    max-width: 100%;
+    max-height: 22.5%;
+    top: 8%;
+    left: 0%;
+  }
 
-    /*Titulo*/
-    #titulo,
-    #titulo2 {
-        max-width: 100%;
-        max-height: 22.5%;
-        top: 8%;
-        left: 0%;
-    }
+  #titulo2 {
+    top: 95%;
+    max-height: 20%;
+  }
 
-    #titulo2 {
-        top: 95%;
-        max-height: 20%;
-    }
+  #contenedor {
+    max-width: 100%;
+    max-height: 250%;
+    left: 0%;
+  }
 
-    #contenedor {
-        max-width: 100%;
-        max-height: 250%;
-        left: 0%;
-    }
+  /* Titulos de Cartas */
+  #contenedor h5 {
+    max-width: 95%;
+    left: 2.5%;
+  }
 
-    /* Titulos de Cartas */
-    #contenedor h5 {
-        max-width: 95%;
-        left: 2.5%;
-    }
+  /* Cartas */
+  #carta-1,
+  #carta-2,
+  #carta-3,
+  #carta-4,
+  #carta-5,
+  #carta-6,
+  #carta-7,
+  #carta-8,
+  #carta-9 {
+    max-width: 35%;
+    max-height: 15%;
+    left: 10%;
+    top: 2.5%;
+  }
 
-    /* Cartas */
-    #carta-1,
-    #carta-2,
-    #carta-3,
-    #carta-4,
-    #carta-5,
-    #carta-6,
-    #carta-7,
-    #carta-8,
-    #carta-9 {
-        max-width: 35%;
-        max-height: 15%;
-        left: 10%;
-        top: 2.5%;
-    }
+  /* Posición de Cartas */
+  #carta-2,
+  #carta-4,
+  #carta-6,
+  #carta-8 {
+    left: 55%;
+  }
 
-    /* Posición de Cartas */
-    #carta-2,
-    #carta-4,
-    #carta-6,
-    #carta-8 {
-        left: 55%;
-    }
+  #carta-3,
+  #carta-4 {
+    top: 22.5%;
+  }
 
-    #carta-3,
-    #carta-4 {
-        top: 22.5%;
-    }
+  #carta-5,
+  #carta-6 {
+    top: 42.5%;
+  }
 
+  #carta-7,
+  #carta-8 {
+    top: 62.5%;
+  }
 
-    #carta-5,
-    #carta-6 {
-        top: 42.5%;
-    }
-
-    #carta-7,
-    #carta-8 {
-        top: 62.5%;
-    }
-
-    #carta-9 {
-        top: 82.5%;
-    }
+  #carta-9 {
+    top: 82.5%;
+  }
 }
 
 @media only screen and (orientation: portrait) and (max-width: 384px) and (min-width: 150px) {
+  /* Carrusel */
+  #carrusel-img {
+    width: 180%;
+    max-width: 180%;
+    left: -40%;
+  }
 
-    /* Carrusel */
-    #carrusel-img {
-        width: 180%;
-        max-width: 180%;
-        left: -40%;
-    }
+  /*Titulo*/
+  #titulo,
+  #titulo2 {
+    max-width: 100%;
+    max-height: 22.5%;
+    top: 8%;
+    left: 0%;
+  }
 
-    /*Titulo*/
-    #titulo,
-    #titulo2 {
-        max-width: 100%;
-        max-height: 22.5%;
-        top: 8%;
-        left: 0%;
-    }
+  #titulo2 {
+    top: 95%;
+    max-height: 20%;
+  }
 
-    #titulo2 {
-        top: 95%;
-        max-height: 20%;
-    }
+  #contenedor {
+    max-width: 100%;
+    max-height: 400%;
+    left: 0%;
+  }
 
-    #contenedor {
-        max-width: 100%;
-        max-height: 400%;
-        left: 0%;
-    }
+  /* Titulos de Cartas */
+  #contenedor h5 {
+    max-width: 90%;
+    left: 5%;
+  }
 
-    /* Titulos de Cartas */
-    #contenedor h5 {
-        max-width: 90%;
-        left: 5%;
-    }
+  /* Cartas */
+  #carta-1,
+  #carta-2,
+  #carta-3,
+  #carta-4,
+  #carta-5,
+  #carta-6,
+  #carta-7,
+  #carta-8,
+  #carta-9 {
+    max-width: 80%;
+    max-height: 10%;
+    left: 10%;
+    top: 1%;
+  }
 
-    /* Cartas */
-    #carta-1,
-    #carta-2,
-    #carta-3,
-    #carta-4,
-    #carta-5,
-    #carta-6,
-    #carta-7,
-    #carta-8,
-    #carta-9 {
-        max-width: 80%;
-        max-height: 10%;
-        left: 10%;
-        top: 1%;
-    }
+  /* Posición de Cartas */
+  #carta-2 {
+    top: 12%;
+  }
 
-    /* Posición de Cartas */
-    #carta-2 {
-        top: 12%;
-    }
+  #carta-3 {
+    top: 23%;
+  }
 
-    #carta-3 {
-        top: 23%;
-    }
+  #carta-4 {
+    top: 34%;
+  }
 
-    #carta-4 {
-        top: 34%;
-    }
+  #carta-5 {
+    top: 45%;
+  }
 
-    #carta-5 {
-        top: 45%;
-    }
+  #carta-6 {
+    top: 56%;
+  }
 
-    #carta-6 {
-        top: 56%;
-    }
+  #carta-7 {
+    top: 67%;
+  }
 
-    #carta-7 {
-        top: 67%;
-    }
+  #carta-8 {
+    top: 78%;
+  }
 
-    #carta-8 {
-        top: 78%;
-    }
-
-    #carta-9 {
-        top: 89%;
-    }
+  #carta-9 {
+    top: 89%;
+  }
 }
